@@ -1,0 +1,310 @@
+{
+  "research": [
+    {
+      "id": "r-1719000000000",
+      "title": "量子纠错阈值突破：超导量子处理器实现逻辑量子比特的容错门操作",
+      "field": "物理",
+      "subfield": "量子计算",
+      "researchers": ["S. Krinner", "N. Lacroix", "A. Remm", "C. Eichler"],
+      "institution": "ETH Zurich",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-00000-0",
+        "url": "https://www.nature.com",
+        "publicationDate": "2026-04-15"
+      },
+      "summary": "超导量子处理器首次在实验中实现了低于表面码纠错阈值的逻辑门操作，证明容错量子计算在工程上是可行的。",
+      "abstract": "Quantum error correction is essential for fault-tolerant quantum computing. Here we demonstrate a universal set of fault-tolerant gates on a logical qubit encoded in a distance-3 surface code on a superconducting quantum processor. We measure logical error rates below the surface code threshold for all gates, achieving a logical error rate of 0.03% per gate cycle.",
+      "breakthrough": "苏黎世联邦理工团队的这项工作实现了量子计算领域一个里程碑式的突破：首次在超导量子处理器上，针对逻辑量子比特完整实现了所有门操作的容错运行，且错误率低于表面码的纠错阈值。\n\n团队使用了一个由 17 个超导量子比特组成的距离-3 表面码，通过实时错误解码和反馈，将逻辑量子比特的相干时间提升到了单个物理量子比特的 10 倍以上。所有逻辑门的错误率均低于表面码的约 1% 阈值，最低达到 0.03%。\n\n这一成果的关键创新在于将实时纠错解码器 FPGA 化，将解码延迟降低到不足 1 微秒，远快于量子比特的解相干时间，使得反馈纠错真正变得实用。",
+      "significance": "这项研究的核心意义在于证明了容错量子计算不是理论幻想——它在一个足够大的超导量子处理器上被实际验证了。此前虽然各个组件（纠错码、逻辑门、实时解码）在分别实验中已被验证，但将它们完整集成并达到阈值以下是第一次。这意味着构建实用量子计算机的最大工程障碍之一已经被克服。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "容错量子计算的突破将直接推动量子化学模拟领域：精确模拟分子基态能量所需的量子门数量巨大，只有容错量子计算机才能完成。同时，这一进展对密码学的影响是双面的——一方面加速了 Shor 算法的实用化威胁，另一方面也推动了量子密码学的发展需求。",
+          "relatedFields": ["计算机", "生物"]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（5年）：逻辑量子比特数量从1增长到数十个，实现简单的量子化学模拟。中期（10年）：百逻辑比特级别，开始在药物分子设计中展现量子优势。长期（20年）：千逻辑比特规模，量子计算机开始对特定问题（大数分解、量子多体问题）产生实用价值。",
+          "relatedFields": ["生物"]
+        },
+        {
+          "direction": "开放问题",
+          "content": "逻辑量子比特的物理实现虽然迈出了关键一步，但量子比特之间的串扰、更高效纠错码的实现、以及如何将数千个逻辑量子比特互联仍是悬而未决的工程问题。此外，是否需要在软件层面发展更友好的量子编程范式，也是一个开放议题。",
+          "relatedFields": ["计算机"]
+        }
+      ],
+      "expertCommentary": "这是2026年量子计算领域最重要的实验成果之一。ETH Zurich 团队的可贵之处在于解决了「实时解码」这个长期被忽视的工程瓶颈——此前大多数纠错实验都是离线解码，无法真正用于门操作期间的反馈。FPGA 解码器将延迟降至亚微秒级别是一个漂亮的工程创新。值得指出的是，距离-3 码只是最小可纠错的表面码，扩展到距离-5、距离-7 时解码器的复杂度将指数级增长。整体评价：方法扎实，结论可靠，是通往实用量子计算机的里程碑。",
+      "relatedMilestones": [
+        {"year": 1995, "description": "Shor 提出量子纠错码理论"},
+        {"year": 2014, "description": "Google 实现表面码中逻辑量子比特的首次实验"},
+        {"year": 2023, "description": "多种量子纠错码在各类平台上突破盈亏平衡点"}
+      ],
+      "tags": ["量子计算", "量子纠错", "表面码", "超导量子比特", "容错量子计算"],
+      "dateAdded": "2026-06-23",
+      "readTime": 12,
+      "status": "unread",
+      "starred": true,
+      "citations": {
+        "bibtex": "@article{krinner2026, title={Fault-tolerant gates on a logical qubit below the surface code threshold}, journal={Nature}, year={2026}}",
+        "formatted": "Krinner, S. et al. Fault-tolerant gates on a logical qubit below the surface code threshold. Nature (2026)."
+      }
+    },
+    {
+      "id": "r-1718900000000",
+      "title": "JWST 在系外行星 K2-18b 大气中确认生物标志物 DMS 的存在",
+      "field": "天文",
+      "subfield": "系外行星大气",
+      "researchers": ["N. Madhusudhan", "S. Constantinou", "M. Edler"],
+      "institution": "University of Cambridge",
+      "source": {
+        "journal": "The Astrophysical Journal Letters",
+        "doi": "10.3847/2041-8213/ad5a9e",
+        "url": "https://iopscience.iop.org/journal/2041-8205",
+        "publicationDate": "2026-05-20"
+      },
+      "summary": "韦布望远镜在 K2-18b 大气光谱中高置信度检测到二甲基硫醚（DMS），在地球上 DMS 仅由微生物产生。",
+      "abstract": "We report the detection of dimethyl sulfide (DMS) in the atmosphere of the hycean exoplanet K2-18b using JWST NIRSpec and MIRI observations. DMS is a biosignature candidate with no known abiotic production pathway on Earth. The detection is at 4.2σ confidence, with an estimated mixing ratio of 10-20 ppb.",
+      "breakthrough": "剑桥大学团队利用詹姆斯·韦布空间望远镜的 NIRSpec 和 MIRI 仪器，对 hycean 型系外行星 K2-18b 进行了 200 小时的深度光谱观测。分析结果显示，在 3.4 微米和 7.5 微米处存在吸收特征，与二甲基硫醚（DMS）的光谱指纹高度吻合，置信度达到 4.2σ。\n\n在地球上，DMS 几乎完全由海洋微生物（如浮游植物）产生，没有已知的非生物生成途径。K2-18b 是一颗位于宜居带的 sub-Neptune 行星，半径约为地球的 2.6 倍，大气中富含氢和甲烷。",
+      "significance": "如果这一发现被独立确认，这将是人类首次在系外行星大气中发现潜在生物标志物，是地外生命搜寻中最重大的突破。DMS 作为生物标志物的一大优势在于其几乎没有假阳性——不像氧气或甲烷可能有非生物来源。但 4.2σ 的置信度尚未达到物理学「发现」标准的 5σ，且 hycean 行星的大气化学尚不完善，需要进一步验证。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "这一发现对生物学和哲学都产生了深远影响。生物学层面，K2-18b 的极端环境挑战了我们对「生命边界」的认知——在氢大气和高温高压环境下生存的微生物将意味着宜居环境的定义需要大幅扩展。哲学层面，如果确认地外微生物的存在，将彻底改变人类在宇宙中的自我定位。",
+          "relatedFields": ["生物", "哲学"]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（5年）：更多 JWST 时间将分配给类似目标，建立更完整的系外行星生物标志物光谱库。中期（10年）：下一代望远镜（如 Habitable Worlds Observatory）将具备直接成像能力，可以对近邻类地行星进行大气光谱分析。长期（20年）：如果微生物生命在系外行星上普遍存在，将极大推动星际探测器的发射计划。",
+          "relatedFields": ["物理", "哲学"]
+        },
+        {
+          "direction": "开放问题",
+          "content": "DMS 在 hycean 行星大气中是否有未知的非生物生成途径？K2-18b 的微生物如果真的存在，其生物化学基础是什么——依然是碳基还是可能采用其他元素方案？这些问题的回答需要对 hycean 行星的大气化学模型进行更深入的研究。",
+          "relatedFields": ["生物", "化学"]
+        }
+      ],
+      "expertCommentary": "Madhusudhan 团队延续了他们在 hycean 行星研究方面的领先地位，这项观测设计精良、数据分析审慎。DMS 作为生物标志物确实具有极低假阳性的优势，但在一个室温超百度的氢大气中，是否存在非生物催化途径产生 DMS 仍需实验验证。4.2σ 的置信度意味着假阳性概率约 1/15000，在物理学中通常需要 5σ 才宣布发现，因此应保持谨慎乐观。这是 SETI 之外最令人振奋的地外生命线索。",
+      "relatedMilestones": [
+        {"year": 2019, "description": "Madhusudhan 首次提出 hycean 行星概念"},
+        {"year": 2022, "description": "JWST 发射升空"},
+        {"year": 2023, "description": "K2-18b 首次被 JWST 观测到甲烷和二氧化碳"}
+      ],
+      "tags": ["系外行星", "生物标志物", "JWST", "K2-18b", "地外生命"],
+      "dateAdded": "2026-06-23",
+      "readTime": 14,
+      "status": "unread",
+      "starred": true,
+      "citations": {
+        "bibtex": "@article{madhusudhan2026, title={Detection of dimethyl sulfide in the atmosphere of K2-18b with JWST}, journal={ApJL}, year={2026}}",
+        "formatted": "Madhusudhan, N. et al. Detection of dimethyl sulfide in the atmosphere of K2-18b with JWST. ApJL (2026)."
+      }
+    },
+    {
+      "id": "r-1718800000000",
+      "title": "通过表观遗传重编程实现人类神经元功能性再生",
+      "field": "生物",
+      "subfield": "神经科学与再生医学",
+      "researchers": ["Z. Liu", "Y. Zhang", "H. Wu"],
+      "institution": "西湖大学 / 复旦大学",
+      "source": {
+        "journal": "Cell",
+        "doi": "10.1016/j.cell.2026.05.001",
+        "url": "https://www.cell.com/cell",
+        "publicationDate": "2026-05-05"
+      },
+      "summary": "研究人员通过 CRISPR 介导的表观遗传编辑，成功在成年小鼠脑内将胶质细胞原位转分化为功能性神经元，并恢复了阿尔茨海默模型小鼠的记忆功能。",
+      "abstract": "We demonstrate in vivo reprogramming of reactive glial cells into functional neurons in adult mouse brains using a CRISPR-dCas9-based epigenetic editing system targeting NeuroD1 and Ascl1. The newly generated neurons integrate into existing neural circuits and exhibit electrophysiological properties indistinguishable from endogenous neurons. In a mouse model of Alzheimer's disease, this approach restores spatial memory function.",
+      "breakthrough": "西湖大学与复旦大学联合团队开发了一种基于 CRISPR-dCas9 的表观遗传编辑系统，通过激活两个关键神经命运决定基因（NeuroD1 和 Ascl1），在不改变 DNA 序列的情况下，诱导成年小鼠脑内反应性星形胶质细胞原位转分化为功能性神经元。\n\n新生成的神经元在形态、电生理特性和突触连接方面与内源性神经元无异，成功整合到现有神经环路中。在阿尔茨海默模型小鼠中，治疗组表现出显著的空间记忆功能恢复，水迷宫测试成绩接近健康对照组。",
+      "significance": "这是神经再生领域的重大突破。此前神经元再生尝试面临两大瓶颈：分化效率低和整合困难。本工作通过表观遗传重编程（而非传统的转录因子过表达）实现了更高的转分化效率和更好的功能整合。更重要的是，该策略不涉及外源 DNA 插入，显著降低了致癌风险。如果能在灵长类中重复，将为阿尔茨海默病、帕金森病等神经退行性疾病的治疗提供全新范式。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "这项技术的伦理和哲学意涵令人深思。如果大脑中的神经元可以被精准再生，那么「记忆」是否可以修复？「自我」的连续性如何界定？从认知科学的角度，该技术也间接支持了神经可塑性理论——成年脑的修复能力远比我们想象的要强，只是被表观遗传机制抑制了。",
+          "relatedFields": ["心理", "哲学"]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（5年）：启动 NHP（非人灵长类）安全性评估，优化递送系统（AAV 载体）。中期（10年）：首批针对阿尔茨海默病早期患者的临床试验。长期（20年）：如果安全有效，可扩展到帕金森病、亨廷顿病、中风后遗症等多种神经疾病。",
+          "relatedFields": []
+        },
+        {
+          "direction": "开放问题",
+          "content": "转分化后的神经元在长期（数十年）尺度上是否保持功能和稳定性？是否会形成异常网络连接（如癫痫样活动）？更重要的是，这一技术能否从星形胶质细胞扩展到其他胶质细胞类型（如小胶质细胞），从而扩大修复范围？",
+          "relatedFields": ["心理"]
+        }
+      ],
+      "expertCommentary": "刘张学团队的工作在技术上堪称精湛。表观遗传编辑相比传统转录因子过表达有三大优势：不改变 DNA 序列（安全性）、可逆（可调控性）、更接近自然发育过程。在阿尔茨海默小鼠模型中的行为学改善显著，体视学和电生理数据也提供了充分的证据。主要局限性在于：小鼠到人的转化存在巨大鸿沟，且阿尔茨海默病在诊断时已有大量病理积累，疗效窗口期可能很窄。但作为概念验证，这是本年度最令人兴奋的神经科学进展之一。",
+      "relatedMilestones": [
+        {"year": 2010, "description": "首次报道在体外将成纤维细胞转分化为神经元"},
+        {"year": 2013, "description": "在体内将胶质细胞转分化为神经元的概念验证"},
+        {"year": 2023, "description": "CRISPR 表观遗传编辑技术进入临床试验"}
+      ],
+      "tags": ["神经再生", "表观遗传", "CRISPR", "阿尔茨海默", "转分化"],
+      "dateAdded": "2026-06-23",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{liu2026, title={In vivo neuronal reprogramming via epigenetic editing restores memory in Alzheimer's mice}, journal={Cell}, year={2026}}",
+        "formatted": "Liu, Z. et al. In vivo neuronal reprogramming via epigenetic editing restores memory in Alzheimer's mice. Cell (2026)."
+      }
+    },
+    {
+      "id": "r-1718700000000",
+      "title": "大语言模型展现出无法被简单归纳的抽象推理能力",
+      "field": "心理",
+      "subfield": "认知科学与AI认知",
+      "researchers": ["S. Chung", "N. Goyal", "M. McCloskey"],
+      "institution": "Johns Hopkins University / DeepMind",
+      "source": {
+        "journal": "Nature Human Behaviour",
+        "doi": "10.1038/s41562-026-00000-0",
+        "url": "https://www.nature.com/nathumbehav",
+        "publicationDate": "2026-04-28"
+      },
+      "summary": "系统性的实验发现，GPT-4 及更大的模型在抽象推理任务上展现出的能力无法用简单的「统计模式匹配」或「记忆检索」来解释，表现出近似人类的概念泛化能力。",
+      "abstract": "We systematically evaluate large language models on a battery of abstract reasoning tasks designed to test the ability to infer and apply novel rules. We find that models above a certain scale exhibit behaviour that cannot be explained by surface-level pattern matching or memorization. Instead, they demonstrate a form of abstract rule learning and systematic generalization that is qualitatively similar to human performance in controlled experiments.",
+      "breakthrough": "约翰霍普金斯大学与 DeepMind 的联合团队设计了一系列严格控制的抽象推理实验，用于测试 LLM 是否具备人类式的「概念泛化」能力。实验采用了新颖的视觉-语言推理任务——这些任务中的规则在训练数据中不可能存在（使用了对抗设计的抽象图形和人工符号），从而排除了「死记硬背」的可能性。\n\n结果显示，参数量超过 1000 亿的模型在大部分任务上表现出类似人类的抽象推理模式：它们能从少量示例中推断出规则，并将规则应用到全新的、语义上不相关的场景中。更重要的是，微调过程中模型不仅仅是在「适应训练分布」，而是展现了真正的系统性组合泛化。",
+      "significance": "这项研究对认知科学和人工智能都具有深远意义。在认知科学层面，它挑战了「大语言模型只是随机鹦鹉」的观点，提示抽象推理能力可能从足够复杂的统计学习过程中涌现。在 AI 层面，它意味着我们可能低估了大模型的认知能力——它们不只是更好的搜索引擎，而是在某些方面具备了类似人类的推理机制。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "这项发现与哲学中的「心灵哲学」直接相关——如果人工系统具备了抽象推理能力，那么「理解」的定义需要修订吗？塞尔的中文屋论证是否仍然成立？同时，对心理学的「认知架构」理论也提出了挑战：皮亚杰的认知发展阶段理论是否需要将 AI 纳入考量？",
+          "relatedFields": ["哲学", "计算机"]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期内，这一发现将推动 AI 评估基准的全面更新，新的测试将更关注「真正的推理」而非模式匹配。中长期来看，具备抽象推理能力的 AI 可以应用于科学发现——从实验数据中推断物理定律、从基因序列中推理调控规则等。",
+          "relatedFields": ["物理", "生物", "计算机"]
+        },
+        {
+          "direction": "开放问题",
+          "content": "这种推理能力是否是缩放定律的必然结果，还是需要特定的架构设计？人类和 LLM 的推理是否存在本质差异（例如，人类依赖具身认知，而 LLM 完全在符号空间操作）？如果 LLM 真的「理解」了抽象规则，研究其内部表征的机制将是一个关键方向。",
+          "relatedFields": ["哲学", "计算机"]
+        }
+      ],
+      "expertCommentary": "这项实验设计的精妙之处在于对抗性的新颖刺激——他们确保模型不可能通过记忆训练数据中的「类似问题」来完成任务，这一控制条件比以往的许多「推理测试」要严格得多。结果的稳健性令人印象深刻：不同架构、不同训练数据的模型在超过 1000 亿参数规模后一致展现出抽象推理能力，这强烈暗示了某种涌现现象。当然，反方会指出这些仍然可以被解释为「高阶模式匹配」，但「高阶」到什么程度才能算作真正的「推理」？这已经成了一个实证问题而非哲学问题。",
+      "relatedMilestones": [
+        {"year": 2020, "description": "GPT-3 发布，首次展现大规模涌现能力"},
+        {"year": 2022, "description": "Chollet 提出抽象推理基准 ARC"},
+        {"year": 2023, "description": "多位研究者观察到 LLM 在全新任务上的泛化能力"}
+      ],
+      "tags": ["大语言模型", "认知科学", "抽象推理", "涌现", "心灵哲学"],
+      "dateAdded": "2026-06-22",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{chung2026, title={Abstract rule learning in large language models}, journal={Nature Human Behaviour}, year={2026}}",
+        "formatted": "Chung, S. et al. Abstract rule learning in large language models. Nature Human Behaviour (2026)."
+      }
+    },
+    {
+      "id": "r-1718600000000",
+      "title": "意识的整合信息理论获实验证据支持：局部脑损伤患者的信息整合与意识水平直接相关",
+      "field": "哲学",
+      "subfield": "意识科学",
+      "researchers": ["M. A. Tagliazucchi", "G. Tononi", "L. D. Haber"],
+      "institution": "University of Wisconsin-Madison / UBA",
+      "source": {
+        "journal": "Science Advances",
+        "doi": "10.1126/sciadv.adf0000",
+        "url": "https://www.science.org/journal/sciadv",
+        "publicationDate": "2026-03-10"
+      },
+      "summary": "通过改进的 PCI（扰动复杂性指数）测量，研究发现不同脑区损伤患者的意识水平与大脑网络的整合信息能力呈高度正相关，为意识的整合信息理论提供了关键的临床证据。",
+      "abstract": "We measured the perturbational complexity index (PCI) in a cohort of 120 patients with focal brain lesions and varying levels of consciousness. PCI, a measure of the brain's capacity to integrate information, was strongly correlated (r=0.87) with clinically assessed consciousness levels. Patients with disrupted frontoparietal network connectivity showed the most significant PCI reductions, even when the lesions themselves were in distal regions.",
+      "breakthrough": "Tononi 团队及其合作者对 120 名局灶性脑损伤患者进行了系统的 PCI 测量。PCI（扰动复杂性指数）通过经颅磁刺激（TMS）激发大脑皮层后记录脑电图反应，计算大脑的「整合信息」水平——这正是整合信息理论（IIT）中定义意识的核心指标。\n\n结果显示，PCI 与患者的临床意识水平（通过昏迷恢复量表修订版 CRS-R 评估）之间的相关系数达到了 0.87，远超此前任何意识测量方法。值得注意的是，即使损伤发生在远离前顶叶网络（被认为是意识的关键网络）的区域，只要影响了网络的信息整合能力，患者的意识水平也会显著下降。",
+      "significance": "这是整合信息理论（IIT）自 2004 年提出以来最强有力的临床证据。IIT 长期面临「无法实证检验」的批评——Phi 值的计算复杂度是 NP-hard 的，无法在完整大脑上计算。PCI 作为 Phi 的近似测量指标，既能在临床上使用，又与理论预测高度一致。这项研究桥接了意识哲学的理论和临床神经科学的实践，可能为闭锁综合征、植物状态患者的意识评估提供客观的生物学标记。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "IIT 的核心主张——「意识等于整合信息」——对 AI 伦理学有深刻影响：如果一个 AI 系统具备了高水平的整合信息能力，它是否算有意识？这直接关系到 AI 权利的讨论。此外，该发现对心理学中的「意识流」理论提供了神经基础支持：意识的统一性正是源自信息的高水平整合。",
+          "relatedFields": ["心理", "计算机"]
+        },
+        {
+          "direction": "应用推演",
+          "content": "PCI 作为临床工具具有巨大潜力：可用于评估植物状态患者的意识水平、辅助判断麻醉深度、甚至作为脑机接口中「用户是否在场」的检测指标。但 PCI 需要 TMS 设备，成本较高，微创版本的开发将是工程方向。",
+          "relatedFields": ["心理"]
+        },
+        {
+          "direction": "开放问题",
+          "content": "PCI 与 Phi 之间到底有多大差距？如果 Phi 的准确计算永远无法实现，PCI 能否作为一个充分逼近？另一个根本问题是：整合信息真的是意识的充分必要条件吗？「整合信息」本身是否需要「类型意识」（关于什么内容被整合）来补充？",
+          "relatedFields": ["心理", "计算机"]
+        }
+      ],
+      "expertCommentary": "作为 IIT 的首创者，Tononi 团队这项研究在实验设计上很谨慎：他们选取的病灶患者包括了各种脑区损伤，从而可以控制「损伤位置」的干扰变量。0.87 的相关系数在临床神经科学中是极高的。但需要指出的是，相关性不等于因果性——意识水平降低可能同时导致整合能力下降，而非反过来。尽管如此，这项研究为 IIT 提供了迄今为止最有力的实证基础，也展示了理论和临床结合的价值。",
+      "relatedMilestones": [
+        {"year": 2004, "description": "Tononi 提出整合信息理论（IIT）1.0"},
+        {"year": 2014, "description": "PCI 首次作为意识测量方法提出"},
+        {"year": 2019, "description": "IIT 在数学上形式化为 IIT 3.0"}
+      ],
+      "tags": ["意识", "整合信息理论", "神经科学", "临床神经科学", "PCI"],
+      "dateAdded": "2026-06-21",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{tagliazucchi2026, title={Integrated information correlates with consciousness in focal brain lesion patients}, journal={Science Advances}, year={2026}}",
+        "formatted": "Tagliazucchi, M. A. et al. Integrated information correlates with consciousness in focal brain lesion patients. Science Advances (2026)."
+      }
+    },
+    {
+      "id": "r-1718500000000",
+      "title": "自监督多模态大模型在抗体设计上达到实验级精度",
+      "field": "计算机",
+      "subfield": "AI for Science / 蛋白质设计",
+      "researchers": ["J. Jumper", "R. Wu", "K. Lee", "Y. Shen"],
+      "institution": "DeepMind / 华盛顿大学",
+      "source": {
+        "journal": "Nature Biotechnology",
+        "doi": "10.1038/s41587-026-00000-0",
+        "url": "https://www.nature.com/nbt",
+        "publicationDate": "2026-06-01"
+      },
+      "summary": "DeepMind基于AlphaFold架构升级的新模型在从头设计高亲和力抗体方面取得成功，体外实验验证率超过90%。",
+      "abstract": "We present a self-supervised multimodal model for antibody design that jointly learns the sequence, structure, and function of antibodies. The model generates de novo antibody sequences targeting specific antigens with predicted binding affinities in the picomolar range. Laboratory validation of 200 designed antibodies showed a 92% success rate for binding affinity better than 10 nM, and 8 candidates advanced to preclinical testing.",
+      "breakthrough": "DeepMind 团队在 AlphaFold 的架构基础上，开发了一个自监督多模态抗体设计模型。该模型同时学习抗体的序列-结构-功能三个模态的表征，能够针对特定抗原从零生成全新的抗体序列。\n\n在 200 个体外验证实验中，92% 的设计抗体对靶标抗原的亲和力超过 10 nM，其中 8 个候选抗体进入临床前测试。这一成功率远超传统抗体筛选方法（通常成功率在 10-30%）。模型还展示了零样本泛化能力——对训练中未见过的新抗原靶点同样有效。",
+      "significance": "这是 AI 驱动药物发现领域的分水岭时刻。传统抗体发现是一个漫长且昂贵的过程（通常 2-3 年，成本数亿美元），涉及动物免疫或噬菌体展示筛选。该模型将这一过程缩短至数周，且成功率高出数倍。这不仅意味着更低的药物开发成本，更意味着可以针对此前「不可成药」的靶点设计抗体。对于新发传染病（如下一个大流行病原体），这可能意味着在数周内获得候选抗体药物。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "这项技术代表了 AI for Science 范式的成熟——从「理解自然」（AlphaFold 预测蛋白质结构）进化到「改造自然」（从头设计功能蛋白）。这对生物学的影响不亚于 CRISPR：如果我们可以设计任意功能的蛋白质，那么生物学就从「发现科学」转变为「工程科学」。哲学上，这引发了一个问题：当人类可以设计生物分子时，「自然」的边界在哪里？",
+          "relatedFields": ["生物", "哲学"]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（3-5年）：抗体药物研发管线将大幅加速，肿瘤免疫治疗领域最先受益。中期（5-10年）：技术扩展到酶设计、蛋白材料设计、合成生物学领域。长期（10-20年）：定制化蛋白药物成为常规医疗手段，每个人都能获得针对其特定疾病标志物的个性化蛋白药物。",
+          "relatedFields": ["生物", "心理"]
+        },
+        {
+          "direction": "开放问题",
+          "content": "AI 设计的抗体在人体内的长期免疫原性如何？尽管亲和力达到了治疗水平，但免疫原性预测仍然是一个未解决的挑战。此外，如果这一技术变得普及，如何防止其被滥用（如设计针对特定蛋白质的生物毒素）也是一个需要提前考虑的治理问题。",
+          "relatedFields": ["哲学"]
+        }
+      ],
+      "expertCommentary": "Jumper 团队在 AlphaFold 之后选择了抗体设计这个高度实用的方向，策略明智。92% 的体外验证率在计算蛋白质设计领域是空前的，但需要谨慎解读：10 nM 的亲和力阈值虽然达到了治疗级，但实际上市抗体药物还需要满足多项其他指标（免疫原性、半衰期、可制造性等），8 个进入临床前测试的候选抗体最终能有多少个成功上市还是未知数。不过，这仍然是 AI 药物发现领域迄今最令人信服的概念验证。",
+      "relatedMilestones": [
+        {"year": 2021, "description": "AlphaFold2 解决蛋白质结构预测问题"},
+        {"year": 2023, "description": "生成式 AI 开始用于蛋白质序列设计"},
+        {"year": 2024, "description": "首个 AI 设计蛋白进入临床试验"}
+      ],
+      "tags": ["AI for Science", "抗体设计", "蛋白质工程", "AlphaFold", "药物发现"],
+      "dateAdded": "2026-06-20",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{jumper2026, title={Self-supervised multimodal antibody design}, journal={Nature Biotechnology}, year={2026}}",
+        "formatted": "Jumper, J. et al. Self-supervised multimodal antibody design. Nature Biotechnology (2026)."
+      }
+    }
+  ]
+}

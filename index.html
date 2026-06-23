@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>科学突破前沿 — Frontiers of Science</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo" onclick="switchTab('home')">
+        <span class="logo-icon">◇</span>
+        <span class="logo-text">科学突破前沿</span>
+        <span class="logo-sub">Frontiers of Science</span>
+      </div>
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="搜索突破…" autocomplete="off">
+        </div>
+        <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" title="切换主题">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 领域导航 -->
+  <nav class="field-nav" id="fieldNav">
+    <button class="field-tab active" data-field="全部" onclick="filterByField('全部')">全部</button>
+    <button class="field-tab" data-field="物理" onclick="filterByField('物理')">⚛️ 物理</button>
+    <button class="field-tab" data-field="天文" onclick="filterByField('天文')">🔭 天文</button>
+    <button class="field-tab" data-field="生物" onclick="filterByField('生物')">🧬 生物</button>
+    <button class="field-tab" data-field="心理" onclick="filterByField('心理')">🧠 心理</button>
+    <button class="field-tab" data-field="哲学" onclick="filterByField('哲学')">💭 哲学</button>
+    <button class="field-tab" data-field="计算机" onclick="filterByField('计算机')">💻 计算机</button>
+  </nav>
+
+  <!-- 主内容区 -->
+  <main id="app" class="container">
+    <div class="loading-state">
+      <div class="loading-spinner"></div>
+      <p>加载中...</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>科学突破前沿 · 跟踪全球科研前沿动态</p>
+      <p class="footer-meta">数据来源：arXiv · Nature · Science · PubMed · bioRxiv · NASA ADS</p>
+      <p class="footer-meta">© 2026 · 基于公开学术数据策展</p>
+    </div>
+  </footer>
+
+  <!-- TOP 按钮 -->
+  <div class="top-float" id="topFloat" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ TOP</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
