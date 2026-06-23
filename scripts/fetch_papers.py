@@ -7,8 +7,11 @@ fetch_papers.py — 从学术 API 拉取近期论文
 
 import argparse
 import json
+import os
+import subprocess
 import urllib.request
 import urllib.parse
+import urllib.error
 import xml.etree.ElementTree as ET
 import time
 import re
@@ -16,6 +19,9 @@ from datetime import datetime, timedelta
 
 # arXiv API endpoint
 ARXIV_API = "https://export.arxiv.org/api/query"
+
+# 代理设置（从环境变量读取，格式 socks5h://127.0.0.1:1080）
+PROXY = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy") or ""
 
 # 各学科对应的 arXiv 分类
 ARXIV_CATEGORIES = {
@@ -34,36 +40,43 @@ for cats in ARXIV_CATEGORIES.values():
 
 def fetch_arxiv(categories, max_results=5, days_back=90):
     """从 arXiv API 拉取论文（带重试和退避）"""
+    # 按日期过滤，只取近期论文
+    date_from = (datetime.now() - timedelta(days=days_back)).strftime("%Y%m%d")
+    date_to = datetime.now().strftime("%Y%m%d")
     cat_query = "+OR+".join(f"cat:{c}" for c in categories)
-    query = f"search_query={cat_query}&sortBy=lastUpdatedDate&sortOrder=descending&max_results={max_results}"
+    query = f"search_query=%28{cat_query}%29+AND+%28submittedDate:[{date_from}0000+TO+{date_to}2359%29&sortBy=submittedDate&sortOrder=descending&max_results={max_results}"
     url = f"{ARXIV_API}?{query}"
+
+    data = None
 
     # 重试机制
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            req = urllib.request.Request(url, headers={
-                "User-Agent": "ResearchFrontiers/1.0 (mailto:research@example.com)"
-            })
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                data = resp.read().decode("utf-8")
-                break
-        except urllib.error.HTTPError as e:
-            if e.code == 429:
-                wait = 10 * (attempt + 1)
-                print(f"   ⏳ arXiv 限流，等待 {wait} 秒后重试 ({attempt+1}/{max_retries})...")
-                time.sleep(wait)
-                if attempt == max_retries - 1:
-                    print(f"   ⚠️ arXiv API 请求超限，跳过")
-                    return []
+            if PROXY:
+                # 走 curl + 代理（urllib 对 SOCKS5+SSL 兼容不好）
+                cmd = ["curl", "-s", "--max-time", "30", "-x", PROXY, url]
+                result = subprocess.run(cmd, capture_output=True, timeout=35)
+                if result.returncode != 0:
+                    raise Exception(f"curl exit {result.returncode}: {result.stderr.decode('utf-8', errors='replace')[:100]}")
+                data = result.stdout.decode("utf-8")
             else:
-                print(f"   ⚠️ arXiv API HTTP {e.code}: {e.reason}")
-                return []
+                req = urllib.request.Request(url, headers={
+                    "User-Agent": "ResearchFrontiers/1.0 (mailto:research@example.com)"
+                })
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    data = resp.read().decode("utf-8")
+            break  # 成功，跳出重试循环
         except Exception as e:
-            print(f"   ⚠️ arXiv API 请求失败: {e}")
-            return []
-    else:
-        print(f"   ⚠️ arXiv API 所有重试均失败")
+            if attempt < max_retries - 1:
+                wait = 5 * (attempt + 1)
+                print(f"   ⏳ 请求异常 ({e})，{wait}秒后重试 ({attempt+1}/{max_retries})...")
+                time.sleep(wait)
+            else:
+                print(f"   ⚠️ arXiv API 请求失败: {e}")
+                return []
+
+    if data is None:
         return []
 
     # 解析 XML
@@ -102,12 +115,11 @@ def fetch_arxiv(categories, max_results=5, days_back=90):
             if "doi.org" in (link.get("href") or ""):
                 doi = link.get("href").replace("https://doi.org/", "")
 
-        # Journal info from arXiv comment
         journal = "arXiv preprint"
 
         papers.append({
             "title": title,
-            "summary": summary[:1000],  # 截断过长摘要
+            "summary": summary[:1000],
             "authors": authors,
             "published": published_str,
             "arxiv_id": arxiv_id,
@@ -295,13 +307,80 @@ def generate_sample_papers(field, count=5):
     return result
 
 
+def fetch_arxiv_by_ids(arxiv_ids):
+    """按 arXiv ID 直接拉取论文（按 ID 查不限流）"""
+    id_list = ",".join(arxiv_ids)
+    url = f"{ARXIV_API}?id_list={id_list}"
+
+    data = None
+    try:
+        if PROXY:
+            cmd = ["curl", "-s", "--max-time", "20", "-x", PROXY, url]
+            result = subprocess.run(cmd, capture_output=True, timeout=25)
+            if result.returncode != 0:
+                raise Exception(f"curl exit {result.returncode}")
+            data = result.stdout.decode("utf-8")
+        else:
+            req = urllib.request.Request(url, headers={"User-Agent": "ResearchFrontiers/1.0"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                data = resp.read().decode("utf-8")
+    except Exception as e:
+        print(f"   ⚠️ 按 ID 拉取失败: {e}")
+        return []
+
+    root = ET.fromstring(data)
+    ns = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
+    papers = []
+    for entry in root.findall("atom:entry", ns):
+        p = parse_arxiv_entry(entry, ns)
+        if p:
+            papers.append(p)
+    return papers
+
+
+def parse_arxiv_entry(entry, ns):
+    """解析单条 arXiv XML 条目"""
+    title = clean_text(entry.find("atom:title", ns))
+    summary = clean_text(entry.find("atom:summary", ns))
+    published = entry.find("atom:published", ns)
+    published_str = published.text[:10] if published is not None else ""
+    authors = []
+    for author in entry.findall("atom:author", ns):
+        name = author.find("atom:name", ns)
+        if name is not None:
+            authors.append(name.text)
+    arxiv_id = ""
+    for link in entry.findall("atom:link", ns):
+        if link.get("rel") == "alternate":
+            href = link.get("href", "")
+            m = re.search(r"arxiv\.org/abs/(\d+\.\d+)", href)
+            if m:
+                arxiv_id = m.group(1)
+    doi = ""
+    for link in entry.findall("atom:link", ns):
+        if "doi.org" in (link.get("href") or ""):
+            doi = link.get("href").replace("https://doi.org/", "")
+    return {
+        "title": title,
+        "summary": summary[:1000],
+        "authors": authors,
+        "published": published_str,
+        "arxiv_id": arxiv_id,
+        "doi": doi,
+        "journal": "arXiv preprint",
+        "url": f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else "",
+        "source_api": "arxiv",
+    }
+
+
 def main():
-    parser = argparse.ArgumentParser(description="从学术 API 拉取近期论文")
+    parser = argparse.ArgumentParser(description="从学术 API 拉取论文")
     parser.add_argument("--field", default="物理", help="学科：物理/天文/生物/计算机/心理/哲学")
     parser.add_argument("--max-results", type=int, default=5, help="最大结果数")
     parser.add_argument("--days-back", type=int, default=90, help="回溯天数")
     parser.add_argument("--output", help="输出 JSON 文件路径（可选）")
-    parser.add_argument("--sample", action="store_true", help="使用内置示例数据（API 不可用时用此模式）")
+    parser.add_argument("--sample", action="store_true", help="使用内置示例数据")
+    parser.add_argument("--ids", nargs="+", help="直接传 arXiv ID 拉取（如 2306.12345 2401.67890）")
     args = parser.parse_args()
 
     field = args.field
@@ -312,7 +391,17 @@ def main():
 
     all_papers = []
 
-    if args.sample:
+    # 代理检测
+    if not PROXY:
+        print("   💡 提示：设置 HTTPS_PROXY 可走代理抓取 arXiv（如 socks5h://127.0.0.1:1080）")
+        print()
+
+    if args.ids:
+        print(f"   📎 按 ID 拉取: {', '.join(args.ids)}")
+        papers = fetch_arxiv_by_ids(args.ids)
+        all_papers.extend(papers)
+        print(f"   ✓ 拉取到 {len(papers)} 篇")
+    elif args.sample:
         print(f"📚 使用内置示例数据...")
         papers = generate_sample_papers(field, args.max_results)
         all_papers.extend(papers)
