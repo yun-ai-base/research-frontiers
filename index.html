@@ -20,6 +20,8 @@
         <div class="search-box">
           <input type="text" id="searchInput" placeholder="搜索突破…" autocomplete="off">
         </div>
+        <button class="btn-refresh" onclick="triggerUpdate()" title="自动抓取最新研究">🔄</button>
+        <button class="btn-add" onclick="showAddModal()" title="添加研究突破">＋ 添加</button>
         <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" title="切换主题">🌙</button>
       </div>
     </div>
@@ -43,6 +45,86 @@
       <p>加载中...</p>
     </div>
   </main>
+
+  <!-- 添加文章模态框 -->
+  <div class="modal-overlay" id="addModal" onclick="closeAddModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2>添加研究突破</h2>
+        <span class="modal-close" onclick="closeAddModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="form-tip">填写研究突破的基本信息，提交后会生成 JSON 格式的条目。你可以直接下载，或复制到 <code>data.json</code> 中。</div>
+
+        <div class="form-row">
+          <label>标题 <span class="req">*</span></label>
+          <input type="text" id="addTitle" placeholder="突破的标题（中英双语）">
+        </div>
+        <div class="form-row">
+          <label>学科 <span class="req">*</span></label>
+          <select id="addField">
+            <option value="">选择学科...</option>
+            <option value="物理">⚛️ 物理</option>
+            <option value="天文">🔭 天文</option>
+            <option value="生物">🧬 生物</option>
+            <option value="心理">🧠 心理</option>
+            <option value="哲学">💭 哲学</option>
+            <option value="计算机">💻 计算机</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>子领域</label>
+          <input type="text" id="addSubfield" placeholder="如：量子计算、认知科学">
+        </div>
+        <div class="form-row">
+          <label>研究者</label>
+          <input type="text" id="addResearchers" placeholder="姓名1 · 姓名2 · 姓名3">
+        </div>
+        <div class="form-row">
+          <label>机构</label>
+          <input type="text" id="addInstitution" placeholder="研究机构名称">
+        </div>
+        <div class="form-row">
+          <label>期刊/来源 <span class="req">*</span></label>
+          <input type="text" id="addJournal" placeholder="Nature / Science / arXiv / 公众号等">
+        </div>
+        <div class="form-row">
+          <label>原文链接</label>
+          <input type="url" id="addUrl" placeholder="https://...">
+        </div>
+        <div class="form-row">
+          <label>DOI</label>
+          <input type="text" id="addDoi" placeholder="10.xxxx/xxxxx（选填）">
+        </div>
+        <div class="form-row">
+          <label>一句话摘要 <span class="req">*</span></label>
+          <textarea id="addSummary" rows="2" placeholder="用一句话概括这个突破"></textarea>
+        </div>
+        <div class="form-row">
+          <label>详细摘要 / 原文摘要</label>
+          <textarea id="addAbstract" rows="4" placeholder="论文的原始摘要或详细内容说明"></textarea>
+        </div>
+        <div class="form-row">
+          <label>标签（逗号分隔）</label>
+          <input type="text" id="addTags" placeholder="量子计算, 纠错码, 超导">
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-secondary" onclick="closeAddModal()">取消</button>
+          <button class="btn btn-primary" onclick="generateEntry()">生成条目</button>
+        </div>
+
+        <div id="addResult" style="display:none;margin-top:16px">
+          <div class="form-tip">✅ 条目已生成！下载 JSON 文件后，用 CLI 工具合并：</div>
+          <pre id="addResultPre" class="result-pre"></pre>
+          <div class="form-actions">
+            <button class="btn btn-primary" onclick="downloadEntry()">📥 下载 JSON</button>
+            <button class="btn btn-secondary" onclick="copyResult()">📋 复制</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">

@@ -428,6 +428,119 @@ document.addEventListener('click', function (e) {
   }
 });
 
+/* --- 自动更新 --- */
+function triggerUpdate() {
+  var msg = '🔄 自动抓取最新研究\n\n'
+    + '方式一（推荐）：双击 update.bat — 本地自动抓取→AI生成→上传\n\n'
+    + '方式二：GitHub 手动触发\n'
+    + 'https://github.com/yun-ai-base/research-frontiers/actions/workflows/auto-update.yml\n\n'
+    + '方式三：告诉我你发现的研究，我来处理';
+  alert(msg);
+  window.open('https://github.com/yun-ai-base/research-frontiers/actions/workflows/auto-update.yml', '_blank');
+}
+
+/* --- 添加模态框 --- */
+function showAddModal() {
+  var modal = $('#addModal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeAddModal(e) {
+  if (e && e.target !== e.currentTarget) return;
+  var modal = $('#addModal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+}
+
+var _lastGeneratedEntry = null;
+
+function generateEntry() {
+  var title = $('#addTitle').value.trim();
+  var field = $('#addField').value;
+  var subfield = $('#addSubfield').value.trim();
+  var researchers = $('#addResearchers').value.trim();
+  var institution = $('#addInstitution').value.trim();
+  var journal = $('#addJournal').value.trim();
+  var url = $('#addUrl').value.trim();
+  var doi = $('#addDoi').value.trim();
+  var summary = $('#addSummary').value.trim();
+  var abstract = $('#addAbstract').value.trim();
+  var tagsStr = $('#addTags').value.trim();
+
+  if (!title || !field || !journal || !summary) {
+    showToast('请填写标题、学科、来源和摘要');
+    return;
+  }
+
+  var tags = tagsStr ? tagsStr.split(/[,，]/).map(function (t) { return t.trim(); }).filter(Boolean) : [];
+  var researchersArr = researchers ? researchers.split(/[·,，]/).map(function (r) { return r.trim(); }).filter(Boolean) : [];
+  var now = new Date();
+  var dateStr = now.toISOString().slice(0, 10);
+  var id = 'r-' + now.getTime();
+
+  var entry = {
+    id: id,
+    title: title,
+    field: field,
+    subfield: subfield,
+    researchers: researchersArr,
+    institution: institution,
+    source: {
+      journal: journal,
+      doi: doi,
+      url: url,
+      publicationDate: dateStr,
+    },
+    summary: summary,
+    abstract: abstract,
+    breakthrough: '（待AI生成）',
+    significance: '',
+    innovationRating: 0,
+    divergentExtensions: [],
+    expertCommentary: '',
+    relatedMilestones: [],
+    tags: tags,
+    dateAdded: dateStr,
+    readTime: Math.max(3, Math.ceil(abstract.length / 500)),
+    status: 'unread',
+    starred: false,
+    citations: {
+      bibtex: '@article{manual' + now.getTime() + ', title={' + title + '}, journal={' + journal + '}, year={' + now.getFullYear() + '}}',
+      formatted: title + '. ' + journal + ' (' + now.getFullYear() + ').',
+    },
+  };
+
+  _lastGeneratedEntry = entry;
+
+  var resultDiv = $('#addResult');
+  var resultPre = $('#addResultPre');
+  if (resultDiv && resultPre) {
+    resultPre.textContent = JSON.stringify(entry, null, 2);
+    resultDiv.style.display = 'block';
+  }
+  showToast('✅ 条目已生成！可下载或复制');
+}
+
+function downloadEntry() {
+  if (!_lastGeneratedEntry) return;
+  var blob = new Blob([JSON.stringify(_lastGeneratedEntry, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'new_entry_' + _lastGeneratedEntry.id + '.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  showToast('📥 已下载');
+}
+
+function copyResult() {
+  if (!_lastGeneratedEntry) return;
+  copyText(JSON.stringify(_lastGeneratedEntry, null, 2));
+}
+
 /* --- Search --- */
 document.addEventListener('DOMContentLoaded', function () {
   var input = $('#searchInput');
