@@ -3,15 +3,28 @@
    ============================================ */
 
 /* --- State --- */
-var PAGE_SIZE = 10; // 首页每页渲染的卡片数（分页/加载更多）
 var state = {
   research: [],
   filteredField: '全部',
   searchQuery: '',
   currentView: 'home',
   currentArticle: null,
-  visibleCount: PAGE_SIZE,
   theme: 'light'
+};
+
+/* --- 虚拟滚动（windowing）：文章再多也只渲染视口附近卡片，DOM 恒定、滚动流畅 --- */
+var CARD_HEIGHT = 260;      // 与 style.css .research-card 高度一致
+var CARD_MIN_WIDTH = 340;   // 卡片最小宽度（列数计算基准）
+var GRID_GAP = 16;          // 卡片行列间距
+var VIRT = {
+  grid: null,
+  filtered: [],
+  total: 0,
+  cols: 1,
+  cardW: 0,
+  start: -1,
+  end: -1,
+  rafId: 0
 };
 
 var THEME_KEY = 'rs-theme';
@@ -38,10 +51,23 @@ function init() {
       renderHome();
     }
   });
-  // Scroll top button
+  // Scroll top button + 虚拟列表窗口更新（rAF 节流）
   window.addEventListener('scroll', function () {
     var btn = $('#topFloat');
     if (btn) btn.classList.toggle('visible', window.scrollY > 300);
+    if (state.currentView === 'home') {
+      if (VIRT.rafId) cancelAnimationFrame(VIRT.rafId);
+      VIRT.rafId = requestAnimationFrame(updateVirtual);
+    }
+  });
+  // 视口宽度变化 → 重算列数并重绘
+  window.addEventListener('resize', function () {
+    if (state.currentView !== 'home' || !VIRT.grid) return;
+    VIRT.cols = computeCols();
+    VIRT.cardW = VIRT.grid.clientWidth > 0 ? (VIRT.grid.clientWidth - (VIRT.cols - 1) * GRID_GAP) / VIRT.cols : 0;
+    VIRT.start = -1; VIRT.end = -1;
+    VIRT.grid.style.height = (Math.ceil(VIRT.total / VIRT.cols) * (CARD_HEIGHT + GRID_GAP)) + 'px';
+    updateVirtual();
   });
 }
 
@@ -111,18 +137,12 @@ function countByField() {
 /* --- Navigation --- */
 function filterByField(field) {
   state.filteredField = field;
-  resetPagination();
   $$('.field-tab').forEach(function (t) {
     t.classList.toggle('active', t.getAttribute('data-field') === field);
   });
   if (state.currentView === 'home') {
     renderHome();
   }
-}
-
-/* 筛选/搜索条件变化时，分页回到第一页 */
-function resetPagination() {
-  state.visibleCount = PAGE_SIZE;
 }
 
 /* ============================================
@@ -179,22 +199,70 @@ function renderHome() {
   });
   html += '</div>';
 
-  // Card grid（分页：只渲染当前可见数量，其余点「加载更多」增量加载）
+  // 卡片列表（虚拟滚动：无论多少条，只渲染视口附近卡片，DOM 恒定）
   if (filtered.length === 0) {
     html += '<div class="empty-state"><div class="empty-icon">🔍</div><h3>没有找到匹配的研究</h3><p>试试其他关键词或领域</p></div>';
   } else {
-    html += '<div class="research-grid" id="researchGrid">';
-    filtered.slice(0, state.visibleCount).forEach(function (a) {
-      html += cardHtml(a);
-    });
-    html += '</div>';
-    html += loadMoreHtml(filtered.length);
+    html += '<div class="research-grid" id="researchGrid"></div>';
   }
 
   app.innerHTML = html;
+
+  // 初始化虚拟列表（容器高度按总行数撑起，卡片按需渲染）
+  initVirtual(filtered);
 }
 
-/* 单张卡片 HTML（供首页分页/加载更多复用） */
+/* --- 虚拟滚动（windowing）实现 --- */
+function computeCols() {
+  if (!VIRT.grid) return 1;
+  var w = VIRT.grid.clientWidth;
+  return Math.max(1, Math.floor((w + GRID_GAP) / (CARD_MIN_WIDTH + GRID_GAP)));
+}
+
+function initVirtual(filtered) {
+  VIRT.grid = $('#researchGrid');
+  VIRT.filtered = filtered;
+  VIRT.total = filtered.length;
+  VIRT.start = -1;
+  VIRT.end = -1;
+  if (!VIRT.grid || VIRT.total === 0) return;
+  VIRT.cols = computeCols();
+  VIRT.cardW = VIRT.grid.clientWidth > 0 ? (VIRT.grid.clientWidth - (VIRT.cols - 1) * GRID_GAP) / VIRT.cols : 0;
+  VIRT.grid.style.height = (Math.ceil(VIRT.total / VIRT.cols) * (CARD_HEIGHT + GRID_GAP)) + 'px';
+  updateVirtual();
+}
+
+function updateVirtual() {
+  if (state.currentView !== 'home' || !VIRT.grid || VIRT.total === 0) return;
+  var stride = CARD_HEIGHT + GRID_GAP;
+  var viewH = window.innerHeight;
+  var gridTop = VIRT.grid.getBoundingClientRect().top + window.scrollY;
+  var y0 = window.scrollY - gridTop;                      // 视口相对列表顶部的偏移
+  var totalRows = Math.ceil(VIRT.total / VIRT.cols);
+  var firstRow = Math.max(0, Math.floor((y0 - 2 * stride) / stride));           // 上方缓冲 2 行
+  var lastRow = Math.min(totalRows, Math.ceil((y0 + viewH + 2 * stride) / stride)); // 下方缓冲 2 行
+  var s = firstRow * VIRT.cols;
+  var e = Math.min(VIRT.total, lastRow * VIRT.cols);
+  if (s === VIRT.start && e === VIRT.end) return;         // 可见窗口未变化 → 不重绘
+  VIRT.start = s;
+  VIRT.end = e;
+
+  var grid = VIRT.grid;
+  while (grid.firstChild) grid.removeChild(grid.firstChild); // 只保留可见窗口内的卡片
+  for (var i = s; i < e; i++) {
+    var wrap = document.createElement('div');
+    wrap.innerHTML = cardHtml(VIRT.filtered[i]);
+    var card = wrap.firstChild;
+    var row = Math.floor(i / VIRT.cols), col = i % VIRT.cols;
+    card.style.position = 'absolute';
+    card.style.top = (row * stride) + 'px';
+    card.style.left = (col * (VIRT.cardW + GRID_GAP)) + 'px';
+    card.style.width = VIRT.cardW + 'px';
+    grid.appendChild(card);
+  }
+}
+
+/* 单张卡片 HTML（供虚拟滚动按需渲染复用） */
 function cardHtml(a) {
   var ratingStars = renderStars(a.innovationRating);
   return '<div class="research-card" onclick="openDetail(\'' + a.id + '\')">'
@@ -213,34 +281,6 @@ function cardHtml(a) {
     + '<span>' + a.readTime + ' 分钟</span>'
     + '</div>'
     + '</div>';
-}
-
-/* 加载更多按钮 HTML（列表未展示完时显示） */
-function loadMoreHtml(total) {
-  var shown = Math.min(state.visibleCount, total);
-  if (shown >= total) return '';
-  return '<div class="load-more-wrap">'
-    + '<button class="load-more-btn" onclick="loadMore()">加载更多（' + (total - shown) + ' 条）</button>'
-    + '<span class="load-more-hint">已加载 ' + shown + ' / ' + total + ' 条</span>'
-    + '</div>';
-}
-
-/* 加载更多：增量追加下一批卡片，不整页重渲染，保持滚动位置 */
-function loadMore() {
-  var filtered = getFilteredResearch();
-  var from = state.visibleCount;
-  if (from >= filtered.length) return;
-  state.visibleCount += PAGE_SIZE;
-  var to = Math.min(state.visibleCount, filtered.length);
-  var grid = $('#researchGrid');
-  if (!grid) { renderHome(); return; }
-  for (var i = from; i < to; i++) {
-    grid.insertAdjacentHTML('beforeend', cardHtml(filtered[i]));
-  }
-  var wrap = grid.parentNode.querySelector('.load-more-wrap');
-  if (wrap) {
-    wrap.outerHTML = loadMoreHtml(filtered.length);
-  }
 }
 
 /* ============================================
@@ -632,7 +672,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (input) {
     input.addEventListener('input', function () {
       state.searchQuery = this.value.trim();
-      if (state.currentView === 'home') { resetPagination(); renderHome(); }
+      if (state.currentView === 'home') renderHome();
     });
   }
 });
