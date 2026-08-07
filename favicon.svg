@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1a2e"/>
+      <stop offset="1" stop-color="#1a5276"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7fd4ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7fd4ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)"/>
+  <circle cx="32" cy="32" r="19" fill="url(#glow)"/>
+  <!-- 发光菱形（呼应站内 logo ◇） -->
+  <path d="M32 19 L43 32 L32 45 L21 32 Z" fill="none" stroke="#7fd4ff" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- 菱形四角亮点：原子核/轨道感 -->
+  <circle cx="32" cy="19" r="2.6" fill="#ffffff"/>
+  <circle cx="43" cy="32" r="2.6" fill="#ffffff"/>
+  <circle cx="32" cy="45" r="2.6" fill="#ffffff"/>
+  <circle cx="21" cy="32" r="2.6" fill="#ffffff"/>
+  <!-- 彩色粒子：多元学科前沿 -->
+  <circle cx="48" cy="15" r="2.4" fill="#ffd166"/>
+  <circle cx="15" cy="49" r="2.4" fill="#ff6b6b"/>
+  <circle cx="49" cy="46" r="2.0" fill="#a3e635"/>
+</svg>
