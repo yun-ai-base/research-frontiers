@@ -74,5 +74,9 @@
   "citations": {
     "bibtex": "@article{nature2026silicon, title={Silicon quantum processors perform essential operations for scalable quantum computing}, journal={Nature}, year={2026}}",
     "formatted": "HRL Laboratories & TU Delft. Silicon quantum processors perform essential operations for scalable quantum computing. Nature (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
 }

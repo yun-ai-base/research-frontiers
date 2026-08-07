@@ -75,5 +75,9 @@
   "citations": {
     "bibtex": "@article{madhusudhan2026, title={Detection of dimethyl sulfide in the atmosphere of K2-18b with JWST}, journal={ApJL}, year={2026}}",
     "formatted": "Madhusudhan, N. et al. Detection of dimethyl sulfide in the atmosphere of K2-18b with JWST. ApJL (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "The Astrophysical Journal Letters",
+  "arxivId": null,
+  "codeUrl": null
 }

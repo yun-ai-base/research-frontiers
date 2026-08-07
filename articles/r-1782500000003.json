@@ -82,5 +82,9 @@
   "citations": {
     "bibtex": "@article{waite2026, title={Detection of phosphorus in Enceladus' subsurface ocean from Cassini CDA data}, journal={Nature Astronomy}, year={2026}}",
     "formatted": "Waite, J. H. et al. Detection of phosphorus in Enceladus' subsurface ocean from Cassini CDA data. Nature Astronomy (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature Astronomy",
+  "arxivId": null,
+  "codeUrl": null
 }

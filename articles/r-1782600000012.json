@@ -79,5 +79,9 @@
   "citations": {
     "bibtex": "@article{lo2026, title={Universal Gates from Braiding and Fusing Anyons on Quantum Hardware}, journal={Nature}, doi={10.1038/s41586-026-10709-y}, year={2026}}",
     "formatted": "Lo, C. F. B. et al. Universal Gates from Braiding and Fusing Anyons on Quantum Hardware. Nature (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
 }

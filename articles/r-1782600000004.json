@@ -80,5 +80,9 @@
   "citations": {
     "bibtex": "@article{jimenezserra2026, title={Detection of erythrulose in the interstellar medium}, journal={Nature Astronomy}, year={2026}}",
     "formatted": "Jiménez-Serra, I. et al. Detection of erythrulose in the interstellar medium. Nature Astronomy (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature Astronomy",
+  "arxivId": null,
+  "codeUrl": null
 }

@@ -76,5 +76,9 @@
   "citations": {
     "bibtex": "@article{chung2026, title={Abstract rule learning in large language models}, journal={Nature Human Behaviour}, year={2026}}",
     "formatted": "Chung, S. et al. Abstract rule learning in large language models. Nature Human Behaviour (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature Human Behaviour",
+  "arxivId": null,
+  "codeUrl": null
 }

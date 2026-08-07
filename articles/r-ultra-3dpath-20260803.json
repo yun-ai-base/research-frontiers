@@ -75,5 +75,9 @@
   "citations": {
     "bibtex": "@article{shi2026ultra, title={ULTRA: ultrafast 3D pathology for intraoperative glioma diagnosis}, journal={Cell}, year={2026}}",
     "formatted": "Shi, L. et al. ULTRA: ultrafast 3D pathology for intraoperative glioma diagnosis. Cell (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Cell",
+  "arxivId": null,
+  "codeUrl": null
 }

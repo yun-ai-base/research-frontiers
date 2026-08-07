@@ -78,5 +78,9 @@
   "citations": {
     "bibtex": "@article{gibbs2026, title={Discovery of Beta Pictoris d via JWST NIRSpec atmospheric spectroscopy}, journal={Nature}, year={2026}}",
     "formatted": "Gibbs, A. et al. Discovery of Beta Pictoris d via JWST NIRSpec atmospheric spectroscopy. Nature (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
 }

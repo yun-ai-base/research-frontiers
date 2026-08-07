@@ -81,5 +81,9 @@
   "citations": {
     "bibtex": "@article{cherubim2026, title={Helium escaping from the atmosphere of a nearby rocky exoplanet orbiting in a habitable zone}, journal={Science}, year={2026}}",
     "formatted": "Cherubim, C. et al. Helium escaping from the atmosphere of a nearby rocky exoplanet orbiting in a habitable zone. Science (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Science",
+  "arxivId": null,
+  "codeUrl": null
 }

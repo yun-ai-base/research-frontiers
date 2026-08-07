@@ -75,5 +75,9 @@
   "citations": {
     "bibtex": "@article{jumper2026, title={Self-supervised multimodal antibody design}, journal={Nature Biotechnology}, year={2026}}",
     "formatted": "Jumper, J. et al. Self-supervised multimodal antibody design. Nature Biotechnology (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature Biotechnology",
+  "arxivId": null,
+  "codeUrl": null
 }

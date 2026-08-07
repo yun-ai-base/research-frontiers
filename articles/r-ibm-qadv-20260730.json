@@ -75,5 +75,9 @@
   "citations": {
     "bibtex": "@article{ibm2026, title={Demonstration of quantum advantage with verifiably high-fidelity logical circuits}, journal={arXiv preprint}, year={2026}}",
     "formatted": "IBM Quantum & University of Chicago. Sampling hard circuits with verifiably high fidelity. arXiv (2026)."
-  }
+  },
+  "preprint": true,
+  "venue": "arXiv",
+  "arxivId": null,
+  "codeUrl": null
 }

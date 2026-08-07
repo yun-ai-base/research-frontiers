@@ -74,5 +74,9 @@
   "citations": {
     "bibtex": "@article{krinner2026, title={Fault-tolerant gates on a logical qubit below the surface code threshold}, journal={Nature}, year={2026}}",
     "formatted": "Krinner, S. et al. Fault-tolerant gates on a logical qubit below the surface code threshold. Nature (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
 }

@@ -7,6 +7,8 @@ var state = {
   research: [],
   filteredField: '全部',
   searchQuery: '',
+  timeFilter: 'all',     // all | 7d | 30d | year
+  typeFilter: 'all',     // all | published | preprint
   currentView: 'home',
   currentArticle: null,
   theme: 'light'
@@ -72,7 +74,25 @@ function init() {
 }
 
 /* --- Data Loading --- */
+/* 首页骨架屏：数据到达前显示占位卡片，避免白屏焦虑 */
+function renderSkeleton() {
+  var app = $('#app');
+  if (!app) return;
+  var html = '<div class="skeleton-wrap">';
+  for (var i = 0; i < 6; i++) {
+    html += '<div class="skeleton-card">'
+      + '<div class="skeleton-line w30"></div>'
+      + '<div class="skeleton-line w90"></div>'
+      + '<div class="skeleton-line w75"></div>'
+      + '<div class="skeleton-line w50"></div>'
+      + '</div>';
+  }
+  html += '</div>';
+  app.innerHTML = html;
+}
+
 function loadData() {
+  renderSkeleton();
   // 首页只加载精简索引 index.json（约 15% 体积），完整文章内容按需加载
   fetch('index.json?' + Date.now())
     .then(function (r) {
@@ -123,6 +143,30 @@ function getFilteredResearch() {
         || (a.researchers && a.researchers.some(function (r) { return r.toLowerCase().indexOf(q) !== -1; }));
     });
   }
+  // 时间筛选（按 source.publicationDate）
+  if (state.timeFilter !== 'all') {
+    var now = new Date();
+    if (state.timeFilter === 'year') {
+      var y = now.getFullYear();
+      result = result.filter(function (a) {
+        var t = a.source && a.source.publicationDate ? new Date(a.source.publicationDate) : null;
+        return t && !isNaN(t.getTime()) && t.getFullYear() === y;
+      });
+    } else {
+      var days = state.timeFilter === '7d' ? 7 : 30;
+      var cutoff = now.getTime() - days * 86400000;
+      result = result.filter(function (a) {
+        var t = a.source && a.source.publicationDate ? new Date(a.source.publicationDate).getTime() : 0;
+        return t >= cutoff;
+      });
+    }
+  }
+  // 类型筛选：预印本 / 正式发表
+  if (state.typeFilter !== 'all') {
+    result = result.filter(function (a) {
+      return state.typeFilter === 'preprint' ? !!a.preprint : !a.preprint;
+    });
+  }
   return result;
 }
 
@@ -143,6 +187,34 @@ function filterByField(field) {
   if (state.currentView === 'home') {
     renderHome();
   }
+}
+
+/* 时间/类型下拉筛选 */
+function setTimeFilter(v) {
+  state.timeFilter = v;
+  if (state.currentView === 'home') renderHome();
+}
+function setTypeFilter(v) {
+  state.typeFilter = v;
+  if (state.currentView === 'home') renderHome();
+}
+
+/* 一键重置：领域 + 搜索 + 时间 + 类型 */
+function resetFilters() {
+  state.filteredField = '全部';
+  state.searchQuery = '';
+  state.timeFilter = 'all';
+  state.typeFilter = 'all';
+  $$('.field-tab').forEach(function (t) {
+    t.classList.toggle('active', t.getAttribute('data-field') === '全部');
+  });
+  var si = $('#searchInput');
+  if (si) si.value = '';
+  var tf = $('#timeFilter');
+  if (tf) tf.value = 'all';
+  var pf = $('#typeFilter');
+  if (pf) pf.value = 'all';
+  if (state.currentView === 'home') renderHome();
 }
 
 /* ============================================
@@ -201,7 +273,9 @@ function renderHome() {
 
   // 卡片列表（虚拟滚动：无论多少条，只渲染视口附近卡片，DOM 恒定）
   if (filtered.length === 0) {
-    html += '<div class="empty-state"><div class="empty-icon">🔍</div><h3>没有找到匹配的研究</h3><p>试试其他关键词或领域</p></div>';
+    html += '<div class="empty-state"><div class="empty-icon">🔍</div><h3>没有找到匹配的研究</h3>'
+      + '<p>试试其他关键词、领域或筛选条件</p>'
+      + '<button class="btn btn-primary" onclick="resetFilters()">重置全部筛选</button></div>';
   } else {
     html += '<div class="research-grid" id="researchGrid"></div>';
   }
@@ -265,9 +339,11 @@ function updateVirtual() {
 /* 单张卡片 HTML（供虚拟滚动按需渲染复用） */
 function cardHtml(a) {
   var ratingStars = renderStars(a.innovationRating);
+  var badge = a.preprint ? '<span class="badge-preprint" title="预印本（尚未正式发表）">📄 预印本</span>' : '';
   return '<div class="research-card" onclick="openDetail(\'' + a.id + '\')">'
     + '<div class="card-header">'
     + '<span class="field-tag field-tag-' + a.field + '">' + a.field + '</span>'
+    + badge
     + '<span class="card-rating">' + ratingStars + '</span>'
     + '</div>'
     + '<h3>' + escapeHtml(a.title) + '</h3>'
@@ -552,17 +628,6 @@ document.addEventListener('click', function (e) {
     }
   }
 });
-
-/* --- 自动更新 --- */
-function triggerUpdate() {
-  var msg = '🔄 自动抓取最新研究\n\n'
-    + '方式一（推荐）：双击 update.bat — 本地自动抓取→AI生成→上传\n\n'
-    + '方式二：GitHub 手动触发\n'
-    + 'https://github.com/yun-ai-base/research-frontiers/actions/workflows/auto-update.yml\n\n'
-    + '方式三：告诉我你发现的研究，我来处理';
-  alert(msg);
-  window.open('https://github.com/yun-ai-base/research-frontiers/actions/workflows/auto-update.yml', '_blank');
-}
 
 /* --- 添加模态框 --- */
 function showAddModal() {

@@ -74,5 +74,9 @@
   "citations": {
     "bibtex": "@article{laplace2026ptc, title={All-optical photonic time crystal with picosecond modulation}, journal={Nature}, year={2026}}",
     "formatted": "Laplace, Y. et al. All-optical photonic time crystal with picosecond modulation. Nature (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
 }

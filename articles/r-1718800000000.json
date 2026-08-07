@@ -71,5 +71,9 @@
   "citations": {
     "bibtex": "@article{liu2026, title={In vivo neuronal reprogramming via epigenetic editing restores memory in Alzheimer's mice}, journal={Cell}, year={2026}}",
     "formatted": "Liu, Z. et al. In vivo neuronal reprogramming via epigenetic editing restores memory in Alzheimer's mice. Cell (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Cell",
+  "arxivId": null,
+  "codeUrl": null
 }

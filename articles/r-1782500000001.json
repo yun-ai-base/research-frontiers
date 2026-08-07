@@ -82,5 +82,9 @@
   "citations": {
     "bibtex": "@article{deepmind2026, title={AI Co-Scientist: a multi-agent system for accelerated scientific discovery}, journal={Nature}, year={2026}}",
     "formatted": "Google DeepMind. AI Co-Scientist: a multi-agent system for accelerated scientific discovery. Nature (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
 }

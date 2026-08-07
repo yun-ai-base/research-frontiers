@@ -74,5 +74,9 @@
   "citations": {
     "bibtex": "@article{tagliazucchi2026, title={Integrated information correlates with consciousness in focal brain lesion patients}, journal={Science Advances}, year={2026}}",
     "formatted": "Tagliazucchi, M. A. et al. Integrated information correlates with consciousness in focal brain lesion patients. Science Advances (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Science Advances",
+  "arxivId": null,
+  "codeUrl": null
 }

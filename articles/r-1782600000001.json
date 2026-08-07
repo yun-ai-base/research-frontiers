@@ -80,5 +80,9 @@
   "citations": {
     "bibtex": "@article{zhao2026, title={Spatially resolved spectral index at the event horizon scale of M87}, journal={The Astrophysical Journal Letters}, year={2026}}",
     "formatted": "Zhao, S. et al. Spatially resolved spectral index at the event horizon scale of M87. ApJL (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "The Astrophysical Journal Letters",
+  "arxivId": null,
+  "codeUrl": null
 }

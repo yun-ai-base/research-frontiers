@@ -77,7 +77,11 @@
       "citations": {
         "bibtex": "@article{hsu2026evophage, title={Generative design of complete functional bacteriophage genomes}, journal={Science}, year={2026}, doi={10.1126/science.aec2657}}",
         "formatted": "Stanford University. Generative design of complete functional bacteriophage genomes. Science (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Science",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-originqc-psec-20260807",
@@ -157,7 +161,11 @@
       "citations": {
         "bibtex": "@article{yang2026pse, title={Parameter-space-extended controlled-Z gate for high-speed high-fidelity superconducting quantum computing}, journal={Physical Review Letters}, year={2026}}",
         "formatted": "Yang, X. et al. Parameter-space-extended controlled-Z gate. Phys. Rev. Lett. (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Physical Review Letters",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-milkyway-rise-20260807",
@@ -234,7 +242,11 @@
       "citations": {
         "bibtex": "@article{pmo2026warp, title={Rippling corrugations in the molecular gas outer disk of the Milky Way}, journal={Nature Astronomy}, year={2026}}",
         "formatted": "Purple Mountain Observatory. Rippling corrugations in the molecular gas outer disk of the Milky Way. Nat. Astron. (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature Astronomy",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-ultra-3dpath-20260803",
@@ -313,7 +325,11 @@
       "citations": {
         "bibtex": "@article{shi2026ultra, title={ULTRA: ultrafast 3D pathology for intraoperative glioma diagnosis}, journal={Cell}, year={2026}}",
         "formatted": "Shi, L. et al. ULTRA: ultrafast 3D pathology for intraoperative glioma diagnosis. Cell (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Cell",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-photonic-tc-20260802",
@@ -391,7 +407,11 @@
       "citations": {
         "bibtex": "@article{laplace2026ptc, title={All-optical photonic time crystal with picosecond modulation}, journal={Nature}, year={2026}}",
         "formatted": "Laplace, Y. et al. All-optical photonic time crystal with picosecond modulation. Nature (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-qgenome-20260731",
@@ -469,7 +489,11 @@
       "citations": {
         "bibtex": "@article{strelchuk2026, title={Encoding a complete viral genome into a quantum computer}, journal={arXiv preprint}, year={2026}}",
         "formatted": "Strelchuk, S. et al. Encoding a complete viral genome into a quantum computer. arXiv (2026)."
-      }
+      },
+      "preprint": true,
+      "venue": "arXiv (预印本)",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-ibm-qadv-20260730",
@@ -548,7 +572,11 @@
       "citations": {
         "bibtex": "@article{ibm2026, title={Demonstration of quantum advantage with verifiably high-fidelity logical circuits}, journal={arXiv preprint}, year={2026}}",
         "formatted": "IBM Quantum & University of Chicago. Sampling hard circuits with verifiably high fidelity. arXiv (2026)."
-      }
+      },
+      "preprint": true,
+      "venue": "arXiv",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-silicon-qubit-20260730",
@@ -626,7 +654,11 @@
       "citations": {
         "bibtex": "@article{nature2026silicon, title={Silicon quantum processors perform essential operations for scalable quantum computing}, journal={Nature}, year={2026}}",
         "formatted": "HRL Laboratories & TU Delft. Silicon quantum processors perform essential operations for scalable quantum computing. Nature (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-sun-silver-20260728",
@@ -703,7 +735,11 @@
       "citations": {
         "bibtex": "@article{uppsala2026, title={Solar silver abundance 55% higher than previous estimates}, journal={Astronomy & Astrophysics}, year={2026}}",
         "formatted": "Uppsala University. Solar silver abundance 55% higher than previous estimates. A&A (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Astronomy & Astrophysics",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-betapic-d-20260724",
@@ -785,7 +821,11 @@
       "citations": {
         "bibtex": "@article{gibbs2026, title={Discovery of Beta Pictoris d via JWST NIRSpec atmospheric spectroscopy}, journal={Nature}, year={2026}}",
         "formatted": "Gibbs, A. et al. Discovery of Beta Pictoris d via JWST NIRSpec atmospheric spectroscopy. Nature (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000001",
@@ -869,7 +909,11 @@
       "citations": {
         "bibtex": "@article{zhao2026, title={Spatially resolved spectral index at the event horizon scale of M87}, journal={The Astrophysical Journal Letters}, year={2026}}",
         "formatted": "Zhao, S. et al. Spatially resolved spectral index at the event horizon scale of M87. ApJL (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "The Astrophysical Journal Letters",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000005",
@@ -954,7 +998,11 @@
       "citations": {
         "bibtex": "@article{cherubim2026, title={Helium escaping from the atmosphere of a nearby rocky exoplanet orbiting in a habitable zone}, journal={Science}, year={2026}}",
         "formatted": "Cherubim, C. et al. Helium escaping from the atmosphere of a nearby rocky exoplanet orbiting in a habitable zone. Science (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Science",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000012",
@@ -1037,7 +1085,11 @@
       "citations": {
         "bibtex": "@article{lo2026, title={Universal Gates from Braiding and Fusing Anyons on Quantum Hardware}, journal={Nature}, doi={10.1038/s41586-026-10709-y}, year={2026}}",
         "formatted": "Lo, C. F. B. et al. Universal Gates from Braiding and Fusing Anyons on Quantum Hardware. Nature (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000004",
@@ -1121,7 +1173,11 @@
       "citations": {
         "bibtex": "@article{jimenezserra2026, title={Detection of erythrulose in the interstellar medium}, journal={Nature Astronomy}, year={2026}}",
         "formatted": "Jiménez-Serra, I. et al. Detection of erythrulose in the interstellar medium. Nature Astronomy (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature Astronomy",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000011",
@@ -1198,7 +1254,11 @@
       "citations": {
         "bibtex": "@article{huashan2026, title={World-first post-approval implanted BCI implantation surgery}, journal={Huashan Hospital release}, year={2026}}",
         "formatted": "Huashan Hospital (Fudan University). World-first post-approval implanted BCI implantation surgery (2026-07-13)."
-      }
+      },
+      "preprint": false,
+      "venue": "医院发布",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000003",
@@ -1279,7 +1339,11 @@
       "citations": {
         "bibtex": "@article{openai2026, title={GPT-5.6 Sol Ultra proves the Cycle Double Cover Conjecture}, journal={OpenAI Technical Report}, year={2026}}",
         "formatted": "Knight, E. GPT-5.6 Sol Ultra proves the Cycle Double Cover Conjecture. OpenAI Technical Report (2026)."
-      }
+      },
+      "preprint": true,
+      "venue": "OpenAI Technical Report",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000002",
@@ -1360,7 +1424,11 @@
       "citations": {
         "bibtex": "@article{anthropic2026, title={Verbalizable Representations Form a Global Workspace in Language Models}, journal={Anthropic Transformer Circuits Research}, year={2026}}",
         "formatted": "Anthropic Interpretability Team. Verbalizable Representations Form a Global Workspace in Language Models. Anthropic Research (2026)."
-      }
+      },
+      "preprint": true,
+      "venue": "Anthropic Transformer Circuits Research",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000010",
@@ -1438,7 +1506,11 @@
       "citations": {
         "bibtex": "@article{hebrewu2026, title={Programming human cells as autonomous computers via RNA trans-splicing}, journal={Nature Communications}, year={2026}}",
         "formatted": "Hebrew University of Jerusalem. Programming human cells as microscopic computers. Nature Communications (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature Communications",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782600000013",
@@ -1521,7 +1593,11 @@
       "citations": {
         "bibtex": "@article{ibm2026, title={First-Known Computations of Fusion Materials on a Quantum Computer}, journal={arXiv:2606.30402}, year={2026}}",
         "formatted": "Oak Ridge National Laboratory, Cleveland Clinic, and IBM. First-Known Computations of Fusion Materials on a Quantum Computer. IBM Newsroom / arXiv:2606.30402 (2026)."
-      }
+      },
+      "preprint": true,
+      "venue": "arXiv preprint (IBM Newsroom 发布)",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782500000002",
@@ -1606,7 +1682,11 @@
       "citations": {
         "bibtex": "@article{guo2026, title={Virtual Yeast: an AI-driven computational model of a eukaryotic cell}, journal={Nature}, year={2026}}",
         "formatted": "Guo, T. et al. Virtual Yeast: an AI-driven computational model of a eukaryotic cell. Nature (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782500000004",
@@ -1690,7 +1770,11 @@
       "citations": {
         "bibtex": "@article{juno2026, title={First measurement of neutrino oscillation parameters from the JUNO experiment}, journal={Nature}, year={2026}}",
         "formatted": "JUNO Collaboration. First measurement of neutrino oscillation parameters from the JUNO experiment. Nature (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1718500000000",
@@ -1769,7 +1853,11 @@
       "citations": {
         "bibtex": "@article{jumper2026, title={Self-supervised multimodal antibody design}, journal={Nature Biotechnology}, year={2026}}",
         "formatted": "Jumper, J. et al. Self-supervised multimodal antibody design. Nature Biotechnology (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature Biotechnology",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782500000001",
@@ -1855,7 +1943,11 @@
       "citations": {
         "bibtex": "@article{deepmind2026, title={AI Co-Scientist: a multi-agent system for accelerated scientific discovery}, journal={Nature}, year={2026}}",
         "formatted": "Google DeepMind. AI Co-Scientist: a multi-agent system for accelerated scientific discovery. Nature (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1718900000000",
@@ -1934,7 +2026,11 @@
       "citations": {
         "bibtex": "@article{madhusudhan2026, title={Detection of dimethyl sulfide in the atmosphere of K2-18b with JWST}, journal={ApJL}, year={2026}}",
         "formatted": "Madhusudhan, N. et al. Detection of dimethyl sulfide in the atmosphere of K2-18b with JWST. ApJL (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "The Astrophysical Journal Letters",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782500000000",
@@ -2018,7 +2114,11 @@
       "citations": {
         "bibtex": "@article{yamins2026, title={MiCRo: Modular Cognitive Routing for interpretable and controllable LLMs}, journal={ICLR 2026}, year={2026}}",
         "formatted": "Yamins, D. L. K. et al. MiCRo: Modular Cognitive Routing for interpretable and controllable LLMs. ICLR 2026."
-      }
+      },
+      "preprint": false,
+      "venue": "ICLR 2026",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1718800000000",
@@ -2093,7 +2193,11 @@
       "citations": {
         "bibtex": "@article{liu2026, title={In vivo neuronal reprogramming via epigenetic editing restores memory in Alzheimer's mice}, journal={Cell}, year={2026}}",
         "formatted": "Liu, Z. et al. In vivo neuronal reprogramming via epigenetic editing restores memory in Alzheimer's mice. Cell (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Cell",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1718700000000",
@@ -2173,7 +2277,11 @@
       "citations": {
         "bibtex": "@article{chung2026, title={Abstract rule learning in large language models}, journal={Nature Human Behaviour}, year={2026}}",
         "formatted": "Chung, S. et al. Abstract rule learning in large language models. Nature Human Behaviour (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature Human Behaviour",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1782500000003",
@@ -2259,7 +2367,11 @@
       "citations": {
         "bibtex": "@article{waite2026, title={Detection of phosphorus in Enceladus' subsurface ocean from Cassini CDA data}, journal={Nature Astronomy}, year={2026}}",
         "formatted": "Waite, J. H. et al. Detection of phosphorus in Enceladus' subsurface ocean from Cassini CDA data. Nature Astronomy (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature Astronomy",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1719000000000",
@@ -2337,7 +2449,11 @@
       "citations": {
         "bibtex": "@article{krinner2026, title={Fault-tolerant gates on a logical qubit below the surface code threshold}, journal={Nature}, year={2026}}",
         "formatted": "Krinner, S. et al. Fault-tolerant gates on a logical qubit below the surface code threshold. Nature (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
     },
     {
       "id": "r-1718600000000",
@@ -2415,7 +2531,11 @@
       "citations": {
         "bibtex": "@article{tagliazucchi2026, title={Integrated information correlates with consciousness in focal brain lesion patients}, journal={Science Advances}, year={2026}}",
         "formatted": "Tagliazucchi, M. A. et al. Integrated information correlates with consciousness in focal brain lesion patients. Science Advances (2026)."
-      }
+      },
+      "preprint": false,
+      "venue": "Science Advances",
+      "arxivId": null,
+      "codeUrl": null
     }
   ]
 }

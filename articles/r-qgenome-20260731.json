@@ -74,5 +74,9 @@
   "citations": {
     "bibtex": "@article{strelchuk2026, title={Encoding a complete viral genome into a quantum computer}, journal={arXiv preprint}, year={2026}}",
     "formatted": "Strelchuk, S. et al. Encoding a complete viral genome into a quantum computer. arXiv (2026)."
-  }
+  },
+  "preprint": true,
+  "venue": "arXiv (预印本)",
+  "arxivId": null,
+  "codeUrl": null
 }

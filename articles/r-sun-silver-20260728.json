@@ -73,5 +73,9 @@
   "citations": {
     "bibtex": "@article{uppsala2026, title={Solar silver abundance 55% higher than previous estimates}, journal={Astronomy & Astrophysics}, year={2026}}",
     "formatted": "Uppsala University. Solar silver abundance 55% higher than previous estimates. A&A (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Astronomy & Astrophysics",
+  "arxivId": null,
+  "codeUrl": null
 }

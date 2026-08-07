@@ -74,5 +74,9 @@
   "citations": {
     "bibtex": "@article{hebrewu2026, title={Programming human cells as autonomous computers via RNA trans-splicing}, journal={Nature Communications}, year={2026}}",
     "formatted": "Hebrew University of Jerusalem. Programming human cells as microscopic computers. Nature Communications (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature Communications",
+  "arxivId": null,
+  "codeUrl": null
 }

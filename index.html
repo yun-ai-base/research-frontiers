@@ -23,7 +23,6 @@
         <div class="search-box">
           <input type="text" id="searchInput" placeholder="搜索突破…" autocomplete="off">
         </div>
-        <button class="btn-refresh" onclick="triggerUpdate()" title="自动抓取最新研究">🔄</button>
         <button class="btn-add" onclick="showAddModal()" title="添加研究突破">＋ 添加</button>
         <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" title="切换主题">🌙</button>
       </div>
@@ -43,6 +42,28 @@
     <button class="field-tab" data-field="化学" onclick="filterByField('化学')">⚗️ 化学</button>
     <button class="field-tab" data-field="医学" onclick="filterByField('医学')">🩺 医学</button>
   </nav>
+
+  <!-- 高级筛选栏：时间 + 发表类型 -->
+  <div class="filter-bar">
+    <div class="filter-item">
+      <span class="filter-label">时间</span>
+      <select id="timeFilter" onchange="setTimeFilter(this.value)">
+        <option value="all">全部</option>
+        <option value="7d">近 7 天</option>
+        <option value="30d">近 30 天</option>
+        <option value="year">本年（2026）</option>
+      </select>
+    </div>
+    <div class="filter-item">
+      <span class="filter-label">类型</span>
+      <select id="typeFilter" onchange="setTypeFilter(this.value)">
+        <option value="all">全部</option>
+        <option value="published">正式发表</option>
+        <option value="preprint">预印本</option>
+      </select>
+    </div>
+    <span class="filter-hint" id="filterHint"></span>
+  </div>
 
   <!-- 主内容区 -->
   <main id="app" class="container">

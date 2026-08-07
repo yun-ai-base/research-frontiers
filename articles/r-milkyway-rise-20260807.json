@@ -73,5 +73,9 @@
   "citations": {
     "bibtex": "@article{pmo2026warp, title={Rippling corrugations in the molecular gas outer disk of the Milky Way}, journal={Nature Astronomy}, year={2026}}",
     "formatted": "Purple Mountain Observatory. Rippling corrugations in the molecular gas outer disk of the Milky Way. Nat. Astron. (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature Astronomy",
+  "arxivId": null,
+  "codeUrl": null
 }

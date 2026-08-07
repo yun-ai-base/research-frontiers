@@ -81,5 +81,9 @@
   "citations": {
     "bibtex": "@article{guo2026, title={Virtual Yeast: an AI-driven computational model of a eukaryotic cell}, journal={Nature}, year={2026}}",
     "formatted": "Guo, T. et al. Virtual Yeast: an AI-driven computational model of a eukaryotic cell. Nature (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
 }

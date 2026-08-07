@@ -76,5 +76,9 @@
   "citations": {
     "bibtex": "@article{yang2026pse, title={Parameter-space-extended controlled-Z gate for high-speed high-fidelity superconducting quantum computing}, journal={Physical Review Letters}, year={2026}}",
     "formatted": "Yang, X. et al. Parameter-space-extended controlled-Z gate. Phys. Rev. Lett. (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Physical Review Letters",
+  "arxivId": null,
+  "codeUrl": null
 }

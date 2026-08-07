@@ -80,5 +80,9 @@
   "citations": {
     "bibtex": "@article{juno2026, title={First measurement of neutrino oscillation parameters from the JUNO experiment}, journal={Nature}, year={2026}}",
     "formatted": "JUNO Collaboration. First measurement of neutrino oscillation parameters from the JUNO experiment. Nature (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
 }

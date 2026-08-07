@@ -79,5 +79,9 @@
   "citations": {
     "bibtex": "@article{ibm2026, title={First-Known Computations of Fusion Materials on a Quantum Computer}, journal={arXiv:2606.30402}, year={2026}}",
     "formatted": "Oak Ridge National Laboratory, Cleveland Clinic, and IBM. First-Known Computations of Fusion Materials on a Quantum Computer. IBM Newsroom / arXiv:2606.30402 (2026)."
-  }
+  },
+  "preprint": true,
+  "venue": "arXiv preprint (IBM Newsroom 发布)",
+  "arxivId": null,
+  "codeUrl": null
 }

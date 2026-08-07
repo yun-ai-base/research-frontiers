@@ -75,5 +75,9 @@
   "citations": {
     "bibtex": "@article{hsu2026evophage, title={Generative design of complete functional bacteriophage genomes}, journal={Science}, year={2026}, doi={10.1126/science.aec2657}}",
     "formatted": "Stanford University. Generative design of complete functional bacteriophage genomes. Science (2026)."
-  }
+  },
+  "preprint": false,
+  "venue": "Science",
+  "arxivId": null,
+  "codeUrl": null
 }

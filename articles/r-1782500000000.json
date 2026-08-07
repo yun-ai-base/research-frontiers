@@ -80,5 +80,9 @@
   "citations": {
     "bibtex": "@article{yamins2026, title={MiCRo: Modular Cognitive Routing for interpretable and controllable LLMs}, journal={ICLR 2026}, year={2026}}",
     "formatted": "Yamins, D. L. K. et al. MiCRo: Modular Cognitive Routing for interpretable and controllable LLMs. ICLR 2026."
-  }
+  },
+  "preprint": false,
+  "venue": "ICLR 2026",
+  "arxivId": null,
+  "codeUrl": null
 }
