@@ -1,6 +1,399 @@
 {
   "research": [
     {
+      "id": "r-ai-phage-20260807",
+      "title": "AI 首次从零生成完整功能性噬菌体基因组：进入生成式基因组设计时代",
+      "field": "生物",
+      "subfield": "合成生物学 / AI for Science",
+      "researchers": [
+        "斯坦福 Evo 团队",
+        "Patrick Hsu 等"
+      ],
+      "institution": "Stanford University",
+      "source": {
+        "journal": "Science",
+        "doi": "10.1126/science.aec2657",
+        "url": "https://www.science.org/doi/10.1126/science.aec2657",
+        "publicationDate": "2026-08-07"
+      },
+      "summary": "斯坦福团队用基因组语言模型 Evo 从零设计出 16 个完整且功能正常的噬菌体基因组，实验验证其可存活、能抑菌，其中部分还能突破耐药大肠杆菌菌株的防线，标志着 AI 引导的生成式基因组设计迈出关键一步。",
+      "abstract": "We use the Evo genome language model to design complete functional bacteriophage genomes from scratch. Of hundreds of candidates, 16 engineered phages (e.g. Evo-Phi36) were experimentally confirmed viable and lytic, with some overcoming two Escherichia coli strains resistant to natural PhiX174, demonstrating AI-driven generative genome design.",
+      "breakthrough": "2026年8月7日，最新一期《科学》杂志发表斯坦福大学团队的研究：利用此前开发的 Evo 基因组语言模型，结合计算生物学方法与实验筛选，从零生成了完整且功能正常的噬菌体基因组。\n\n团队以研究充分的 ΦX174 噬菌体为模型，通过计算设计了数百个候选基因组，随后通过实验从中识别出 16 个具有功能的人工噬菌体。这些工程噬菌体的基因序列和结构存在明显差异，部分性能与自然界同类噬菌体相当。更关键的是，一些新设计的噬菌体能够克服两种对 ΦX174 产生耐药性的大肠杆菌菌株的抗药性——生成噬菌体混合物经 1 至 2 次传代即可抑制耐药菌生长，而天然 ΦX174 类混合物 5 次传代后仍未产生同样效果。\n\n长期以来，由于基因、调控序列与其他遗传元件之间复杂的相互作用，从零设计功能性基因组被视为科学界的重大挑战。这项成果被评价为「AI 引导的基因组设计向前迈出重要一步」，意味着基因组设计有望与测序、合成、编辑一样成为核心生物技术。",
+      "significance": "这标志着人类进入「生成式基因组设计」时代。此前 AI 设计多聚焦单个基因或基因回路，而完整基因组对序列组成高度敏感、单个突变就可能使其失活，需要通用框架。Evo 模型在海量 DNA 序列（含 200 多万个噬菌体基因组）上预训练，能生成「自带可折叠结构」的完整基因组。\n\n应用前景直接指向噬菌体疗法：用 AI 快速生成针对耐药细菌的新型噬菌体，为应对快速进化的细菌病原体提供新路径。团队同时明确指出，AI 设计和合成功能性病毒基因组带来不可忽视的生物安全问题——同期观点文章也强调，问题已不是「是否会出现」，而是「社会能否建立有效监督机制」，在模型层面对敏感病毒序列做防护（如排除训练数据）是降低风险的关键手段。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "这是「AI for Science」的又一范式案例：语言模型学的是 DNA「语法」而非语义规则，却能生成有功能的生物系统。它把深度学习、合成生物学、结构生物学（冷冻电镜验证新蛋白组合）串成一条完整流水线，预示未来设计范围可扩展到细菌、真菌乃至更复杂基因组。",
+          "relatedFields": [
+            "计算机",
+            "生物"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（2-3年）：AI 噬菌体进入耐药菌感染的动物实验与临床前研究。中期（5年）：生成式设计扩展到更大基因组与代谢通路工程。长期（10年）：若生物安全治理框架成熟，生成式基因组设计将像今天的基因合成一样成为常规科研工具。",
+          "relatedFields": [
+            "医学",
+            "生物"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "AI 生成基因组的「可预测性」边界在哪？生成序列超出训练分布后会怎样？如何建立兼顾创新与安全的生物安保机制——敏感序列是否应从训练数据中排除？生成式设计的通用性能否从噬菌体扩展到真核基因组？",
+          "relatedFields": [
+            "生物",
+            "计算机"
+          ]
+        }
+      ],
+      "expertCommentary": "这是本周乃至本年度最具分量的 AI 生物成果之一。关键不在「生成 16 个噬菌体」本身，而在于它打通了「语言模型设计 → 实验验证 → 功能超越天然品系」的闭环，并且坦然把生物安全风险摆在桌面上讨论——这种透明度在同类工作中少见。Evo-Φ36 能克服耐药菌株尤其值得注意，它说明 AI 生成的序列不是天然基因组的简单重排，而是可能探索到了人类未曾设计过的功能空间。当然，噬菌体基因组（约 5kb）与人类基因组（3Gb）之间仍有数量级鸿沟，通用性尚待验证。",
+      "relatedMilestones": [
+        {
+          "year": 2003,
+          "description": "人类基因组计划完成，测序进入新时代"
+        },
+        {
+          "year": 2024,
+          "description": "Evo 基因组语言模型发布，展示基因预测与设计能力"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 AI 首次从零生成完整功能性噬菌体基因组（Science）"
+        }
+      ],
+      "tags": [
+        "AI",
+        "噬菌体",
+        "基因组设计",
+        "合成生物学",
+        "Evo",
+        "生物安全"
+      ],
+      "dateAdded": "2026-08-07",
+      "readTime": 12,
+      "status": "unread",
+      "starred": true,
+      "citations": {
+        "bibtex": "@article{hsu2026evophage, title={Generative design of complete functional bacteriophage genomes}, journal={Science}, year={2026}, doi={10.1126/science.aec2657}}",
+        "formatted": "Stanford University. Generative design of complete functional bacteriophage genomes. Science (2026)."
+      }
+    },
+    {
+      "id": "r-originqc-psec-20260807",
+      "title": "中国团队破解超导量子计算「速度与保真度」矛盾：新型 PSE-CZ 量子门",
+      "field": "物理",
+      "subfield": "超导量子计算 / 量子门",
+      "researchers": [
+        "杨小燕",
+        "本源量子团队",
+        "中国科学技术大学团队"
+      ],
+      "institution": "本源量子计算科技（合肥）/ 中国科学技术大学",
+      "source": {
+        "journal": "Physical Review Letters",
+        "doi": "",
+        "url": "https://journals.aps.org/prl",
+        "publicationDate": "2026-08-07"
+      },
+      "summary": "本源量子与中国科学技术大学联合团队提出参数空间扩展受控相位门（PSE-CZ）方案，在「本源悟空」超导量子计算机上验证：无需延长脉冲时长即可同时纠正泄漏与相位两类误差，让两比特量子门同时做到高速与高保真。",
+      "abstract": "We propose a parameter-space-extended controlled-Z gate (PSE-CZ) that splits the detuning in the pulse middle into two independently tunable parameters, enabling simultaneous correction of leakage and phase errors without prolonging the pulse. Validated on 20 pairs of two-qubit gates on the Origin Wukong superconducting processor, the scheme keeps high fidelity at gate times as short as 30-40 ns.",
+      "breakthrough": "2026年8月7日，安徽省量子计算芯片重点实验室消息：本源量子计算科技（合肥）有限公司与中国科学技术大学组成的研究团队提出新型量子门技术方案「参数空间扩展受控相位门」（PSE-CZ），成功破解超导量子计算领域长期存在的「速度与保真度相互制约」难题，成果发表于《物理评论快报》（PRL），实验验证在本源「本源悟空」超导量子计算机上完成。\n\n量子门类似传统计算机的逻辑门，是量子计算的基础运算单元。稳定高效的量子计算要求量子门同时具备超快操作速度与超高准确率，但二者长期矛盾：门运行越快，硬件波形失真、时序偏差带来的误差越显著；放慢速度保精度，又拖累整机效率。\n\n研究团队创新性地提出 PSE-CZ 方案：无需延长脉冲操作时长，而是将脉冲中间区域的失谐量拆分为两个独立可调参数——相当于给系统新增一枚「调节旋钮」，可同步纠正泄漏与相位两类误差，实现高速与高精度兼得。团队在「本源悟空」上选取 20 对两比特量子门测试，结果显示新方案有效降低短脉冲畸变引发的相干误差，使量子门性能更接近退相干极限；即使在 30–40 纳秒的极短门长下，PSE-CZ 仍保持优于传统 CZ 门的稳定性能。",
+      "significance": "这是超导量子计算工程层面的一次实质进展。量子门的「速度-保真度」矛盾是制约整机性能的关键瓶颈，PSE-CZ 用「多加一个可调参数」的低成本方式同时抑制两类误差，思路简洁且可推广——论文指出该方案不仅适配超导体系，还可推广至离子阱、固态自旋等多种量子计算平台。\n\n中国量子计算正从「比特数量」竞赛转向「系统实用性与工程化」竞争：5 月上线的「本源悟空-180」搭载 180 个计算比特，单比特门保真度 99.9%、双比特门 99%。PSE-CZ 这类面向「又快又准」的底层技术，是通往实用化容错量子计算的关键积累。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "「用额外自由度换取同时优化两个互相冲突的指标」是控制论与工程优化的通用思想，与脉冲整形、最优控制理论一脉相承；PSE-CZ 的可迁移性（离子阱/自旋平台）正源于此。",
+          "relatedFields": [
+            "计算机",
+            "物理"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（2-3年）：PSE-CZ 推广到更多量子门类型与更大规模芯片。中期（5年）：与量子纠错码结合，降低逻辑门错误率。长期（10年）：成为国产超导量子计算机向容错实用化演进的标准技术组件之一。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "新增可调参数在更高比特数下的校准开销如何控制？PSE-CZ 与实时反馈解码能否协同？「速度-保真度」权衡被缓解后，下一个制约整机性能的瓶颈是什么（读取、互联还是制冷）？",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        }
+      ],
+      "expertCommentary": "PSE-CZ 的价值在于「低增量成本换双倍收益」：不延长脉冲、不加硬件，只把失谐量拆成两个独立参数，就同时压住了泄漏和相位两类误差——这种「巧劲」式创新比堆砌新硬件更有工程智慧。20 对门的实测与 30–40 纳秒极短门长下的稳定性验证给了结论可信度。值得注意其平台普适性声明，若在离子阱上复现，将是通用方法论。",
+      "relatedMilestones": [
+        {
+          "year": 2021,
+          "description": "本源量子推出「本源悟源」超导量子计算机"
+        },
+        {
+          "year": 2026,
+          "description": "「本源悟空-180」上线，180 计算比特"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 PSE-CZ 量子门发表 PRL，破解速度-保真度矛盾"
+        }
+      ],
+      "tags": [
+        "量子计算",
+        "超导量子比特",
+        "量子门",
+        "PSE-CZ",
+        "本源悟空",
+        "PRL"
+      ],
+      "dateAdded": "2026-08-07",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{yang2026pse, title={Parameter-space-extended controlled-Z gate for high-speed high-fidelity superconducting quantum computing}, journal={Physical Review Letters}, year={2026}}",
+        "formatted": "Yang, X. et al. Parameter-space-extended controlled-Z gate. Phys. Rev. Lett. (2026)."
+      }
+    },
+    {
+      "id": "r-milkyway-rise-20260807",
+      "title": "紫金山天文台首次发现：银河系分子气体外盘呈波纹状褶皱结构",
+      "field": "天文",
+      "subfield": "银河系结构 / 分子云巡天",
+      "researchers": [
+        "紫金山天文台团队"
+      ],
+      "institution": "中国科学院紫金山天文台",
+      "source": {
+        "journal": "Nature Astronomy",
+        "doi": "",
+        "url": "https://www.nature.com/natastron/",
+        "publicationDate": "2026-08-07"
+      },
+      "summary": "紫金山天文台团队基于「银河画卷」一氧化碳分子巡天数据，首次发现银河系分子气体外盘广泛存在波纹状褶皱结构——银河系外盘并非平滑翘曲盘，而是由翘曲与多尺度垂直褶皱共同构成的复杂系统。",
+      "abstract": "Based on 13.7-m millimeter-wave telescope CO survey data ('Galactic Plane Scanning Survey') with more than 30,000 molecular cloud samples, we reconstruct the warped CO outer disk and identify widespread rippling vertical undulations (corrugations) superimposed on the warp, suggesting external gravitational perturbations excite bending waves in the outer disk.",
+      "breakthrough": "2026年8月7日，中国科学院紫金山天文台研究团队在国际期刊《自然·天文学》在线发表研究：基于我国 13.7 米毫米波望远镜开展的「银河画卷」一氧化碳（CO）分子巡天数据，首次在银河系分子气体外盘中发现了广泛分布的波纹状褶皱结构。\n\n过去数十年，银河系大尺度「翘曲结构」已被广泛确认并建立基本模型。然而，星系盘中更细尺度的垂直起伏结构（如褶皱）长期缺乏系统性观测与定量研究。此前相关分子气体褶皱结构的观测仅局限于太阳邻域，其在银河系外盘是否存在仍是未知数。\n\n研究团队基于巡天数据证认了 3 万多个分子云样本，定量构建了银河系 CO 外盘的翘曲模型，发现背景结构中呈现清晰的波纹状垂直起伏——褶皱。结果显示这些褶皱在银河系分子外盘中广泛存在。团队分析认为，这些大尺度垂直起伏更可能来源于外部引力扰动激发的「弯曲波」，意味着银河系外盘在演化历史中可能经历过更多样的内外相互作用过程，并在冷分子气体中留下结构性痕迹。",
+      "significance": "这项研究刷新了人们对银河系三维结构的认知：银河系盘面并非传统意义上的「平滑翘曲盘」，而是由翘曲结构与多尺度垂直褶皱共同构成的复杂系统。\n\nCO 分子气体是追踪银河系冷密介质的重要探针，但受限于巡天灵敏度与空间覆盖，银河系外盘三维结构此前存在明显不确定性。该研究首次从整体尺度揭示了银河系外盘冷分子气体的精细结构特征，对理解银河系旋臂结构、盘面动力学演化以及外部扰动历史（如与卫星星系的相互作用）具有重要意义，也展示了「银河画卷」巡天数据在银河系结构研究中的独特价值。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "盘状星系的「翘曲+褶皱」垂直结构在河外星系中同样存在，这项研究为「银河系作为河外星系观测样本的校准器」提供了新标尺；外部扰动激发弯曲波的图像也与卫星星系并合、暗物质晕相互作用的理论模型直接对话。",
+          "relatedFields": [
+            "天文",
+            "物理"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（2-3年）：结合更多 CO 巡天数据刻画褶皱的三维形态与统计性质。中期（5年）：与 N 体数值模拟对比，约束外部扰动来源（如人马座矮星系流）。长期（10年）：将方法推广到其他旋涡星系，建立「盘面垂直结构」的统一演化图景。",
+          "relatedFields": [
+            "天文"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "褶皱与翘曲的能量来源是否相同？弯曲波由哪一次具体的外部扰动激发？褶皱对银河系旋臂处恒星形成率有无调制作用？分子气体外盘的垂直起伏与 HI 气体结构如何相互耦合？",
+          "relatedFields": [
+            "天文",
+            "物理"
+          ]
+        }
+      ],
+      "expertCommentary": "这是一项典型的「数据驱动」里程碑：不是靠新望远镜，而是把既有「银河画卷」巡天数据的价值挖掘到了新高度。3 万多个分子云样本的样本量让结论具有统计可信度。将银河系外盘描述从「平滑翘曲盘」修正为「翘曲+多尺度褶皱」的复杂系统，为研究盘面动力学与外部扰动历史打开了新窗口。若后续能定位激发弯曲波的具体扰动源，将把这项发现从「形态刻画」推向「机制解释」。",
+      "relatedMilestones": [
+        {
+          "year": 1957,
+          "description": "银河系翘曲结构首次被发现"
+        },
+        {
+          "year": 2011,
+          "description": "「银河画卷」CO 分子巡天项目启动"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 首次发现银河系分子气体外盘波纹状褶皱结构"
+        }
+      ],
+      "tags": [
+        "银河系",
+        "分子云",
+        "翘曲结构",
+        "银河画卷",
+        "紫金山天文台",
+        "Nature Astronomy"
+      ],
+      "dateAdded": "2026-08-07",
+      "readTime": 8,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{pmo2026warp, title={Rippling corrugations in the molecular gas outer disk of the Milky Way}, journal={Nature Astronomy}, year={2026}}",
+        "formatted": "Purple Mountain Observatory. Rippling corrugations in the molecular gas outer disk of the Milky Way. Nat. Astron. (2026)."
+      }
+    },
+    {
+      "id": "r-ultra-3dpath-20260803",
+      "title": "复旦团队推出 ULTRA 平台：30 分钟生成胶质瘤毫米级三维病理图像",
+      "field": "医学",
+      "subfield": "医学影像 / 神经外科病理",
+      "researchers": [
+        "施立雪",
+        "季敏标"
+      ],
+      "institution": "复旦大学生物医学研究院 / 复旦大学物理学系",
+      "source": {
+        "journal": "Cell",
+        "doi": "",
+        "url": "https://www.cell.com/cell",
+        "publicationDate": "2026-08-03"
+      },
+      "summary": "复旦大学生物医学研究院施立雪团队联合物理学系季敏标团队在《细胞》发表研究，推出超快速三维病理技术平台 ULTRA：可在 30 分钟内产出毫米级三维病理图像，实现胶质瘤术中三维病理解析与肿瘤浸润边界精准测绘。",
+      "abstract": "We present ULTRA, an ultra-fast label-free three-dimensional pathology platform combining stimulated Raman scattering (SRS) imaging, rapid tissue clearing and unsupervised-learning image generation, producing millimeter-scale 3D pathological images within 30 minutes at paraffin-section gold-standard quality, enabling intraoperative 3D pathology and precise tumor-infiltration boundary mapping for glioma surgery.",
+      "breakthrough": "2026年8月3日晚，复旦大学生物医学研究院施立雪团队联合物理学系季敏标团队，在国际学术期刊《细胞》（Cell）发表研究论文，推出全新超快速三维病理技术平台 ULTRA。\n\n肿瘤是立体三维生长的复杂病灶，但长期以来病理医生只能依靠薄薄的二维切片研判病情。尤其对弥散性浸润的胶质瘤，肿瘤细胞沿组织间隙立体蔓延、分布隐匿，单一平面切片极易遗漏关键病变区域，直接影响肿瘤分级判定与手术边界精准界定。\n\nULTRA 平台依托无标记受激拉曼散射（SRS）成像原理，创新性融合快速组织透明化技术与无监督学习图像生成算法，解决了三维病理成像周期漫长的核心难题：可在 30 分钟内产出媲美石蜡病理金标准级别的毫米级三维病理图像，实现胶质瘤术中三维病理特征解析与肿瘤浸润边界精准测绘。\n\n临床术中冰冻病理流程需将手术切除组织制成微米级薄切片，且仅能选取少量平面观测，而「30 分钟病理诊断窗口」是神经外科手术的临床刚需。现有三维病理技术完整检测周期长达数小时甚至数天，长期停滞于实验室，难以落地手术场景——ULTRA 恰好补上了这块拼图。",
+      "significance": "这是把三维病理从「实验室研究」推向「手术台」的关键一步。医生可以依托术中快速病理结果实时判断病灶性质、界定肿瘤浸润边界、即时调整切除范围，最大程度实现肿瘤完整切除并保留正常神经功能——直击胶质瘤手术「切多伤脑、切少复发」的核心痛点。\n\n从技术角度，SRS 无标记成像免去了染色步骤，组织透明化+AI 生成算法把三维重建周期从天级压缩到分钟级，为病理诊断提供了二维切片无法获取的空间结构信息。该平台还有望推广到其他实体瘤的术中诊断。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "SRS 成像+透明化+无监督学习的组合，本质是「物理成像 × 化学特异 × AI 重建」的交叉工程，思路可迁移到组织学以外的领域（如活体深层成像、材料无损检测）。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（2-3年）：在更多胶质瘤病例中前瞻性验证 ULTRA 对手术切缘判断的临床获益。中期（5年）：扩展到乳腺癌、结直肠癌等实体瘤的术中病理。长期（10年）：与术中导航、手术机器人整合，实现「实时三维病理引导手术」。",
+          "relatedFields": [
+            "医学",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "三维病理图像与二维石蜡金标准在分级判读上的一致性如何量化？无监督生成算法在罕见病理形态上的泛化能力如何？30 分钟窗口内能否进一步叠加分子诊断信息（如 IDH 突变状态）？",
+          "relatedFields": [
+            "医学",
+            "生物"
+          ]
+        }
+      ],
+      "expertCommentary": "ULTRA 最大的价值是「时效性」：把三维病理从「数小时到数天」压进「30 分钟」术中窗口，直接对准神经外科的真实刚需。无标记 SRS 免染色、透明化加速、AI 生成补全——三步环环相扣，工程完成度很高。胶质瘤是三维浸润的极端代表，若 ULTRA 在此验证成功，向其他实体瘤推广的路径就打开了。下一步的关键证据将来自前瞻性临床队列：三维判读能否真正改变手术决策并改善患者预后。",
+      "relatedMilestones": [
+        {
+          "year": 2018,
+          "description": "受激拉曼散射（SRS）病理成像进入临床应用探索"
+        },
+        {
+          "year": 2023,
+          "description": "组织透明化技术加速发展，但三维病理周期仍以小时/天计"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 ULTRA 平台实现 30 分钟毫米级术中三维病理"
+        }
+      ],
+      "tags": [
+        "三维病理",
+        "胶质瘤",
+        "受激拉曼散射",
+        "术中诊断",
+        "复旦大学",
+        "Cell"
+      ],
+      "dateAdded": "2026-08-07",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{shi2026ultra, title={ULTRA: ultrafast 3D pathology for intraoperative glioma diagnosis}, journal={Cell}, year={2026}}",
+        "formatted": "Shi, L. et al. ULTRA: ultrafast 3D pathology for intraoperative glioma diagnosis. Cell (2026)."
+      }
+    },
+    {
+      "id": "r-photonic-tc-20260802",
+      "title": "全球首个光子时间晶体问世：在皮秒尺度动态调控太赫兹光",
+      "field": "物理",
+      "subfield": "光子学 / 太赫兹技术",
+      "researchers": [
+        "Yannis Laplace",
+        "郭廷文"
+      ],
+      "institution": "École Polytechnique（巴黎综合理工学院）/ Thales",
+      "source": {
+        "journal": "Nature",
+        "doi": "",
+        "url": "https://www.nature.com",
+        "publicationDate": "2026-08-02"
+      },
+      "summary": "国际研究团队首次通过实验构建出全光学光子时间晶体——光学特性（反射率、共振频率）能在皮秒时间尺度被动态改变的「时间维度晶体」，为超快计算、新型通信与太赫兹激光器开辟新路径，成果发表于《自然》。",
+      "abstract": "We experimentally construct an all-optical photonic time crystal whose optical properties (reflectivity, resonance frequency) are dynamically modulated on picosecond timescales—approaching the period of light itself—by optically exciting a plasmonic metamaterial, opening a new dimension for light control in the terahertz band and beyond.",
+      "breakthrough": "2026年8月2日前后，一个国际研究团队首次通过实验构建出全光学光子时间晶体——一种能随时间推移快速且重复改变其光学行为的材料，相关成果发表于《自然》。\n\n传统光子晶体是纳米结构材料，通过空间上重复排列不同形状和折射率的材料，阻挡、引导或增强特定波长的光——控制光子的方式类似半导体控制电子。然而一旦制造完成，其光学行为不会随时间改变。\n\n法国巴黎综合理工学院 Yannis Laplace 的辐照固体实验室团队，将光子晶体从空间维度拓展到时间维度：所构建的全光学光子时间晶体的光学特性（如反射率、共振频率）能在皮秒（万亿分之一秒）时间尺度上被动态改变——这已接近光自身振荡的时间尺度。\n\n团队构建了等离子体超材料光子晶体：微米尺度的金质城垛状结构位于绝缘层和铟锑半导体之上，形成限制光的微小空腔；当半导体表面被激发产生「表面等离子体」（能捕获光并维持振荡的电子集体激发波）时，晶体便获得随时间变化的周期光学行为。「通过将光子晶体从空间拓展到时间，我们为光控制开辟了一个新维度，也开启了一条通往光放大和激光发射的新路径。」论文第一作者郭廷文表示。",
+      "significance": "这是「时间晶体」概念在光子学领域的一次实验落地。时间晶体——在时间上而非空间上具有周期性结构的物质态——此前主要在原子物理与量子系统（如离子阱）中被研究；此次在全光学平台上实现，把概念带进了实用光电领域。\n\n太赫兹频段处于电子技术与光子技术交界，频率比当前电子元件使用频率高约 1000 倍，被视为观测和操控物质的强力新途径，但相关技术开发相对滞后。光子时间晶体的时间调制能力有望为超快计算、新型智能通信系统、先进成像技术以及新一代高度可调谐激光器（光放大与激光发射的新路径）作出贡献，可能彻底改变太赫兹频段及更广范围的光学技术。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "时间晶体横跨凝聚态物理（时间平移对称性破缺）、光子学与量子光学。此次全光学实现把「空间光子晶体控制光子」的成熟框架推广到「时间调制」，与激光物理、超快光学、材料科学深度交叉。",
+          "relatedFields": [
+            "物理",
+            "材料"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期（2-3年）：优化时间调制深度与速度，探索可调谐太赫兹源。中期（5年）：将光子时间晶体集成进通信与成像原型器件。长期（10年）：若时间晶体实现增益，或催生新型相干光源与超快光开关，改变太赫兹技术的工程图景。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "皮秒级调制目前依赖复杂的专用器件，能否用更简单的结构实现？时间调制是否真的能带来净增益（放大）？光子时间晶体的拓扑性质与鲁棒性如何？能否与其他时间晶体体系（原子、声子）统一描述？",
+          "relatedFields": [
+            "物理"
+          ]
+        }
+      ],
+      "expertCommentary": "把「时间晶体」从量子物理的概念橱窗搬进光学实验室，是这次工作的核心贡献。关键指标是皮秒级调制——已经逼近光振荡周期本身，这意味着「时间晶格」对光的作用不再是缓慢扰动，而是可与光场强耦合。Laplace 团队在太赫兹频段选择切入也很务实：那里器件匮乏、需求明确。当然，目前的实现依赖复杂的等离子体超材料与光激发方案，距离工程应用还有距离；「能否实现时间域增益」将是决定其技术价值的下一步看点。",
+      "relatedMilestones": [
+        {
+          "year": 2012,
+          "description": "时间晶体概念由 Frank Wilczek 提出"
+        },
+        {
+          "year": 2017,
+          "description": "离散时间晶体在量子系统中首次被观测"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 全球首个全光学光子时间晶体（Nature）"
+        }
+      ],
+      "tags": [
+        "光子时间晶体",
+        "太赫兹",
+        "光子学",
+        "时间晶体",
+        "Nature",
+        "巴黎综合理工"
+      ],
+      "dateAdded": "2026-08-07",
+      "readTime": 9,
+      "status": "unread",
+      "starred": true,
+      "citations": {
+        "bibtex": "@article{laplace2026ptc, title={All-optical photonic time crystal with picosecond modulation}, journal={Nature}, year={2026}}",
+        "formatted": "Laplace, Y. et al. All-optical photonic time crystal with picosecond modulation. Nature (2026)."
+      }
+    },
+    {
       "id": "r-qgenome-20260731",
       "title": "量子计算机首次编码一个完整基因组：丁型肝炎病毒载入量子比特",
       "field": "计算机",
