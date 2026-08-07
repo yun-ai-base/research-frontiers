@@ -649,12 +649,19 @@ img { max-width: 100%; height: auto; }
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 1;
+  font-family: var(--font-sans);
+  user-select: none;
   box-shadow: var(--shadow);
   opacity: 0;
   transform: translateY(20px);
   transition: all var(--transition);
   z-index: 50;
+}
+.top-float:hover {
+  background: #256a97;
+  transform: translateY(-2px);
 }
 .top-float.visible {
   opacity: 1;
