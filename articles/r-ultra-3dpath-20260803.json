@@ -1,0 +1,79 @@
+{
+  "id": "r-ultra-3dpath-20260803",
+  "title": "复旦团队推出 ULTRA 平台：30 分钟生成胶质瘤毫米级三维病理图像",
+  "field": "医学",
+  "subfield": "医学影像 / 神经外科病理",
+  "researchers": [
+    "施立雪",
+    "季敏标"
+  ],
+  "institution": "复旦大学生物医学研究院 / 复旦大学物理学系",
+  "source": {
+    "journal": "Cell",
+    "doi": "",
+    "url": "https://www.cell.com/cell",
+    "publicationDate": "2026-08-03"
+  },
+  "summary": "复旦大学生物医学研究院施立雪团队联合物理学系季敏标团队在《细胞》发表研究，推出超快速三维病理技术平台 ULTRA：可在 30 分钟内产出毫米级三维病理图像，实现胶质瘤术中三维病理解析与肿瘤浸润边界精准测绘。",
+  "abstract": "We present ULTRA, an ultra-fast label-free three-dimensional pathology platform combining stimulated Raman scattering (SRS) imaging, rapid tissue clearing and unsupervised-learning image generation, producing millimeter-scale 3D pathological images within 30 minutes at paraffin-section gold-standard quality, enabling intraoperative 3D pathology and precise tumor-infiltration boundary mapping for glioma surgery.",
+  "breakthrough": "2026年8月3日晚，复旦大学生物医学研究院施立雪团队联合物理学系季敏标团队，在国际学术期刊《细胞》（Cell）发表研究论文，推出全新超快速三维病理技术平台 ULTRA。\n\n肿瘤是立体三维生长的复杂病灶，但长期以来病理医生只能依靠薄薄的二维切片研判病情。尤其对弥散性浸润的胶质瘤，肿瘤细胞沿组织间隙立体蔓延、分布隐匿，单一平面切片极易遗漏关键病变区域，直接影响肿瘤分级判定与手术边界精准界定。\n\nULTRA 平台依托无标记受激拉曼散射（SRS）成像原理，创新性融合快速组织透明化技术与无监督学习图像生成算法，解决了三维病理成像周期漫长的核心难题：可在 30 分钟内产出媲美石蜡病理金标准级别的毫米级三维病理图像，实现胶质瘤术中三维病理特征解析与肿瘤浸润边界精准测绘。\n\n临床术中冰冻病理流程需将手术切除组织制成微米级薄切片，且仅能选取少量平面观测，而「30 分钟病理诊断窗口」是神经外科手术的临床刚需。现有三维病理技术完整检测周期长达数小时甚至数天，长期停滞于实验室，难以落地手术场景——ULTRA 恰好补上了这块拼图。",
+  "significance": "这是把三维病理从「实验室研究」推向「手术台」的关键一步。医生可以依托术中快速病理结果实时判断病灶性质、界定肿瘤浸润边界、即时调整切除范围，最大程度实现肿瘤完整切除并保留正常神经功能——直击胶质瘤手术「切多伤脑、切少复发」的核心痛点。\n\n从技术角度，SRS 无标记成像免去了染色步骤，组织透明化+AI 生成算法把三维重建周期从天级压缩到分钟级，为病理诊断提供了二维切片无法获取的空间结构信息。该平台还有望推广到其他实体瘤的术中诊断。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "SRS 成像+透明化+无监督学习的组合，本质是「物理成像 × 化学特异 × AI 重建」的交叉工程，思路可迁移到组织学以外的领域（如活体深层成像、材料无损检测）。",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（2-3年）：在更多胶质瘤病例中前瞻性验证 ULTRA 对手术切缘判断的临床获益。中期（5年）：扩展到乳腺癌、结直肠癌等实体瘤的术中病理。长期（10年）：与术中导航、手术机器人整合，实现「实时三维病理引导手术」。",
+      "relatedFields": [
+        "医学",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "三维病理图像与二维石蜡金标准在分级判读上的一致性如何量化？无监督生成算法在罕见病理形态上的泛化能力如何？30 分钟窗口内能否进一步叠加分子诊断信息（如 IDH 突变状态）？",
+      "relatedFields": [
+        "医学",
+        "生物"
+      ]
+    }
+  ],
+  "expertCommentary": "ULTRA 最大的价值是「时效性」：把三维病理从「数小时到数天」压进「30 分钟」术中窗口，直接对准神经外科的真实刚需。无标记 SRS 免染色、透明化加速、AI 生成补全——三步环环相扣，工程完成度很高。胶质瘤是三维浸润的极端代表，若 ULTRA 在此验证成功，向其他实体瘤推广的路径就打开了。下一步的关键证据将来自前瞻性临床队列：三维判读能否真正改变手术决策并改善患者预后。",
+  "relatedMilestones": [
+    {
+      "year": 2018,
+      "description": "受激拉曼散射（SRS）病理成像进入临床应用探索"
+    },
+    {
+      "year": 2023,
+      "description": "组织透明化技术加速发展，但三维病理周期仍以小时/天计"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 ULTRA 平台实现 30 分钟毫米级术中三维病理"
+    }
+  ],
+  "tags": [
+    "三维病理",
+    "胶质瘤",
+    "受激拉曼散射",
+    "术中诊断",
+    "复旦大学",
+    "Cell"
+  ],
+  "dateAdded": "2026-08-07",
+  "readTime": 10,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{shi2026ultra, title={ULTRA: ultrafast 3D pathology for intraoperative glioma diagnosis}, journal={Cell}, year={2026}}",
+    "formatted": "Shi, L. et al. ULTRA: ultrafast 3D pathology for intraoperative glioma diagnosis. Cell (2026)."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "r-1718800000000",
+  "title": "通过表观遗传重编程实现人类神经元功能性再生",
+  "field": "生物",
+  "subfield": "神经科学与再生医学",
+  "researchers": [
+    "Z. Liu",
+    "Y. Zhang",
+    "H. Wu"
+  ],
+  "institution": "西湖大学 / 复旦大学",
+  "source": {
+    "journal": "Cell",
+    "doi": "10.1016/j.cell.2026.05.001",
+    "url": "https://www.cell.com/cell",
+    "publicationDate": "2026-05-05"
+  },
+  "summary": "研究人员通过 CRISPR 介导的表观遗传编辑，成功在成年小鼠脑内将胶质细胞原位转分化为功能性神经元，并恢复了阿尔茨海默模型小鼠的记忆功能。",
+  "abstract": "We demonstrate in vivo reprogramming of reactive glial cells into functional neurons in adult mouse brains using a CRISPR-dCas9-based epigenetic editing system targeting NeuroD1 and Ascl1. The newly generated neurons integrate into existing neural circuits and exhibit electrophysiological properties indistinguishable from endogenous neurons. In a mouse model of Alzheimer's disease, this approach restores spatial memory function.",
+  "breakthrough": "西湖大学与复旦大学联合团队开发了一种基于 CRISPR-dCas9 的表观遗传编辑系统，通过激活两个关键神经命运决定基因（NeuroD1 和 Ascl1），在不改变 DNA 序列的情况下，诱导成年小鼠脑内反应性星形胶质细胞原位转分化为功能性神经元。\n\n新生成的神经元在形态、电生理特性和突触连接方面与内源性神经元无异，成功整合到现有神经环路中。在阿尔茨海默模型小鼠中，治疗组表现出显著的空间记忆功能恢复，水迷宫测试成绩接近健康对照组。",
+  "significance": "这是神经再生领域的重大突破。此前神经元再生尝试面临两大瓶颈：分化效率低和整合困难。本工作通过表观遗传重编程（而非传统的转录因子过表达）实现了更高的转分化效率和更好的功能整合。更重要的是，该策略不涉及外源 DNA 插入，显著降低了致癌风险。如果能在灵长类中重复，将为阿尔茨海默病、帕金森病等神经退行性疾病的治疗提供全新范式。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "这项技术的伦理和哲学意涵令人深思。如果大脑中的神经元可以被精准再生，那么「记忆」是否可以修复？「自我」的连续性如何界定？从认知科学的角度，该技术也间接支持了神经可塑性理论——成年脑的修复能力远比我们想象的要强，只是被表观遗传机制抑制了。",
+      "relatedFields": [
+        "心理",
+        "哲学"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（5年）：启动 NHP（非人灵长类）安全性评估，优化递送系统（AAV 载体）。中期（10年）：首批针对阿尔茨海默病早期患者的临床试验。长期（20年）：如果安全有效，可扩展到帕金森病、亨廷顿病、中风后遗症等多种神经疾病。",
+      "relatedFields": []
+    },
+    {
+      "direction": "开放问题",
+      "content": "转分化后的神经元在长期（数十年）尺度上是否保持功能和稳定性？是否会形成异常网络连接（如癫痫样活动）？更重要的是，这一技术能否从星形胶质细胞扩展到其他胶质细胞类型（如小胶质细胞），从而扩大修复范围？",
+      "relatedFields": [
+        "心理"
+      ]
+    }
+  ],
+  "expertCommentary": "刘张学团队的工作在技术上堪称精湛。表观遗传编辑相比传统转录因子过表达有三大优势：不改变 DNA 序列（安全性）、可逆（可调控性）、更接近自然发育过程。在阿尔茨海默小鼠模型中的行为学改善显著，体视学和电生理数据也提供了充分的证据。主要局限性在于：小鼠到人的转化存在巨大鸿沟，且阿尔茨海默病在诊断时已有大量病理积累，疗效窗口期可能很窄。但作为概念验证，这是本年度最令人兴奋的神经科学进展之一。",
+  "relatedMilestones": [
+    {
+      "year": 2010,
+      "description": "首次报道在体外将成纤维细胞转分化为神经元"
+    },
+    {
+      "year": 2013,
+      "description": "在体内将胶质细胞转分化为神经元的概念验证"
+    },
+    {
+      "year": 2023,
+      "description": "CRISPR 表观遗传编辑技术进入临床试验"
+    }
+  ],
+  "tags": [
+    "神经再生",
+    "表观遗传",
+    "CRISPR",
+    "阿尔茨海默",
+    "转分化"
+  ],
+  "dateAdded": "2026-06-23",
+  "readTime": 11,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{liu2026, title={In vivo neuronal reprogramming via epigenetic editing restores memory in Alzheimer's mice}, journal={Cell}, year={2026}}",
+    "formatted": "Liu, Z. et al. In vivo neuronal reprogramming via epigenetic editing restores memory in Alzheimer's mice. Cell (2026)."
+  }
+}

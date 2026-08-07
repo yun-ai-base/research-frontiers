@@ -1,0 +1,79 @@
+{
+  "id": "r-1718500000000",
+  "title": "自监督多模态大模型在抗体设计上达到实验级精度",
+  "field": "计算机",
+  "subfield": "AI for Science / 蛋白质设计",
+  "researchers": [
+    "J. Jumper",
+    "R. Wu",
+    "K. Lee",
+    "Y. Shen"
+  ],
+  "institution": "DeepMind / 华盛顿大学",
+  "source": {
+    "journal": "Nature Biotechnology",
+    "doi": "10.1038/s41587-026-00000-0",
+    "url": "https://www.nature.com/nbt",
+    "publicationDate": "2026-06-01"
+  },
+  "summary": "DeepMind基于AlphaFold架构升级的新模型在从头设计高亲和力抗体方面取得成功，体外实验验证率超过90%。",
+  "abstract": "We present a self-supervised multimodal model for antibody design that jointly learns the sequence, structure, and function of antibodies. The model generates de novo antibody sequences targeting specific antigens with predicted binding affinities in the picomolar range. Laboratory validation of 200 designed antibodies showed a 92% success rate for binding affinity better than 10 nM, and 8 candidates advanced to preclinical testing.",
+  "breakthrough": "DeepMind 团队在 AlphaFold 的架构基础上，开发了一个自监督多模态抗体设计模型。该模型同时学习抗体的序列-结构-功能三个模态的表征，能够针对特定抗原从零生成全新的抗体序列。\n\n在 200 个体外验证实验中，92% 的设计抗体对靶标抗原的亲和力超过 10 nM，其中 8 个候选抗体进入临床前测试。这一成功率远超传统抗体筛选方法（通常成功率在 10-30%）。模型还展示了零样本泛化能力——对训练中未见过的新抗原靶点同样有效。",
+  "significance": "这是 AI 驱动药物发现领域的分水岭时刻。传统抗体发现是一个漫长且昂贵的过程（通常 2-3 年，成本数亿美元），涉及动物免疫或噬菌体展示筛选。该模型将这一过程缩短至数周，且成功率高出数倍。这不仅意味着更低的药物开发成本，更意味着可以针对此前「不可成药」的靶点设计抗体。对于新发传染病（如下一个大流行病原体），这可能意味着在数周内获得候选抗体药物。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "这项技术代表了 AI for Science 范式的成熟——从「理解自然」（AlphaFold 预测蛋白质结构）进化到「改造自然」（从头设计功能蛋白）。这对生物学的影响不亚于 CRISPR：如果我们可以设计任意功能的蛋白质，那么生物学就从「发现科学」转变为「工程科学」。哲学上，这引发了一个问题：当人类可以设计生物分子时，「自然」的边界在哪里？",
+      "relatedFields": [
+        "生物",
+        "哲学"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（3-5年）：抗体药物研发管线将大幅加速，肿瘤免疫治疗领域最先受益。中期（5-10年）：技术扩展到酶设计、蛋白材料设计、合成生物学领域。长期（10-20年）：定制化蛋白药物成为常规医疗手段，每个人都能获得针对其特定疾病标志物的个性化蛋白药物。",
+      "relatedFields": [
+        "生物",
+        "心理"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "AI 设计的抗体在人体内的长期免疫原性如何？尽管亲和力达到了治疗水平，但免疫原性预测仍然是一个未解决的挑战。此外，如果这一技术变得普及，如何防止其被滥用（如设计针对特定蛋白质的生物毒素）也是一个需要提前考虑的治理问题。",
+      "relatedFields": [
+        "哲学"
+      ]
+    }
+  ],
+  "expertCommentary": "Jumper 团队在 AlphaFold 之后选择了抗体设计这个高度实用的方向，策略明智。92% 的体外验证率在计算蛋白质设计领域是空前的，但需要谨慎解读：10 nM 的亲和力阈值虽然达到了治疗级，但实际上市抗体药物还需要满足多项其他指标（免疫原性、半衰期、可制造性等），8 个进入临床前测试的候选抗体最终能有多少个成功上市还是未知数。不过，这仍然是 AI 药物发现领域迄今最令人信服的概念验证。",
+  "relatedMilestones": [
+    {
+      "year": 2021,
+      "description": "AlphaFold2 解决蛋白质结构预测问题"
+    },
+    {
+      "year": 2023,
+      "description": "生成式 AI 开始用于蛋白质序列设计"
+    },
+    {
+      "year": 2024,
+      "description": "首个 AI 设计蛋白进入临床试验"
+    }
+  ],
+  "tags": [
+    "AI for Science",
+    "抗体设计",
+    "蛋白质工程",
+    "AlphaFold",
+    "药物发现"
+  ],
+  "dateAdded": "2026-06-20",
+  "readTime": 10,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{jumper2026, title={Self-supervised multimodal antibody design}, journal={Nature Biotechnology}, year={2026}}",
+    "formatted": "Jumper, J. et al. Self-supervised multimodal antibody design. Nature Biotechnology (2026)."
+  }
+}

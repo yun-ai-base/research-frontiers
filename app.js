@@ -3,21 +3,24 @@
    ============================================ */
 
 /* --- State --- */
+var PAGE_SIZE = 10; // 首页每页渲染的卡片数（分页/加载更多）
 var state = {
   research: [],
   filteredField: '全部',
   searchQuery: '',
   currentView: 'home',
   currentArticle: null,
+  visibleCount: PAGE_SIZE,
   theme: 'light'
 };
 
 var THEME_KEY = 'rs-theme';
 var FIELD_ICONS = {
   '物理': '⚛️', '天文': '🔭', '生物': '🧬',
-  '心理': '🧠', '哲学': '💭', '计算机': '💻'
+  '心理': '🧠', '哲学': '💭', '计算机': '💻',
+  '数学': '📐', '化学': '⚗️', '医学': '🩺'
 };
-var FIELD_ORDER = ['物理', '天文', '生物', '心理', '哲学', '计算机'];
+var FIELD_ORDER = ['物理', '天文', '生物', '心理', '哲学', '计算机', '数学', '化学', '医学'];
 
 var $ = function (s, p) { return (p || document).querySelector(s); };
 var $$ = function (s, p) { return [].slice.call((p || document).querySelectorAll(s)); };
@@ -28,8 +31,7 @@ function init() {
   loadData();
   window.addEventListener('popstate', function (e) {
     if (e.state && e.state.view === 'detail') {
-      state.currentArticle = e.state.article;
-      renderDetail(state.currentArticle);
+      openDetail(e.state.article);
     } else {
       state.currentView = 'home';
       state.currentArticle = null;
@@ -45,7 +47,8 @@ function init() {
 
 /* --- Data Loading --- */
 function loadData() {
-  fetch('data.json?' + Date.now())
+  // 首页只加载精简索引 index.json（约 15% 体积），完整文章内容按需加载
+  fetch('index.json?' + Date.now())
     .then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
@@ -55,7 +58,7 @@ function loadData() {
       renderHome();
     })
     .catch(function (err) {
-      console.error('data.json 加载失败:', err);
+      console.error('index.json 加载失败:', err);
       var app = $('#app');
       if (app) app.innerHTML = '<div class="empty-state"><div class="empty-icon">⚠️</div><h3>数据加载失败</h3><p>' + err.message + '</p></div>';
     });
@@ -108,12 +111,18 @@ function countByField() {
 /* --- Navigation --- */
 function filterByField(field) {
   state.filteredField = field;
+  resetPagination();
   $$('.field-tab').forEach(function (t) {
     t.classList.toggle('active', t.getAttribute('data-field') === field);
   });
   if (state.currentView === 'home') {
     renderHome();
   }
+}
+
+/* 筛选/搜索条件变化时，分页回到第一页 */
+function resetPagination() {
+  state.visibleCount = PAGE_SIZE;
 }
 
 /* ============================================
@@ -170,49 +179,125 @@ function renderHome() {
   });
   html += '</div>';
 
-  // Card grid
+  // Card grid（分页：只渲染当前可见数量，其余点「加载更多」增量加载）
   if (filtered.length === 0) {
     html += '<div class="empty-state"><div class="empty-icon">🔍</div><h3>没有找到匹配的研究</h3><p>试试其他关键词或领域</p></div>';
   } else {
-    html += '<div class="research-grid">';
-    filtered.forEach(function (a) {
-      var ratingStars = renderStars(a.innovationRating);
-      html += '<div class="research-card" onclick="openDetail(\'' + a.id + '\')">'
-        + '<div class="card-header">'
-        + '<span class="field-tag field-tag-' + a.field + '">' + a.field + '</span>'
-        + '<span class="card-rating">' + ratingStars + '</span>'
-        + '</div>'
-        + '<h3>' + escapeHtml(a.title) + '</h3>'
-        + '<div class="card-meta">'
-        + '<span>' + (a.researchers ? a.researchers[0] + ' 等' : '') + '</span>'
-        + '<span>' + (a.source ? a.source.journal : '') + '</span>'
-        + '</div>'
-        + '<div class="card-summary">' + escapeHtml(a.summary) + '</div>'
-        + '<div class="card-footer">'
-        + '<span>' + a.dateAdded + '</span>'
-        + '<span>' + a.readTime + ' 分钟</span>'
-        + '</div>'
-        + '</div>';
+    html += '<div class="research-grid" id="researchGrid">';
+    filtered.slice(0, state.visibleCount).forEach(function (a) {
+      html += cardHtml(a);
     });
     html += '</div>';
+    html += loadMoreHtml(filtered.length);
   }
 
   app.innerHTML = html;
 }
 
+/* 单张卡片 HTML（供首页分页/加载更多复用） */
+function cardHtml(a) {
+  var ratingStars = renderStars(a.innovationRating);
+  return '<div class="research-card" onclick="openDetail(\'' + a.id + '\')">'
+    + '<div class="card-header">'
+    + '<span class="field-tag field-tag-' + a.field + '">' + a.field + '</span>'
+    + '<span class="card-rating">' + ratingStars + '</span>'
+    + '</div>'
+    + '<h3>' + escapeHtml(a.title) + '</h3>'
+    + '<div class="card-meta">'
+    + '<span>' + (a.researchers ? a.researchers[0] + ' 等' : '') + '</span>'
+    + '<span>' + (a.source ? a.source.journal : '') + '</span>'
+    + '</div>'
+    + '<div class="card-summary">' + escapeHtml(a.summary) + '</div>'
+    + '<div class="card-footer">'
+    + '<span>' + a.dateAdded + '</span>'
+    + '<span>' + a.readTime + ' 分钟</span>'
+    + '</div>'
+    + '</div>';
+}
+
+/* 加载更多按钮 HTML（列表未展示完时显示） */
+function loadMoreHtml(total) {
+  var shown = Math.min(state.visibleCount, total);
+  if (shown >= total) return '';
+  return '<div class="load-more-wrap">'
+    + '<button class="load-more-btn" onclick="loadMore()">加载更多（' + (total - shown) + ' 条）</button>'
+    + '<span class="load-more-hint">已加载 ' + shown + ' / ' + total + ' 条</span>'
+    + '</div>';
+}
+
+/* 加载更多：增量追加下一批卡片，不整页重渲染，保持滚动位置 */
+function loadMore() {
+  var filtered = getFilteredResearch();
+  var from = state.visibleCount;
+  if (from >= filtered.length) return;
+  state.visibleCount += PAGE_SIZE;
+  var to = Math.min(state.visibleCount, filtered.length);
+  var grid = $('#researchGrid');
+  if (!grid) { renderHome(); return; }
+  for (var i = from; i < to; i++) {
+    grid.insertAdjacentHTML('beforeend', cardHtml(filtered[i]));
+  }
+  var wrap = grid.parentNode.querySelector('.load-more-wrap');
+  if (wrap) {
+    wrap.outerHTML = loadMoreHtml(filtered.length);
+  }
+}
+
 /* ============================================
    DETAIL RENDER
    ============================================ */
-function openDetail(id) {
-  var article = null;
+/* --- Detail: 按需加载 --- */
+function findById(id) {
   for (var i = 0; i < state.research.length; i++) {
-    if (state.research[i].id === id) { article = state.research[i]; break; }
+    if (state.research[i].id === id) return state.research[i];
   }
+  return null;
+}
+
+function openDetail(id) {
+  var article = findById(id);
   if (!article) return;
   state.currentView = 'detail';
   state.currentArticle = article;
   history.pushState({ view: 'detail', article: id }, '', '#r-' + id);
-  renderDetail(article);
+  // 先用索引数据立即渲染头部，同时按需拉取完整详情
+  renderDetailLoading(article);
+  fetch('articles/' + encodeURIComponent(id) + '.json?' + Date.now())
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function (full) {
+      state.currentArticle = full;
+      renderDetail(full);
+    })
+    .catch(function (err) {
+      console.error('文章详情加载失败:', err);
+      renderDetail(article); // 降级：用索引中的精简数据渲染
+    });
+}
+
+/* 详情加载中的骨架视图（先用索引数据渲染头部，占位符提示加载中） */
+function renderDetailLoading(a) {
+  var app = $('#app');
+  if (!app) return;
+  var fieldTagClass = 'field-tag-' + a.field;
+  var html = '<div class="detail-container">'
+    + '<button class="detail-back" onclick="goHome()">← 返回列表</button>'
+    + '<div class="detail-header">'
+    + '<div class="detail-field-line">'
+    + '<span class="detail-field-tag ' + fieldTagClass + '">' + (FIELD_ICONS[a.field] || '') + ' ' + a.field + '</span>'
+    + (a.subfield ? '<span class="detail-date">' + escapeHtml(a.subfield) + '</span>' : '')
+    + '<span class="detail-date">' + a.dateAdded + '</span>'
+    + '</div>'
+    + '<h1>' + escapeHtml(a.title) + '</h1>'
+    + (a.researchers && a.researchers.length ? '<div class="detail-authors">👤 ' + escapeHtml(a.researchers.join(' · ')) + '</div>' : '')
+    + (a.institution ? '<div class="detail-institution">🏛️ ' + escapeHtml(a.institution) + '</div>' : '')
+    + '</div>'
+    + '<div class="detail-loading"><div class="loading-spinner"></div><p>正在加载完整内容…</p></div>'
+    + '</div>';
+  app.innerHTML = html;
+  window.scrollTo({ top: 0 });
 }
 
 function renderDetail(a) {
@@ -250,10 +335,10 @@ function renderDetail(a) {
     + '创新性评级：<span class="rating-stars">' + ratingStars + '</span>'
     + '</div>';
 
-  // Breakthrough
+  // Breakthrough（降级渲染时可能缺失，给出提示）
   html += '<div class="detail-section">'
     + '<h2><span class="section-icon">🔬</span> 核心突破</h2>'
-    + '<div class="section-body">' + escapeHtml(a.breakthrough) + '</div>'
+    + '<div class="section-body">' + (a.breakthrough ? escapeHtml(a.breakthrough) : '<div class="detail-placeholder">该条目缺少核心突破内容，或详情文件加载失败。</div>') + '</div>'
     + '</div>';
 
   // Significance
@@ -547,7 +632,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (input) {
     input.addEventListener('input', function () {
       state.searchQuery = this.value.trim();
-      if (state.currentView === 'home') renderHome();
+      if (state.currentView === 'home') { resetPagination(); renderHome(); }
     });
   }
 });

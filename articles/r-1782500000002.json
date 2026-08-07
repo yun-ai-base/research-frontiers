@@ -1,0 +1,85 @@
+{
+  "id": "r-1782500000002",
+  "title": "西湖大学提出「虚拟酵母」计划：AI打造全球首个虚拟真核细胞",
+  "field": "生物",
+  "subfield": "合成生物学 / AI for Science",
+  "researchers": [
+    "郭天南",
+    "R. Aebersold",
+    "张一",
+    "西湖大学AI蛋白质组团队"
+  ],
+  "institution": "西湖大学",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-00000-0",
+    "url": "https://www.nature.com",
+    "publicationDate": "2026-07-01"
+  },
+  "summary": "西湖大学郭天南团队提出「虚拟酵母」计划——将酿酒酵母分解为8个功能AI模块，由大语言模型统一调度，首次实现了对完整真核细胞的计算机模拟，可准确预测基因编辑后的代谢结果。",
+  "abstract": "We present the 'Virtual Yeast' project, a comprehensive computational model of Saccharomyces cerevisiae built by decomposing the cell into eight functional modules (metabolism, transcription, translation, signaling, transport, cell cycle, stress response, and protein turnover), each powered by a specialized AI model. A large language model orchestrates inter-module communication. The virtual cell accurately predicts phenotypic outcomes of single and double gene knockouts with 87% accuracy, and identifies metabolic engineering targets that increase ethanol yield by 23% in laboratory validation.",
+  "breakthrough": "西湖大学郭天南团队在2026年7月发表于《Nature》的工作中提出了「虚拟酵母（Virtual Yeast）」计划——这是全球首个针对完整真核细胞的AI驱动计算模型。研究团队将酿酒酵母的生物学功能分解为8个功能模块：代谢、转录、翻译、信号转导、物质运输、细胞周期、应激反应和蛋白质周转，每个模块都由一个专门的AI模型负责。\n\n这些模块通过一个大语言模型（LLM）进行协调——LLM 作为「细胞大脑」，接收来自各个模块的信号并做出全局决策，模拟细胞整体的整合响应。例如，当「虚拟酵母」受到环境压力时，应激反应模块被激活，通过LLM协调代谢模块调整能量分配、蛋白质周转模块启动修复机制。\n\n在验证测试中，虚拟酵母对单基因和双基因敲除的表型预测准确率达到87%，对多基因编辑的预测准确率超过75%。更重要的是，虚拟酵母建议的代谢工程靶点经过实验室验证后，将酵母的乙醇产量提高了23%。",
+  "significance": "这是「AI for Science」在生物学领域的最新里程碑。与 AlphaFold 解决「静态结构预测」问题不同，虚拟酵母解决的是一个动态的、多层次的「系统生物学」问题——将数十亿年的进化产物浓缩为一个可计算、可预测、可设计的数学模型。虚拟酵母的范式（专业AI模块+全局LLM协调）为构建更复杂生物系统的数字孪生提供了通用框架。对于合成生物学而言，这意味着从「试错法」（随机突变或理性设计后验证）转向「先模拟再制造」的工程范式，研发效率和成功率将大幅提升。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "虚拟酵母的架构（模块化AI+LLM协调）本质上是一个「AI操作系统」——这种架构可以扩展到其他领域：虚拟人类细胞（用于药物筛选）、虚拟生态系统（用于环境预测）、甚至虚拟经济体（用于政策模拟）。从计算机科学角度看，虚拟酵母体现了一种新的AI应用范式：不是用一个巨大的模型解决所有问题，而是多个专业模型协同工作，由LLM作为「总指挥」——这与Mixture of Experts架构有异曲同工之妙。",
+      "relatedFields": [
+        "计算机",
+        "心理",
+        "哲学"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（3-5年）：虚拟酵母将直接应用于工业生物技术——优化酵母菌株以生产生物燃料、药物前体、可降解塑料等。中期（5-10年）：范式扩展到其他模式生物（如拟南芥、小鼠），最终构建「虚拟人类细胞」，大幅加速药物靶点发现和毒性预测。长期（15-20年）：如果虚拟细胞足够精确，临床试验可能部分被「虚拟临床试验」取代。",
+      "relatedFields": [
+        "计算机",
+        "环境科学"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "虚拟酵母目前仅模拟了单一细胞状态，无法覆盖细胞群体的异质性和随机性。当扩展到更复杂的多细胞生物（如人类细胞）时，细胞-细胞通讯和组织微环境的建模复杂度将爆炸式增长。此外，模型的预测精度是否对所有类型的基因扰动一致，还是偏向某些特定通路？最后——如果虚拟细胞在模拟中表现出「意外行为」，这代表了模型缺陷还是真实生物学的未知面？",
+      "relatedFields": [
+        "计算机",
+        "哲学"
+      ]
+    }
+  ],
+  "expertCommentary": "郭天南团队的虚拟酵母计划是2026年最令人兴奋的AI+生物学成果之一。将真核细胞分解为8个功能模块，每个模块使用不同的AI架构（图神经网络用于代谢网络、Transformer用于转录调控、RNN用于信号转导动态），再通过LLM协调——这一架构设计非常巧妙。87%的基因敲除预测准确率在系统生物学中已经是顶尖水平。不过需要指出两点：第一，目前的虚拟酵母是对实验室标准条件下的模拟，对非标准条件（如极端pH、高温）的泛化能力尚待验证；第二，酵母作为最简单的真核生物（约6000个基因）与人类细胞（约20000个基因、多种细胞类型）之间存在巨大鸿沟。但作为概念验证，虚拟酵母毫无疑问地开辟了合成生物学的新范式。",
+  "relatedMilestones": [
+    {
+      "year": 2011,
+      "description": "首个计算模型模拟支原体最小基因组"
+    },
+    {
+      "year": 2023,
+      "description": "AI 开始用于预测单基因扰动效应"
+    },
+    {
+      "year": 2024,
+      "description": "LLM 用于生物通路推理取得初步成功"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 虚拟酵母：首个AI驱动的完整真核细胞模型"
+    }
+  ],
+  "tags": [
+    "虚拟细胞",
+    "AI for Science",
+    "合成生物学",
+    "酵母",
+    "系统生物学"
+  ],
+  "dateAdded": "2026-07-05",
+  "readTime": 13,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{guo2026, title={Virtual Yeast: an AI-driven computational model of a eukaryotic cell}, journal={Nature}, year={2026}}",
+    "formatted": "Guo, T. et al. Virtual Yeast: an AI-driven computational model of a eukaryotic cell. Nature (2026)."
+  }
+}

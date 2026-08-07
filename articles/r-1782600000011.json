@@ -1,0 +1,77 @@
+{
+  "id": "r-1782600000011",
+  "title": "全球首款植入式脑机接口获批上市后，首例植入手术在上海华山医院完成",
+  "field": "医学",
+  "subfield": "脑机接口 / 神经康复",
+  "researchers": [
+    "华山医院神经外科团队"
+  ],
+  "institution": "复旦大学附属华山医院",
+  "source": {
+    "journal": "医院发布 / 环球科学要闻",
+    "doi": "",
+    "url": "https://www.huashan.org.cn",
+    "publicationDate": "2026-07-13"
+  },
+  "summary": "2026年7月13日，植入式脑机接口手部运动功能代偿系统获批上市后的首张处方在上海华山医院开出，全球首例植入手术完成，标志着这项曾局限于实验室与临床试验的前沿技术正式进入真实诊疗路径、并可医保报销。",
+  "abstract": "We report the world-first implantation surgery performed after a clinically approved invasive brain-computer interface (BCI) system received market authorization. On 13 July 2026, Huashan Hospital in Shanghai issued the first prescription for an epidural BCI system for hand motor-function compensation and completed the first implantation. The system decodes epidural electrocorticographic signals to infer movement intent, building an information pathway between the brain and an external compensatory device for patients with severe spinal-cord injury.",
+  "breakthrough": "2026年7月13日，复旦大学附属华山医院开出植入式脑机接口手部运动功能代偿系统获批上市后的首张处方，并完成全球首例植入手术。术中测试显示，系统采集的硬膜外脑电信号稳定、质量良好，患者术后生命体征平稳。\n\n这背后的时间线是：该系统于 2026年3月13日获批上市，4个月后进入真实诊疗；华山医院于4月28日完成医保价格备案，随后推进设备入院、患者筛选与术前评估，最终促成7月13日的首例植入。\n\n接受手术的患者10年前因车祸导致脊髓损伤，手部抓握功能受损、生活自理受限，经规范康复后功能改善进入平台期。植入系统通过采集并解码硬脑膜外脑电信号，识别运动意图，在大脑与外部功能代偿装置之间建立信息通路，预期将辅助实现手部抓握功能的代偿，改善生活自理能力。\n\n从「3月获批上市」到「4个月后进入真实诊疗」，一项曾仅限实验室与临床试验的前沿技术，由此成为符合条件患者的临床治疗路径——且医保可报销。",
+  "significance": "这是脑机接口从「研究原型」走向「常规医疗」的关键分水岭。\n\n过去十余年，侵入式脑机接口（如 Neuralink 等的动物与少数人体试验）不断刷屏，但几乎都停留在临床试验或个案演示阶段，未进入标准诊疗流程。华山医院这例的意义在于：它发生在一个「已获批上市、有医保价格备案、有患者筛选与术前评估规范」的真实医疗体系内——意味着 BCI 不再是炫技，而是可复制、可报销的临床手段。\n\n对重度脊髓损伤等运动功能受损患者，这意味着手部抓握等功能代偿第一次有了「从科研到病房」的清晰路径。它也向产业释放信号：脑机接口的商业化拐点可能比预期更早到来，监管、医保与临床路径的协同才是规模化的真正瓶颈。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "脑机接口是神经科学、材料工程、信号处理与康复医学的交汇点。从神经科学角度，它把「运动意图的解码」从抽象研究变成可植入、可长期稳定的临床信号通路；从卫生经济学角度，医保价格备案使这项高价技术首次具备「可负担、可规模化」的可能；从监管科学角度，它展示了高风险植入器械从审批到落地的完整闭环，为后续神经工程产品提供范本。",
+      "relatedFields": [
+        "医学",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（1-3年）：更多符合纳入标准的患者将接受植入，真实世界数据积累，适应症可能从手部抓握扩展到更多运动功能代偿。中期（3-7年）：若信号稳定性与时长持续提升，BCI 可能进入神经康复标准流程，并与外骨骼、功能性电刺激结合。长期（7-15年）：侵入式 BCI 或从「功能代偿」走向「感觉反馈闭环」，甚至成为瘫痪患者恢复部分自主性的常规选项。",
+      "relatedFields": [
+        "医学",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "长期植入的生物相容性与信号衰减仍是核心未知数：硬膜外电极数年后的信号质量能否维持？患者筛选标准如何界定才既有效又公平？更复杂的运动（如精细操作）能否被可靠解码？此外，脑信号隐私、网络安全（抗篡改）等伦理与安全问题，将随规模化而愈发突出。",
+      "relatedFields": [
+        "医学",
+        "计算机"
+      ]
+    }
+  ],
+  "expertCommentary": "这例的价值不在「技术多新颖」——硬膜外脑电解码运动意图的思路并非首创，真正重要的是「制度性落地」：获批上市、医保备案、临床路径、患者筛选规范同时就位，使 BCI 第一次以可复制、可报销的方式进入真实诊疗。对比海外仍多以临床试验/个案为主，华山医院这例代表了一种「监管-医保-临床」协同推进的范式，对脑机接口产业化意义深远。需保持的现实态度：单例成功尚不能证明大规模长期有效性，信号长期稳定性、适应症边界与成本控制仍是待解问题。但作为「从科研到病房」的分水岭，它当之无愧是 2026 年神经工程领域最受关注的临床里程碑之一。",
+  "relatedMilestones": [
+    {
+      "year": 2023,
+      "description": "Neuralink 等完成首批人体植入试验"
+    },
+    {
+      "year": 2026,
+      "description": "中国多款植入式脑机接口获国家药监局批准上市"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 全球首例获批上市后植入手术在上海华山医院完成"
+    }
+  ],
+  "tags": [
+    "脑机接口",
+    "神经康复",
+    "脊髓损伤",
+    "华山医院",
+    "植入式"
+  ],
+  "dateAdded": "2026-07-24",
+  "readTime": 10,
+  "status": "unread",
+  "starred": true,
+  "citations": {
+    "bibtex": "@article{huashan2026, title={World-first post-approval implanted BCI implantation surgery}, journal={Huashan Hospital release}, year={2026}}",
+    "formatted": "Huashan Hospital (Fudan University). World-first post-approval implanted BCI implantation surgery (2026-07-13)."
+  }
+}

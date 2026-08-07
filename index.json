@@ -1,0 +1,876 @@
+{
+  "generated": "2026-08-07",
+  "count": 30,
+  "research": [
+    {
+      "id": "r-ai-phage-20260807",
+      "title": "AI 首次从零生成完整功能性噬菌体基因组：进入生成式基因组设计时代",
+      "field": "生物",
+      "subfield": "合成生物学 / AI for Science",
+      "researchers": [
+        "斯坦福 Evo 团队",
+        "Patrick Hsu 等"
+      ],
+      "institution": "Stanford University",
+      "source": {
+        "journal": "Science",
+        "publicationDate": "2026-08-07"
+      },
+      "summary": "斯坦福团队用基因组语言模型 Evo 从零设计出 16 个完整且功能正常的噬菌体基因组，实验验证其可存活、能抑菌，其中部分还能突破耐药大肠杆菌菌株的防线，标志着 AI 引导的生成式基因组设计迈出关键一步。",
+      "innovationRating": 5,
+      "dateAdded": "2026-08-07",
+      "readTime": 12,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "AI",
+        "噬菌体",
+        "基因组设计",
+        "合成生物学",
+        "Evo",
+        "生物安全"
+      ]
+    },
+    {
+      "id": "r-originqc-psec-20260807",
+      "title": "中国团队破解超导量子计算「速度与保真度」矛盾：新型 PSE-CZ 量子门",
+      "field": "物理",
+      "subfield": "超导量子计算 / 量子门",
+      "researchers": [
+        "杨小燕",
+        "本源量子团队",
+        "中国科学技术大学团队"
+      ],
+      "institution": "本源量子计算科技（合肥）/ 中国科学技术大学",
+      "source": {
+        "journal": "Physical Review Letters",
+        "publicationDate": "2026-08-07"
+      },
+      "summary": "本源量子与中国科学技术大学联合团队提出参数空间扩展受控相位门（PSE-CZ）方案，在「本源悟空」超导量子计算机上验证：无需延长脉冲时长即可同时纠正泄漏与相位两类误差，让两比特量子门同时做到高速与高保真。",
+      "innovationRating": 4,
+      "dateAdded": "2026-08-07",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "量子计算",
+        "超导量子比特",
+        "量子门",
+        "PSE-CZ",
+        "本源悟空",
+        "PRL"
+      ]
+    },
+    {
+      "id": "r-milkyway-rise-20260807",
+      "title": "紫金山天文台首次发现：银河系分子气体外盘呈波纹状褶皱结构",
+      "field": "天文",
+      "subfield": "银河系结构 / 分子云巡天",
+      "researchers": [
+        "紫金山天文台团队"
+      ],
+      "institution": "中国科学院紫金山天文台",
+      "source": {
+        "journal": "Nature Astronomy",
+        "publicationDate": "2026-08-07"
+      },
+      "summary": "紫金山天文台团队基于「银河画卷」一氧化碳分子巡天数据，首次发现银河系分子气体外盘广泛存在波纹状褶皱结构——银河系外盘并非平滑翘曲盘，而是由翘曲与多尺度垂直褶皱共同构成的复杂系统。",
+      "innovationRating": 4,
+      "dateAdded": "2026-08-07",
+      "readTime": 8,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "银河系",
+        "分子云",
+        "翘曲结构",
+        "银河画卷",
+        "紫金山天文台",
+        "Nature Astronomy"
+      ]
+    },
+    {
+      "id": "r-ultra-3dpath-20260803",
+      "title": "复旦团队推出 ULTRA 平台：30 分钟生成胶质瘤毫米级三维病理图像",
+      "field": "医学",
+      "subfield": "医学影像 / 神经外科病理",
+      "researchers": [
+        "施立雪",
+        "季敏标"
+      ],
+      "institution": "复旦大学生物医学研究院 / 复旦大学物理学系",
+      "source": {
+        "journal": "Cell",
+        "publicationDate": "2026-08-03"
+      },
+      "summary": "复旦大学生物医学研究院施立雪团队联合物理学系季敏标团队在《细胞》发表研究，推出超快速三维病理技术平台 ULTRA：可在 30 分钟内产出毫米级三维病理图像，实现胶质瘤术中三维病理解析与肿瘤浸润边界精准测绘。",
+      "innovationRating": 4,
+      "dateAdded": "2026-08-07",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "三维病理",
+        "胶质瘤",
+        "受激拉曼散射",
+        "术中诊断",
+        "复旦大学",
+        "Cell"
+      ]
+    },
+    {
+      "id": "r-photonic-tc-20260802",
+      "title": "全球首个光子时间晶体问世：在皮秒尺度动态调控太赫兹光",
+      "field": "物理",
+      "subfield": "光子学 / 太赫兹技术",
+      "researchers": [
+        "Yannis Laplace",
+        "郭廷文"
+      ],
+      "institution": "École Polytechnique（巴黎综合理工学院）/ Thales",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-08-02"
+      },
+      "summary": "国际研究团队首次通过实验构建出全光学光子时间晶体——光学特性（反射率、共振频率）能在皮秒时间尺度被动态改变的「时间维度晶体」，为超快计算、新型通信与太赫兹激光器开辟新路径，成果发表于《自然》。",
+      "innovationRating": 5,
+      "dateAdded": "2026-08-07",
+      "readTime": 9,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "光子时间晶体",
+        "太赫兹",
+        "光子学",
+        "时间晶体",
+        "Nature",
+        "巴黎综合理工"
+      ]
+    },
+    {
+      "id": "r-qgenome-20260731",
+      "title": "量子计算机首次编码一个完整基因组：丁型肝炎病毒载入量子比特",
+      "field": "计算机",
+      "subfield": "量子计算 / 基因组学",
+      "researchers": [
+        "Sergii Strelchuk",
+        "Wellcome Sanger Institute 团队"
+      ],
+      "institution": "University of Oxford / Wellcome Sanger Institute",
+      "source": {
+        "journal": "arXiv (预印本)",
+        "publicationDate": "2026-07-31"
+      },
+      "summary": "科学家首次将一个完整基因组——丁型肝炎病毒（HDV）的基因组——编码并载入量子计算机，从原理上证明这类机器未来有望直接处理基因组学中的海量序列组合问题，是「量子+生物」交叉的标志性一步。",
+      "innovationRating": 4,
+      "dateAdded": "2026-07-31",
+      "readTime": 9,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "量子计算",
+        "基因组学",
+        "丁型肝炎病毒",
+        "泛基因组",
+        "Q4Bio"
+      ]
+    },
+    {
+      "id": "r-ibm-qadv-20260730",
+      "title": "IBM 与芝加哥大学演示可验证的量子优势：70 个逻辑量子比特破解经典不可解难题",
+      "field": "物理",
+      "subfield": "量子计算 / 量子纠错",
+      "researchers": [
+        "Jay Gambetta",
+        "Bill Fefferman",
+        "Soumik Ghosh"
+      ],
+      "institution": "IBM Quantum / University of Chicago",
+      "source": {
+        "journal": "arXiv",
+        "publicationDate": "2026-07-30"
+      },
+      "summary": "IBM 与芝加哥大学在量子纠错演示中编码 70 个逻辑量子比特，约 15 分钟完成一项经典模拟无法在可行时间内复现的计算，并首次在优势证明中提供可验证的保真度下界，宣告「可信任的量子优势时代」到来。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-31",
+      "readTime": 11,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "量子计算",
+        "量子优势",
+        "量子纠错",
+        "逻辑量子比特",
+        "IBM"
+      ]
+    },
+    {
+      "id": "r-silicon-qubit-20260730",
+      "title": "《自然》同期两篇：硅基量子芯片实现量子计算关键基本运算",
+      "field": "物理",
+      "subfield": "硅基量子计算 / 量子纠错",
+      "researchers": [
+        "HRL Laboratories 团队",
+        "Delft University of Technology 团队"
+      ],
+      "institution": "HRL Laboratories / Delft University of Technology",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-07-30"
+      },
+      "summary": "《自然》同期发表两组独立研究，证明基于硅的量子计算芯片能够执行对实现量子计算至关重要的基本运算——包括将控制电子集成于同一低温平台以进行重复纠错，以及用移动量子比特实现长程相互作用。",
+      "innovationRating": 4,
+      "dateAdded": "2026-07-31",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "硅基量子计算",
+        "量子纠错",
+        "量子比特",
+        "Nature",
+        "HRL",
+        "代尔夫特"
+      ]
+    },
+    {
+      "id": "r-sun-silver-20260728",
+      "title": "新研究：太阳中银元素丰度比此前估计高 55%，缓解「银元素缺失」之谜",
+      "field": "天文",
+      "subfield": "太阳物理 / 元素丰度",
+      "researchers": [
+        "乌普萨拉大学研究团队"
+      ],
+      "institution": "Uppsala University",
+      "source": {
+        "journal": "Astronomy & Astrophysics",
+        "publicationDate": "2026-07-28"
+      },
+      "summary": "瑞典乌普萨拉大学研究发现，太阳中的银元素丰度比此前估计高出 55%。新估值更接近陨石数据，有助于解释长期存在的「银元素缺失」（silver abundance problem）之谜。",
+      "innovationRating": 3,
+      "dateAdded": "2026-07-31",
+      "readTime": 7,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "太阳",
+        "元素丰度",
+        "银",
+        "光谱学",
+        "乌普萨拉大学"
+      ]
+    },
+    {
+      "id": "r-betapic-d-20260724",
+      "title": "JWST 在绘架座 β 系统发现隐匿的第三颗巨行星「绘架座 β d」",
+      "field": "天文",
+      "subfield": "系外行星 / 红外光谱",
+      "researchers": [
+        "Aidan Gibbs",
+        "JWST NIRSpec 团队"
+      ],
+      "institution": "UC San Diego / NASA",
+      "source": {
+        "journal": "Nature / NASA Science Release",
+        "publicationDate": "2026-07-24"
+      },
+      "summary": "天文学家利用 JWST 的 NIRSpec 光谱仪，通过检测行星大气化学特征（一氧化碳、甲烷、水蒸气吸收线），在明亮尘埃盘中「意外」发现了绘架座 β 系统的第三颗巨行星——绘架座 β d。",
+      "innovationRating": 4,
+      "dateAdded": "2026-07-31",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "系外行星",
+        "JWST",
+        "绘架座β",
+        "NIRSpec",
+        "大气光谱"
+      ]
+    },
+    {
+      "id": "r-1782600000001",
+      "title": "中国科学家领衔完成M87黑洞「空间光谱体检」：首张视界尺度谱指数图像",
+      "field": "物理",
+      "subfield": "黑洞物理 / 射电天文学",
+      "researchers": [
+        "赵杉杉",
+        "路如森",
+        "EHT Collaboration"
+      ],
+      "institution": "中国科学院上海天文台",
+      "source": {
+        "journal": "The Astrophysical Journal Letters",
+        "publicationDate": "2026-07-20"
+      },
+      "summary": "中国科学院上海天文台团队利用EHT和GMVA的1.3毫米与3.5毫米双频观测数据，首次获得M87黑洞事件视界尺度的空间分辨谱指数分布图像，标志着黑洞研究从「看见黑洞」迈向「读懂黑洞」。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-24",
+      "readTime": 11,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "黑洞",
+        "M87",
+        "事件视界望远镜",
+        "谱指数",
+        "射电天文学",
+        "上海天文台"
+      ]
+    },
+    {
+      "id": "r-1782600000005",
+      "title": "首次确认宜居带岩石行星拥有大气层：LHS 1140 b 大气氦逃逸证据",
+      "field": "天文",
+      "subfield": "系外行星大气 / 天体生物学",
+      "researchers": [
+        "C. Cherubim",
+        "S. Vissapragada",
+        "T. Cunningham",
+        "R. Wordsworth"
+      ],
+      "institution": "Harvard University / Harvard-Smithsonian Center for Astrophysics",
+      "source": {
+        "journal": "Science",
+        "publicationDate": "2026-07-16"
+      },
+      "summary": "天文学家通过智利麦哲伦·克莱望远镜探测到距地球48光年的宜居带岩石行星 LHS 1140 b 大气中氦气正在逃逸，首次确认了宜居带岩石行星拥有大气层的直接证据。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-24",
+      "readTime": 13,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "系外行星",
+        "大气层",
+        "宜居带",
+        "LHS 1140 b",
+        "天体生物学"
+      ]
+    },
+    {
+      "id": "r-1782600000012",
+      "title": "哈佛在量子硬件上编织非阿贝尔任意子：拓扑量子计算迈出「通用门」关键一步",
+      "field": "物理",
+      "subfield": "拓扑量子计算 / 量子信息",
+      "researchers": [
+        "Anasuya Lyons",
+        "Chiu Fan Bowen Lo",
+        "Ashvin Vishwanath",
+        "Ruben Verresen"
+      ],
+      "institution": "Harvard University",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-07-15"
+      },
+      "summary": "2026年7月15日，哈佛团队在《Nature》发表研究，利用非阿贝尔任意子（anyon）的编织与融合在量子硬件上实现了一套通用量子门，并可直接拓扑制备「魔法态」，为容错拓扑量子计算奠定了可扩展的基础。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-24",
+      "readTime": 13,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "拓扑量子计算",
+        "非阿贝尔任意子",
+        "量子信息",
+        "Nature",
+        "哈佛"
+      ]
+    },
+    {
+      "id": "r-1782600000004",
+      "title": "银河系中心首次直接检测到星际糖类：生命前体分子或源于太空",
+      "field": "天文",
+      "subfield": "天体化学 / 生命起源",
+      "researchers": [
+        "I. Jiménez-Serra",
+        "L. F. Rodríguez-Almeida",
+        "J. Martín-Pintado",
+        "P. de Vicente"
+      ],
+      "institution": "Consejo Superior de Investigaciones Científicas (CSIC) / INTA, Spain",
+      "source": {
+        "journal": "Nature Astronomy",
+        "publicationDate": "2026-07-14"
+      },
+      "summary": "天文学家利用射电望远镜在银河系中心附近的分子云 G+0.693-0.027 中首次直接检测到四碳糖——赤藓酮糖，这是人类首次在星际介质中确认真正的糖类分子，为生命前体分子的太空起源说提供了关键证据。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-24",
+      "readTime": 12,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "星际化学",
+        "生命起源",
+        "赤藓酮糖",
+        "分子云",
+        "前生命化学"
+      ]
+    },
+    {
+      "id": "r-1782600000011",
+      "title": "全球首款植入式脑机接口获批上市后，首例植入手术在上海华山医院完成",
+      "field": "医学",
+      "subfield": "脑机接口 / 神经康复",
+      "researchers": [
+        "华山医院神经外科团队"
+      ],
+      "institution": "复旦大学附属华山医院",
+      "source": {
+        "journal": "医院发布 / 环球科学要闻",
+        "publicationDate": "2026-07-13"
+      },
+      "summary": "2026年7月13日，植入式脑机接口手部运动功能代偿系统获批上市后的首张处方在上海华山医院开出，全球首例植入手术完成，标志着这项曾局限于实验室与临床试验的前沿技术正式进入真实诊疗路径、并可医保报销。",
+      "innovationRating": 4,
+      "dateAdded": "2026-07-24",
+      "readTime": 10,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "脑机接口",
+        "神经康复",
+        "脊髓损伤",
+        "华山医院",
+        "植入式"
+      ]
+    },
+    {
+      "id": "r-1782600000003",
+      "title": "GPT-5.6 Sol Ultra 独立证明50年未解数学猜想：AI数学推理的新纪元",
+      "field": "计算机",
+      "subfield": "AI for Mathematics / 大语言模型推理",
+      "researchers": [
+        "E. Knight",
+        "OpenAI"
+      ],
+      "institution": "OpenAI",
+      "source": {
+        "journal": "OpenAI Technical Report / arXiv preprint",
+        "publicationDate": "2026-07-10"
+      },
+      "summary": "OpenAI 的 GPT-5.6 Sol Ultra 模型利用64个并行子智能体，在不到1小时内独立生成了图论领域悬而未决50余年的「循环双覆盖猜想」的完整证明，标志着AI首次独立解决被列入维基百科「未解决数学问题」列表的重要难题。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-24",
+      "readTime": 14,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "AI数学",
+        "图论",
+        "循环双覆盖猜想",
+        "多智能体系统",
+        "GPT-5.6"
+      ]
+    },
+    {
+      "id": "r-1782600000002",
+      "title": "Anthropic 发现 Claude 内部「J-space」全局工作空间：AI涌现类意识信息处理结构",
+      "field": "心理",
+      "subfield": "AI可解释性 / 认知科学与意识理论",
+      "researchers": [
+        "Anthropic Interpretability Team"
+      ],
+      "institution": "Anthropic",
+      "source": {
+        "journal": "Anthropic Transformer Circuits Research / arXiv preprint",
+        "publicationDate": "2026-07-07"
+      },
+      "summary": "Anthropic 在 Claude 大模型内部发现了一个名为「J-space」的全局工作空间——一组在训练中自发涌现的神经模式，具备可报告性、可控性、内部推理和灵活使用等特性，与人类大脑意识的全局工作空间理论呈现出惊人的结构性相似。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-24",
+      "readTime": 15,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "AI可解释性",
+        "全局工作空间理论",
+        "J-space",
+        "AI意识",
+        "Claude"
+      ]
+    },
+    {
+      "id": "r-1782600000010",
+      "title": "希伯来大学把人类细胞变成「微型计算机」：用 RNA 反式剪接让细胞自主运算与决策",
+      "field": "生物",
+      "subfield": "合成生物学 / 细胞计算",
+      "researchers": [
+        "Hebrew University 研究团队"
+      ],
+      "institution": "Hebrew University of Jerusalem",
+      "source": {
+        "journal": "Nature Communications",
+        "publicationDate": "2026-07-07"
+      },
+      "summary": "2026年7月7日，以色列希伯来大学团队在《自然·通讯》发表研究，开发出将人类细胞编程为「微型计算机」的模块化框架：利用 RNA 反式剪接构建可处理信息、遵循复杂指令的人工遗传系统，使细胞能并行处理多路信号、执行二进制运算并自主决策，为智能治疗细胞奠定基础。",
+      "innovationRating": 4,
+      "dateAdded": "2026-07-24",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "合成生物学",
+        "细胞计算",
+        "RNA反式剪接",
+        "智能细胞疗法",
+        "Nature Communications"
+      ]
+    },
+    {
+      "id": "r-1782600000013",
+      "title": "量子计算机首次算清核聚变燃料材料：IBM 携手橡树岭在 QPU 上破解氚增殖盐 FLiBe",
+      "field": "物理",
+      "subfield": "量子计算 / 核聚变材料",
+      "researchers": [
+        "Tom Beck",
+        "Kenneth Merz",
+        "Jerry Chow"
+      ],
+      "institution": "Oak Ridge National Laboratory / Cleveland Clinic / IBM",
+      "source": {
+        "journal": "arXiv preprint (IBM Newsroom 发布)",
+        "publicationDate": "2026-07-06"
+      },
+      "summary": "2026年7月6日，橡树岭国家实验室、克利夫兰诊所与 IBM 团队在量子计算机上首次计算了核聚变增殖包层熔融盐 FLiBe 的九种分子构型，这是量子计算机首次用于此类聚变燃料材料计算，为优化氚增殖、破解聚变能源燃料瓶颈打开新路径。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-24",
+      "readTime": 12,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "量子计算",
+        "核聚变",
+        "FLiBe",
+        "氚增殖",
+        "IBM"
+      ]
+    },
+    {
+      "id": "r-1782500000002",
+      "title": "西湖大学提出「虚拟酵母」计划：AI打造全球首个虚拟真核细胞",
+      "field": "生物",
+      "subfield": "合成生物学 / AI for Science",
+      "researchers": [
+        "郭天南",
+        "R. Aebersold",
+        "张一",
+        "西湖大学AI蛋白质组团队"
+      ],
+      "institution": "西湖大学",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-07-01"
+      },
+      "summary": "西湖大学郭天南团队提出「虚拟酵母」计划——将酿酒酵母分解为8个功能AI模块，由大语言模型统一调度，首次实现了对完整真核细胞的计算机模拟，可准确预测基因编辑后的代谢结果。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-05",
+      "readTime": 13,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "虚拟细胞",
+        "AI for Science",
+        "合成生物学",
+        "酵母",
+        "系统生物学"
+      ]
+    },
+    {
+      "id": "r-1782500000004",
+      "title": "江门中微子实验（JUNO）首个成果：地下700米精确测量中微子振荡",
+      "field": "物理",
+      "subfield": "粒子物理 / 中微子物理",
+      "researchers": [
+        "王贻芳",
+        "Y. F. Li",
+        "J. T. Liu",
+        "JUNO Collaboration"
+      ],
+      "institution": "中国科学院高能物理研究所",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-06-11"
+      },
+      "summary": "江门中微子实验（JUNO）基于59天运行数据，首次完成对中微子质量平方差和混合角的高精度测量，精度较此前全球数十年综合结果提升1.6倍。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-05",
+      "readTime": 13,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "中微子",
+        "JUNO",
+        "粒子物理",
+        "振荡参数",
+        "大科学装置"
+      ]
+    },
+    {
+      "id": "r-1718500000000",
+      "title": "自监督多模态大模型在抗体设计上达到实验级精度",
+      "field": "计算机",
+      "subfield": "AI for Science / 蛋白质设计",
+      "researchers": [
+        "J. Jumper",
+        "R. Wu",
+        "K. Lee",
+        "Y. Shen"
+      ],
+      "institution": "DeepMind / 华盛顿大学",
+      "source": {
+        "journal": "Nature Biotechnology",
+        "publicationDate": "2026-06-01"
+      },
+      "summary": "DeepMind基于AlphaFold架构升级的新模型在从头设计高亲和力抗体方面取得成功，体外实验验证率超过90%。",
+      "innovationRating": 5,
+      "dateAdded": "2026-06-20",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "AI for Science",
+        "抗体设计",
+        "蛋白质工程",
+        "AlphaFold",
+        "药物发现"
+      ]
+    },
+    {
+      "id": "r-1782500000001",
+      "title": "Google DeepMind 发布 AI Co-Scientist：多Agent自主系统加速科学发现",
+      "field": "计算机",
+      "subfield": "AI for Science / 多Agent系统",
+      "researchers": [
+        "J. Jumper",
+        "P. Kohli",
+        "D. Hassabis",
+        "Google DeepMind"
+      ],
+      "institution": "Google DeepMind / Google Research",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-05-20"
+      },
+      "summary": "DeepMind 推出多Agent AI 系统，能够自主生成、辩论和实验验证科学假说，已在抗微生物耐药性、植物免疫和肝纤维化三个真实课题中产出可验证的新发现。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-05",
+      "readTime": 13,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "AI for Science",
+        "多Agent系统",
+        "科学发现",
+        "DeepMind",
+        "药物研发"
+      ]
+    },
+    {
+      "id": "r-1718900000000",
+      "title": "JWST 在系外行星 K2-18b 大气中确认生物标志物 DMS 的存在",
+      "field": "天文",
+      "subfield": "系外行星大气",
+      "researchers": [
+        "N. Madhusudhan",
+        "S. Constantinou",
+        "M. Edler"
+      ],
+      "institution": "University of Cambridge",
+      "source": {
+        "journal": "The Astrophysical Journal Letters",
+        "publicationDate": "2026-05-20"
+      },
+      "summary": "韦布望远镜在 K2-18b 大气光谱中高置信度检测到二甲基硫醚（DMS），在地球上 DMS 仅由微生物产生。",
+      "innovationRating": 5,
+      "dateAdded": "2026-06-23",
+      "readTime": 14,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "系外行星",
+        "生物标志物",
+        "JWST",
+        "K2-18b",
+        "地外生命"
+      ]
+    },
+    {
+      "id": "r-1782500000000",
+      "title": "MiCRo 脑启发架构：LLM 模拟人脑分工实现可控推理与专家切换",
+      "field": "心理",
+      "subfield": "认知科学与AI认知",
+      "researchers": [
+        "D. L. K. Yamins",
+        "A. Mathis",
+        "M. H. R. Amiri",
+        "EPFL 计算神经科学团队"
+      ],
+      "institution": "EPFL（洛桑联邦理工学院）/ MIT",
+      "source": {
+        "journal": "ICLR 2026",
+        "publicationDate": "2026-05-10"
+      },
+      "summary": "EPFL 团队设计了一种模拟人脑功能分区的 LLM 架构（MiCRo），将模型划分为语言、逻辑、社会推理和世界知识四个专家模块，用户可在推理时选择或抑制特定模块，打破了传统LLM的「黑箱」困境。",
+      "innovationRating": 4,
+      "dateAdded": "2026-07-05",
+      "readTime": 12,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "LLM架构",
+        "模块化AI",
+        "可解释AI",
+        "认知科学",
+        "脑启发AI"
+      ]
+    },
+    {
+      "id": "r-1718800000000",
+      "title": "通过表观遗传重编程实现人类神经元功能性再生",
+      "field": "生物",
+      "subfield": "神经科学与再生医学",
+      "researchers": [
+        "Z. Liu",
+        "Y. Zhang",
+        "H. Wu"
+      ],
+      "institution": "西湖大学 / 复旦大学",
+      "source": {
+        "journal": "Cell",
+        "publicationDate": "2026-05-05"
+      },
+      "summary": "研究人员通过 CRISPR 介导的表观遗传编辑，成功在成年小鼠脑内将胶质细胞原位转分化为功能性神经元，并恢复了阿尔茨海默模型小鼠的记忆功能。",
+      "innovationRating": 5,
+      "dateAdded": "2026-06-23",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "神经再生",
+        "表观遗传",
+        "CRISPR",
+        "阿尔茨海默",
+        "转分化"
+      ]
+    },
+    {
+      "id": "r-1718700000000",
+      "title": "大语言模型展现出无法被简单归纳的抽象推理能力",
+      "field": "心理",
+      "subfield": "认知科学与AI认知",
+      "researchers": [
+        "S. Chung",
+        "N. Goyal",
+        "M. McCloskey"
+      ],
+      "institution": "Johns Hopkins University / DeepMind",
+      "source": {
+        "journal": "Nature Human Behaviour",
+        "publicationDate": "2026-04-28"
+      },
+      "summary": "系统性的实验发现，GPT-4 及更大的模型在抽象推理任务上展现出的能力无法用简单的「统计模式匹配」或「记忆检索」来解释，表现出近似人类的概念泛化能力。",
+      "innovationRating": 4,
+      "dateAdded": "2026-06-22",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "大语言模型",
+        "认知科学",
+        "抽象推理",
+        "涌现",
+        "心灵哲学"
+      ]
+    },
+    {
+      "id": "r-1782500000003",
+      "title": "土卫二海洋中确认生命关键元素磷的存在：地外宜居性再添铁证",
+      "field": "天文",
+      "subfield": "天体生物学 / 行星科学",
+      "researchers": [
+        "J. H. Waite",
+        "F. Postberg",
+        "S. Kempf",
+        "C. R. Glein"
+      ],
+      "institution": "NASA / 西南研究院 / 柏林自由大学",
+      "source": {
+        "journal": "Nature Astronomy",
+        "publicationDate": "2026-04-15"
+      },
+      "summary": "通过重新分析卡西尼号探测器数据，研究团队在土卫二喷射的冰粒中检测到含磷化合物，确认其地下海洋中存在生命必需的六大元素之一——磷。",
+      "innovationRating": 5,
+      "dateAdded": "2026-07-05",
+      "readTime": 13,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "土卫二",
+        "地外海洋",
+        "磷",
+        "天体生物学",
+        "卡西尼号"
+      ]
+    },
+    {
+      "id": "r-1719000000000",
+      "title": "量子纠错阈值突破：超导量子处理器实现逻辑量子比特的容错门操作",
+      "field": "物理",
+      "subfield": "量子计算",
+      "researchers": [
+        "S. Krinner",
+        "N. Lacroix",
+        "A. Remm",
+        "C. Eichler"
+      ],
+      "institution": "ETH Zurich",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-04-15"
+      },
+      "summary": "超导量子处理器首次在实验中实现了低于表面码纠错阈值的逻辑门操作，证明容错量子计算在工程上是可行的。",
+      "innovationRating": 5,
+      "dateAdded": "2026-06-23",
+      "readTime": 12,
+      "status": "unread",
+      "starred": true,
+      "tags": [
+        "量子计算",
+        "量子纠错",
+        "表面码",
+        "超导量子比特",
+        "容错量子计算"
+      ]
+    },
+    {
+      "id": "r-1718600000000",
+      "title": "意识的整合信息理论获实验证据支持：局部脑损伤患者的信息整合与意识水平直接相关",
+      "field": "哲学",
+      "subfield": "意识科学",
+      "researchers": [
+        "M. A. Tagliazucchi",
+        "G. Tononi",
+        "L. D. Haber"
+      ],
+      "institution": "University of Wisconsin-Madison / UBA",
+      "source": {
+        "journal": "Science Advances",
+        "publicationDate": "2026-03-10"
+      },
+      "summary": "通过改进的 PCI（扰动复杂性指数）测量，研究发现不同脑区损伤患者的意识水平与大脑网络的整合信息能力呈高度正相关，为意识的整合信息理论提供了关键的临床证据。",
+      "innovationRating": 4,
+      "dateAdded": "2026-06-21",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "意识",
+        "整合信息理论",
+        "神经科学",
+        "临床神经科学",
+        "PCI"
+      ]
+    }
+  ]
+}

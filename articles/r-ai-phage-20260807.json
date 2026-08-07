@@ -1,0 +1,79 @@
+{
+  "id": "r-ai-phage-20260807",
+  "title": "AI 首次从零生成完整功能性噬菌体基因组：进入生成式基因组设计时代",
+  "field": "生物",
+  "subfield": "合成生物学 / AI for Science",
+  "researchers": [
+    "斯坦福 Evo 团队",
+    "Patrick Hsu 等"
+  ],
+  "institution": "Stanford University",
+  "source": {
+    "journal": "Science",
+    "doi": "10.1126/science.aec2657",
+    "url": "https://www.science.org/doi/10.1126/science.aec2657",
+    "publicationDate": "2026-08-07"
+  },
+  "summary": "斯坦福团队用基因组语言模型 Evo 从零设计出 16 个完整且功能正常的噬菌体基因组，实验验证其可存活、能抑菌，其中部分还能突破耐药大肠杆菌菌株的防线，标志着 AI 引导的生成式基因组设计迈出关键一步。",
+  "abstract": "We use the Evo genome language model to design complete functional bacteriophage genomes from scratch. Of hundreds of candidates, 16 engineered phages (e.g. Evo-Phi36) were experimentally confirmed viable and lytic, with some overcoming two Escherichia coli strains resistant to natural PhiX174, demonstrating AI-driven generative genome design.",
+  "breakthrough": "2026年8月7日，最新一期《科学》杂志发表斯坦福大学团队的研究：利用此前开发的 Evo 基因组语言模型，结合计算生物学方法与实验筛选，从零生成了完整且功能正常的噬菌体基因组。\n\n团队以研究充分的 ΦX174 噬菌体为模型，通过计算设计了数百个候选基因组，随后通过实验从中识别出 16 个具有功能的人工噬菌体。这些工程噬菌体的基因序列和结构存在明显差异，部分性能与自然界同类噬菌体相当。更关键的是，一些新设计的噬菌体能够克服两种对 ΦX174 产生耐药性的大肠杆菌菌株的抗药性——生成噬菌体混合物经 1 至 2 次传代即可抑制耐药菌生长，而天然 ΦX174 类混合物 5 次传代后仍未产生同样效果。\n\n长期以来，由于基因、调控序列与其他遗传元件之间复杂的相互作用，从零设计功能性基因组被视为科学界的重大挑战。这项成果被评价为「AI 引导的基因组设计向前迈出重要一步」，意味着基因组设计有望与测序、合成、编辑一样成为核心生物技术。",
+  "significance": "这标志着人类进入「生成式基因组设计」时代。此前 AI 设计多聚焦单个基因或基因回路，而完整基因组对序列组成高度敏感、单个突变就可能使其失活，需要通用框架。Evo 模型在海量 DNA 序列（含 200 多万个噬菌体基因组）上预训练，能生成「自带可折叠结构」的完整基因组。\n\n应用前景直接指向噬菌体疗法：用 AI 快速生成针对耐药细菌的新型噬菌体，为应对快速进化的细菌病原体提供新路径。团队同时明确指出，AI 设计和合成功能性病毒基因组带来不可忽视的生物安全问题——同期观点文章也强调，问题已不是「是否会出现」，而是「社会能否建立有效监督机制」，在模型层面对敏感病毒序列做防护（如排除训练数据）是降低风险的关键手段。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "这是「AI for Science」的又一范式案例：语言模型学的是 DNA「语法」而非语义规则，却能生成有功能的生物系统。它把深度学习、合成生物学、结构生物学（冷冻电镜验证新蛋白组合）串成一条完整流水线，预示未来设计范围可扩展到细菌、真菌乃至更复杂基因组。",
+      "relatedFields": [
+        "计算机",
+        "生物"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（2-3年）：AI 噬菌体进入耐药菌感染的动物实验与临床前研究。中期（5年）：生成式设计扩展到更大基因组与代谢通路工程。长期（10年）：若生物安全治理框架成熟，生成式基因组设计将像今天的基因合成一样成为常规科研工具。",
+      "relatedFields": [
+        "医学",
+        "生物"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "AI 生成基因组的「可预测性」边界在哪？生成序列超出训练分布后会怎样？如何建立兼顾创新与安全的生物安保机制——敏感序列是否应从训练数据中排除？生成式设计的通用性能否从噬菌体扩展到真核基因组？",
+      "relatedFields": [
+        "生物",
+        "计算机"
+      ]
+    }
+  ],
+  "expertCommentary": "这是本周乃至本年度最具分量的 AI 生物成果之一。关键不在「生成 16 个噬菌体」本身，而在于它打通了「语言模型设计 → 实验验证 → 功能超越天然品系」的闭环，并且坦然把生物安全风险摆在桌面上讨论——这种透明度在同类工作中少见。Evo-Φ36 能克服耐药菌株尤其值得注意，它说明 AI 生成的序列不是天然基因组的简单重排，而是可能探索到了人类未曾设计过的功能空间。当然，噬菌体基因组（约 5kb）与人类基因组（3Gb）之间仍有数量级鸿沟，通用性尚待验证。",
+  "relatedMilestones": [
+    {
+      "year": 2003,
+      "description": "人类基因组计划完成，测序进入新时代"
+    },
+    {
+      "year": 2024,
+      "description": "Evo 基因组语言模型发布，展示基因预测与设计能力"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 AI 首次从零生成完整功能性噬菌体基因组（Science）"
+    }
+  ],
+  "tags": [
+    "AI",
+    "噬菌体",
+    "基因组设计",
+    "合成生物学",
+    "Evo",
+    "生物安全"
+  ],
+  "dateAdded": "2026-08-07",
+  "readTime": 12,
+  "status": "unread",
+  "starred": true,
+  "citations": {
+    "bibtex": "@article{hsu2026evophage, title={Generative design of complete functional bacteriophage genomes}, journal={Science}, year={2026}, doi={10.1126/science.aec2657}}",
+    "formatted": "Stanford University. Generative design of complete functional bacteriophage genomes. Science (2026)."
+  }
+}

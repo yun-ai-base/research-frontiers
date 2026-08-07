@@ -1,0 +1,81 @@
+{
+  "id": "r-1782600000003",
+  "title": "GPT-5.6 Sol Ultra 独立证明50年未解数学猜想：AI数学推理的新纪元",
+  "field": "计算机",
+  "subfield": "AI for Mathematics / 大语言模型推理",
+  "researchers": [
+    "E. Knight",
+    "OpenAI"
+  ],
+  "institution": "OpenAI",
+  "source": {
+    "journal": "OpenAI Technical Report / arXiv preprint",
+    "doi": "",
+    "url": "https://openai.com",
+    "publicationDate": "2026-07-10"
+  },
+  "summary": "OpenAI 的 GPT-5.6 Sol Ultra 模型利用64个并行子智能体，在不到1小时内独立生成了图论领域悬而未决50余年的「循环双覆盖猜想」的完整证明，标志着AI首次独立解决被列入维基百科「未解决数学问题」列表的重要难题。",
+  "abstract": "We report that GPT-5.6 Sol Ultra has generated a complete proof of the Cycle Double Cover Conjecture, a graph theory problem open for over 50 years. The model employed 64 parallel sub-agents with dynamic task management, maintaining research route diversity and deploying adversarial agents for error-checking. The proof reduces the conjecture to cubic graphs, leverages the 8-flow theorem, and constructs edge labeling over GF(3) to show every edge belongs to exactly two cycles. The computation completed in under one hour, despite an 8-hour compute budget.",
+  "breakthrough": "2026年7月10日，OpenAI 宣布其旗舰模型 GPT-5.6 Sol Ultra 成功生成了「循环双覆盖猜想」（Cycle Double Cover Conjecture）的完整证明。这一猜想由数学家 George Szekeres（1973年）和 Paul Seymour（1979年）分别独立提出，是图论领域最重要的公开难题之一，已被列入维基百科「未解决数学问题」列表超过50年。\n\n该猜想的内容是：对于任意无桥图（bridgeless graph），是否存在一组循环（cycle），使得图中的每一条边都恰好出现在两个循环中？\n\nGPT-5.6 Sol Ultra 的证明过程极为引人注目：模型被要求最多同时调用64个并行子智能体（subagents）；动态管理各智能体的工作内容，在早期阶段保持研究路线多样性——不同智能体分别尝试不同数学表示方法、代数思路以及结构归纳；安排专门的「对抗智能体」（Adversarial Agents）负责寻找漏洞、边界情况以及潜在错误；禁止联网搜索资料，拒绝仅证明特殊情况或不完整证明，必须通过对抗式验证检查常见数学错误。\n\n系统原本预留了8小时计算时间，但最终仅耗时约1小时便完成全部证明。证明的核心步骤包括：将原猜想归约为三次图（Cubic Graph）问题；利用8-流定理（8-flow theorem）；通过 GF(3)（三元有限域）上的线性代数构造边标记（Edge Labeling），最终证明每条边都能恰好属于两个环。\n\n英国曼彻斯特大学数学家 Thomas Bloom 评价这是一个「非常漂亮的证明」——简洁、基础、使用的方法并不复杂，如果当年有人想到，20世纪80年代就有可能完成。",
+  "significance": "如果这一证明通过数学界同行评审，它将标志着大型语言模型首次独立解决了一个被广泛认可的重要数学难题。此前 AI 在数学领域的成果（如 DeepMind 在帽子集合问题上的研究、AI 在纽结理论方面的突破）都属于人类与AI协同完成，而非AI独立完成完整证明。\n\n更深层的意义在于：AI 最大的优势可能不是提出全新的数学概念，而是在不断尝试各种细微变化时具有远超人类的耐心。人类数学家通常会尝试一种自然的方法，如果失败了很可能就会放弃；而AI会继续不断尝试各种细微变化。这种「穷举式探索」与「创造性直觉」的结合，可能代表了一种新的数学发现范式。\n\n这一成果也引发了关于数学发现本质的深刻讨论：如果AI能够系统性地搜索证明空间，那么数学研究中「创造力」的角色是否需要重新定义？",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "这一成果对数学哲学和认知科学都有深远影响。从数学哲学角度，它挑战了「数学发现需要人类直觉」的传统观点——如果AI可以系统性地搜索证明空间并找到正确路径，那么「数学美」和「数学直觉」是否只是对高效搜索策略的主观描述？从认知科学角度，GPT-5.6 的多智能体架构（生成+对抗验证）模仿了数学共同体的运作方式，这是否意味着「数学推理」可以从「个体认知」扩展到「群体计算」？",
+      "relatedFields": [
+        "哲学",
+        "心理"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（1-2年）：AI辅助数学证明将从图论扩展到其他数学分支（组合学、数论、拓扑），形成「AI提出证明→人类验证」的标准流程。中期（3-5年）：AI可能开始提出新的数学猜想，数学发现的速度将显著加速。长期（10年）：如果AI数学推理能力持续提升，某些数学领域可能面临「问题枯竭」。",
+      "relatedFields": [
+        "哲学",
+        "心理"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "这份证明目前尚未经过正式同行评审，历史上循环双覆盖猜想曾多次出现「证明」后被发现漏洞的情况。证明未引用任何已有文献，这是AI自动生成数学论文的普遍问题。此外，证明未使用Lean等形式化验证工具进行机器验证。更根本的问题是：AI的「证明搜索」是否真正理解了数学概念，还是只是在模式空间中进行高维匹配？",
+      "relatedFields": [
+        "哲学"
+      ]
+    }
+  ],
+  "expertCommentary": "这是2026年AI与数学交叉领域最具争议性也最具突破性的成果。从技术角度看，GPT-5.6 的多智能体策略（64个并行子智能体+对抗验证）设计精巧——它不仅生成证明，还主动寻找漏洞，这种「红蓝对抗」式的自验证机制是AI数学推理的重要创新。Thomas Bloom 的评价值得关注：证明使用的都是几十年前已有的经典工具（8-流定理、GF(3)线性代数），这说明AI的优势不在于发明新工具，而在于以超人的耐心和系统性在已有工具空间中搜索正确组合。但必须强调几个关键限制：第一，证明尚未通过同行评审；第二，证明未引用相关文献，说明AI缺乏对数学文献的整合能力；第三，计算成本约275-485美元是在「禁止联网搜索」的受控条件下完成的。总体而言，这是一个里程碑式的工作，但需要数学界的严格验证才能最终确立其地位。",
+  "relatedMilestones": [
+    {
+      "year": 1973,
+      "description": "Szekeres 提出循环双覆盖猜想"
+    },
+    {
+      "year": 1979,
+      "description": "Seymour 独立提出该猜想"
+    },
+    {
+      "year": 2024,
+      "description": "DeepMind AI 在帽子集合问题上取得突破（人机协作）"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 GPT-5.6 独立生成50年未解猜想的完整证明"
+    }
+  ],
+  "tags": [
+    "AI数学",
+    "图论",
+    "循环双覆盖猜想",
+    "多智能体系统",
+    "GPT-5.6"
+  ],
+  "dateAdded": "2026-07-24",
+  "readTime": 14,
+  "status": "unread",
+  "starred": true,
+  "citations": {
+    "bibtex": "@article{openai2026, title={GPT-5.6 Sol Ultra proves the Cycle Double Cover Conjecture}, journal={OpenAI Technical Report}, year={2026}}",
+    "formatted": "Knight, E. GPT-5.6 Sol Ultra proves the Cycle Double Cover Conjecture. OpenAI Technical Report (2026)."
+  }
+}

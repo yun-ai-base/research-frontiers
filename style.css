@@ -269,6 +269,9 @@ img { max-width: 100%; height: auto; }
 .featured-card[data-field="心理"] { background: linear-gradient(135deg, #3a0a5e, #5a1a7a); }
 .featured-card[data-field="哲学"] { background: linear-gradient(135deg, #5e4a0a, #7a6a1a); }
 .featured-card[data-field="计算机"] { background: linear-gradient(135deg, #1a2a3e, #2a3a5e); }
+.featured-card[data-field="数学"] { background: linear-gradient(135deg, #1a1a5e, #2a2a8a); }
+.featured-card[data-field="化学"] { background: linear-gradient(135deg, #0a4a3a, #1a6a5a); }
+.featured-card[data-field="医学"] { background: linear-gradient(135deg, #5e0a2a, #8a2a4a); }
 
 /* --- Field Count Cards --- */
 .field-counts {
@@ -372,6 +375,9 @@ img { max-width: 100%; height: auto; }
 .field-tag-心理 { background: #7a2a9a; }
 .field-tag-哲学 { background: #9a7a0a; }
 .field-tag-计算机 { background: #2c3e50; }
+.field-tag-数学 { background: #3d4ea0; }
+.field-tag-化学 { background: #1e8a6a; }
+.field-tag-医学 { background: #c0395b; }
 
 /* --- Empty State --- */
 .empty-state {
@@ -823,3 +829,54 @@ img { max-width: 100%; height: auto; }
   word-break: break-all;
   margin-top: 8px;
 }
+
+/* ============ 分页/加载更多 ============ */
+.load-more-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 36px 0 24px;
+}
+.load-more-btn {
+  padding: 11px 32px;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: inherit;
+}
+.load-more-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.load-more-hint {
+  font-size: 12px;
+  color: var(--text3);
+}
+
+/* ============ 详情按需加载 ============ */
+.detail-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 72px 24px;
+  color: var(--text2);
+  font-size: 14px;
+}
+.detail-placeholder {
+  padding: 16px 20px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface2);
+  color: var(--text2);
+  font-size: 14px;
+}
+

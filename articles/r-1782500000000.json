@@ -1,0 +1,84 @@
+{
+  "id": "r-1782500000000",
+  "title": "MiCRo 脑启发架构：LLM 模拟人脑分工实现可控推理与专家切换",
+  "field": "心理",
+  "subfield": "认知科学与AI认知",
+  "researchers": [
+    "D. L. K. Yamins",
+    "A. Mathis",
+    "M. H. R. Amiri",
+    "EPFL 计算神经科学团队"
+  ],
+  "institution": "EPFL（洛桑联邦理工学院）/ MIT",
+  "source": {
+    "journal": "ICLR 2026",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2606.xxxxx",
+    "publicationDate": "2026-05-10"
+  },
+  "summary": "EPFL 团队设计了一种模拟人脑功能分区的 LLM 架构（MiCRo），将模型划分为语言、逻辑、社会推理和世界知识四个专家模块，用户可在推理时选择或抑制特定模块，打破了传统LLM的「黑箱」困境。",
+  "abstract": "We present MiCRo (Modular Cognitive Routing), a large language model architecture inspired by the functional specialization of the human brain. Unlike monolithic transformers, MiCRo divides its parameters into four specialized expert modules — language, logic, social reasoning, and world knowledge — each pre-trained on domain-specific data then fine-tuned jointly. A learned routing mechanism dynamically weights module contributions per token. Crucially, users can explicitly steer which modules dominate at inference time. MiCRo (7B total parameters) outperforms monolithic models of comparable size on domain-specific benchmarks while enabling unprecedented architectural interpretability.",
+  "breakthrough": "当前的主流 LLM（如 GPT-4、Claude、Llama）采用的是「单一巨型神经网络」架构——所有能力（语言、逻辑、知识、社交推理）混合在同一个模型中，内部工作机制完全不透明。EPFL 团队在2026年发表于 ICLR 的工作中提出了一个截然不同的架构：MiCRo（Modular Cognitive Routing，模块化认知路由）。\n\nMiCRo 将模型的全部参数划分为四个功能专家模块：语言模块（处理语法、句法和表达）、逻辑模块（负责推理、数学和规划）、社会推理模块（处理情感、意图和社交语境）、世界知识模块（存储事实性和常识性知识）。每个模块首先在各自领域的数据上进行预训练，然后通过联合微调学习协同工作。\n\n最关键的创新在于 MiCRo 的「可控路由」机制：在推理时，一个轻量的路由网络决定每个 token 对各模块的依赖权重。而用户可以通过调节模块权重向量，在推理时显式地「增强」或「抑制」特定能力——例如在解决数学问题时增强逻辑模块、抑制社会推理模块；在分析社交场景时反过来。",
+  "significance": "MiCRo 的意义在于同时解决了当前LLM的三个核心痛点：可解释性、可控性和效率。在可解释性方面，由于不同能力分布在不同的模块中，研究者可以分析每个模块对最终输出的贡献，而非面对一个完全的黑箱。在可控性方面，用户无需通过复杂的 prompt 工程来「引导」模型的行为，而是可以直接在架构层面控制模型的能力分配。在效率方面，模块化架构意味着可以针对性地更新或扩展特定模块（例如更新知识模块而不需要重新训练整个模型），大幅降低持续改进的成本。此外，MiCRo 的架构设计本身为认知科学提供了一个有趣的「计算模型」——如果AI可以通过模块化架构实现类似人脑的功能分工，那么人脑的功能分区理论获得了一个来自工程领域的间接支持。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "MiCRo 对认知神经科学提出了一个有趣的「逆向问题」：如果人工系统的功能模块化可以实现更好的推理能力，那么人脑的功能分区（如布罗卡区负责语言、前额叶负责逻辑）是否不仅仅是进化的副产品，而是计算优化的必然结果？从哲学角度看，MiCRo 的「可控推理」挑战了「理解」的定义——如果AI可以在不同的推理模式间切换，它是否真的「理解」了它正在处理的问题？",
+      "relatedFields": [
+        "哲学",
+        "生物"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（3年）：模块化架构将影响下一代LLM的设计思路，开源社区将出现多个基于模块化思想的模型变体。中期（5年）：模块化LLM的可控性将在医疗、法律等需要「可靠推理」的高风险领域得到率先应用——在这些场景中，抑制创造力、增强准确性和可复现性是关键需求。长期（10年）：模块化架构可能使得「个性化AI」成为可能——用户可以根据自己的需求定制AI的能力配置。",
+      "relatedFields": [
+        "计算机",
+        "哲学"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "MiCRo 的四个模块划分是否是最优的功能分解方案？增加更多模块（如「视觉模块」「音乐模块」「道德推理模块」）是否会提升性能？模块之间的信息隔离是否足够——恶意输入是否会「感染」所有模块？另外，路由机制本身是否可能成为新的「瓶颈」或「攻击面」？",
+      "relatedFields": [
+        "计算机",
+        "心理"
+      ]
+    }
+  ],
+  "expertCommentary": "MiCRo 是2026年最令人耳目一新的LLM架构创新。在当前大模型领域沉迷于「更大、更多数据、更多算力」的 Scaling Law 竞赛中，MiCRo 提供了一条不同的思路：更好的架构设计（而非单纯的规模增长）也可以带来能力的提升。7B参数的MiCRo在特定领域基准上超过了同规模的稠密模型，这本身就是一个有意义的证明。可控路由机制是真正的亮点——它允许用户在推理时实现「neuro-symbolic」风格的能力调配，这在以前的LLM中是完全不可能的。当然，MiCRo 也有其局限性：四个模块之间的信息隔离并非完美，路由机制引入了额外的计算开销，且模块划分的「正确性」缺乏理论基础。但作为概念验证，MiCRo 已经成功打开了「可解释LLM架构」这个重要的研究方向。",
+  "relatedMilestones": [
+    {
+      "year": 2017,
+      "description": "Transformer 架构提出，开启大模型时代"
+    },
+    {
+      "year": 2020,
+      "description": "GPT-3 展示大规模涌现能力但完全黑箱"
+    },
+    {
+      "year": 2023,
+      "description": "学界开始呼吁「可解释AI」和「可控AI」"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 MiCRo 模块化LLM实现架构级可控推理"
+    }
+  ],
+  "tags": [
+    "LLM架构",
+    "模块化AI",
+    "可解释AI",
+    "认知科学",
+    "脑启发AI"
+  ],
+  "dateAdded": "2026-07-05",
+  "readTime": 12,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{yamins2026, title={MiCRo: Modular Cognitive Routing for interpretable and controllable LLMs}, journal={ICLR 2026}, year={2026}}",
+    "formatted": "Yamins, D. L. K. et al. MiCRo: Modular Cognitive Routing for interpretable and controllable LLMs. ICLR 2026."
+  }
+}

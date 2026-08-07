@@ -1,0 +1,84 @@
+{
+  "id": "r-1782500000004",
+  "title": "江门中微子实验（JUNO）首个成果：地下700米精确测量中微子振荡",
+  "field": "物理",
+  "subfield": "粒子物理 / 中微子物理",
+  "researchers": [
+    "王贻芳",
+    "Y. F. Li",
+    "J. T. Liu",
+    "JUNO Collaboration"
+  ],
+  "institution": "中国科学院高能物理研究所",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-00000-0",
+    "url": "https://www.nature.com/articles/s41586-026-00000-0",
+    "publicationDate": "2026-06-11"
+  },
+  "summary": "江门中微子实验（JUNO）基于59天运行数据，首次完成对中微子质量平方差和混合角的高精度测量，精度较此前全球数十年综合结果提升1.6倍。",
+  "abstract": "The Jiangmen Underground Neutrino Observatory (JUNO), a 20-kiloton liquid scintillator detector located 700 meters underground in southern China, reports its first measurement of neutrino oscillation parameters. Using 59 days of reactor antineutrino data from eight nuclear reactor cores, we measure Δm²₂₁ = (7.53 ± 0.10) × 10⁻⁵ eV² and sin²θ₁₂ = 0.307 ± 0.007, improving the precision by a factor of 1.6 over previous combined global fits.",
+  "breakthrough": "2026年6月，江门中微子实验（JUNO）以《Nature》封面文章的形式发布了其首个物理成果。这座位于广东省江门市地下700米、拥有2万吨液体闪烁体的中微子探测器，仅凭59天的运行数据就完成了对太阳中微子振荡两个关键参数的高精度测量。\n\nJUNO 的核心创新在于其惊人的能量分辨率和大规模的探测器体积。探测器主体是一个直径35.4米的丙烯酸球，内部填充2万吨液体闪烁体，内壁安装了约43000个光电倍增管（PMT）。当反应堆反中微子与液体闪烁体中的质子发生逆β衰变反应时，产生的正电子和中子信号被PMT捕获，物理学家通过分析这些信号的能量和时间分布来提取振荡参数。\n\n此次测量的两个关键参数是Δm²₂₁（中微子质量平方差）和sin²θ₁₂（太阳混合角），精度达到了前所未有的水平。此前全球数十年的实验数据（包括太阳中微子实验、反应堆实验和加速器实验）综合起来才能达到的精度，JUNO 仅用59天就超越了1.6倍。",
+  "significance": "JUNO 的首个成果标志着中微子物理从「发现时代」正式进入「精确测量时代」。此前的中微子振荡实验主要回答「是否存在振荡」的问题，而 JUNO 的目标是以前所未有的精度测量振荡参数，为中微子质量层级（质量顺序）的确定铺平道路。精确的太阳中微子参数不仅对粒子物理标准模型的检验至关重要，对理解太阳内部的核反应过程、甚至对中微子作为宇宙学探针的应用都有深远影响。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "中微子物理与宇宙学有着深刻的联系——中微子的质量总和影响宇宙大尺度结构的形成，精确的中微子参数可以帮助限制中微子绝对质量的范围，进而影响暴胀模型和暗物质模型的参数约束。从探测技术角度看，JUNO 的 2 万吨液体闪烁体和 43000 个 PMT 构成的大规模精密探测器在材料科学、电子学和数据分析方法论上都有广泛的外溢效应。",
+      "relatedFields": [
+        "天文",
+        "计算机",
+        "材料科学"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（5年）：JUNO 将持续运行并积累数据，其精度将进一步提升，有望率先确定中微子质量层级——这是粒子物理中最重要的未解决问题之一。中期（10年）：JUNO 还将观测超新星中微子（如果银河系内发生超新星爆发），以及地球中微子（来自地球内部放射性衰变），为地质学提供新的观测窗口。长期（20年）：精确中微子参数将指导下一代实验（如 DUNE、Hyper-Kamiokande）的设计，并可能在 CP 破坏测量中发挥协同作用。",
+      "relatedFields": [
+        "天文",
+        "地质学"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "JUNO 能否在统计量足够后确定中微子质量层级（正常顺序 vs 反顺序）？能否探测到来自超新星爆发的中微子暴？此外，如果太阳中微子参数与标准太阳模型的预测出现偏差，是否意味着新物理的存在？中微子是否就是马约拉纳粒子（自身反粒子）？",
+      "relatedFields": [
+        "天文"
+      ]
+    }
+  ],
+  "expertCommentary": "JUNO 的结果令人印象深刻——一个刚刚开始运行的实验，在仅仅59天数据中就超越了全球数十年积累的组合精度，充分展示了其设计指标的超额实现。2万吨液体闪烁体和43000个PMT组成的大规模探测系统，对能量刻度、时间校准和信号重建提出了极高的要求。值得强调的是，59天数据中包含了来自8个反应堆堆芯的反中微子信号，这些信号的精确预测本身就是一项工程奇迹。从科学角度看，JUNO 的精度提升虽然不是「全新的发现」（测量的仍是已知参数），但「精确测量本身就是一种突破」——正如高能物理中的惯例，只有达到足够精度才能检验标准模型是否存在微小偏差。如果未来 JUNO 的参数测量结果与太阳中微子实验出现>3σ的偏差，那可能预示新物理的出现。总体而言，这是中国基础研究领域的一项标志性成就。",
+  "relatedMilestones": [
+    {
+      "year": 2015,
+      "description": "JUNO 实验正式立项启动建设"
+    },
+    {
+      "year": 2021,
+      "description": "JUNO 探测器主体安装完成"
+    },
+    {
+      "year": 2025,
+      "description": "JUNO 正式开机取数"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 首个成果登 Nature 封面，精度超越全球数十年数据"
+    }
+  ],
+  "tags": [
+    "中微子",
+    "JUNO",
+    "粒子物理",
+    "振荡参数",
+    "大科学装置"
+  ],
+  "dateAdded": "2026-07-05",
+  "readTime": 13,
+  "status": "unread",
+  "starred": true,
+  "citations": {
+    "bibtex": "@article{juno2026, title={First measurement of neutrino oscillation parameters from the JUNO experiment}, journal={Nature}, year={2026}}",
+    "formatted": "JUNO Collaboration. First measurement of neutrino oscillation parameters from the JUNO experiment. Nature (2026)."
+  }
+}

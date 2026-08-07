@@ -1,0 +1,78 @@
+{
+  "id": "r-1719000000000",
+  "title": "量子纠错阈值突破：超导量子处理器实现逻辑量子比特的容错门操作",
+  "field": "物理",
+  "subfield": "量子计算",
+  "researchers": [
+    "S. Krinner",
+    "N. Lacroix",
+    "A. Remm",
+    "C. Eichler"
+  ],
+  "institution": "ETH Zurich",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-00000-0",
+    "url": "https://www.nature.com",
+    "publicationDate": "2026-04-15"
+  },
+  "summary": "超导量子处理器首次在实验中实现了低于表面码纠错阈值的逻辑门操作，证明容错量子计算在工程上是可行的。",
+  "abstract": "Quantum error correction is essential for fault-tolerant quantum computing. Here we demonstrate a universal set of fault-tolerant gates on a logical qubit encoded in a distance-3 surface code on a superconducting quantum processor. We measure logical error rates below the surface code threshold for all gates, achieving a logical error rate of 0.03% per gate cycle.",
+  "breakthrough": "苏黎世联邦理工团队的这项工作实现了量子计算领域一个里程碑式的突破：首次在超导量子处理器上，针对逻辑量子比特完整实现了所有门操作的容错运行，且错误率低于表面码的纠错阈值。\n\n团队使用了一个由 17 个超导量子比特组成的距离-3 表面码，通过实时错误解码和反馈，将逻辑量子比特的相干时间提升到了单个物理量子比特的 10 倍以上。所有逻辑门的错误率均低于表面码的约 1% 阈值，最低达到 0.03%。\n\n这一成果的关键创新在于将实时纠错解码器 FPGA 化，将解码延迟降低到不足 1 微秒，远快于量子比特的解相干时间，使得反馈纠错真正变得实用。",
+  "significance": "这项研究的核心意义在于证明了容错量子计算不是理论幻想——它在一个足够大的超导量子处理器上被实际验证了。此成果虽然各个组件（纠错码、逻辑门、实时解码）在分别实验中已被验证，但将它们完整集成并达到阈值以下是第一次。这意味着构建实用量子计算机的最大工程障碍之一已经被克服。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "容错量子计算的突破将直接推动量子化学模拟领域：精确模拟分子基态能量所需的量子门数量巨大，只有容错量子计算机才能完成。同时，这一进展对密码学的影响是双面的——一方面加速了 Shor 算法的实用化威胁，另一方面也推动了量子密码学的发展需求。",
+      "relatedFields": [
+        "计算机",
+        "生物"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（5年）：逻辑量子比特数量从1增长到数十个，实现简单的量子化学模拟。中期（10年）：百逻辑比特级别，开始在药物分子设计中展现量子优势。长期（20年）：千逻辑比特规模，量子计算机开始对特定问题（大数分解、量子多体问题）产生实用价值。",
+      "relatedFields": [
+        "生物"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "逻辑量子比特的物理实现虽然迈出了关键一步，但量子比特之间的串扰、更高效纠错码的实现、以及如何将数千个逻辑量子比特互联仍是悬而未决的工程问题。此外，是否需要在软件层面发展更友好的量子编程范式，也是一个开放议题。",
+      "relatedFields": [
+        "计算机"
+      ]
+    }
+  ],
+  "expertCommentary": "这是2026年量子计算领域最重要的实验成果之一。ETH Zurich 团队的可贵之处在于解决了「实时解码」这个长期被忽视的工程瓶颈——此前大多数纠错实验都是离线解码，无法真正用于门操作期间的反馈。FPGA 解码器将延迟降至亚微秒级别是一个漂亮的工程创新。值得指出的是，距离-3 码只是最小可纠错的表面码，扩展到距离-5、距离-7 时解码器的复杂度将指数级增长。整体评价：方法扎实，结论可靠，是通往实用量子计算机的里程碑。",
+  "relatedMilestones": [
+    {
+      "year": 1995,
+      "description": "Shor 提出量子纠错码理论"
+    },
+    {
+      "year": 2014,
+      "description": "Google 实现表面码中逻辑量子比特的首次实验"
+    },
+    {
+      "year": 2023,
+      "description": "多种量子纠错码在各类平台上突破盈亏平衡点"
+    }
+  ],
+  "tags": [
+    "量子计算",
+    "量子纠错",
+    "表面码",
+    "超导量子比特",
+    "容错量子计算"
+  ],
+  "dateAdded": "2026-06-23",
+  "readTime": 12,
+  "status": "unread",
+  "starred": true,
+  "citations": {
+    "bibtex": "@article{krinner2026, title={Fault-tolerant gates on a logical qubit below the surface code threshold}, journal={Nature}, year={2026}}",
+    "formatted": "Krinner, S. et al. Fault-tolerant gates on a logical qubit below the surface code threshold. Nature (2026)."
+  }
+}

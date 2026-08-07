@@ -1,0 +1,78 @@
+{
+  "id": "r-1782600000010",
+  "title": "希伯来大学把人类细胞变成「微型计算机」：用 RNA 反式剪接让细胞自主运算与决策",
+  "field": "生物",
+  "subfield": "合成生物学 / 细胞计算",
+  "researchers": [
+    "Hebrew University 研究团队"
+  ],
+  "institution": "Hebrew University of Jerusalem",
+  "source": {
+    "journal": "Nature Communications",
+    "doi": "",
+    "url": "https://www.nature.com/ncomms/",
+    "publicationDate": "2026-07-07"
+  },
+  "summary": "2026年7月7日，以色列希伯来大学团队在《自然·通讯》发表研究，开发出将人类细胞编程为「微型计算机」的模块化框架：利用 RNA 反式剪接构建可处理信息、遵循复杂指令的人工遗传系统，使细胞能并行处理多路信号、执行二进制运算并自主决策，为智能治疗细胞奠定基础。",
+  "abstract": "We present a modular design framework that programs human cells into microscopic computers capable of autonomous computation and decision-making. Using RNA trans-splicing to fuse genetic fragments with natural and engineered regulatory elements, the system builds processor-like molecules that execute complex genetic programs in parallel, including a full adder for binary arithmetic and a biological multiplexer, while incorporating a safety mechanism that flags invalid or overloaded configurations.",
+  "breakthrough": "2026年7月7日，以色列希伯来大学科学家在《自然·通讯》发表研究，开发出一种全新方法，能将人类细胞编程为「微型计算机」，使其自主执行运算并作出决策。这一突破有望催生更智能的治疗细胞，可精准打击癌症等顽疾。\n\n长期以来，科学家一直梦想赋予细胞「识别疾病并自动应答」的能力，但引入外源遗传模块往往加重细胞代谢负荷、大量消耗自身资源。团队独辟蹊径，提出模块化设计框架，在细胞内创造出可处理信息、遵循复杂指令且易于扩展的人工遗传系统。\n\n其秘诀在于一种名为 RNA 反式剪接（RNA trans-splicing）的过程——它让遗传信息片段与团队设计的天然及人工调控元件精巧融合。这些元件中有一类酷似生物处理器的特殊分子，能根据预设遗传程序对关键遗传元件进行工程化调控，精准触发指定基因的表达。由于能以复杂运算方式并行处理多路信号，整套系统效率远胜以往设计。\n\n系统内置一个「全加法器」（full adder），可执行简单二进制数学运算，宛如计算机处理器的运算单元；还包括一款生物版「多路复用器」（multiplexer）——能从多个输入信号中遴选其一并转发，并以不同颜色荧光蛋白追踪信号。尤为巧妙的是，系统自带安全功能：一旦细胞检测到无效或过载配置，便发出特殊警示信号，未来有望触发保护性反应以防范医疗差错。\n\n为验证构想，团队对人类细胞编程令其产生白细胞介素-15（IL-15）——一种能激活抗癌免疫细胞的蛋白，使治疗性细胞能持续监测环境并自主反应。",
+  "significance": "这是「细胞计算」（cellular computing）从概念走向实用的重要一步，把合成生物学的目标从「让细胞生产某物」升级为「让细胞思考与决策」。\n\n传统基因线路多只能做简单的开关或线性响应，难以应对疾病微环境的复杂性。希伯来大学的框架引入真正的计算原语——加法器做二进制算术、多路复用器做信号路由——意味着细胞可在内部并行处理多条输入（如多种肿瘤标志物），按预设逻辑综合判断后，才触发治疗性输出（如 IL-15）。这接近于「把 if-then 逻辑写进活细胞」。\n\n其医学潜力直接：未来的智能治疗细胞可自主感知癌灶、区分健康与病变组织、按需释放药物，减少对全身化疗的依赖与副作用。内置的安全警示机制则回应了合成生物学长期的安全焦虑——当遗传程序出错或过载时，细胞能「报警」。\n\n更广义地看，它预示一种新范式：药物未来或许可像软件一样，用生物「代码」指示细胞何时、如何诊断并应对疾病。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "这项工作把合成生物学、计算机科学与医学治疗融合。从计算机科学角度，全加法器与多路复用器是数字电路的基本构件，如今在活细胞内以 RNA 分子实现，是「生物计算」理念的具体落地；从医学角度，它为「智能细胞疗法」提供了可编程底座，区别于当前固定的 CAR-T 等方案；从系统生物学角度，它展示细胞可被视为可重构的信息处理系统，而非单纯的生化反应器。",
+      "relatedFields": [
+        "生物",
+        "计算机",
+        "医学"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（2-4年）：研究将扩展可执行的指令集，并在类器官与动物模型中验证智能细胞对复杂病变的响应。中期（4-8年）：结合基因治疗递送，可编程细胞疗法可能进入早期临床试验，用于实体瘤等难以靶向的病症。长期（8-15年）：若安全性与可控性解决，「细胞即程序」或催生个性化、可远程重编程的细胞疗法，重塑药物研发范式。",
+      "relatedFields": [
+        "生物",
+        "医学"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "当前系统仍属原理验证：并行处理的信号路数有限，且依赖荧光报告间接观测。活细胞内的计算保真度如何随代际与微环境变化？生物分子「电路」的能耗与代谢负担是否会削弱细胞功能？最棘手的是安全与可控性——一旦可编程细胞进入人体，如何确保它只在目标组织「执行程序」、且可被外部关停？这些决定了其临床转化的天花板。",
+      "relatedFields": [
+        "生物",
+        "医学"
+      ]
+    }
+  ],
+  "expertCommentary": "这是合成生物学里「细胞计算」方向令人兴奋的进展。它的巧思在于用 RNA 反式剪接把遗传片段与调控元件融合，从而在活细胞内实打实地搭出全加法器与多路复用器这类计算原语——不是比喻，而是可并行处理多路输入、按逻辑触发输出的真实遗传线路。内置的安全警示机制也显示出对合成生物学安全焦虑的回应。需保持现实：论文仍是概念验证，路数有限、靠荧光间接观测，离临床智能细胞疗法尚有距离；且活细胞计算的保真度、代谢负担与可控性是长期难题。但作为「把 if-then 逻辑写进人类细胞」的清晰示范，它为可编程细胞疗法提供了有价值的新底座。",
+  "relatedMilestones": [
+    {
+      "year": 2000,
+      "description": "合成生物学兴起，基因线路（开关、振荡器）被构建"
+    },
+    {
+      "year": 2019,
+      "description": "CRISPR 等工具让细胞可编程性大幅提升"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 希伯来大学用 RNA 反式剪接把人类细胞编程为可运算的「微型计算机」"
+    }
+  ],
+  "tags": [
+    "合成生物学",
+    "细胞计算",
+    "RNA反式剪接",
+    "智能细胞疗法",
+    "Nature Communications"
+  ],
+  "dateAdded": "2026-07-24",
+  "readTime": 11,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{hebrewu2026, title={Programming human cells as autonomous computers via RNA trans-splicing}, journal={Nature Communications}, year={2026}}",
+    "formatted": "Hebrew University of Jerusalem. Programming human cells as microscopic computers. Nature Communications (2026)."
+  }
+}

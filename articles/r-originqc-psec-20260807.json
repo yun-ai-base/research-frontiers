@@ -1,0 +1,80 @@
+{
+  "id": "r-originqc-psec-20260807",
+  "title": "中国团队破解超导量子计算「速度与保真度」矛盾：新型 PSE-CZ 量子门",
+  "field": "物理",
+  "subfield": "超导量子计算 / 量子门",
+  "researchers": [
+    "杨小燕",
+    "本源量子团队",
+    "中国科学技术大学团队"
+  ],
+  "institution": "本源量子计算科技（合肥）/ 中国科学技术大学",
+  "source": {
+    "journal": "Physical Review Letters",
+    "doi": "",
+    "url": "https://journals.aps.org/prl",
+    "publicationDate": "2026-08-07"
+  },
+  "summary": "本源量子与中国科学技术大学联合团队提出参数空间扩展受控相位门（PSE-CZ）方案，在「本源悟空」超导量子计算机上验证：无需延长脉冲时长即可同时纠正泄漏与相位两类误差，让两比特量子门同时做到高速与高保真。",
+  "abstract": "We propose a parameter-space-extended controlled-Z gate (PSE-CZ) that splits the detuning in the pulse middle into two independently tunable parameters, enabling simultaneous correction of leakage and phase errors without prolonging the pulse. Validated on 20 pairs of two-qubit gates on the Origin Wukong superconducting processor, the scheme keeps high fidelity at gate times as short as 30-40 ns.",
+  "breakthrough": "2026年8月7日，安徽省量子计算芯片重点实验室消息：本源量子计算科技（合肥）有限公司与中国科学技术大学组成的研究团队提出新型量子门技术方案「参数空间扩展受控相位门」（PSE-CZ），成功破解超导量子计算领域长期存在的「速度与保真度相互制约」难题，成果发表于《物理评论快报》（PRL），实验验证在本源「本源悟空」超导量子计算机上完成。\n\n量子门类似传统计算机的逻辑门，是量子计算的基础运算单元。稳定高效的量子计算要求量子门同时具备超快操作速度与超高准确率，但二者长期矛盾：门运行越快，硬件波形失真、时序偏差带来的误差越显著；放慢速度保精度，又拖累整机效率。\n\n研究团队创新性地提出 PSE-CZ 方案：无需延长脉冲操作时长，而是将脉冲中间区域的失谐量拆分为两个独立可调参数——相当于给系统新增一枚「调节旋钮」，可同步纠正泄漏与相位两类误差，实现高速与高精度兼得。团队在「本源悟空」上选取 20 对两比特量子门测试，结果显示新方案有效降低短脉冲畸变引发的相干误差，使量子门性能更接近退相干极限；即使在 30–40 纳秒的极短门长下，PSE-CZ 仍保持优于传统 CZ 门的稳定性能。",
+  "significance": "这是超导量子计算工程层面的一次实质进展。量子门的「速度-保真度」矛盾是制约整机性能的关键瓶颈，PSE-CZ 用「多加一个可调参数」的低成本方式同时抑制两类误差，思路简洁且可推广——论文指出该方案不仅适配超导体系，还可推广至离子阱、固态自旋等多种量子计算平台。\n\n中国量子计算正从「比特数量」竞赛转向「系统实用性与工程化」竞争：5 月上线的「本源悟空-180」搭载 180 个计算比特，单比特门保真度 99.9%、双比特门 99%。PSE-CZ 这类面向「又快又准」的底层技术，是通往实用化容错量子计算的关键积累。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "「用额外自由度换取同时优化两个互相冲突的指标」是控制论与工程优化的通用思想，与脉冲整形、最优控制理论一脉相承；PSE-CZ 的可迁移性（离子阱/自旋平台）正源于此。",
+      "relatedFields": [
+        "计算机",
+        "物理"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（2-3年）：PSE-CZ 推广到更多量子门类型与更大规模芯片。中期（5年）：与量子纠错码结合，降低逻辑门错误率。长期（10年）：成为国产超导量子计算机向容错实用化演进的标准技术组件之一。",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "新增可调参数在更高比特数下的校准开销如何控制？PSE-CZ 与实时反馈解码能否协同？「速度-保真度」权衡被缓解后，下一个制约整机性能的瓶颈是什么（读取、互联还是制冷）？",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    }
+  ],
+  "expertCommentary": "PSE-CZ 的价值在于「低增量成本换双倍收益」：不延长脉冲、不加硬件，只把失谐量拆成两个独立参数，就同时压住了泄漏和相位两类误差——这种「巧劲」式创新比堆砌新硬件更有工程智慧。20 对门的实测与 30–40 纳秒极短门长下的稳定性验证给了结论可信度。值得注意其平台普适性声明，若在离子阱上复现，将是通用方法论。",
+  "relatedMilestones": [
+    {
+      "year": 2021,
+      "description": "本源量子推出「本源悟源」超导量子计算机"
+    },
+    {
+      "year": 2026,
+      "description": "「本源悟空-180」上线，180 计算比特"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 PSE-CZ 量子门发表 PRL，破解速度-保真度矛盾"
+    }
+  ],
+  "tags": [
+    "量子计算",
+    "超导量子比特",
+    "量子门",
+    "PSE-CZ",
+    "本源悟空",
+    "PRL"
+  ],
+  "dateAdded": "2026-08-07",
+  "readTime": 9,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{yang2026pse, title={Parameter-space-extended controlled-Z gate for high-speed high-fidelity superconducting quantum computing}, journal={Physical Review Letters}, year={2026}}",
+    "formatted": "Yang, X. et al. Parameter-space-extended controlled-Z gate. Phys. Rev. Lett. (2026)."
+  }
+}

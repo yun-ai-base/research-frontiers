@@ -1,0 +1,78 @@
+{
+  "id": "r-qgenome-20260731",
+  "title": "量子计算机首次编码一个完整基因组：丁型肝炎病毒载入量子比特",
+  "field": "计算机",
+  "subfield": "量子计算 / 基因组学",
+  "researchers": [
+    "Sergii Strelchuk",
+    "Wellcome Sanger Institute 团队"
+  ],
+  "institution": "University of Oxford / Wellcome Sanger Institute",
+  "source": {
+    "journal": "arXiv (预印本)",
+    "doi": "",
+    "url": "https://arxiv.org",
+    "publicationDate": "2026-07-31"
+  },
+  "summary": "科学家首次将一个完整基因组——丁型肝炎病毒（HDV）的基因组——编码并载入量子计算机，从原理上证明这类机器未来有望直接处理基因组学中的海量序列组合问题，是「量子+生物」交叉的标志性一步。",
+  "abstract": "We report the first encoding of a complete viral genome (hepatitis delta virus) into the quantum state of a quantum computer, demonstrating in principle that quantum hardware can load and represent biological sequence data for downstream quantum algorithms on pangenomes.",
+  "breakthrough": "2026年7月31日前后，英国牛津大学的 Sergii Strelchuk 与惠康桑格研究所（Wellcome Sanger Institute）的研究人员公布成果：他们首次将一个完整基因组——丁型肝炎病毒（HDV）的基因组——成功编码并载入量子计算机。\n\n人类基因组解码在21世纪初完成后，DNA 测序迎来爆炸式增长，传统计算机已越来越难以应对海量数据与激增的算力需求。这一瓶颈推动了替代方案的出现，而量子计算被认为是一条潜在路径。\n\nStrelchuk 团队开发的算法能够高效地压缩 DNA 序列，并将其编码为量子态。这项研究属于惠康（Wellcome）旗下高风险生物医学资助计划「量子生物计划」（Q4Bio，5000万美元）的六个决赛项目之一。意大利国际高等研究院的 Guglielmo Mazzola 评价：「这是至关重要的一步——想要处理基因组，首先必须把数据载入进去。」\n\n不过 Mazzola 也提醒：在量子计算机能够处理更大的基因组、或真正对这些数据开展分析之前，很难判断它是否会超越其他现有技术。「量子计算能否真正带来好处，目前仍不清楚。」",
+  "significance": "这是「量子计算 + 基因组学」交叉方向的原理性突破。遗传学家正越来越多地转向「泛基因组」（pangenome）——它被视为个性化医疗和理解病原体演化的关键，但在计算上极其复杂：在海量、交错的序列组合「迷宫」中寻找路径，正是量子计算机擅长的问题。\n\n从更长的尺度看，把生物序列载入量子比特，是未来用量子算法加速序列比对、变异发现和药物靶点搜索的前提。尽管目前仅完成「载入」而非「分析」，且距离超越经典方法尚有距离，但它第一次从工程上证明了基因组数据可以被表示为量子态，为后续量子算法打开了入口。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "泛基因组的构建与分析本质上是超大规模组合优化问题，与量子计算擅长的最短路径、组合搜索天然契合。一旦数据可被载入量子态，序列比对、变异网络分析都可能受益于量子叠加带来的并行性。",
+      "relatedFields": [
+        "生物",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期（2-3年）：在更大病毒/噬菌体基因组上验证编码与读取保真度。中期（5年）：探索量子算法对序列比对的加速。长期（10年）：若量子硬件规模化，泛基因组分析或可成为首批「量子优势」生物医药应用之一。",
+      "relatedFields": [
+        "生物",
+        "医学"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "当前仅完成「载入」，量子计算机能否在基因组的实际分析任务上超越经典方法？编码的保真度随序列长度如何衰减？量子纠错成熟后，能否稳定表示人类规模（30亿碱基对）的基因组？",
+      "relatedFields": [
+        "计算机",
+        "生物"
+      ]
+    }
+  ],
+  "expertCommentary": "这是概念验证层面的重要一步：它把「基因组能被表示为量子态」从设想变成了可复现的工程事实。Oxford/Sanger 团队的切入点很聪明——先用最小的完整基因组（HDV，约1.7kb）验证编码流程，而非直接挑战人类基因组。但必须清醒：载入不等于计算优势，Mazzola 的谨慎评价是公允的。真正的考验在于，能否在载入之后用量子算法完成经典难以胜任的分析任务。",
+  "relatedMilestones": [
+    {
+      "year": 2001,
+      "description": "人类基因组计划完成首次全序列解码"
+    },
+    {
+      "year": 2019,
+      "description": "泛基因组概念在群体遗传学中加速推广"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 首次将完整病毒基因组编码载入量子计算机"
+    }
+  ],
+  "tags": [
+    "量子计算",
+    "基因组学",
+    "丁型肝炎病毒",
+    "泛基因组",
+    "Q4Bio"
+  ],
+  "dateAdded": "2026-07-31",
+  "readTime": 9,
+  "status": "unread",
+  "starred": true,
+  "citations": {
+    "bibtex": "@article{strelchuk2026, title={Encoding a complete viral genome into a quantum computer}, journal={arXiv preprint}, year={2026}}",
+    "formatted": "Strelchuk, S. et al. Encoding a complete viral genome into a quantum computer. arXiv (2026)."
+  }
+}
