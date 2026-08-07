@@ -947,3 +947,38 @@ img { max-width: 100%; height: auto; }
 @media (prefers-reduced-motion: reduce) {
   .skeleton-line { animation: none; }
 }
+
+/* ============ 站点风自定义滚动条（原生滚动条太丑） ============ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1a5276, #4a90c2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c6e9e;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2c6e9e, #4a90c2);
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #5aa8d8;
+}
+
+/* Firefox 兜底 */
+html,
+.modal-content,
+.result-pre {
+  scrollbar-width: thin;
+  scrollbar-color: #1a5276 transparent;
+}
+[data-theme="dark"] html,
+[data-theme="dark"] .modal-content,
+[data-theme="dark"] .result-pre {
+  scrollbar-color: #2c6e9e transparent;
+}
