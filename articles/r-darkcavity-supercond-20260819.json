@@ -1,0 +1,84 @@
+{
+  "id": "r-darkcavity-supercond-20260819",
+  "title": "中国科大首次利用「暗腔」实现真空涨落增强超导",
+  "field": "物理",
+  "subfield": "凝聚态物理 / 腔量子电动力学",
+  "researchers": [
+    "曾长淦",
+    "程广珲",
+    "蒋庆东",
+    "Frank Wilczek 等"
+  ],
+  "institution": "中国科学技术大学 / 上海交通大学 / 麻省理工学院",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-11037-x",
+    "url": "https://doi.org/10.1038/s41586-026-11037-x",
+    "publicationDate": "2026-08-19"
+  },
+  "summary": "中国科学技术大学曾长淦团队联合上海交大、MIT 等，首次利用太赫兹分裂环谐振器构成的「暗腔」重塑电磁环境、增强真空涨落，使二硒化铌超导临界温度最高提升 5.4%，实现国际上首次实验观测到真空涨落增强超导。",
+  "abstract": "Vacuum fluctuations in free space are usually too weak to affect macroscopic condensed-matter systems. We embed the superconductor niobium diselenide in a 'dark cavity' formed by terahertz split-ring resonators to reshape the electromagnetic environment and enhance vacuum fluctuations, raising the superconducting critical temperature by up to 5.4% in six-layer devices, with enhanced critical current and critical field. A resonance-shaped dependence on cavity frequency and a Ginzburg-Landau theoretical framework support vacuum-fluctuation-mediated superconducting enhancement.",
+  "breakthrough": "2026年8月19日，中国科学技术大学曾长淦、程广珲团队联合上海交通大学蒋庆东、美国麻省理工学院 Frank Wilczek 等，在《自然》发表研究成果，首次利用「暗腔」实现真空涨落增强超导。\n\n在量子电动力学中，真空并非空无一物，而是时刻存在虚粒子产生与湮灭的「真空涨落」；但自由空间中的真空涨落信号通常较弱，难以对宏观体系产生可观测影响。团队引入由太赫兹分裂环谐振器构成的「暗腔」，通过重塑电磁环境显著增强真空涨落，并将超导体二硒化铌嵌入其中，发现超导临界温度实质性升高——在六层二硒化铌器件中临界温度最高提升 5.4%，临界电流与临界磁场在超导转变附近也显著增强。\n\n严格对照实验排除了应变、退化、非均匀性等常规因素；超导增强效应随暗腔特征频率呈现共振峰形依赖，为超导态与暗腔耦合提供了关键证据。理论上，蒋庆东研究组与 Wilczek 基于金兹堡-朗道框架提出：超导态与暗腔交换虚光子、降低超导态能量，从而增强超导。",
+  "significance": "这是国际上首次实验观测到「真空涨落增强超导」，把真空涨落从物理概念转化为可工程化的量子物态调控资源。此前团队已实现卡西米尔力由吸引到排斥的可逆转变，本次则证明真空环境本身可以作为调控宏观量子物态的可控「旋钮」。\n\n该研究提供了一种无需外部驱动、非接触式的超导增强途径，有望应用于超导量子器件、超导电路与新型量子物态调控平台，为探索超导机理与设计新型超导器件开辟新思路。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "这是腔量子电动力学（cQED）从「量子信息载体」向「凝聚态物态调控工具」的延伸：同一套「重塑真空环境」逻辑，既可服务于超导量子比特，也可用于调控超导相变。太赫兹分裂环谐振器本身来自超材料研究，多学科交叉特征明显。",
+      "relatedFields": [
+        "物理",
+        "量子计算"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：把暗腔方案移植到更多超导材料与器件构型，验证普适性；中期：在超导量子电路中有意引入暗腔环境，优化器件临界参数；长期：若能在常压材料上复现显著增强效应，可能影响实用超导材料的设计思路。",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "真空涨落增强效应在不同超导机制（如铜氧化物高温超导）中是否同样成立？暗腔的损耗如何控制？增强幅度能否从 5.4% 进一步提升？「非接触式旋钮」的调控带宽与可编程性如何？",
+      "relatedFields": [
+        "物理"
+      ]
+    }
+  ],
+  "expertCommentary": "「真空不空」从哲学命题变成了实验参数——这个工作的巧劲在于用太赫兹分裂环谐振器把真空涨落「调大」到足以影响宏观超导态的程度，并且观察到共振频率依赖，这给了耦合机制一个干净的判据。5.4% 的临界温度提升绝对值不大，但方向性意义重大：它证明真空环境可以成为超导材料设计的自由度。理论部分由 Wilczek 参与的金兹堡-朗道框架给出自洽解释，实验-理论闭环完整。下一步的关键是普适性验证。",
+  "relatedMilestones": [
+    {
+      "year": 2020,
+      "description": "曾长淦团队实现卡西米尔力吸引-排斥可逆转变"
+    },
+    {
+      "year": 2024,
+      "description": "腔量子电动力学调控量子物态研究加速"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 首次实验观测真空涨落增强超导（Nature）"
+    }
+  ],
+  "tags": [
+    "真空涨落",
+    "超导",
+    "暗腔",
+    "腔量子电动力学",
+    "凝聚态物理",
+    "二硒化铌"
+  ],
+  "dateAdded": "2026-08-24",
+  "readTime": 9,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{zeng2026darkcavity, title={Vacuum-fluctuation-enhanced superconductivity in a dark cavity}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-11037-x}}",
+    "formatted": "Zeng C., Cheng G., Jiang Q., Wilczek F., et al. Vacuum-fluctuation-enhanced superconductivity in a dark cavity. Nature (2026). DOI: 10.1038/s41586-026-11037-x."
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
+}

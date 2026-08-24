@@ -1,0 +1,84 @@
+{
+  "id": "r-ried-superres-20260812",
+  "title": "化学反应发光超分辨成像 RIED：无激光、41 小时活细胞长时程观测",
+  "field": "化学",
+  "subfield": "分析化学 / 超分辨成像",
+  "researchers": [
+    "浙江大学冯建东团队",
+    "哈尔滨工业大学赵唯淞团队"
+  ],
+  "institution": "浙江大学 / 哈尔滨工业大学",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-10889-7",
+    "url": "https://www.nature.com/articles/s41586-026-10889-7",
+    "publicationDate": "2026-08-12"
+  },
+  "summary": "浙江大学与哈尔滨工业大学团队提出 RIED 超分辨成像框架，完全依靠电化学发光、化学发光与生物发光三类化学反应成像，无需外部激光，实现约 100 nm 空间分辨率与长达 41 小时的活细胞连续动态观测。",
+  "abstract": "Super-resolution fluorescence microscopy breaks the diffraction limit but relies on external laser excitation, causing photobleaching and phototoxicity. Here we develop RIED (reaction-enabled super-resolution imaging via entropy-weighted correlation combined with deconvolution), a framework using electrochemical, chemiluminescent and bioluminescent reactions as the light source, reaching ~100 nm resolution in living cells and enabling 41-hour continuous observation of mitochondrial dynamics without photodamage.",
+  "breakthrough": "2026年8月12日，浙江大学化学系冯建东团队与哈尔滨工业大学仪器学院赵唯淞团队在《自然》在线发表论文，提出基于化学反应发光的超分辨成像方法 RIED（熵加权相关联合反卷积）。\n\n传统荧光超分辨显微镜依赖高能激光激发荧光分子，不可避免地带来光漂白与光毒性，活细胞难以长时间存活，「看得清」与「看得久」难以兼得。研究团队彻底摆脱外源光激发：利用电致发光（ECL）、化学发光（CL）与生物发光（BL）三类化学反应作为光源，创新性引入「时空孤立采样」策略高效收集反应光子信号，再以熵加权相关累积量结合反卷积重建图像，将反应发光成像的空间分辨率推进至约 100 nm（ECL 模式最优 97 nm）。\n\n团队将 Ru(bpy)3²⁺ 发光探针偶联抗体实现细胞器特异标记，并用 Bis-tris 共反应剂使发光强度提升约 1000 倍。生物发光模式下，该方法实现长达 41 小时的活细胞线粒体连续超分辨观测，首次原位直接捕捉到细胞间线粒体转移的完整动态过程；对界面低浓度蛋白的检出限较传统荧光超分辨降低 8 倍。",
+  "significance": "这是国际上首次在化学反应发光体系实现三维、大视场、可长时间连续的超分辨生物成像。它绕过了荧光显微「高时空分辨率、成像深度与光毒性」之间的根本权衡，为活细胞纳米尺度长时程研究提供了全新工具。\n\n由于成像信号来自可定制的化学反应体系而非固定激光波长，RIED 具备很高的通用性——探针与反应体系可根据应用场景定制，可与电化学、微流控等平台集成。在疾病早期微量生物标志物检测、细胞粘附微环境解析、线粒体跨细胞通讯研究等领域均有直接应用前景。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "RIED 是「化学 × 光学 × 计算」交叉的典型：化学反应提供光源，信息熵加权与反卷积算法负责突破衍射极限。这一思路与单分子检测、量子传感等技术同源，预示「测量工具由化学性质决定」的成像新范式。",
+      "relatedFields": [
+        "化学",
+        "生物",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：RIED-ECL 进入肿瘤标志物超灵敏检测的临床前验证；中期：与活体成像结合，探索深组织化学发光成像；长期：可能取代部分荧光显微场景，成为神经科学、细胞生物学长时程观测的主流工具。",
+      "relatedFields": [
+        "医学",
+        "生物"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "化学发光信号的量子产率能否进一步提升？如何将成像深度从单层细胞推向组织层面？算法重构在不同标记密度下的鲁棒性如何？能否与超分辨荧光技术融合实现多通道同时成像？",
+      "relatedFields": [
+        "化学",
+        "生物"
+      ]
+    }
+  ],
+  "expertCommentary": "这项工作的核心突破不在分辨率数字本身，而在于「去激光化」：化学反应发光天然无光毒性、无光漂白，从物理机制上绕开了荧光成像的时程上限。41 小时连续观测并捕捉线粒体跨细胞转移，是荧光技术难以想象的。值得注意的是它同时打通了 ECL/CL/BL 三种体系，说明框架是通用的而非单一体系特调。局限在于：化学发光标记依赖抗体偶联，活体深组织应用仍受发光强度限制；从「看得久」到「看得深」还有一段路。",
+  "relatedMilestones": [
+    {
+      "year": 2014,
+      "description": "超分辨荧光显微术获诺贝尔化学奖"
+    },
+    {
+      "year": 2021,
+      "description": "冯建东团队首次实现单分子电化学发光成像（Nature）"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 RIED 化学反应发光超分辨成像：41 小时活细胞观测（Nature）"
+    }
+  ],
+  "tags": [
+    "超分辨成像",
+    "化学发光",
+    "活细胞成像",
+    "RIED",
+    "显微镜",
+    "无激光"
+  ],
+  "dateAdded": "2026-08-24",
+  "readTime": 10,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{zhu2026ried, title={Luminescent-reaction-enabled super-resolution imaging}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-10889-7}}",
+    "formatted": "Zhu W., Zhang C., Gui J., et al. Luminescent-reaction-enabled super-resolution imaging. Nature (2026). DOI: 10.1038/s41586-026-10889-7."
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
+}

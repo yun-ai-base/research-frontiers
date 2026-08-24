@@ -1,0 +1,82 @@
+{
+  "id": "r-malaria-calm-20260813",
+  "title": "「化学疫苗接种」：让蚊虫叮咬变成疟疾免疫加强针",
+  "field": "医学",
+  "subfield": "免疫学 / 疫苗研发",
+  "researchers": [
+    "Ryan W. J. Steel",
+    "Justin A. Boddey 等"
+  ],
+  "institution": "沃尔特与伊丽莎·霍尔医学研究所（WEHI）/ 墨尔本大学 / MSD",
+  "source": {
+    "journal": "Science",
+    "doi": "10.1126/science.aea7605",
+    "url": "https://www.science.org/doi/10.1126/science.aea7605",
+    "publicationDate": "2026-08-13"
+  },
+  "summary": "WEHI 与 MSD 团队提出「化学疫苗接种」（CALM）策略：单次低剂量疟原虫暴露后服用 PMIX/X 蛋白酶抑制剂，让疟原虫在肝脏晚期被「化学减毒」，小鼠获得长达 21 个月的无菌免疫，蚊虫叮咬有望成为天然疫苗加强针。",
+  "abstract": "Plasmodium sporozoite vaccines require complex manufacture and high intravenous doses. We found that a single low-dose P. berghei sporozoite exposure (intravenous or mosquito bite) combined with a plasmepsin IX and X (PMIX/X) inhibitor (WM382 or MK-7602) produced 'chemo-attenuated liver merozoites' (CALM) and induced sterile immunity in mice for up to 21 months. Protection involved anti-circumsporozoite antibodies and CD8+ T cells including liver-resident memory subsets recognizing diverse antigens; WM382 also attenuated P. falciparum liver merozoites in a human-liver xenograft model.",
+  "breakthrough": "2026年8月13日，《科学》杂志发表澳大利亚沃尔特与伊丽莎·霍尔医学研究所（WEHI）与默沙东（MSD）合作的研究，提出「化学疫苗接种」（CALM）策略：利用药物而非基因编辑来「减毒」疟原虫，让一次蚊虫叮咬变成一次免疫接种。\n\n传统疟疾孢子子疫苗需复杂制造工艺与高剂量静脉注射。团队采用完全不同的思路：让小鼠经静脉或蚊虫叮咬接受单次低剂量疟原虫暴露，随后口服 PMIX/X 蛋白酶双重抑制剂（WM382 或 MK-7602）。疟原虫得以在肝脏内正常发育成熟、暴露广泛的抗原，但产生的「化学减毒肝裂殖子」（CALM）无法入侵红细胞引发疾病——相当于让免疫系统「预览」了完整的病原体威胁却不致病。\n\n结果显示：单次低剂量暴露即可让小鼠获得长达 21 个月的无菌免疫（含反复致死剂量攻毒）；保护机制涉及抗环子孢子蛋白（CSP）抗体、CD8+ T 细胞及识别多种抗原的肝脏常驻记忆 T 细胞。在人肝嵌合小鼠模型中，WM382 同样阻断了恶性疟原虫从肝脏向血液阶段转移，提示泛疟原虫物种保护的潜力。",
+  "significance": "这是疟疾疫苗研究路径上的一个重要范式转换：从「基因减毒」走向「化学减毒」。化学减毒保留了疟原虫在肝脏的完整发育过程，使免疫系统接触到远比基因减毒株更广的抗原库，因而用更低的孢子子剂量获得更强、更持久的保护。\n\n由于 PMIX/X 活性位点在多种疟原虫中高度保守，该策略有广谱保护潜力；更富想象力的图景是：在疟疾流行地区，通过反复自然蚊虫叮咬 + 口服/长效注射剂，让每次叮咬都成为「接种 + 天然加强」。长效 PMIX/X 抑制剂注射剂型正在临床前开发中。当前结果仍限于小鼠与嵌合模型，人体试验是下一步关键。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "「化学减毒」把抗疟药从「治疗工具」变成「疫苗佐剂」，是药物-免疫学交叉的巧妙案例；靶向疟原虫生存关键酶（天冬氨酸蛋白酶 IX/X）的抑制剂同时承担治疗与免疫编程双重角色，提示「药物辅助免疫」可能推广到其他寄生虫与病毒疾病。",
+      "relatedFields": [
+        "医学",
+        "生物"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：长效注射型 PMIX/X 抑制剂进入临床前开发，开展人体疟原虫受控感染研究；中期：验证自然蚊虫叮咬场景下的免疫增强效果；长期：若成立，流行地区可通过「自然叮咬 + 药物窗口」模式逐步建立群体免疫，大幅降低疫苗制造成本与给药门槛。",
+      "relatedFields": [
+        "医学",
+        "生物"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "化学减毒的安全性边界（药物剂量、疟原虫株差异）如何界定？21 个月的无菌免疫能否在人体复制？与现有 RTS,S/基因减毒疫苗相比的免疫谱差异如何量化？药物暴露是否会筛选出耐药疟原虫？",
+      "relatedFields": [
+        "医学"
+      ]
+    }
+  ],
+  "expertCommentary": "思路非常聪明：疫苗界苦「减毒」久矣——基因减毒保留的抗原太少，辐射减毒剂量要求太高，而 CALM 让疟原虫在肝脏完整发育一圈、把全套抗原展示给免疫系统，再用药物掐断致病环节，等于「既要全貌、又不出事」。21 个月无菌免疫加上肝驻留记忆 T 细胞的数据相当扎实。冷静看：这是小鼠数据，疟原虫 P. berghei 与人的恶性疟原虫差异不小；WM382 在人肝嵌合模型的表现是积极信号但离人体还差得远。最大的想象空间在「叮咬即接种」的公共卫生模式，但耐药与安全性问题必须先在人体试验中回答。",
+  "relatedMilestones": [
+    {
+      "year": 2021,
+      "description": "WHO 批准首款疟疾疫苗 RTS,S 广泛接种"
+    },
+    {
+      "year": 2023,
+      "description": "第二代疟疾疫苗 R21 获批，效力提升但仍需多剂次接种"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 CALM 化学疫苗接种：单次暴露 21 个月无菌免疫（Science）"
+    }
+  ],
+  "tags": [
+    "疟疾",
+    "疫苗",
+    "化学减毒",
+    "免疫学",
+    "PMIX/X 抑制剂",
+    "CALM"
+  ],
+  "dateAdded": "2026-08-24",
+  "readTime": 9,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{steel2026calm, title={Chemovaccination with a late-liver-stage antimalarial induces durable immunity against malaria}, journal={Science}, year={2026}, doi={10.1126/science.aea7605}}",
+    "formatted": "Steel R.W.J., Chua Y.C., Boddey J.A., et al. Chemovaccination with a late-liver-stage antimalarial induces durable immunity against malaria. Science 393 (2026). DOI: 10.1126/science.aea7605."
+  },
+  "preprint": false,
+  "venue": "Science",
+  "arxivId": null,
+  "codeUrl": null
+}

@@ -1,7 +1,130 @@
 {
-  "generated": "2026-08-07",
-  "count": 30,
+  "generated": "2026-08-24",
+  "count": 34,
   "research": [
+    {
+      "id": "r-cu-atomchain-20260820",
+      "title": "全球最长单原子「金属线」：碳鞘包裹铜原子链突破微米级",
+      "field": "化学",
+      "subfield": "高压化学 / 低维材料",
+      "researchers": [
+        "李阔",
+        "郑海燕",
+        "张杰 等"
+      ],
+      "institution": "北京高压科学研究中心 / 南开大学 / 北京大学",
+      "source": {
+        "journal": "Science",
+        "publicationDate": "2026-08-20"
+      },
+      "summary": "北京高压科学研究中心李阔团队通过高压固相拓扑聚合，首次合成微米级长度、原子级粗细、碳鞘包裹的铜单原子链：单链超过 4000 个铜原子，长度较此前国际纪录提升两个数量级以上，并实现毫克级宏量制备。",
+      "innovationRating": 4,
+      "dateAdded": "2026-08-24",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "单原子链",
+        "高压合成",
+        "低维材料",
+        "纳米电子学",
+        "铜",
+        "酞菁"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-darkcavity-supercond-20260819",
+      "title": "中国科大首次利用「暗腔」实现真空涨落增强超导",
+      "field": "物理",
+      "subfield": "凝聚态物理 / 腔量子电动力学",
+      "researchers": [
+        "曾长淦",
+        "程广珲",
+        "蒋庆东",
+        "Frank Wilczek 等"
+      ],
+      "institution": "中国科学技术大学 / 上海交通大学 / 麻省理工学院",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-08-19"
+      },
+      "summary": "中国科学技术大学曾长淦团队联合上海交大、MIT 等，首次利用太赫兹分裂环谐振器构成的「暗腔」重塑电磁环境、增强真空涨落，使二硒化铌超导临界温度最高提升 5.4%，实现国际上首次实验观测到真空涨落增强超导。",
+      "innovationRating": 5,
+      "dateAdded": "2026-08-24",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "真空涨落",
+        "超导",
+        "暗腔",
+        "腔量子电动力学",
+        "凝聚态物理",
+        "二硒化铌"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-malaria-calm-20260813",
+      "title": "「化学疫苗接种」：让蚊虫叮咬变成疟疾免疫加强针",
+      "field": "医学",
+      "subfield": "免疫学 / 疫苗研发",
+      "researchers": [
+        "Ryan W. J. Steel",
+        "Justin A. Boddey 等"
+      ],
+      "institution": "沃尔特与伊丽莎·霍尔医学研究所（WEHI）/ 墨尔本大学 / MSD",
+      "source": {
+        "journal": "Science",
+        "publicationDate": "2026-08-13"
+      },
+      "summary": "WEHI 与 MSD 团队提出「化学疫苗接种」（CALM）策略：单次低剂量疟原虫暴露后服用 PMIX/X 蛋白酶抑制剂，让疟原虫在肝脏晚期被「化学减毒」，小鼠获得长达 21 个月的无菌免疫，蚊虫叮咬有望成为天然疫苗加强针。",
+      "innovationRating": 5,
+      "dateAdded": "2026-08-24",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "疟疾",
+        "疫苗",
+        "化学减毒",
+        "免疫学",
+        "PMIX/X 抑制剂",
+        "CALM"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-ried-superres-20260812",
+      "title": "化学反应发光超分辨成像 RIED：无激光、41 小时活细胞长时程观测",
+      "field": "化学",
+      "subfield": "分析化学 / 超分辨成像",
+      "researchers": [
+        "浙江大学冯建东团队",
+        "哈尔滨工业大学赵唯淞团队"
+      ],
+      "institution": "浙江大学 / 哈尔滨工业大学",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-08-12"
+      },
+      "summary": "浙江大学与哈尔滨工业大学团队提出 RIED 超分辨成像框架，完全依靠电化学发光、化学发光与生物发光三类化学反应成像，无需外部激光，实现约 100 nm 空间分辨率与长达 41 小时的活细胞连续动态观测。",
+      "innovationRating": 5,
+      "dateAdded": "2026-08-24",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "超分辨成像",
+        "化学发光",
+        "活细胞成像",
+        "RIED",
+        "显微镜",
+        "无激光"
+      ],
+      "preprint": false
+    },
     {
       "id": "r-ai-phage-20260807",
       "title": "AI 首次从零生成完整功能性噬菌体基因组：进入生成式基因组设计时代",

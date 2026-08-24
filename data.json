@@ -1,6 +1,341 @@
 {
   "research": [
     {
+      "id": "r-cu-atomchain-20260820",
+      "title": "全球最长单原子「金属线」：碳鞘包裹铜原子链突破微米级",
+      "field": "化学",
+      "subfield": "高压化学 / 低维材料",
+      "researchers": [
+        "李阔",
+        "郑海燕",
+        "张杰 等"
+      ],
+      "institution": "北京高压科学研究中心 / 南开大学 / 北京大学",
+      "source": {
+        "journal": "Science",
+        "doi": "10.1126/science.aeg0028",
+        "url": "https://www.science.org/doi/10.1126/science.aeg0028",
+        "publicationDate": "2026-08-20"
+      },
+      "summary": "北京高压科学研究中心李阔团队通过高压固相拓扑聚合，首次合成微米级长度、原子级粗细、碳鞘包裹的铜单原子链：单链超过 4000 个铜原子，长度较此前国际纪录提升两个数量级以上，并实现毫克级宏量制备。",
+      "abstract": "Single-metal-atom chains (SMACs) are the ultimate one-dimensional nanostructures, but synthesizing them at practical lengths has remained challenging. We compressed beta-copper phthalocyanine above 21 gigapascals to create micrometer-long, carbon-sheathed copper SMACs at milligram scale, with Cu-Cu distance confined at 2.57 angstroms. The chains are isolable via acid-assisted exfoliation, exhibit anisotropic conductance and antiferromagnetic interactions, and the high-pressure topological polymerization strategy extends to cobalt, nickel and zinc phthalocyanines.",
+      "breakthrough": "2026年8月20日，《科学》杂志发表北京高压科学研究中心李阔、郑海燕团队的研究成果（联合南开大学、北京大学等），首次合成微米级长度、原子级粗细且结构稳定的碳包裹铜单金属原子链。\n\n单金属原子链是「最细的一维金属线」，但此前制备受限于链长——有机配体辅助溶液合成法所得链通常不足 10 个金属原子，纪录也仅 28 个原子。团队创新性地提出高压固相拓扑聚合策略：将 β-酞菁铜单晶压缩至 21 GPa 以上（25 GPa、533 K 保温 12 小时），外围芳香环发生聚合形成致密碳鞘，把内部周期性排列的铜原子「锁定」为原子链。利用巴黎-爱丁堡压机实现毫克级宏量制备，酸辅助剥离得到长度超过 1 微米、连续 4000 余个铜原子（Cu-Cu 距离 2.57 Å）的单链，链长较此前提升两个数量级以上。\n\n实验与计算显示，该原子链呈现显著导电各向异性（沿链方向电导率比垂直方向高一个数量级）与一维反铁磁耦合；碳鞘赋予其优异的化学与机械稳定性（可在三氟乙酸中长时间超声而不损）。该策略可推广至钴、镍、锌等多种金属酞菁体系。",
+      "significance": "把「最细金属导线」的制备极限从几十个原子推进到 4000+ 原子、微米级长度，同时解决了稳定性与宏量制备问题——链长、稳定性、批量制备三者首次兼得。\n\n单原子链是研究 Peierls 不稳定性、Tomonaga-Luttinger 液体等一维凝聚态理论问题的理想模型体系，也为下一代纳米电路、柔性可穿戴电子、自旋电子学器件提供了全新材料选项。高压固相拓扑聚合被证明是通用策略，为「一维原子链材料平台」奠定了基础。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "高压化学与凝聚态物理在此交汇：21 GPa 的极端条件不仅是合成工具，更揭示「压力锁定结构」这一通用思路——与超导材料高压合成、富氢化合物超导研究共享方法论。碳鞘与金属芯的「核-壳」结构也提示了一维异质结构设计新空间。",
+          "relatedFields": [
+            "化学",
+            "物理",
+            "材料"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：混合金属原子链与一维异质结构的可控合成；中期：原子链的电学/磁学单器件测量与纳米电路原型验证；长期：若导电性各向异性可工程化利用，有望进入分子电子学与自旋电子学应用。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "能否实现混合金属（如 Cu/Ni）异质结链？单链的本征电导率（理论预测 10⁷ S/m 量级）能否在单器件实验中验证？碳鞘的 sp²/sp³ 杂化结构如何精确调控？高压合成的规模能否进一步放大到工业化量级？",
+          "relatedFields": [
+            "化学",
+            "物理"
+          ]
+        }
+      ],
+      "expertCommentary": "这是「材料极端合成」的代表作：别人在溶液里凑金属原子，李阔团队直接把酞菁晶体压到 21 GPa 以上「原位聚合」出原子链——思路简洁且具有普适性，扩展到 Co/Ni/Zn 酞菁都成立，说明不是偶然。4000 个铜原子、1 微米长，两个数量级的链长提升是实打实的纪录。碳鞘设计同时解决稳定性和绝缘保护，堪称巧妙。不足之处在于应用还很远：单链的电输运测量与器件集成尚未完成，理论预测的本征电导率还有待实验检验。",
+      "relatedMilestones": [
+        {
+          "year": 2000,
+          "description": "溶液法合成单金属原子链起步，链长长期停留在数十原子以内"
+        },
+        {
+          "year": 2022,
+          "description": "有机配体辅助合成链长纪录约 28 个金属原子"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 高压拓扑聚合：微米级碳鞘铜单原子链（Science）"
+        }
+      ],
+      "tags": [
+        "单原子链",
+        "高压合成",
+        "低维材料",
+        "纳米电子学",
+        "铜",
+        "酞菁"
+      ],
+      "dateAdded": "2026-08-24",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{zhang2026smac, title={Ultralong sheathed single-metal-atom chains synthesized under high pressure}, journal={Science}, year={2026}, doi={10.1126/science.aeg0028}}",
+        "formatted": "Zhang J., Dong X., Qiu S., Li K., et al. Ultralong sheathed single-metal-atom chains synthesized under high pressure. Science 393, 826-830 (2026). DOI: 10.1126/science.aeg0028."
+      },
+      "preprint": false,
+      "venue": "Science",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-darkcavity-supercond-20260819",
+      "title": "中国科大首次利用「暗腔」实现真空涨落增强超导",
+      "field": "物理",
+      "subfield": "凝聚态物理 / 腔量子电动力学",
+      "researchers": [
+        "曾长淦",
+        "程广珲",
+        "蒋庆东",
+        "Frank Wilczek 等"
+      ],
+      "institution": "中国科学技术大学 / 上海交通大学 / 麻省理工学院",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-11037-x",
+        "url": "https://doi.org/10.1038/s41586-026-11037-x",
+        "publicationDate": "2026-08-19"
+      },
+      "summary": "中国科学技术大学曾长淦团队联合上海交大、MIT 等，首次利用太赫兹分裂环谐振器构成的「暗腔」重塑电磁环境、增强真空涨落，使二硒化铌超导临界温度最高提升 5.4%，实现国际上首次实验观测到真空涨落增强超导。",
+      "abstract": "Vacuum fluctuations in free space are usually too weak to affect macroscopic condensed-matter systems. We embed the superconductor niobium diselenide in a 'dark cavity' formed by terahertz split-ring resonators to reshape the electromagnetic environment and enhance vacuum fluctuations, raising the superconducting critical temperature by up to 5.4% in six-layer devices, with enhanced critical current and critical field. A resonance-shaped dependence on cavity frequency and a Ginzburg-Landau theoretical framework support vacuum-fluctuation-mediated superconducting enhancement.",
+      "breakthrough": "2026年8月19日，中国科学技术大学曾长淦、程广珲团队联合上海交通大学蒋庆东、美国麻省理工学院 Frank Wilczek 等，在《自然》发表研究成果，首次利用「暗腔」实现真空涨落增强超导。\n\n在量子电动力学中，真空并非空无一物，而是时刻存在虚粒子产生与湮灭的「真空涨落」；但自由空间中的真空涨落信号通常较弱，难以对宏观体系产生可观测影响。团队引入由太赫兹分裂环谐振器构成的「暗腔」，通过重塑电磁环境显著增强真空涨落，并将超导体二硒化铌嵌入其中，发现超导临界温度实质性升高——在六层二硒化铌器件中临界温度最高提升 5.4%，临界电流与临界磁场在超导转变附近也显著增强。\n\n严格对照实验排除了应变、退化、非均匀性等常规因素；超导增强效应随暗腔特征频率呈现共振峰形依赖，为超导态与暗腔耦合提供了关键证据。理论上，蒋庆东研究组与 Wilczek 基于金兹堡-朗道框架提出：超导态与暗腔交换虚光子、降低超导态能量，从而增强超导。",
+      "significance": "这是国际上首次实验观测到「真空涨落增强超导」，把真空涨落从物理概念转化为可工程化的量子物态调控资源。此前团队已实现卡西米尔力由吸引到排斥的可逆转变，本次则证明真空环境本身可以作为调控宏观量子物态的可控「旋钮」。\n\n该研究提供了一种无需外部驱动、非接触式的超导增强途径，有望应用于超导量子器件、超导电路与新型量子物态调控平台，为探索超导机理与设计新型超导器件开辟新思路。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "这是腔量子电动力学（cQED）从「量子信息载体」向「凝聚态物态调控工具」的延伸：同一套「重塑真空环境」逻辑，既可服务于超导量子比特，也可用于调控超导相变。太赫兹分裂环谐振器本身来自超材料研究，多学科交叉特征明显。",
+          "relatedFields": [
+            "物理",
+            "量子计算"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：把暗腔方案移植到更多超导材料与器件构型，验证普适性；中期：在超导量子电路中有意引入暗腔环境，优化器件临界参数；长期：若能在常压材料上复现显著增强效应，可能影响实用超导材料的设计思路。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "真空涨落增强效应在不同超导机制（如铜氧化物高温超导）中是否同样成立？暗腔的损耗如何控制？增强幅度能否从 5.4% 进一步提升？「非接触式旋钮」的调控带宽与可编程性如何？",
+          "relatedFields": [
+            "物理"
+          ]
+        }
+      ],
+      "expertCommentary": "「真空不空」从哲学命题变成了实验参数——这个工作的巧劲在于用太赫兹分裂环谐振器把真空涨落「调大」到足以影响宏观超导态的程度，并且观察到共振频率依赖，这给了耦合机制一个干净的判据。5.4% 的临界温度提升绝对值不大，但方向性意义重大：它证明真空环境可以成为超导材料设计的自由度。理论部分由 Wilczek 参与的金兹堡-朗道框架给出自洽解释，实验-理论闭环完整。下一步的关键是普适性验证。",
+      "relatedMilestones": [
+        {
+          "year": 2020,
+          "description": "曾长淦团队实现卡西米尔力吸引-排斥可逆转变"
+        },
+        {
+          "year": 2024,
+          "description": "腔量子电动力学调控量子物态研究加速"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 首次实验观测真空涨落增强超导（Nature）"
+        }
+      ],
+      "tags": [
+        "真空涨落",
+        "超导",
+        "暗腔",
+        "腔量子电动力学",
+        "凝聚态物理",
+        "二硒化铌"
+      ],
+      "dateAdded": "2026-08-24",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{zeng2026darkcavity, title={Vacuum-fluctuation-enhanced superconductivity in a dark cavity}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-11037-x}}",
+        "formatted": "Zeng C., Cheng G., Jiang Q., Wilczek F., et al. Vacuum-fluctuation-enhanced superconductivity in a dark cavity. Nature (2026). DOI: 10.1038/s41586-026-11037-x."
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-malaria-calm-20260813",
+      "title": "「化学疫苗接种」：让蚊虫叮咬变成疟疾免疫加强针",
+      "field": "医学",
+      "subfield": "免疫学 / 疫苗研发",
+      "researchers": [
+        "Ryan W. J. Steel",
+        "Justin A. Boddey 等"
+      ],
+      "institution": "沃尔特与伊丽莎·霍尔医学研究所（WEHI）/ 墨尔本大学 / MSD",
+      "source": {
+        "journal": "Science",
+        "doi": "10.1126/science.aea7605",
+        "url": "https://www.science.org/doi/10.1126/science.aea7605",
+        "publicationDate": "2026-08-13"
+      },
+      "summary": "WEHI 与 MSD 团队提出「化学疫苗接种」（CALM）策略：单次低剂量疟原虫暴露后服用 PMIX/X 蛋白酶抑制剂，让疟原虫在肝脏晚期被「化学减毒」，小鼠获得长达 21 个月的无菌免疫，蚊虫叮咬有望成为天然疫苗加强针。",
+      "abstract": "Plasmodium sporozoite vaccines require complex manufacture and high intravenous doses. We found that a single low-dose P. berghei sporozoite exposure (intravenous or mosquito bite) combined with a plasmepsin IX and X (PMIX/X) inhibitor (WM382 or MK-7602) produced 'chemo-attenuated liver merozoites' (CALM) and induced sterile immunity in mice for up to 21 months. Protection involved anti-circumsporozoite antibodies and CD8+ T cells including liver-resident memory subsets recognizing diverse antigens; WM382 also attenuated P. falciparum liver merozoites in a human-liver xenograft model.",
+      "breakthrough": "2026年8月13日，《科学》杂志发表澳大利亚沃尔特与伊丽莎·霍尔医学研究所（WEHI）与默沙东（MSD）合作的研究，提出「化学疫苗接种」（CALM）策略：利用药物而非基因编辑来「减毒」疟原虫，让一次蚊虫叮咬变成一次免疫接种。\n\n传统疟疾孢子子疫苗需复杂制造工艺与高剂量静脉注射。团队采用完全不同的思路：让小鼠经静脉或蚊虫叮咬接受单次低剂量疟原虫暴露，随后口服 PMIX/X 蛋白酶双重抑制剂（WM382 或 MK-7602）。疟原虫得以在肝脏内正常发育成熟、暴露广泛的抗原，但产生的「化学减毒肝裂殖子」（CALM）无法入侵红细胞引发疾病——相当于让免疫系统「预览」了完整的病原体威胁却不致病。\n\n结果显示：单次低剂量暴露即可让小鼠获得长达 21 个月的无菌免疫（含反复致死剂量攻毒）；保护机制涉及抗环子孢子蛋白（CSP）抗体、CD8+ T 细胞及识别多种抗原的肝脏常驻记忆 T 细胞。在人肝嵌合小鼠模型中，WM382 同样阻断了恶性疟原虫从肝脏向血液阶段转移，提示泛疟原虫物种保护的潜力。",
+      "significance": "这是疟疾疫苗研究路径上的一个重要范式转换：从「基因减毒」走向「化学减毒」。化学减毒保留了疟原虫在肝脏的完整发育过程，使免疫系统接触到远比基因减毒株更广的抗原库，因而用更低的孢子子剂量获得更强、更持久的保护。\n\n由于 PMIX/X 活性位点在多种疟原虫中高度保守，该策略有广谱保护潜力；更富想象力的图景是：在疟疾流行地区，通过反复自然蚊虫叮咬 + 口服/长效注射剂，让每次叮咬都成为「接种 + 天然加强」。长效 PMIX/X 抑制剂注射剂型正在临床前开发中。当前结果仍限于小鼠与嵌合模型，人体试验是下一步关键。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "「化学减毒」把抗疟药从「治疗工具」变成「疫苗佐剂」，是药物-免疫学交叉的巧妙案例；靶向疟原虫生存关键酶（天冬氨酸蛋白酶 IX/X）的抑制剂同时承担治疗与免疫编程双重角色，提示「药物辅助免疫」可能推广到其他寄生虫与病毒疾病。",
+          "relatedFields": [
+            "医学",
+            "生物"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：长效注射型 PMIX/X 抑制剂进入临床前开发，开展人体疟原虫受控感染研究；中期：验证自然蚊虫叮咬场景下的免疫增强效果；长期：若成立，流行地区可通过「自然叮咬 + 药物窗口」模式逐步建立群体免疫，大幅降低疫苗制造成本与给药门槛。",
+          "relatedFields": [
+            "医学",
+            "生物"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "化学减毒的安全性边界（药物剂量、疟原虫株差异）如何界定？21 个月的无菌免疫能否在人体复制？与现有 RTS,S/基因减毒疫苗相比的免疫谱差异如何量化？药物暴露是否会筛选出耐药疟原虫？",
+          "relatedFields": [
+            "医学"
+          ]
+        }
+      ],
+      "expertCommentary": "思路非常聪明：疫苗界苦「减毒」久矣——基因减毒保留的抗原太少，辐射减毒剂量要求太高，而 CALM 让疟原虫在肝脏完整发育一圈、把全套抗原展示给免疫系统，再用药物掐断致病环节，等于「既要全貌、又不出事」。21 个月无菌免疫加上肝驻留记忆 T 细胞的数据相当扎实。冷静看：这是小鼠数据，疟原虫 P. berghei 与人的恶性疟原虫差异不小；WM382 在人肝嵌合模型的表现是积极信号但离人体还差得远。最大的想象空间在「叮咬即接种」的公共卫生模式，但耐药与安全性问题必须先在人体试验中回答。",
+      "relatedMilestones": [
+        {
+          "year": 2021,
+          "description": "WHO 批准首款疟疾疫苗 RTS,S 广泛接种"
+        },
+        {
+          "year": 2023,
+          "description": "第二代疟疾疫苗 R21 获批，效力提升但仍需多剂次接种"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 CALM 化学疫苗接种：单次暴露 21 个月无菌免疫（Science）"
+        }
+      ],
+      "tags": [
+        "疟疾",
+        "疫苗",
+        "化学减毒",
+        "免疫学",
+        "PMIX/X 抑制剂",
+        "CALM"
+      ],
+      "dateAdded": "2026-08-24",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{steel2026calm, title={Chemovaccination with a late-liver-stage antimalarial induces durable immunity against malaria}, journal={Science}, year={2026}, doi={10.1126/science.aea7605}}",
+        "formatted": "Steel R.W.J., Chua Y.C., Boddey J.A., et al. Chemovaccination with a late-liver-stage antimalarial induces durable immunity against malaria. Science 393 (2026). DOI: 10.1126/science.aea7605."
+      },
+      "preprint": false,
+      "venue": "Science",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-ried-superres-20260812",
+      "title": "化学反应发光超分辨成像 RIED：无激光、41 小时活细胞长时程观测",
+      "field": "化学",
+      "subfield": "分析化学 / 超分辨成像",
+      "researchers": [
+        "浙江大学冯建东团队",
+        "哈尔滨工业大学赵唯淞团队"
+      ],
+      "institution": "浙江大学 / 哈尔滨工业大学",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-10889-7",
+        "url": "https://www.nature.com/articles/s41586-026-10889-7",
+        "publicationDate": "2026-08-12"
+      },
+      "summary": "浙江大学与哈尔滨工业大学团队提出 RIED 超分辨成像框架，完全依靠电化学发光、化学发光与生物发光三类化学反应成像，无需外部激光，实现约 100 nm 空间分辨率与长达 41 小时的活细胞连续动态观测。",
+      "abstract": "Super-resolution fluorescence microscopy breaks the diffraction limit but relies on external laser excitation, causing photobleaching and phototoxicity. Here we develop RIED (reaction-enabled super-resolution imaging via entropy-weighted correlation combined with deconvolution), a framework using electrochemical, chemiluminescent and bioluminescent reactions as the light source, reaching ~100 nm resolution in living cells and enabling 41-hour continuous observation of mitochondrial dynamics without photodamage.",
+      "breakthrough": "2026年8月12日，浙江大学化学系冯建东团队与哈尔滨工业大学仪器学院赵唯淞团队在《自然》在线发表论文，提出基于化学反应发光的超分辨成像方法 RIED（熵加权相关联合反卷积）。\n\n传统荧光超分辨显微镜依赖高能激光激发荧光分子，不可避免地带来光漂白与光毒性，活细胞难以长时间存活，「看得清」与「看得久」难以兼得。研究团队彻底摆脱外源光激发：利用电致发光（ECL）、化学发光（CL）与生物发光（BL）三类化学反应作为光源，创新性引入「时空孤立采样」策略高效收集反应光子信号，再以熵加权相关累积量结合反卷积重建图像，将反应发光成像的空间分辨率推进至约 100 nm（ECL 模式最优 97 nm）。\n\n团队将 Ru(bpy)3²⁺ 发光探针偶联抗体实现细胞器特异标记，并用 Bis-tris 共反应剂使发光强度提升约 1000 倍。生物发光模式下，该方法实现长达 41 小时的活细胞线粒体连续超分辨观测，首次原位直接捕捉到细胞间线粒体转移的完整动态过程；对界面低浓度蛋白的检出限较传统荧光超分辨降低 8 倍。",
+      "significance": "这是国际上首次在化学反应发光体系实现三维、大视场、可长时间连续的超分辨生物成像。它绕过了荧光显微「高时空分辨率、成像深度与光毒性」之间的根本权衡，为活细胞纳米尺度长时程研究提供了全新工具。\n\n由于成像信号来自可定制的化学反应体系而非固定激光波长，RIED 具备很高的通用性——探针与反应体系可根据应用场景定制，可与电化学、微流控等平台集成。在疾病早期微量生物标志物检测、细胞粘附微环境解析、线粒体跨细胞通讯研究等领域均有直接应用前景。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "RIED 是「化学 × 光学 × 计算」交叉的典型：化学反应提供光源，信息熵加权与反卷积算法负责突破衍射极限。这一思路与单分子检测、量子传感等技术同源，预示「测量工具由化学性质决定」的成像新范式。",
+          "relatedFields": [
+            "化学",
+            "生物",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：RIED-ECL 进入肿瘤标志物超灵敏检测的临床前验证；中期：与活体成像结合，探索深组织化学发光成像；长期：可能取代部分荧光显微场景，成为神经科学、细胞生物学长时程观测的主流工具。",
+          "relatedFields": [
+            "医学",
+            "生物"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "化学发光信号的量子产率能否进一步提升？如何将成像深度从单层细胞推向组织层面？算法重构在不同标记密度下的鲁棒性如何？能否与超分辨荧光技术融合实现多通道同时成像？",
+          "relatedFields": [
+            "化学",
+            "生物"
+          ]
+        }
+      ],
+      "expertCommentary": "这项工作的核心突破不在分辨率数字本身，而在于「去激光化」：化学反应发光天然无光毒性、无光漂白，从物理机制上绕开了荧光成像的时程上限。41 小时连续观测并捕捉线粒体跨细胞转移，是荧光技术难以想象的。值得注意的是它同时打通了 ECL/CL/BL 三种体系，说明框架是通用的而非单一体系特调。局限在于：化学发光标记依赖抗体偶联，活体深组织应用仍受发光强度限制；从「看得久」到「看得深」还有一段路。",
+      "relatedMilestones": [
+        {
+          "year": 2014,
+          "description": "超分辨荧光显微术获诺贝尔化学奖"
+        },
+        {
+          "year": 2021,
+          "description": "冯建东团队首次实现单分子电化学发光成像（Nature）"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 RIED 化学反应发光超分辨成像：41 小时活细胞观测（Nature）"
+        }
+      ],
+      "tags": [
+        "超分辨成像",
+        "化学发光",
+        "活细胞成像",
+        "RIED",
+        "显微镜",
+        "无激光"
+      ],
+      "dateAdded": "2026-08-24",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{zhu2026ried, title={Luminescent-reaction-enabled super-resolution imaging}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-10889-7}}",
+        "formatted": "Zhu W., Zhang C., Gui J., et al. Luminescent-reaction-enabled super-resolution imaging. Nature (2026). DOI: 10.1038/s41586-026-10889-7."
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
       "id": "r-ai-phage-20260807",
       "title": "AI 首次从零生成完整功能性噬菌体基因组：进入生成式基因组设计时代",
       "field": "生物",

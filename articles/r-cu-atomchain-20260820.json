@@ -1,0 +1,85 @@
+{
+  "id": "r-cu-atomchain-20260820",
+  "title": "全球最长单原子「金属线」：碳鞘包裹铜原子链突破微米级",
+  "field": "化学",
+  "subfield": "高压化学 / 低维材料",
+  "researchers": [
+    "李阔",
+    "郑海燕",
+    "张杰 等"
+  ],
+  "institution": "北京高压科学研究中心 / 南开大学 / 北京大学",
+  "source": {
+    "journal": "Science",
+    "doi": "10.1126/science.aeg0028",
+    "url": "https://www.science.org/doi/10.1126/science.aeg0028",
+    "publicationDate": "2026-08-20"
+  },
+  "summary": "北京高压科学研究中心李阔团队通过高压固相拓扑聚合，首次合成微米级长度、原子级粗细、碳鞘包裹的铜单原子链：单链超过 4000 个铜原子，长度较此前国际纪录提升两个数量级以上，并实现毫克级宏量制备。",
+  "abstract": "Single-metal-atom chains (SMACs) are the ultimate one-dimensional nanostructures, but synthesizing them at practical lengths has remained challenging. We compressed beta-copper phthalocyanine above 21 gigapascals to create micrometer-long, carbon-sheathed copper SMACs at milligram scale, with Cu-Cu distance confined at 2.57 angstroms. The chains are isolable via acid-assisted exfoliation, exhibit anisotropic conductance and antiferromagnetic interactions, and the high-pressure topological polymerization strategy extends to cobalt, nickel and zinc phthalocyanines.",
+  "breakthrough": "2026年8月20日，《科学》杂志发表北京高压科学研究中心李阔、郑海燕团队的研究成果（联合南开大学、北京大学等），首次合成微米级长度、原子级粗细且结构稳定的碳包裹铜单金属原子链。\n\n单金属原子链是「最细的一维金属线」，但此前制备受限于链长——有机配体辅助溶液合成法所得链通常不足 10 个金属原子，纪录也仅 28 个原子。团队创新性地提出高压固相拓扑聚合策略：将 β-酞菁铜单晶压缩至 21 GPa 以上（25 GPa、533 K 保温 12 小时），外围芳香环发生聚合形成致密碳鞘，把内部周期性排列的铜原子「锁定」为原子链。利用巴黎-爱丁堡压机实现毫克级宏量制备，酸辅助剥离得到长度超过 1 微米、连续 4000 余个铜原子（Cu-Cu 距离 2.57 Å）的单链，链长较此前提升两个数量级以上。\n\n实验与计算显示，该原子链呈现显著导电各向异性（沿链方向电导率比垂直方向高一个数量级）与一维反铁磁耦合；碳鞘赋予其优异的化学与机械稳定性（可在三氟乙酸中长时间超声而不损）。该策略可推广至钴、镍、锌等多种金属酞菁体系。",
+  "significance": "把「最细金属导线」的制备极限从几十个原子推进到 4000+ 原子、微米级长度，同时解决了稳定性与宏量制备问题——链长、稳定性、批量制备三者首次兼得。\n\n单原子链是研究 Peierls 不稳定性、Tomonaga-Luttinger 液体等一维凝聚态理论问题的理想模型体系，也为下一代纳米电路、柔性可穿戴电子、自旋电子学器件提供了全新材料选项。高压固相拓扑聚合被证明是通用策略，为「一维原子链材料平台」奠定了基础。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "高压化学与凝聚态物理在此交汇：21 GPa 的极端条件不仅是合成工具，更揭示「压力锁定结构」这一通用思路——与超导材料高压合成、富氢化合物超导研究共享方法论。碳鞘与金属芯的「核-壳」结构也提示了一维异质结构设计新空间。",
+      "relatedFields": [
+        "化学",
+        "物理",
+        "材料"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：混合金属原子链与一维异质结构的可控合成；中期：原子链的电学/磁学单器件测量与纳米电路原型验证；长期：若导电性各向异性可工程化利用，有望进入分子电子学与自旋电子学应用。",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "能否实现混合金属（如 Cu/Ni）异质结链？单链的本征电导率（理论预测 10⁷ S/m 量级）能否在单器件实验中验证？碳鞘的 sp²/sp³ 杂化结构如何精确调控？高压合成的规模能否进一步放大到工业化量级？",
+      "relatedFields": [
+        "化学",
+        "物理"
+      ]
+    }
+  ],
+  "expertCommentary": "这是「材料极端合成」的代表作：别人在溶液里凑金属原子，李阔团队直接把酞菁晶体压到 21 GPa 以上「原位聚合」出原子链——思路简洁且具有普适性，扩展到 Co/Ni/Zn 酞菁都成立，说明不是偶然。4000 个铜原子、1 微米长，两个数量级的链长提升是实打实的纪录。碳鞘设计同时解决稳定性和绝缘保护，堪称巧妙。不足之处在于应用还很远：单链的电输运测量与器件集成尚未完成，理论预测的本征电导率还有待实验检验。",
+  "relatedMilestones": [
+    {
+      "year": 2000,
+      "description": "溶液法合成单金属原子链起步，链长长期停留在数十原子以内"
+    },
+    {
+      "year": 2022,
+      "description": "有机配体辅助合成链长纪录约 28 个金属原子"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 高压拓扑聚合：微米级碳鞘铜单原子链（Science）"
+    }
+  ],
+  "tags": [
+    "单原子链",
+    "高压合成",
+    "低维材料",
+    "纳米电子学",
+    "铜",
+    "酞菁"
+  ],
+  "dateAdded": "2026-08-24",
+  "readTime": 9,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{zhang2026smac, title={Ultralong sheathed single-metal-atom chains synthesized under high pressure}, journal={Science}, year={2026}, doi={10.1126/science.aeg0028}}",
+    "formatted": "Zhang J., Dong X., Qiu S., Li K., et al. Ultralong sheathed single-metal-atom chains synthesized under high pressure. Science 393, 826-830 (2026). DOI: 10.1126/science.aeg0028."
+  },
+  "preprint": false,
+  "venue": "Science",
+  "arxivId": null,
+  "codeUrl": null
+}
