@@ -1,7 +1,73 @@
 {
-  "generated": "2026-08-24",
-  "count": 34,
+  "generated": "2026-09-03",
+  "count": 37,
   "research": [
+    {
+      "id": "r-besiii-entangle-vus-20260902",
+      "title": "量子纠缠首次用于提取粒子信息：复旦团队开辟精确检验标准模型新路径",
+      "field": "物理",
+      "subfield": "粒子物理 / 量子信息",
+      "researchers": [
+        "罗涛",
+        "王顺",
+        "潘祥",
+        "Varvara Batozskaya",
+        "Andrzej Kupsc 等"
+      ],
+      "institution": "复旦大学现代物理研究所 / 西南科技大学 / 东南大学 / 中国科学院高能物理研究所 / 乌普萨拉大学",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-09-02"
+      },
+      "summary": "复旦大学罗涛团队与合作者首次在对撞机实验中利用量子纠缠与极化信息提取 CKM 矩阵元 |Vus|，仅用三十年前美国费米实验室研究二十分之一的数据量便达到同等测量精度，并实现对弱电耦合参数的首次测量。",
+      "innovationRating": 5,
+      "dateAdded": "2026-09-03",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "量子纠缠",
+        "CKM矩阵",
+        "粒子物理",
+        "BESIII",
+        "标准模型",
+        "Λ超子衰变"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-ugcg-gatekeeper-20260826",
+      "title": "首次看清细胞表面「看门酶」UGCG：冷冻电镜破解糖鞘脂合成调控机制",
+      "field": "医学",
+      "subfield": "结构生物学 / 药物靶点",
+      "researchers": [
+        "徐华强",
+        "吴灿荣",
+        "蒋轶",
+        "金三珊 等"
+      ],
+      "institution": "中国科学院上海药物研究所 / 上海交通大学医学院附属瑞金医院 / 临港实验室",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-08-26"
+      },
+      "summary": "中科院上海药物所徐华强团队联合瑞金医院、临港实验室，用冷冻电镜解析全长人源 UGCG 在 8 种功能状态下的高分辨率结构（2.9–3.4 Å），首次揭示这一糖鞘脂合成「看门酶」的三跨膜架构、无金属催化机制与灵长类特有的调控「刹车」。",
+      "innovationRating": 5,
+      "dateAdded": "2026-09-03",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "糖鞘脂",
+        "UGCG",
+        "冷冻电镜",
+        "结构生物学",
+        "药物靶点",
+        "戈谢病",
+        "帕金森病"
+      ],
+      "preprint": false
+    },
     {
       "id": "r-cu-atomchain-20260820",
       "title": "全球最长单原子「金属线」：碳鞘包裹铜原子链突破微米级",
@@ -30,6 +96,36 @@
         "纳米电子学",
         "铜",
         "酞菁"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-tmdc-nanotube-20260820",
+      "title": "攻克 30 年难题：氮化硼纳米管内「限域生长」实现 TMDC 纳米管手性可控制备",
+      "field": "化学",
+      "subfield": "材料化学 / 低维纳米材料",
+      "researchers": [
+        "项荣",
+        "郑永嘉 等"
+      ],
+      "institution": "浙江大学 / 大连理工大学 / 西湖大学 / 北京大学 / 大阪大学 / 东京大学",
+      "source": {
+        "journal": "Science",
+        "publicationDate": "2026-08-20"
+      },
+      "summary": "浙江大学项荣团队等以氮化硼纳米管为模具实现过渡金属硫族化合物（TMDC）纳米管的限域生长，使「扶手椅型」构型占比最高达 84%，攻克了自 1992 年以来困扰该领域 30 余年的手性构型控制难题。",
+      "innovationRating": 4,
+      "dateAdded": "2026-09-03",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "TMDC",
+        "纳米管",
+        "手性控制",
+        "限域生长",
+        "氮化硼",
+        "二维材料"
       ],
       "preprint": false
     },

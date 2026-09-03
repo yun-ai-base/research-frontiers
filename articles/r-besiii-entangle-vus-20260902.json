@@ -1,0 +1,84 @@
+{
+  "id": "r-besiii-entangle-vus-20260902",
+  "title": "量子纠缠首次用于提取粒子信息：复旦团队开辟精确检验标准模型新路径",
+  "field": "物理",
+  "subfield": "粒子物理 / 量子信息",
+  "researchers": [
+    "罗涛",
+    "王顺",
+    "潘祥",
+    "Varvara Batozskaya",
+    "Andrzej Kupsc 等"
+  ],
+  "institution": "复旦大学现代物理研究所 / 西南科技大学 / 东南大学 / 中国科学院高能物理研究所 / 乌普萨拉大学",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-10818-8",
+    "url": "https://www.nature.com/articles/s41586-026-10818-8",
+    "publicationDate": "2026-09-02"
+  },
+  "summary": "复旦大学罗涛团队与合作者首次在对撞机实验中利用量子纠缠与极化信息提取 CKM 矩阵元 |Vus|，仅用三十年前美国费米实验室研究二十分之一的数据量便达到同等测量精度，并实现对弱电耦合参数的首次测量。",
+  "abstract": "We report the first extraction of the Cabibbo-Kobayashi-Maskawa matrix element |Vus| from a collider experiment using quantum entanglement and polarization information in Lambda hyperon semileptonic decays. By developing a joint angular distribution multivariate fit that exploits spin entanglement between the decay products, invisible anti-neutrino kinematics are reconstructed via energy-momentum conservation, enabling a measurement precision comparable to previous determinations with one twentieth of the data sample, together with a first determination of the weak-electric coupling parameter.",
+  "breakthrough": "2026年9月2日，复旦大学现代物理研究所罗涛团队与合作者在《自然》发表题为「Exploring baryon semileptonic decays through polarization and entanglement」的研究，首次在对撞机实验中利用量子纠缠与极化信息提取卡比博—小林—益川（CKM）矩阵元 |Vus|。\n\n标准模型中，夸克有六种「味」，不同夸克之间的转变强度由 CKM 矩阵描述，其中每个矩阵元描述一种夸克转变的强弱，且各行须满足严格的幺正性关系。|Vus| 对应奇异夸克向上夸克的转变，其精确性直接关系标准模型对三代夸克混合的描述能否通过检验；当前不同衰变过程测得的 |Vus| 之间存在差异，第一行幺正性检验显示出一定张力，亟需更多彼此独立的测量途径。\n\nΛ 超子的 β 衰变提供了理想途径。团队创造性地开发了一套独特的联合角分布多变量拟合方法，利用衰变产物之间的自旋纠缠与极化信息，把「看不见」的反中微子通过能量动量守恒反推出行踪，与「看得见」的带电粒子信息结合，使原本模糊的物理图像清晰可辨。团队利用北京谱仪 III（BESIII）实验数据，从 100 亿个对撞事例中筛选信号。得益于对探测灵敏度与信息利用率的提升，本研究仅以三十年前美国费米实验室研究二十分之一的数据量，便达到同等测量精度，并实现了对弱电耦合参数的首次测量。",
+  "significance": "这是量子纠缠从「原理验证」走向「高能物理实验工具」的标志性工作。过去量子纠缠多用于量子信息领域，本研究证明它可以作为对撞机实验中的信息放大器——用更精妙的分析思路让已有的数据「焕发新生」，而非依赖堆砌数据量或升级设备。\n\n该结果为精确检验标准模型开辟了独立于 K 介子、陶轻子衰变之外的全新路径，对厘清 CKM 第一行幺正性张力具有直接价值。方法已推广至 BESIII 其他重子的衰变测量，并有望为欧洲 PANDA 实验及下一代超级陶粲装置提供关键分析手段。正如中科院院士马余刚所评价：这是一项开创性工作，其突破不在于设备堆叠，而在于思路的精妙。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "量子信息科学与高能物理在此深度交叉：把「纠缠」这一量子资源转化为测量精度的杠杆，与量子计量学中用纠缠突破标准量子极限的思路同源。这意味着加速器实验的数据分析范式可能整体向量子信息方法迁移。",
+      "relatedFields": [
+        "物理",
+        "量子计算"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：方法推广至 BESIII 其他重子衰变（Ξ、Ω 等）测量；中期：为 PANDA 实验、超级陶粲装置提供标准分析工具；长期：若 CKM 幺正性张力被持续观测到，可能成为新物理信号的关键线索。",
+      "relatedFields": [
+        "物理"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "纠缠增强方法在其他衰变道（含粲、底夸克）中的适用性如何？理论侧形状因子计算的不确定性能否同步降低到匹配实验精度的水平？幺正性张力最终会收敛还是会指向新物理？",
+      "relatedFields": [
+        "物理"
+      ]
+    }
+  ],
+  "expertCommentary": "「用二十分之一的数据达到同等精度」这句话是理解这项工作的钥匙——它说明制约精度的从来不只是统计量，而是信息提取方式。把量子纠缠当作测量工具而非研究对象，是高能物理分析思路的一次跃迁。更值得称道的是它同时给出了弱电耦合参数的首次测量，说明方法不只是复现已知量、而是打开了新可观测量。冷静看：|Vus| 的幺正性张力目前还不足以断言新物理，这项工作的价值在于提供了一个完全独立的测量路径，让「张力」是否真实这一问题的判定多了一票可信的证据。",
+  "relatedMilestones": [
+    {
+      "year": 1963,
+      "description": "卡比博提出夸克混合角，CKM 矩阵理论起点"
+    },
+    {
+      "year": 2008,
+      "description": "小林诚、益川敏英因 CKM 矩阵获诺贝尔物理学奖"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 首次在对撞机实验中用量子纠缠提取 CKM 矩阵元 |Vus|（Nature）"
+    }
+  ],
+  "tags": [
+    "量子纠缠",
+    "CKM矩阵",
+    "粒子物理",
+    "BESIII",
+    "标准模型",
+    "Λ超子衰变"
+  ],
+  "dateAdded": "2026-09-03",
+  "readTime": 10,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{wang2026entanglement, title={Exploring baryon semileptonic decays through polarization and entanglement}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-10818-8}}",
+    "formatted": "Wang S., Luo T., Pan X., Batozskaya V., Kupsc A., Adlarson P., et al. Exploring baryon semileptonic decays through polarization and entanglement. Nature (2026). DOI: 10.1038/s41586-026-10818-8."
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
+}

@@ -1,0 +1,84 @@
+{
+  "id": "r-tmdc-nanotube-20260820",
+  "title": "攻克 30 年难题：氮化硼纳米管内「限域生长」实现 TMDC 纳米管手性可控制备",
+  "field": "化学",
+  "subfield": "材料化学 / 低维纳米材料",
+  "researchers": [
+    "项荣",
+    "郑永嘉 等"
+  ],
+  "institution": "浙江大学 / 大连理工大学 / 西湖大学 / 北京大学 / 大阪大学 / 东京大学",
+  "source": {
+    "journal": "Science",
+    "doi": "10.1126/science.aeh1429",
+    "url": "https://www.science.org/doi/10.1126/science.aeh1429",
+    "publicationDate": "2026-08-20"
+  },
+  "summary": "浙江大学项荣团队等以氮化硼纳米管为模具实现过渡金属硫族化合物（TMDC）纳米管的限域生长，使「扶手椅型」构型占比最高达 84%，攻克了自 1992 年以来困扰该领域 30 余年的手性构型控制难题。",
+  "abstract": "Transition metal dichalcogenide (TMDC) nanotubes hold promise for optoelectronics, quantum information and catalysis, but controlling their chirality at the atomic scale has remained unsolved since their discovery in 1992. We use boron nitride nanotubes as confined-growth templates, enabling selective synthesis of armchair TMDC nanotubes with a selectivity up to 84%, demonstrated for tin disulfide and also applicable to molybdenum and tungsten disulfide. In situ transmission electron microscopy reveals that TMDC preferentially grows as a zigzag nanoribbon on the inner wall, which then closes into an armchair nanotube through interlayer sliding under template confinement and wall vibration.",
+  "breakthrough": "2026年8月20日，浙江大学项荣教授团队、百人计划研究员郑永嘉等联合大连理工大学、西湖大学、苏州实验室、北京大学及日本大阪大学、东京大学等单位，在《科学》发表题为「Preferred synthesis of armchair transition metal dichalcogenide nanotubes」的研究论文，在原子级材料结构一致性制造方向取得突破。\n\n过渡金属硫族化合物（TMDC）纳米管具有带隙覆盖范围广、非线性光学效应强等特性，还能承载谷电子学等物理效应，在光电器件、量子信息、催化领域前景广阔。但在原子尺度下，极小的结构失配就会引发显著性能差异，TMDC 纳米管的构型控制难题自 1992 年首次被发现以来，30 余年间未取得实质性突破。\n\n团队以氮化硼纳米管作为模具，在其空心通道内实现 TMDC 材料的限域生长，从而实现特定手性构型的选择性合成。以二硫化锡为例，该方法制备的「扶手椅型」TMDC 纳米管占比最高可达 84%；该策略同样适用于二硫化钼、二硫化钨等典型 TMDC 材料，均表现出明显的扶手椅型择优生长特性。通过原位透射电子显微镜实时观测，团队揭示了机理：TMDC 会优先在氮化硼纳米管内壁生长出一条锯齿形纳米带，在模具的限域作用和管壁振动下，锯齿型纳米带通过层间滑动、边缘闭合，进一步卷成扶手椅型纳米管。",
+  "significance": "这是自 1992 年 TMDC 纳米管发现以来，手性构型控制难题的首次实质性突破。「氮化硼纳米管作为限域模具」这一思路简洁且具有普适性，为原子级结构一致性制造提供了新范式。\n\n手性直接决定纳米管的电学与光学性质——能按需制备单一手性的 TMDC 纳米管，意味着从「碰运气得到混合物」走向「按设计得到目标结构」，对谷电子学器件、非线性光学器件、量子信息载体等应用是基础性前提。此外，原位 TEM 揭示的「锯齿带卷成扶手椅管」机理，为其他一维纳米结构的构型控制提供了可借鉴的机理性认识。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "「限域模具 + 原位观测」是纳米制造与表征技术的组合创新：氮化硼纳米管既是反应容器又是结构模板，与原位 TEM 联用让生长机理直接可视化。这种「模板法」思路与分子筛合成、MOF 限域催化同源。",
+      "relatedFields": [
+        "化学",
+        "物理",
+        "材料"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：拓展至更多 TMDC 组分（硒化物、合金化体系）验证普适性；中期：制备单一手性纳米管器件，验证谷电子学与非线性光学性能；长期：若手性纯度可进一步提升并规模制备，有望进入光电器件应用。",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "84% 的选择性能否进一步提升至接近 100%？限域生长的尺度上限（管长、管径）在哪里？氮化硼模板能否去除而不破坏 TMDC 管结构、从而实现自由-standing 器件集成？",
+      "relatedFields": [
+        "化学",
+        "物理"
+      ]
+    }
+  ],
+  "expertCommentary": "「用氮化硼纳米管当模具」这个想法妙在简洁——前人三十年在气相里调参数碰运气，团队换了个思路：给材料一个物理边界，让几何约束替你选手性。84% 的选择性是可观的突破，原位 TEM 把「锯齿带卷成扶手椅管」的过程拍下来更是让机理无可争辩。要冷静的地方：84% 距离单一手性的实用要求仍有距离；模板去除与器件集成是下一个真实门槛。评审和资助层面的亮点是它出自青年科学基金「非共识项目」试点——这类高风险探索能出成果，对资助机制本身也是个正面案例。",
+  "relatedMilestones": [
+    {
+      "year": 1992,
+      "description": "TMDC 纳米管首次被发现，手性控制难题随之提出"
+    },
+    {
+      "year": 2025,
+      "description": "国家自然科学基金委启动非共识项目试点，本项目获资助"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 氮化硼限域生长实现扶手椅型 TMDC 纳米管 84% 选择性（Science）"
+    }
+  ],
+  "tags": [
+    "TMDC",
+    "纳米管",
+    "手性控制",
+    "限域生长",
+    "氮化硼",
+    "二维材料"
+  ],
+  "dateAdded": "2026-09-03",
+  "readTime": 9,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{zheng2026tmdc, title={Preferred synthesis of armchair transition metal dichalcogenide nanotubes}, journal={Science}, year={2026}, doi={10.1126/science.aeh1429}}",
+    "formatted": "Zheng Y., et al. Preferred synthesis of armchair transition metal dichalcogenide nanotubes. Science (2026). DOI: 10.1126/science.aeh1429."
+  },
+  "preprint": false,
+  "venue": "Science",
+  "arxivId": null,
+  "codeUrl": null
+}

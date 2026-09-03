@@ -1,6 +1,177 @@
 {
   "research": [
     {
+      "id": "r-besiii-entangle-vus-20260902",
+      "title": "量子纠缠首次用于提取粒子信息：复旦团队开辟精确检验标准模型新路径",
+      "field": "物理",
+      "subfield": "粒子物理 / 量子信息",
+      "researchers": [
+        "罗涛",
+        "王顺",
+        "潘祥",
+        "Varvara Batozskaya",
+        "Andrzej Kupsc 等"
+      ],
+      "institution": "复旦大学现代物理研究所 / 西南科技大学 / 东南大学 / 中国科学院高能物理研究所 / 乌普萨拉大学",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-10818-8",
+        "url": "https://www.nature.com/articles/s41586-026-10818-8",
+        "publicationDate": "2026-09-02"
+      },
+      "summary": "复旦大学罗涛团队与合作者首次在对撞机实验中利用量子纠缠与极化信息提取 CKM 矩阵元 |Vus|，仅用三十年前美国费米实验室研究二十分之一的数据量便达到同等测量精度，并实现对弱电耦合参数的首次测量。",
+      "abstract": "We report the first extraction of the Cabibbo-Kobayashi-Maskawa matrix element |Vus| from a collider experiment using quantum entanglement and polarization information in Lambda hyperon semileptonic decays. By developing a joint angular distribution multivariate fit that exploits spin entanglement between the decay products, invisible anti-neutrino kinematics are reconstructed via energy-momentum conservation, enabling a measurement precision comparable to previous determinations with one twentieth of the data sample, together with a first determination of the weak-electric coupling parameter.",
+      "breakthrough": "2026年9月2日，复旦大学现代物理研究所罗涛团队与合作者在《自然》发表题为「Exploring baryon semileptonic decays through polarization and entanglement」的研究，首次在对撞机实验中利用量子纠缠与极化信息提取卡比博—小林—益川（CKM）矩阵元 |Vus|。\n\n标准模型中，夸克有六种「味」，不同夸克之间的转变强度由 CKM 矩阵描述，其中每个矩阵元描述一种夸克转变的强弱，且各行须满足严格的幺正性关系。|Vus| 对应奇异夸克向上夸克的转变，其精确性直接关系标准模型对三代夸克混合的描述能否通过检验；当前不同衰变过程测得的 |Vus| 之间存在差异，第一行幺正性检验显示出一定张力，亟需更多彼此独立的测量途径。\n\nΛ 超子的 β 衰变提供了理想途径。团队创造性地开发了一套独特的联合角分布多变量拟合方法，利用衰变产物之间的自旋纠缠与极化信息，把「看不见」的反中微子通过能量动量守恒反推出行踪，与「看得见」的带电粒子信息结合，使原本模糊的物理图像清晰可辨。团队利用北京谱仪 III（BESIII）实验数据，从 100 亿个对撞事例中筛选信号。得益于对探测灵敏度与信息利用率的提升，本研究仅以三十年前美国费米实验室研究二十分之一的数据量，便达到同等测量精度，并实现了对弱电耦合参数的首次测量。",
+      "significance": "这是量子纠缠从「原理验证」走向「高能物理实验工具」的标志性工作。过去量子纠缠多用于量子信息领域，本研究证明它可以作为对撞机实验中的信息放大器——用更精妙的分析思路让已有的数据「焕发新生」，而非依赖堆砌数据量或升级设备。\n\n该结果为精确检验标准模型开辟了独立于 K 介子、陶轻子衰变之外的全新路径，对厘清 CKM 第一行幺正性张力具有直接价值。方法已推广至 BESIII 其他重子的衰变测量，并有望为欧洲 PANDA 实验及下一代超级陶粲装置提供关键分析手段。正如中科院院士马余刚所评价：这是一项开创性工作，其突破不在于设备堆叠，而在于思路的精妙。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "量子信息科学与高能物理在此深度交叉：把「纠缠」这一量子资源转化为测量精度的杠杆，与量子计量学中用纠缠突破标准量子极限的思路同源。这意味着加速器实验的数据分析范式可能整体向量子信息方法迁移。",
+          "relatedFields": [
+            "物理",
+            "量子计算"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：方法推广至 BESIII 其他重子衰变（Ξ、Ω 等）测量；中期：为 PANDA 实验、超级陶粲装置提供标准分析工具；长期：若 CKM 幺正性张力被持续观测到，可能成为新物理信号的关键线索。",
+          "relatedFields": [
+            "物理"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "纠缠增强方法在其他衰变道（含粲、底夸克）中的适用性如何？理论侧形状因子计算的不确定性能否同步降低到匹配实验精度的水平？幺正性张力最终会收敛还是会指向新物理？",
+          "relatedFields": [
+            "物理"
+          ]
+        }
+      ],
+      "expertCommentary": "「用二十分之一的数据达到同等精度」这句话是理解这项工作的钥匙——它说明制约精度的从来不只是统计量，而是信息提取方式。把量子纠缠当作测量工具而非研究对象，是高能物理分析思路的一次跃迁。更值得称道的是它同时给出了弱电耦合参数的首次测量，说明方法不只是复现已知量、而是打开了新可观测量。冷静看：|Vus| 的幺正性张力目前还不足以断言新物理，这项工作的价值在于提供了一个完全独立的测量路径，让「张力」是否真实这一问题的判定多了一票可信的证据。",
+      "relatedMilestones": [
+        {
+          "year": 1963,
+          "description": "卡比博提出夸克混合角，CKM 矩阵理论起点"
+        },
+        {
+          "year": 2008,
+          "description": "小林诚、益川敏英因 CKM 矩阵获诺贝尔物理学奖"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 首次在对撞机实验中用量子纠缠提取 CKM 矩阵元 |Vus|（Nature）"
+        }
+      ],
+      "tags": [
+        "量子纠缠",
+        "CKM矩阵",
+        "粒子物理",
+        "BESIII",
+        "标准模型",
+        "Λ超子衰变"
+      ],
+      "dateAdded": "2026-09-03",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{wang2026entanglement, title={Exploring baryon semileptonic decays through polarization and entanglement}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-10818-8}}",
+        "formatted": "Wang S., Luo T., Pan X., Batozskaya V., Kupsc A., Adlarson P., et al. Exploring baryon semileptonic decays through polarization and entanglement. Nature (2026). DOI: 10.1038/s41586-026-10818-8."
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-ugcg-gatekeeper-20260826",
+      "title": "首次看清细胞表面「看门酶」UGCG：冷冻电镜破解糖鞘脂合成调控机制",
+      "field": "医学",
+      "subfield": "结构生物学 / 药物靶点",
+      "researchers": [
+        "徐华强",
+        "吴灿荣",
+        "蒋轶",
+        "金三珊 等"
+      ],
+      "institution": "中国科学院上海药物研究所 / 上海交通大学医学院附属瑞金医院 / 临港实验室",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-10927-4",
+        "url": "https://doi.org/10.1038/s41586-026-10927-4",
+        "publicationDate": "2026-08-26"
+      },
+      "summary": "中科院上海药物所徐华强团队联合瑞金医院、临港实验室，用冷冻电镜解析全长人源 UGCG 在 8 种功能状态下的高分辨率结构（2.9–3.4 Å），首次揭示这一糖鞘脂合成「看门酶」的三跨膜架构、无金属催化机制与灵长类特有的调控「刹车」。",
+      "abstract": "Glycosphingolipids enter their biosynthetic network through a single rate-limiting reaction catalysed by UDP-glucose ceramide glucosyltransferase (UGCG), the gatekeeper determining glycosphingolipid diversity. We report cryo-EM structures of full-length human UGCG in eight functional states at 2.9-3.4 angstrom resolution. UGCG adopts a previously unrecognized triple-transmembrane architecture that anchors a GT-A catalytic core at the membrane interface, creating a dual-entry active centre that simultaneously engages a soluble sugar donor and a membrane-embedded lipid acceptor. Unlike canonical GT-A enzymes, UGCG uses an arginine-network-driven metal-independent catalytic mechanism. We identify a primate-specific steric element that tunes lipid affinity and catalytic turnover, and co-structures with clinical inhibitors reveal how this architecture determines inhibitor potency and selectivity.",
+      "breakthrough": "2026年8月26日，中国科学院上海药物研究所徐华强团队联合上海交通大学医学院附属瑞金医院吴灿荣团队、临港实验室蒋轶团队，在《自然》发表题为「Primate-specific regulation of the human glycosphingolipid gatekeeper UGCG」的研究论文。\n\n糖鞘脂是细胞膜上的关键「标签系统」，参与细胞识别、信号传递，其代谢异常与戈谢病、法布里病等罕见病，以及帕金森病等神经退行性疾病、代谢性疾病和肿瘤密切相关。UGCG 位于整个糖鞘脂合成网络的入口，是经临床验证的药物靶点。但它要处理的两种原料「性格」完全相反——一种水溶（UDP-葡萄糖，在细胞质），一种油性的（神经酰胺，藏在膜内），究竟如何把它们凑到一起完成反应，长期没有答案。\n\n研究团队利用单颗粒冷冻电镜技术，解析了全长人源 UGCG 在 8 种功能状态下的结构（分辨率 2.9–3.4 Å），覆盖无配体、UDP/UDP-葡萄糖结合、神经酰胺相关、磷脂占位及不同抑制剂结合状态。结构显示 UGCG 具有此前未被认识的三次跨膜架构，其胞质侧 GT-A 型催化核心被精准锚定于膜表面，形成由亲水区和疏水区共同构成的「双通路」活性中心：UDP-葡萄糖从胞质侧进入亲水口袋，神经酰胺从脂质双层侧向进入膜内疏水通道，两条通路汇聚于同一反应中心。与经典 GT-A 酶依赖 Mg²⁺/Mn²⁺ 不同，UGCG 采用精氨酸网络驱动的无金属催化机制。团队还鉴定出一个仅存在于灵长类的空间位阻元件，可调节脂质亲和力与催化转换率，相当于一个精细调控「开关」。",
+      "significance": "这是首次系统回答「UGCG 长什么样、怎么干活」这一基础问题，把糖鞘脂合成网络的入口机制从黑箱变为可解析的结构模型。\n\n临床意义直接：UGCG 抑制剂已用于治疗因糖鞘脂「堆积」致病的戈谢病等患者，过去药物开发主要靠大量化合物筛选和反复试错；如今有了多个高分辨率「药物—酶」结合结构，可直接比较不同药物的结合方式与选择性（一种「堵住脂的入口」，另一种「扰乱糖的一侧」），针对性地设计出适应证各异的新型药物。灵长类特异调控元件的发现还提示：啮齿类模型的药效数据可能无法完全外推到人类。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "结构生物学 × 脂质代谢 × 药物化学三线交汇：冷冻电镜解析膜蛋白的技术进步（尤其膜界面锚定的催化核心）是本次突破的直接前提，而「双通路活性中心」的结构范式对其他处理两亲性底物的酶（如其他糖基转移酶、脂质修饰酶）具有参照价值。",
+          "relatedFields": [
+            "生物",
+            "医学",
+            "化学"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：基于 8 种状态结构开展 UGCG 抑制剂的结构导向优化；中期：拓展适应证至帕金森病（GBA 通路相关）与部分肿瘤；长期：把「膜界面双通路」思路推广到其他膜嵌入酶家族的药物设计。",
+          "relatedFields": [
+            "医学",
+            "生物"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "灵长类特异「刹车」元件在体内的生理调控信号是什么——是否存在内源性调节因子？无金属催化机制在进化上为何被选择？抑制剂的长期安全性（完全抑制 UGCG 的后果）如何评估？",
+          "relatedFields": [
+            "医学",
+            "生物"
+          ]
+        }
+      ],
+      "expertCommentary": "这是一篇典型的「看清了结构，药物设计就从玄学变工程」的工作。8 个功能状态不是为了凑数，而是把底物识别、催化、抑制三个环节逐一拆解，尤其两种已上市抑制剂「一个堵脂入口、一个扰糖侧」的差异，直接给出选择性的结构解释——这对做药的人价值极高。灵长类特有元件的发现是个意外之喜，它同时抬出了一个警告：小鼠模型上的 UGCG 药效数据可能系统性偏离人体，这对整个领域的临床前评估框架是个提醒。局限在于：结构静态快照不等于动态催化全貌，调控元件在活细胞中的生理触发条件仍待回答。",
+      "relatedMilestones": [
+        {
+          "year": 2017,
+          "description": "冷冻电镜技术成熟，膜蛋白结构解析进入高分辨率时代"
+        },
+        {
+          "year": 2020,
+          "description": "徐华强团队在 GPCR 结构药理学方向持续产出顶刊成果"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 首次解析人源 UGCG 8 种状态结构，揭示灵长类特异调控（Nature）"
+        }
+      ],
+      "tags": [
+        "糖鞘脂",
+        "UGCG",
+        "冷冻电镜",
+        "结构生物学",
+        "药物靶点",
+        "戈谢病",
+        "帕金森病"
+      ],
+      "dateAdded": "2026-09-03",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{wu2026ugcg, title={Primate-specific regulation of the human glycosphingolipid gatekeeper UGCG}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-10927-4}}",
+        "formatted": "Wu C., Jin S., Xu J., Wang J.J., Jiang Y., Xu H.E., et al. Primate-specific regulation of the human glycosphingolipid gatekeeper UGCG. Nature (2026). DOI: 10.1038/s41586-026-10927-4."
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
       "id": "r-cu-atomchain-20260820",
       "title": "全球最长单原子「金属线」：碳鞘包裹铜原子链突破微米级",
       "field": "化学",
@@ -79,6 +250,90 @@
       "citations": {
         "bibtex": "@article{zhang2026smac, title={Ultralong sheathed single-metal-atom chains synthesized under high pressure}, journal={Science}, year={2026}, doi={10.1126/science.aeg0028}}",
         "formatted": "Zhang J., Dong X., Qiu S., Li K., et al. Ultralong sheathed single-metal-atom chains synthesized under high pressure. Science 393, 826-830 (2026). DOI: 10.1126/science.aeg0028."
+      },
+      "preprint": false,
+      "venue": "Science",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-tmdc-nanotube-20260820",
+      "title": "攻克 30 年难题：氮化硼纳米管内「限域生长」实现 TMDC 纳米管手性可控制备",
+      "field": "化学",
+      "subfield": "材料化学 / 低维纳米材料",
+      "researchers": [
+        "项荣",
+        "郑永嘉 等"
+      ],
+      "institution": "浙江大学 / 大连理工大学 / 西湖大学 / 北京大学 / 大阪大学 / 东京大学",
+      "source": {
+        "journal": "Science",
+        "doi": "10.1126/science.aeh1429",
+        "url": "https://www.science.org/doi/10.1126/science.aeh1429",
+        "publicationDate": "2026-08-20"
+      },
+      "summary": "浙江大学项荣团队等以氮化硼纳米管为模具实现过渡金属硫族化合物（TMDC）纳米管的限域生长，使「扶手椅型」构型占比最高达 84%，攻克了自 1992 年以来困扰该领域 30 余年的手性构型控制难题。",
+      "abstract": "Transition metal dichalcogenide (TMDC) nanotubes hold promise for optoelectronics, quantum information and catalysis, but controlling their chirality at the atomic scale has remained unsolved since their discovery in 1992. We use boron nitride nanotubes as confined-growth templates, enabling selective synthesis of armchair TMDC nanotubes with a selectivity up to 84%, demonstrated for tin disulfide and also applicable to molybdenum and tungsten disulfide. In situ transmission electron microscopy reveals that TMDC preferentially grows as a zigzag nanoribbon on the inner wall, which then closes into an armchair nanotube through interlayer sliding under template confinement and wall vibration.",
+      "breakthrough": "2026年8月20日，浙江大学项荣教授团队、百人计划研究员郑永嘉等联合大连理工大学、西湖大学、苏州实验室、北京大学及日本大阪大学、东京大学等单位，在《科学》发表题为「Preferred synthesis of armchair transition metal dichalcogenide nanotubes」的研究论文，在原子级材料结构一致性制造方向取得突破。\n\n过渡金属硫族化合物（TMDC）纳米管具有带隙覆盖范围广、非线性光学效应强等特性，还能承载谷电子学等物理效应，在光电器件、量子信息、催化领域前景广阔。但在原子尺度下，极小的结构失配就会引发显著性能差异，TMDC 纳米管的构型控制难题自 1992 年首次被发现以来，30 余年间未取得实质性突破。\n\n团队以氮化硼纳米管作为模具，在其空心通道内实现 TMDC 材料的限域生长，从而实现特定手性构型的选择性合成。以二硫化锡为例，该方法制备的「扶手椅型」TMDC 纳米管占比最高可达 84%；该策略同样适用于二硫化钼、二硫化钨等典型 TMDC 材料，均表现出明显的扶手椅型择优生长特性。通过原位透射电子显微镜实时观测，团队揭示了机理：TMDC 会优先在氮化硼纳米管内壁生长出一条锯齿形纳米带，在模具的限域作用和管壁振动下，锯齿型纳米带通过层间滑动、边缘闭合，进一步卷成扶手椅型纳米管。",
+      "significance": "这是自 1992 年 TMDC 纳米管发现以来，手性构型控制难题的首次实质性突破。「氮化硼纳米管作为限域模具」这一思路简洁且具有普适性，为原子级结构一致性制造提供了新范式。\n\n手性直接决定纳米管的电学与光学性质——能按需制备单一手性的 TMDC 纳米管，意味着从「碰运气得到混合物」走向「按设计得到目标结构」，对谷电子学器件、非线性光学器件、量子信息载体等应用是基础性前提。此外，原位 TEM 揭示的「锯齿带卷成扶手椅管」机理，为其他一维纳米结构的构型控制提供了可借鉴的机理性认识。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "「限域模具 + 原位观测」是纳米制造与表征技术的组合创新：氮化硼纳米管既是反应容器又是结构模板，与原位 TEM 联用让生长机理直接可视化。这种「模板法」思路与分子筛合成、MOF 限域催化同源。",
+          "relatedFields": [
+            "化学",
+            "物理",
+            "材料"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：拓展至更多 TMDC 组分（硒化物、合金化体系）验证普适性；中期：制备单一手性纳米管器件，验证谷电子学与非线性光学性能；长期：若手性纯度可进一步提升并规模制备，有望进入光电器件应用。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "84% 的选择性能否进一步提升至接近 100%？限域生长的尺度上限（管长、管径）在哪里？氮化硼模板能否去除而不破坏 TMDC 管结构、从而实现自由-standing 器件集成？",
+          "relatedFields": [
+            "化学",
+            "物理"
+          ]
+        }
+      ],
+      "expertCommentary": "「用氮化硼纳米管当模具」这个想法妙在简洁——前人三十年在气相里调参数碰运气，团队换了个思路：给材料一个物理边界，让几何约束替你选手性。84% 的选择性是可观的突破，原位 TEM 把「锯齿带卷成扶手椅管」的过程拍下来更是让机理无可争辩。要冷静的地方：84% 距离单一手性的实用要求仍有距离；模板去除与器件集成是下一个真实门槛。评审和资助层面的亮点是它出自青年科学基金「非共识项目」试点——这类高风险探索能出成果，对资助机制本身也是个正面案例。",
+      "relatedMilestones": [
+        {
+          "year": 1992,
+          "description": "TMDC 纳米管首次被发现，手性控制难题随之提出"
+        },
+        {
+          "year": 2025,
+          "description": "国家自然科学基金委启动非共识项目试点，本项目获资助"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 氮化硼限域生长实现扶手椅型 TMDC 纳米管 84% 选择性（Science）"
+        }
+      ],
+      "tags": [
+        "TMDC",
+        "纳米管",
+        "手性控制",
+        "限域生长",
+        "氮化硼",
+        "二维材料"
+      ],
+      "dateAdded": "2026-09-03",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{zheng2026tmdc, title={Preferred synthesis of armchair transition metal dichalcogenide nanotubes}, journal={Science}, year={2026}, doi={10.1126/science.aeh1429}}",
+        "formatted": "Zheng Y., et al. Preferred synthesis of armchair transition metal dichalcogenide nanotubes. Science (2026). DOI: 10.1126/science.aeh1429."
       },
       "preprint": false,
       "venue": "Science",

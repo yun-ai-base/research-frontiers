@@ -1,0 +1,87 @@
+{
+  "id": "r-ugcg-gatekeeper-20260826",
+  "title": "首次看清细胞表面「看门酶」UGCG：冷冻电镜破解糖鞘脂合成调控机制",
+  "field": "医学",
+  "subfield": "结构生物学 / 药物靶点",
+  "researchers": [
+    "徐华强",
+    "吴灿荣",
+    "蒋轶",
+    "金三珊 等"
+  ],
+  "institution": "中国科学院上海药物研究所 / 上海交通大学医学院附属瑞金医院 / 临港实验室",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-10927-4",
+    "url": "https://doi.org/10.1038/s41586-026-10927-4",
+    "publicationDate": "2026-08-26"
+  },
+  "summary": "中科院上海药物所徐华强团队联合瑞金医院、临港实验室，用冷冻电镜解析全长人源 UGCG 在 8 种功能状态下的高分辨率结构（2.9–3.4 Å），首次揭示这一糖鞘脂合成「看门酶」的三跨膜架构、无金属催化机制与灵长类特有的调控「刹车」。",
+  "abstract": "Glycosphingolipids enter their biosynthetic network through a single rate-limiting reaction catalysed by UDP-glucose ceramide glucosyltransferase (UGCG), the gatekeeper determining glycosphingolipid diversity. We report cryo-EM structures of full-length human UGCG in eight functional states at 2.9-3.4 angstrom resolution. UGCG adopts a previously unrecognized triple-transmembrane architecture that anchors a GT-A catalytic core at the membrane interface, creating a dual-entry active centre that simultaneously engages a soluble sugar donor and a membrane-embedded lipid acceptor. Unlike canonical GT-A enzymes, UGCG uses an arginine-network-driven metal-independent catalytic mechanism. We identify a primate-specific steric element that tunes lipid affinity and catalytic turnover, and co-structures with clinical inhibitors reveal how this architecture determines inhibitor potency and selectivity.",
+  "breakthrough": "2026年8月26日，中国科学院上海药物研究所徐华强团队联合上海交通大学医学院附属瑞金医院吴灿荣团队、临港实验室蒋轶团队，在《自然》发表题为「Primate-specific regulation of the human glycosphingolipid gatekeeper UGCG」的研究论文。\n\n糖鞘脂是细胞膜上的关键「标签系统」，参与细胞识别、信号传递，其代谢异常与戈谢病、法布里病等罕见病，以及帕金森病等神经退行性疾病、代谢性疾病和肿瘤密切相关。UGCG 位于整个糖鞘脂合成网络的入口，是经临床验证的药物靶点。但它要处理的两种原料「性格」完全相反——一种水溶（UDP-葡萄糖，在细胞质），一种油性的（神经酰胺，藏在膜内），究竟如何把它们凑到一起完成反应，长期没有答案。\n\n研究团队利用单颗粒冷冻电镜技术，解析了全长人源 UGCG 在 8 种功能状态下的结构（分辨率 2.9–3.4 Å），覆盖无配体、UDP/UDP-葡萄糖结合、神经酰胺相关、磷脂占位及不同抑制剂结合状态。结构显示 UGCG 具有此前未被认识的三次跨膜架构，其胞质侧 GT-A 型催化核心被精准锚定于膜表面，形成由亲水区和疏水区共同构成的「双通路」活性中心：UDP-葡萄糖从胞质侧进入亲水口袋，神经酰胺从脂质双层侧向进入膜内疏水通道，两条通路汇聚于同一反应中心。与经典 GT-A 酶依赖 Mg²⁺/Mn²⁺ 不同，UGCG 采用精氨酸网络驱动的无金属催化机制。团队还鉴定出一个仅存在于灵长类的空间位阻元件，可调节脂质亲和力与催化转换率，相当于一个精细调控「开关」。",
+  "significance": "这是首次系统回答「UGCG 长什么样、怎么干活」这一基础问题，把糖鞘脂合成网络的入口机制从黑箱变为可解析的结构模型。\n\n临床意义直接：UGCG 抑制剂已用于治疗因糖鞘脂「堆积」致病的戈谢病等患者，过去药物开发主要靠大量化合物筛选和反复试错；如今有了多个高分辨率「药物—酶」结合结构，可直接比较不同药物的结合方式与选择性（一种「堵住脂的入口」，另一种「扰乱糖的一侧」），针对性地设计出适应证各异的新型药物。灵长类特异调控元件的发现还提示：啮齿类模型的药效数据可能无法完全外推到人类。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "结构生物学 × 脂质代谢 × 药物化学三线交汇：冷冻电镜解析膜蛋白的技术进步（尤其膜界面锚定的催化核心）是本次突破的直接前提，而「双通路活性中心」的结构范式对其他处理两亲性底物的酶（如其他糖基转移酶、脂质修饰酶）具有参照价值。",
+      "relatedFields": [
+        "生物",
+        "医学",
+        "化学"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：基于 8 种状态结构开展 UGCG 抑制剂的结构导向优化；中期：拓展适应证至帕金森病（GBA 通路相关）与部分肿瘤；长期：把「膜界面双通路」思路推广到其他膜嵌入酶家族的药物设计。",
+      "relatedFields": [
+        "医学",
+        "生物"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "灵长类特异「刹车」元件在体内的生理调控信号是什么——是否存在内源性调节因子？无金属催化机制在进化上为何被选择？抑制剂的长期安全性（完全抑制 UGCG 的后果）如何评估？",
+      "relatedFields": [
+        "医学",
+        "生物"
+      ]
+    }
+  ],
+  "expertCommentary": "这是一篇典型的「看清了结构，药物设计就从玄学变工程」的工作。8 个功能状态不是为了凑数，而是把底物识别、催化、抑制三个环节逐一拆解，尤其两种已上市抑制剂「一个堵脂入口、一个扰糖侧」的差异，直接给出选择性的结构解释——这对做药的人价值极高。灵长类特有元件的发现是个意外之喜，它同时抬出了一个警告：小鼠模型上的 UGCG 药效数据可能系统性偏离人体，这对整个领域的临床前评估框架是个提醒。局限在于：结构静态快照不等于动态催化全貌，调控元件在活细胞中的生理触发条件仍待回答。",
+  "relatedMilestones": [
+    {
+      "year": 2017,
+      "description": "冷冻电镜技术成熟，膜蛋白结构解析进入高分辨率时代"
+    },
+    {
+      "year": 2020,
+      "description": "徐华强团队在 GPCR 结构药理学方向持续产出顶刊成果"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 首次解析人源 UGCG 8 种状态结构，揭示灵长类特异调控（Nature）"
+    }
+  ],
+  "tags": [
+    "糖鞘脂",
+    "UGCG",
+    "冷冻电镜",
+    "结构生物学",
+    "药物靶点",
+    "戈谢病",
+    "帕金森病"
+  ],
+  "dateAdded": "2026-09-03",
+  "readTime": 10,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{wu2026ugcg, title={Primate-specific regulation of the human glycosphingolipid gatekeeper UGCG}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-10927-4}}",
+    "formatted": "Wu C., Jin S., Xu J., Wang J.J., Jiang Y., Xu H.E., et al. Primate-specific regulation of the human glycosphingolipid gatekeeper UGCG. Nature (2026). DOI: 10.1038/s41586-026-10927-4."
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
+}
