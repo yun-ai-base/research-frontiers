@@ -1,0 +1,96 @@
+{
+  "id": "r-dendritic-decision-20261015",
+  "title": "神经元内部也分工：树突编码抽象规则，胞体处理感觉，共同撑起灵活决策",
+  "field": "生物",
+  "subfield": "神经科学 / 认知计算",
+  "researchers": [
+    "张园",
+    "刘延和",
+    "胡亚闯",
+    "张振坤",
+    "杜杰",
+    "崔乐乐",
+    "刘奇",
+    "钟林",
+    "辛宇",
+    "柴瑞明",
+    "邓莉",
+    "潘经纬",
+    "Jackie Schiller",
+    "徐宁龙"
+  ],
+  "institution": "中国科学院脑科学与智能技术卓越创新中心（神经科学研究所）/ 脑认知与类脑智能全国重点实验室",
+  "source": {
+    "journal": "Science",
+    "doi": "10.1126/science.adz5323",
+    "url": "https://www.science.org/doi/10.1126/science.adz5323",
+    "publicationDate": "2026-10-15"
+  },
+  "summary": "中科院脑智卓越中心徐宁龙团队在小鼠听觉规则切换任务中，用亚细胞分辨率双光子成像首次直接证明：同一个皮层神经元的顶端树突主要编码推断出的抽象规则，胞体主要表征感觉信息；光遗传抑制树突后，胞体依据规则输出选择信号的能力显著下降，而在规则反转试次中受损最重。",
+  "abstract": "Flexible decisions require combining sensory inputs with abstract rules, yet most studies treat a neuron as a single processing unit. Recording tuft dendrites and somata of layer 5 extratelencephalic neurons in mouse auditory cortex during a rule-switching categorization task, we show compartmentalized coding within the same cell: tuft dendrites preferentially encode the inferred abstract rule whereas somata preferentially encode sensory information, with the choice signal present in both. Optogenetic suppression of tuft activity, mediated by SST interneurons, reduced rule coding and impaired soma choice signals, most strongly on trials where the correct choice reversed with the rule.",
+  "breakthrough": "2026 年 10 月 15 日，《科学》在线发表中国科学院脑科学与智能技术卓越创新中心徐宁龙团队的研究，第一次在认知行为中拿到直接证据：同一个神经元内部存在功能分区，树突算「规则」，胞体算「感觉」。\n\n现代神经科学沿用一百多年的经典图像是把神经元当作一个均质的「点状节点」，只用发放率近似它的全部输出。这个简化在建模上很方便，却回避了一个根本问题：基本单元内部的计算如何支撑智能。皮层锥体神经元拥有庞大分支的树突——早在 1951 年，张香桐先生就提出顶端树突具有电兴奋性并能整合突触输入，但树突处理与灵活决策之间始终缺少直接的因果链条。\n\n团队设计了规则切换的听觉分类任务：小鼠听七个频率之一的纯音，按当前分类边界判断高低，而边界会在没有预警的情况下切换，动物只能从奖励反馈里推断隐藏规则。借助基于信念状态的强化学习模型估计每个试次的规则判断，再用双光子成像同步记录听觉皮层第 5 层端脑外投射（ET）神经元的顶端树突与胞体钙活动。\n\n结果是清晰的分区：广义线性模型与互信息分析都显示，树突末梢以规则编码为主，胞体以感觉编码为主，主干介于两者之间，而选择信号在两个区室都出现；对同一神经元做双平面近同步配对记录，仍在单细胞内部看到同样的偏好。因果验证靠光遗传：在生长抑素（SST）阳性中间神经元中表达红光敏感通道，选择性压制远端树突活动后，树突与胞体的规则、决策编码双双减弱，感觉编码却基本保留；把试次按「正确选择是否随规则反转」拆开后，反转试次的胞体选择信号受损最重，固定映射的非反转试次几乎不受影响。",
+  "significance": "它把「神经元是不是一个点」这个建模假设变成了可测量的问题，答案是：不是。同一细胞内部就能完成一次非线性整合——树突带来的抽象规则与胞体带来的感觉输入相乘，才产生单独任一区室都造不出的、依赖规则的选择信号。\n\n这为认知灵活性提供了细胞层面的统一解释：灵活不是因为网络更复杂，而是因为基本单元本身就能分区计算。对人工智能而言，这是一条可借鉴的架构线索——当前主流的人工神经元仍是「点状加权求和」，而大脑用树突的多区室非线性换来了极高的能效与灵活性，两者的差距提示了下一代神经网络的设计方向。\n\n它还接续了一条跨越七十余年的中国学术脉络：从张香桐 1951 年对顶端树突的推断，到今天直接的行为层面证据。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "计算神经科学与深度学习在此正面相遇：「点状神经元」正是人工神经网络的基本单元，而本研究表明真实神经元自带分区编码与非线性整合。这为「树突神经网络」类架构提供了实验依据，也暗示 Transformer 之类的模型可能缺失了一种廉价而有效的计算层级。",
+      "relatedFields": [
+        "生物",
+        "计算机",
+        "心理"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：解析树突实现规则—感觉整合的具体电生理机制（钙尖峰、NMDA 非线性）；中期：把多区室计算规则抽象成算法模块，用于小样本、快适应的强化学习；长期：若类脑芯片能实现树突级非线性，低功耗情境推理与脑机接口的自适应解码都可能受益。",
+      "relatedFields": [
+        "计算机",
+        "生物"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "规则信息如何「写」进树突——是长程投射的输入选择，还是局部可塑性？SST 中间神经元既接收规则又只调控树突、不输出决策，这类「只调不算」的细胞在更大网络里扮演什么角色？这套分区机制在人类皮层与其他模态（如视觉规则）中是否同样成立？",
+      "relatedFields": [
+        "生物",
+        "心理"
+      ]
+    }
+  ],
+  "expertCommentary": "这项研究的价值在于「因果闭环」做得干净：先证明树突偏规则、胞体偏感觉，再用光遗传掐掉树突，看选择信号是否随之塌陷，最后按「正确选择是否随规则反转」拆数据，让受损效应精确落在需要规则整合的试次上。三步环环相扣，很难用其他解释绕过去。特别值得称道的是双平面配对成像——群体统计容易受细胞组成干扰，他们在同一细胞内部复核了结论，这一步把「细胞间差异」的替代解释也堵掉了。保留意见：整合的电生理机制仍是黑箱，且对象是小鼠听觉皮层的单一亚型神经元，普适性还有待跨模态、跨物种验证。",
+  "relatedMilestones": [
+    {
+      "year": 1951,
+      "description": "张香桐提出顶端树突具有电兴奋性并整合突触输入，埋下分区计算的伏笔"
+    },
+    {
+      "year": 1960,
+      "description": "双区室神经元模型确立，把树突与胞体视为可分别计算的两级"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 首次在认知行为中证明树突编码抽象规则、与胞体感觉信号整合支撑灵活决策（Science）"
+    }
+  ],
+  "tags": [
+    "树突计算",
+    "认知灵活性",
+    "光遗传学",
+    "双光子成像",
+    "听觉皮层",
+    "类脑计算"
+  ],
+  "dateAdded": "2026-10-28",
+  "readTime": 11,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{zhang2026dendritic, title={Dendritic computation for abstract rule-based flexible decision-making}, journal={Science}, year={2026}, doi={10.1126/science.adz5323}}",
+    "formatted": "Zhang Y., Liu Y., Hu Y., Zhang Z., Du J., Cui L., et al. Dendritic computation for abstract rule-based flexible decision-making. Science 394 (6821) (2026). DOI: 10.1126/science.adz5323."
+  },
+  "preprint": false,
+  "venue": "Science",
+  "arxivId": null,
+  "codeUrl": null
+}

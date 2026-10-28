@@ -1,0 +1,83 @@
+{
+  "id": "r-th229-nuclear-clock-20261007",
+  "title": "钍-229 核光钟闭环运行：1.4 微克钍把原子核变成钟摆",
+  "field": "物理",
+  "subfield": "精密测量 / 核量子计量",
+  "researchers": [
+    "丁世谦 等"
+  ],
+  "institution": "清华大学物理系 / 中国科学院相关研究所",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-11122-1",
+    "url": "https://www.nature.com/articles/s41586-026-11122-1",
+    "publicationDate": "2026-10-07"
+  },
+  "summary": "清华大学丁世谦团队联合国内多家机构，用自主研制的 148 纳米连续波真空紫外激光和仅 1.4 微克钍-229 生长的毫米级掺钍氟化钙晶体，把激光频率稳定锁定到钍-229 原子核跃迁上，实现核光钟的稳定闭环运行——首次把高精度频率锁定从原子电子跃迁拓展到原子核跃迁。",
+  "abstract": "Optical clocks reference the frequency of an electronic transition, whereas a nuclear clock references a transition inside the atomic nucleus, which is far less sensitive to external electromagnetic perturbations. Using a home-built 148 nm continuous-wave vacuum-ultraviolet laser and a millimetre-scale CaF2 crystal doped with only 1.4 micrograms of Th-229, we lock the laser frequency to the Th-229 nuclear transition and demonstrate stable closed-loop operation of a nuclear clock, establishing a complete technical chain from light source and crystal growth to precision spectroscopy and frequency feedback.",
+  "breakthrough": "2026 年 10 月 7 日，《自然》在线发表清华大学物理系丁世谦团队联合国内多家科研机构的研究，成功让核光钟稳定闭环运行——这不是又一次「测到核跃迁」，而是第一次让原子核真正开始「走时」。\n\n传统原子钟用的是原子外层电子的能级跃迁。原子核比原子小五个数量级，其跃迁受外界电磁环境扰动小得多，因此核光钟在原理上能提供更高的精度与更低的系统不确定度。钍-229 是目前唯一已知可用激光直接激发的核跃迁体系：跃迁能量约 8.4 电子伏，对应 148 纳米真空紫外波长。但这条路有两个老瓶颈——缺少满足精密操控要求的连续波真空紫外激光，以及高质量掺钍晶体极难制备。\n\n团队的做法是两头同时啃。光源侧，依靠前期自主发展的 148 纳米连续波超窄线宽激光；材料侧，联合中国科学院相关机构突破稀缺放射性核素掺杂晶体的生长难题，仅用 1.4 微克钍-229 就长出毫米尺度的高质量掺钍氟化钙晶体。随后完成精密光谱测量，获得高分辨率的核跃迁吸收谱并实现快速吸收信号读出；通过筛选窄线宽、低温度敏感性的核跃迁谱线作为频率参考，建立起以核跃迁信号为基准的激光频率反馈控制系统。\n\n这一步跨越被团队视为关键：从「测得一条谱线」到「让一条谱线当基准」，核光钟由此形成从连续波真空紫外光源、掺钍晶体制备、核跃迁精密探测到闭环运行的完整技术体系，并展现出优异的短期频率稳定性。同期欧洲研究团队独立完成了同类工作，两者共同标志着钍-229 核光钟的成功研制。",
+  "significance": "核光钟被讨论了近二十年，此前的进展一直停在「能激发、能观测」，缺的正是「能锁定、能运行」。本次工作补上了这最后一环，意味着时间频率基准有可能从电子跃迁时代跨入核跃迁时代。\n\n预期价值集中在三处：一是更高精度的时间频率基准（核跃迁对电磁扰动不敏感，系统不确定度天花板更低）；二是基础物理检验——核跃迁对精细结构常数、强相互作用耦合的漂移更敏感，可作为「常数是否真的恒定」的探针；三是与现有光钟比对后形成新的引力测量手段，用于相对论测地、暗物质搜寻等。\n\n工程上的巧思同样值得注意：仅用 1.4 微克放射性核素就长出可用晶体，把材料门槛压到了现实可承受的量级——这在放射性核素实验里是决定项目能否推进的关键。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "核物理与精密测量在此交汇：核跃迁把「原子核内部结构」这个核物理议题变成了计量学资源。反过来，核光钟的稳定性又为核结构理论提供高精度检验数据，两端互为工具。这与光频梳、离子钟的发展路径高度相似。",
+      "relatedFields": [
+        "物理"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：与锶/镱光钟做长期比对，压低核光钟的不确定度预算；中期：把设备小型化、降低对同步辐射等大装置的依赖；长期：用于精细结构常数漂移检验、引力势差测量与新型导航/授时体系。",
+      "relatedFields": [
+        "物理"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "当前展示的是短期稳定性，长期稳定度能否压过最好的电子光钟？掺钍晶体的放射性衰变与辐照损伤会如何限制寿命？核跃迁谱线里是否还藏着新物理（如超轻暗物质耦合）的信号？",
+      "relatedFields": [
+        "物理"
+      ]
+    }
+  ],
+  "expertCommentary": "评判这项工作要看它跨的是哪道坎：过去几年钍-229 的新闻都停在「首次激光激发核跃迁」，那是物理可行性的证明；这一次是把核跃迁做成频率基准并闭环锁定，属于计量学可行性。两者难度不在一个量级——前者要求测到信号，后者要求信号足够干净、可快速读出、可长期反馈。1.4 微克核素长出毫米级晶体这个数字值得单独记一笔，它决定了这条路能不能被更多实验室复制。冷静看：论文展示的主要是短期稳定性，与顶尖光钟的长期稳定度和系统不确定度对比尚未公布，核光钟要从「能跑」变成「更准」，还差一场硬碰硬的比对。",
+  "relatedMilestones": [
+    {
+      "year": 1976,
+      "description": "发现钍-229 存在极低能量的同核异能态，为核光钟埋下物质基础"
+    },
+    {
+      "year": 2003,
+      "description": "Flambaum 提出利用钍-229 核跃迁研制核光钟的构想"
+    },
+    {
+      "year": 2024,
+      "description": "多个团队首次实现钍-229 核跃迁的激光激发与精密谱测量"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 核光钟实现稳定闭环运行，中欧团队同期独立完成（Nature）"
+    }
+  ],
+  "tags": [
+    "核光钟",
+    "钍-229",
+    "真空紫外激光",
+    "精密测量",
+    "频率基准",
+    "基础物理检验"
+  ],
+  "dateAdded": "2026-10-28",
+  "readTime": 9,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{ding2026nuclearclock, title={A nuclear clock synchronized to Th-229}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-11122-1}}",
+    "formatted": "Ding S., et al. A nuclear clock synchronized to Th-229. Nature (2026). DOI: 10.1038/s41586-026-11122-1."
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
+}

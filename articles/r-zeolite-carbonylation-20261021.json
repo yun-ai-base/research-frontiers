@@ -1,0 +1,90 @@
+{
+  "id": "r-zeolite-carbonylation-20261021",
+  "title": "分子筛「独自」催化烯烃羰基化：无金属、无配体，做出伯酸与仲酸",
+  "field": "化学",
+  "subfield": "催化化学 / 分子筛",
+  "researchers": [
+    "亓良",
+    "盛滢嬴",
+    "张雯娜",
+    "倪友明",
+    "何林海",
+    "李彬",
+    "王安杰",
+    "朱文良",
+    "Alexis T. Bell",
+    "刘中民"
+  ],
+  "institution": "中国科学院大连化学物理研究所 / 加州大学伯克利分校",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-11183-2",
+    "url": "https://www.nature.com/articles/s41586-026-11183-2",
+    "publicationDate": "2026-10-21"
+  },
+  "summary": "中科院大连化物所刘中民院士、朱文良研究员团队利用 FER 分子筛的孔道限域效应，在无贵金属、无有机配体条件下实现水参与的乙烯羰基化制丙酸、丙烯羰基化制异丁酸：丙酸选择性 100 小时保持 80%，异丁酸选择性 750 小时保持 95%，并证明八元环与十元环孔道位点分别「指定」乙烯与丙烯的反应路径。",
+  "abstract": "Carbonylation inserts CO into substrates to make acids, esters and alcohols, but industrial routes rely on precious-metal complexes with ancillary ligands. Here we show that tuning spatial confinement in a ferrierite (FER) zeolite, combined with a high CO/olefin ratio, extends zeolite-catalysed carbonylation from tertiary to primary and secondary carboxylic acids. At a CO/olefin ratio of 360, ethylene carbonylation to propionic acid keeps 80% selectivity over 100 h, and propylene carbonylation to isobutyric acid keeps 95% selectivity over 750 h. The T2-O5 site in the eight-membered-ring cavity and the T3-O1 site in the ten-membered-ring channel are identified as the respective active centres, showing that pore micro-environment alone can preset reaction selectivity.",
+  "breakthrough": "2026 年 10 月 21 日，《自然》发表中国科学院大连化学物理研究所刘中民院士、朱文良研究员团队（与加州大学伯克利分校 Alexis T. Bell 合作）的研究，首次让分子筛「独自」完成烯烃羰基化：不加任何金属、不加任何有机配体，在水参与的条件下把乙烯变成丙酸、把丙烯变成异丁酸。\n\n羰基化就是把 CO 插入底物分子、造出酸、酯、醇的百年老反应，醋酸、香料、医药中间体都靠它。但工业主流至今离不开铑、铱等贵金属配合物和卤素助剂，成本高、流程繁琐，催化剂与产物还难以分离。Koch 型酸性催化虽在 1960 年代就被发现，过去几十年在沸石上只能得到含叔碳的羧酸——因为烯烃的齐聚与异构化总是比生成伯酸、仲酸更快。\n\n团队的关键判断是：用孔道的空间限域把这条副反应「挤」出去。他们筛选了 FER(ZSM-35)、TON、MFI、MOR、BEA、FAU 六种拓扑结构，FER 的活性与羧酸选择性明显最优，说明决定因素在骨架拓扑而非酸浓度或晶粒尺寸。在 CO/烯烃比 360 的条件下，乙烯羰基化制丙酸的选择性在 100 小时内保持 80%，丙烯羰基化制异丁酸的选择性在 750 小时连续运行中保持约 95%；把比例降到 24 和 90，选择性分别降到 61% 和 57%，限域效应与高 CO 分压的耦合关系由此量化。\n\n结合二维 27Al 多量子 MAS NMR、动力学测量与 DFT 计算，团队把「活性位点」定位到具体晶格位置：八元环空腔中的 T2-O5 负责乙烯羰基化，十元环通道中的 T3-O1 负责丙烯羰基化。也就是说，孔道开在哪里、多大，本身就决定了催化哪种底物——选择性可以由孔道几何「预先设定」，而不是靠反复调配金属与配体试出来。",
+  "significance": "这是一条绕开贵金属的化工新路线：把羰基化从「必须有金属中心」的范式里解放出来，用固体的孔道几何代替配体的电子与空间调控。分子筛作为固体酸还天然与产物两相分离，催化剂回收比均相体系简单得多，同时孔道限域顺带抑制了烯烃聚合副反应。\n\n对产业而言，这与我国煤基甲醇制烯烃的既有布局天然衔接——把丰富的烯烃变成丙酸、异丁酸这类高附加值含氧化合物，是一条能落地的煤化工增值路径。对学科而言，它给出了「孔道微环境即选择性开关」的底层理论框架，让分子筛羰基化从个案经验走向可按位点反向预测、理性设计的通用方法。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "这是「结构催化」对「配体催化」的一次正面替代：传统均相催化靠配体电子效应调控金属中心，这里靠 8-MR / 10-MR 孔道的物理限域区分底物，两条调控哲学在同一个反应上碰面。同样的思路可迁移到择形择路径的其他反应体系，例如选择性氢氧化、胺化。",
+      "relatedFields": [
+        "化学",
+        "物理"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：把实验室反应推向工艺放大，重点解决高 CO/烯烃比带来的 CO 循环能耗；中期：通过后处理调控或新骨架合成降低所需 CO 比例，让 80%/95% 的选择性在工业级配比下站住；长期：若成本压下来，丙酸/异丁酸下游（防腐剂、香料、可降解塑料单体）的绿色路线会被整体重写。",
+      "relatedFields": [
+        "化学"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "为什么偏偏是 FER 的 8-MR 与 10-MR 分工明确，这一分界的电子结构根源能否推广成预测规则？酰基阳离子中间体的限域稳定性如何在不牺牲扩散的前提下继续提升？750 小时之外的长周期失活机理（积碳还是骨架脱铝）需要更长时间的工业侧验证。",
+      "relatedFields": [
+        "化学"
+      ]
+    }
+  ],
+  "expertCommentary": "把「百年必须用贵金属」这件事拆开看，本质是没有人相信纯 Brønsted 酸能把伯酸/仲酸这条路径跑赢烯烃齐聚。刘中民团队的做法是把竞争反应物理性地关在门外——不是调电子，是调几何，这就把问题从「配体设计」换维成了「孔道设计」，思路很硬。750 小时、95% 选择性，这个稳定性数据说明他们不是在展示一个漂亮但脆弱的初活性。需要冷静的是 CO/烯烃比 360 这个条件：真实工厂里循环这么多 CO 能耗不低，论文也自认这是应用前提，所以离「绿色化工」还差一段工程账。",
+  "relatedMilestones": [
+    {
+      "year": 1962,
+      "description": "Koch 等人发现无机酸质子可催化羰基化，为非金属路线留下最早的伏笔"
+    },
+    {
+      "year": 2017,
+      "description": "刘中民团队实现分子筛催化二甲醚羰基化制乙醇的工业化，证明分子筛本身可当羰基化催化剂"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 孔道限域调控让分子筛独自完成烯烃羰基化，首次做出伯酸与仲酸（Nature）"
+    }
+  ],
+  "tags": [
+    "分子筛",
+    "羰基化",
+    "绿色化工",
+    "限域效应",
+    "择形催化",
+    "丙酸",
+    "异丁酸"
+  ],
+  "dateAdded": "2026-10-28",
+  "readTime": 10,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{qi2026zeolite, title={Zeolite-catalysed olefin carbonylation based on tuning spatial confinement}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-11183-2}}",
+    "formatted": "Qi L., Sheng Y., Zhang W., Ni Y., He L., Li B., Wang A., Zhu W., Bell A.T., Liu Z. Zeolite-catalysed olefin carbonylation based on tuning spatial confinement. Nature (2026). DOI: 10.1038/s41586-026-11183-2."
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
+}

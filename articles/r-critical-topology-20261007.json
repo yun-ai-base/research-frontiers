@@ -1,0 +1,93 @@
+{
+  "id": "r-critical-topology-20261007",
+  "title": "「沸水里保住冰雕」：中国团队首次实验观测临界拓扑态，拓扑不再需要能隙",
+  "field": "物理",
+  "subfield": "凝聚态物理 / 拓扑物态",
+  "researchers": [
+    "林志康",
+    "王立威",
+    "孔泽霖",
+    "周尧",
+    "林海青",
+    "余雪佳",
+    "张霜",
+    "蒋建华"
+  ],
+  "institution": "中国科学技术大学 / 苏州大学 / 宁波东方理工大学 / 香港大学",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-11099-x",
+    "url": "https://www.nature.com/articles/s41586-026-11099-x",
+    "publicationDate": "2026-10-07"
+  },
+  "summary": "中国科大蒋建华、宁波东方理工余雪佳、港大张霜等团队用 3D 打印声学超材料，以纠缠谱代替能隙判据，在一维与二维体系中首次实验观测到临界拓扑态——证明能隙关闭到零时拓扑边缘态仍可存在；同期刊发的另一篇论文（南洋理工张柏乐团队）在一维 Floquet 临界点观测到拓扑零模与 π 模。",
+  "abstract": "Topological phases are conventionally protected by a bulk energy gap, and whether topology survives at a gapless critical point has been a long-standing question. Here, using acoustic metamaterials and the generalized Li-Haldane bulk-edge correspondence, we experimentally demonstrate critical topology in one and two dimensions: the bulk entanglement spectrum, obtained from the spectral decomposition of the measured Green's function, shows the degeneracies expected for gapless topological states, and topological edge modes are directly imaged inside the gapless continuum. Transitions between phases with different critical topology generate multi-critical points, revealing topology-driven multi-criticality and a hierarchy of topological phases.",
+  "breakthrough": "2026 年 10 月 7 日，《自然》同期发表两篇论文，宣布中国科学家首次实验观测到「临界拓扑态」，在拓扑物理与临界相变之间架起桥梁。\n\n过去的主流认识是：拓扑只能活在「有能隙」的物质里。能隙像一道堤坝，把体态与边缘态隔开，边缘的特殊传导才能稳定；到了相变临界点，堤坝消失、涨落主导，拓扑效应理应不复存在。宁波东方理工大学余雪佳把这道难题比作「在沸水中完好保存一件冰雕」，并用数年时间建起临界拓扑的理论框架——包括量子临界点拓扑分类与广义 Li-Haldane 体边对应。\n\n实验由两支风格迥异的团队完成。中国科大蒋建华团队（联合香港大学张霜等）的做法是把临界拓扑物态映射到 3D 打印的声子晶体上，用泵浦—探测手段测出隐含本征性质的格林函数，再作谱分解得到纠缠谱。纠缠谱相当于「不看堤坝看水流的影子」：即使体态完全无能隙，也能从量子关联中还原边缘模态。实验在一维与二维体系中同时看到预期的简并：一维体态纠缠谱在 0.5 处出现两重简并，二维自旋陈绝缘体转变处的动量分辨纠缠谱同样在 0.5 附近出现简并模，对应无能隙连续谱中的拓扑角态。\n\n同期另一篇论文由南洋理工大学张柏乐团队完成，用 3D 打印声学波导阵列构建一维 Floquet（周期驱动）系统，通过直管设定最近邻耦合、弯管设定次近邻耦合，在约 9.8 kHz 重构单周期 Floquet 算符，锁定无能隙的临界相边界，并分辨出局域在边界上的临界零能模与 π 模。\n\n研究还发现了一个超出预期的规律：拓扑会引发多重临界现象——当临界态的拓扑性质改变时，必然出现多重临界点，这与经典相变中由吉布斯相律决定的三相点完全不同，说明拓扑是临界相变不可忽视的特征指标。",
+  "significance": "这是一次教科书级别的概念改写：拓扑不变量的成立不再以能隙为前提。它把拓扑物理与临界现象这两条各自拿过诺贝尔奖（1982 年临界现象理论、2016 年拓扑相变）却长期互不相容的脉络接了起来，用不变量去重新分类相变。\n\n方法上的意义同样重要：纠缠谱被证明是一种不受能隙约束的拓扑「诊断工具」，可在真实体系中测量，且不依赖极低温或复杂量子操控。声学超材料这种宏观、可打印、可重构的平台大幅降低了验证门槛，使这类前沿物理能被重复、被教学、被快速扩展到光学等经典波体系。\n\n应用层面，临界拓扑会带来一类特殊的「连续谱内拓扑局域态」，为声学与光学器件（如稳健波导、抗无序滤波）提供了新的设计自由度，也为拓扑量子计算与非平衡拓扑物态研究打开了入口。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "拓扑学与临界现象在此合并：过去分类物质靠「有没有能隙」，现在可以靠「临界点的拓扑指标」。这把统计物理的普适类思想引入拓扑分类，反过来也让拓扑成为刻画相变的新标签，与张量网络、量子蒙特卡洛方法天然衔接。",
+      "relatedFields": [
+        "物理",
+        "数学"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：把临界拓扑推广到光学、微波等经典波平台，做成可打印的稳健波导与传感器原型；中期：在真实量子体系（冷原子、超导电路）中复现临界拓扑态；长期：若临界点的拓扑局域态可控，可能用于抗无序的片上信息传输与拓扑量子计算编码。",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "声学平台测得的纠缠谱与量子极限结果等价，但真实量子体系中的退相干会不会抹掉临界信号？二维之上的三维临界拓扑如何定义与测量？拓扑驱动的多重临界性是否存在超越吉布斯相律的一般计数规则？",
+      "relatedFields": [
+        "物理",
+        "数学"
+      ]
+    }
+  ],
+  "expertCommentary": "「在沸水里保存冰雕」这个比喻点出了问题的全部难度：临界点涨落最大、能隙为零，任何依赖能隙的判据都失效。余雪佳团队的回答不是硬保能隙，而是换了一把尺子——纠缠谱只依赖量子关联结构，与有没有能隙无关，这一步把概念障碍拆掉了。两篇同期论文用完全不同的设计与测量方式（Floquet 零模/π 模 vs 一维二维纠缠谱）指向同一结论，这种「独立双证」比单篇更有分量。声学超材料虽是经典波平台，却恰好避开了量子体系在临界点的强噪声，是聪明的取巧。需要留意的是，实验目前仍在经典波体系，量子体系中的临界拓扑观测才算真正闭环。",
+  "relatedMilestones": [
+    {
+      "year": 1982,
+      "description": "Wilson 因临界现象相变理论获诺贝尔物理学奖，普适类思想确立"
+    },
+    {
+      "year": 2016,
+      "description": "Thouless、Haldane、Kosterlitz 因拓扑相变与拓扑物态获诺贝尔物理学奖"
+    },
+    {
+      "year": 2024,
+      "description": "余雪佳等提出广义 Li-Haldane 体边对应，为无能隙拓扑提供判据"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 声学超材料中首次实验观测一维与二维临界拓扑态（Nature 同期两篇）"
+    }
+  ],
+  "tags": [
+    "临界拓扑",
+    "纠缠谱",
+    "声学超材料",
+    "拓扑相变",
+    "Floquet系统",
+    "多临界性"
+  ],
+  "dateAdded": "2026-10-28",
+  "readTime": 11,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{lin2026critical, title={Experimental observation of critical topology}, journal={Nature}, volume={658}, pages={365--371}, year={2026}, doi={10.1038/s41586-026-11099-x}}",
+    "formatted": "Lin Z.-K., Wang L.-W., Kong Z.-L., Zhou Y., Lin H.-Q., Yu X., Zhang S., Jiang J.-H. Experimental observation of critical topology. Nature 658, 365-371 (2026). DOI: 10.1038/s41586-026-11099-x. 同期：Cheng Z. et al. Observation of critical topological phase transition. Nature 658, 358-364 (2026). DOI: 10.1038/s41586-026-11067-5."
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
+}

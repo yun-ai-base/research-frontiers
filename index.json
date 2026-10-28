@@ -1,7 +1,253 @@
 {
-  "generated": "2026-09-03",
-  "count": 37,
+  "generated": "2026-10-28",
+  "count": 44,
   "research": [
+    {
+      "id": "r-surface-code-teleport-20261022",
+      "title": "125 比特芯片上「传送」拓扑量子物态：浙大团队首次观测到传态相变",
+      "field": "物理",
+      "subfield": "量子计算 / 量子纠错",
+      "researchers": [
+        "邹亦仁",
+        "夏弘宽",
+        "张奥赛",
+        "朱旭浩",
+        "金飞彤 等",
+        "张鹏飞",
+        "朱国毅",
+        "王浩华"
+      ],
+      "institution": "浙江大学物理学院 / 浙江大学杭州国际科创中心 / 香港科技大学（广州）/ 合肥国家实验室",
+      "source": {
+        "journal": "Nature Physics",
+        "publicationDate": "2026-10-22"
+      },
+      "summary": "浙江大学与香港科技大学（广州）团队在自研 125 比特超导芯片上，用 98 个量子比特实现码距最高为 7 的拓扑表面码逻辑态隐形传态，并首次测出「传态相变」：芯片间纠缠强度存在明确临界门槛，借助非克利福德魔法资源恢复电磁对偶对称性后，阈值从 0.122π 提升至 0.175π。",
+      "innovationRating": 5,
+      "dateAdded": "2026-10-28",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "量子纠错",
+        "表面码",
+        "量子隐形传态",
+        "超导量子计算",
+        "拓扑序",
+        "魔法资源"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-zeolite-carbonylation-20261021",
+      "title": "分子筛「独自」催化烯烃羰基化：无金属、无配体，做出伯酸与仲酸",
+      "field": "化学",
+      "subfield": "催化化学 / 分子筛",
+      "researchers": [
+        "亓良",
+        "盛滢嬴",
+        "张雯娜",
+        "倪友明",
+        "何林海",
+        "李彬",
+        "王安杰",
+        "朱文良",
+        "Alexis T. Bell",
+        "刘中民"
+      ],
+      "institution": "中国科学院大连化学物理研究所 / 加州大学伯克利分校",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-10-21"
+      },
+      "summary": "中科院大连化物所刘中民院士、朱文良研究员团队利用 FER 分子筛的孔道限域效应，在无贵金属、无有机配体条件下实现水参与的乙烯羰基化制丙酸、丙烯羰基化制异丁酸：丙酸选择性 100 小时保持 80%，异丁酸选择性 750 小时保持 95%，并证明八元环与十元环孔道位点分别「指定」乙烯与丙烯的反应路径。",
+      "innovationRating": 5,
+      "dateAdded": "2026-10-28",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "分子筛",
+        "羰基化",
+        "绿色化工",
+        "限域效应",
+        "择形催化",
+        "丙酸",
+        "异丁酸"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-dendritic-decision-20261015",
+      "title": "神经元内部也分工：树突编码抽象规则，胞体处理感觉，共同撑起灵活决策",
+      "field": "生物",
+      "subfield": "神经科学 / 认知计算",
+      "researchers": [
+        "张园",
+        "刘延和",
+        "胡亚闯",
+        "张振坤",
+        "杜杰",
+        "崔乐乐",
+        "刘奇",
+        "钟林",
+        "辛宇",
+        "柴瑞明",
+        "邓莉",
+        "潘经纬",
+        "Jackie Schiller",
+        "徐宁龙"
+      ],
+      "institution": "中国科学院脑科学与智能技术卓越创新中心（神经科学研究所）/ 脑认知与类脑智能全国重点实验室",
+      "source": {
+        "journal": "Science",
+        "publicationDate": "2026-10-15"
+      },
+      "summary": "中科院脑智卓越中心徐宁龙团队在小鼠听觉规则切换任务中，用亚细胞分辨率双光子成像首次直接证明：同一个皮层神经元的顶端树突主要编码推断出的抽象规则，胞体主要表征感觉信息；光遗传抑制树突后，胞体依据规则输出选择信号的能力显著下降，而在规则反转试次中受损最重。",
+      "innovationRating": 5,
+      "dateAdded": "2026-10-28",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "树突计算",
+        "认知灵活性",
+        "光遗传学",
+        "双光子成像",
+        "听觉皮层",
+        "类脑计算"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-sgr-stream-disk-20261013",
+      "title": "为正在瓦解的星系「画像」：人马座矮星系曾有旋转盘，金属丰度呈罕见「∧形」",
+      "field": "天文",
+      "subfield": "星系考古 / 银河系结构",
+      "researchers": [
+        "郭子熙",
+        "薛香香",
+        "刘超",
+        "赵刚 等"
+      ],
+      "institution": "中国科学院国家天文台 / 中国科学院紫金山天文台",
+      "source": {
+        "journal": "Nature Astronomy",
+        "publicationDate": "2026-10-13"
+      },
+      "summary": "国家天文台赵刚院士团队联合紫金山天文台，用 LAMOST、SDSS 与 Gaia 数据结合 N 体模拟，为正在被银河系潮汐撕裂的人马座矮星系「倒带重放」：它瓦解前曾拥有旋转恒星盘，且盘内金属丰度沿半径呈先升后降的「∧形」分布，与多数星系「越往外越贫金属」的图景不同。",
+      "innovationRating": 4,
+      "dateAdded": "2026-10-28",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "人马座星流",
+        "星系考古",
+        "金属丰度",
+        "LAMOST",
+        "Gaia",
+        "矮星系演化"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-critical-topology-20261007",
+      "title": "「沸水里保住冰雕」：中国团队首次实验观测临界拓扑态，拓扑不再需要能隙",
+      "field": "物理",
+      "subfield": "凝聚态物理 / 拓扑物态",
+      "researchers": [
+        "林志康",
+        "王立威",
+        "孔泽霖",
+        "周尧",
+        "林海青",
+        "余雪佳",
+        "张霜",
+        "蒋建华"
+      ],
+      "institution": "中国科学技术大学 / 苏州大学 / 宁波东方理工大学 / 香港大学",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-10-07"
+      },
+      "summary": "中国科大蒋建华、宁波东方理工余雪佳、港大张霜等团队用 3D 打印声学超材料，以纠缠谱代替能隙判据，在一维与二维体系中首次实验观测到临界拓扑态——证明能隙关闭到零时拓扑边缘态仍可存在；同期刊发的另一篇论文（南洋理工张柏乐团队）在一维 Floquet 临界点观测到拓扑零模与 π 模。",
+      "innovationRating": 5,
+      "dateAdded": "2026-10-28",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "临界拓扑",
+        "纠缠谱",
+        "声学超材料",
+        "拓扑相变",
+        "Floquet系统",
+        "多临界性"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-th229-nuclear-clock-20261007",
+      "title": "钍-229 核光钟闭环运行：1.4 微克钍把原子核变成钟摆",
+      "field": "物理",
+      "subfield": "精密测量 / 核量子计量",
+      "researchers": [
+        "丁世谦 等"
+      ],
+      "institution": "清华大学物理系 / 中国科学院相关研究所",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-10-07"
+      },
+      "summary": "清华大学丁世谦团队联合国内多家机构，用自主研制的 148 纳米连续波真空紫外激光和仅 1.4 微克钍-229 生长的毫米级掺钍氟化钙晶体，把激光频率稳定锁定到钍-229 原子核跃迁上，实现核光钟的稳定闭环运行——首次把高精度频率锁定从原子电子跃迁拓展到原子核跃迁。",
+      "innovationRating": 5,
+      "dateAdded": "2026-10-28",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "核光钟",
+        "钍-229",
+        "真空紫外激光",
+        "精密测量",
+        "频率基准",
+        "基础物理检验"
+      ],
+      "preprint": false
+    },
+    {
+      "id": "r-7ev-uwbg-semi-20261007",
+      "title": "7 电子伏带隙还能导电：掺硅氧化铝镓薄膜刷新半导体纪录",
+      "field": "化学",
+      "subfield": "材料化学 / 超宽带隙半导体",
+      "researchers": [
+        "Jacob Steele",
+        "D. Bhattacharya",
+        "K. Nomoto",
+        "Darrell G. Schlom 等"
+      ],
+      "institution": "康奈尔大学",
+      "source": {
+        "journal": "Nature",
+        "publicationDate": "2026-10-07"
+      },
+      "summary": "康奈尔大学 Darrell Schlom 团队用分子束外延在蓝宝石衬底上生长掺硅 α-(AlxGa1-x)2O3 薄膜，在带隙超过 7 电子伏时仍保持可控导电，打破立方氮化硼保持的纪录；在 6 电子伏以上的「巨带隙」区间，室温导电性比此前报道高出 1 亿倍以上，并已制成可工作的二极管与晶体管。",
+      "innovationRating": 4,
+      "dateAdded": "2026-10-28",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "tags": [
+        "超宽带隙半导体",
+        "氧化铝镓",
+        "分子束外延",
+        "功率电子",
+        "硅掺杂",
+        "蓝宝石衬底"
+      ],
+      "preprint": false
+    },
     {
       "id": "r-besiii-entangle-vus-20260902",
       "title": "量子纠缠首次用于提取粒子信息：复旦团队开辟精确检验标准模型新路径",

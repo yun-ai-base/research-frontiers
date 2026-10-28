@@ -1,0 +1,85 @@
+{
+  "id": "r-7ev-uwbg-semi-20261007",
+  "title": "7 电子伏带隙还能导电：掺硅氧化铝镓薄膜刷新半导体纪录",
+  "field": "化学",
+  "subfield": "材料化学 / 超宽带隙半导体",
+  "researchers": [
+    "Jacob Steele",
+    "D. Bhattacharya",
+    "K. Nomoto",
+    "Darrell G. Schlom 等"
+  ],
+  "institution": "康奈尔大学",
+  "source": {
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-11085-3",
+    "url": "https://www.nature.com/articles/s41586-026-11085-3",
+    "publicationDate": "2026-10-07"
+  },
+  "summary": "康奈尔大学 Darrell Schlom 团队用分子束外延在蓝宝石衬底上生长掺硅 α-(AlxGa1-x)2O3 薄膜，在带隙超过 7 电子伏时仍保持可控导电，打破立方氮化硼保持的纪录；在 6 电子伏以上的「巨带隙」区间，室温导电性比此前报道高出 1 亿倍以上，并已制成可工作的二极管与晶体管。",
+  "abstract": "Wider bandgaps allow semiconductors to withstand stronger electric fields, but supplying free electrons becomes progressively harder as the gap widens. Here we show that silicon doping of alpha-(AlxGa1-x)2O3 films grown by molecular-beam epitaxy on sapphire preserves controllable conductivity at bandgaps beyond 7 eV, exceeding the previous record held by cubic boron nitride. Above 6 eV, in the colossal-bandgap regime, room-temperature conductivity exceeds earlier reports by more than eight orders of magnitude, and both diodes and transistors operate with these films.",
+  "breakthrough": "2026 年 10 月 7 日，《自然》发表康奈尔大学 Darrell Schlom 团队的研究，把「能导电的半导体带隙」纪录推到 7 电子伏以上——并且是在蓝宝石这种便宜、可大规模量产的衬底上做到的。\n\n带隙是电子从价带跃入导带所需的能量。带隙越宽，材料越能承受强电场，氮化镓、碳化硅因此撑起了快充与电动车。氧化铝镓更极端：调节铝镓比例，带隙可在 5.4 至 8.6 电子伏之间连续可调，是已知半导体中可调范围最宽的体系。但这里长期横着一道墙——铝含量越高，越难向材料中注入自由电子；富铝薄膜的导电性比富镓薄膜低几个数量级，做成器件毫无意义。\n\n团队的解决办法朴实而精准：用分子束外延在蓝宝石衬底上逐原子层生长氧化膜，在生长过程中掺入少量硅，让硅原子充当电子施主。测试结果显示，掺硅薄膜在带隙超过 7 电子伏时仍可导电，打破此前由立方氮化硼保持的纪录；在团队称为「巨带隙（colossal bandgap）」的 6 电子伏以上区间，室温导电性比以往任何报道高出 1 亿倍以上。更关键的是，他们把材料做成了器件：二极管与晶体管均成功运行，说明这不是一组漂亮的霍尔测量数据，而是可工作的电子学。\n\n成本维度的优势同样重要。金刚石、立方氮化硼等超宽带隙材料性能优异却难以规模化制备，而蓝宝石储量丰富、价格低廉且已有高质量的大规模产能，这使该路线的产业化门槛显著低于其他候选材料。",
+  "significance": "电力电子的核心矛盾一直是「耐压」与「导通」的二选一：要承受高电压就得用宽带隙材料，但带隙一宽，导通损耗就飙升。这项工作在 7 电子伏这个前所未有的高度同时拿到了两者，等于把这堵墙推开一道缝。\n\n若良率与成本可控，其直接后果是功率器件更小、更耐压、发热更少——从快充、电动车到电网的电能转换环节，都能少浪费一部分能量。对材料学科而言，「掺硅做施主 + 蓝宝石衬底 + 分子束外延」是一套可复制的工艺组合，说明超宽带隙半导体的瓶颈不一定在材料本身，也可能只是掺杂策略没找对。\n\n需要清醒的是：这是一项薄膜层面的结果，从论文到产线仍需长期的工程化验证，尤其是大面积均匀性与长期可靠性。",
+  "innovationRating": 4,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "这项工作重新定义了「宽带隙半导体」的边界：过去 GaN/SiC（3.3/3.2 eV）已算宽，如今 7 eV 仍可器件化，意味着深紫外光电子、高压功率与极端环境电子学有了同一套材料平台。掺杂工程与衬底工程在此合流，为后续多元氧化物外延提供模板。",
+      "relatedFields": [
+        "化学",
+        "物理"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：提升薄膜迁移率与接触电阻，做出更高耐压的晶体管原型；中期：验证大面积外延均匀性与长期偏压可靠性，打通 6 英寸级蓝宝石工艺；长期：进入超高压直流输电、深紫外探测与航天电子等对体积和散热极敏感的场景。",
+      "relatedFields": [
+        "化学",
+        "物理"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "7 eV 之上还能走多远——8.6 eV 的纯铝端是否也能导电？硅之外是否有更高效的施主（如锡、锗）？p 型掺杂这道宽禁带半导体的老难题在这套体系里有没有解？高铝含量下的氧空位与界面态如何抑制？",
+      "relatedFields": [
+        "化学",
+        "物理"
+      ]
+    }
+  ],
+  "expertCommentary": "这条新闻最容易被误读成「又一个参数纪录」，实际上它的突破点在于「导电可控」而不是「带隙更宽」——氧化铝镓本来就能做到 8.6 eV，问题一直是里面没有可用的电子。团队没有去改材料体系，而是用一个最朴素的手段（掺硅）配上一套足够干净的外延工艺解决了注入问题，属于典型的「难点不在想法而在手艺」。做成二极管和晶体管这一步尤其关键，它把材料数据变成了器件可行性。批注两条：一是 p 型缺失会让它短期内只能做单极器件；二是从实验室薄膜到产线，中间隔着良率这条长河。",
+  "relatedMilestones": [
+    {
+      "year": 1993,
+      "description": "GaN 基蓝光 LED 与高电子迁移率晶体管起步，宽带隙半导体进入实用阶段"
+    },
+    {
+      "year": 2010,
+      "description": "SiC 功率器件量产，宽禁带电力电子开始替代硅基方案"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 掺硅氧化铝镓薄膜在 7 eV 带隙下保持可控导电并做成器件（Nature）"
+    }
+  ],
+  "tags": [
+    "超宽带隙半导体",
+    "氧化铝镓",
+    "分子束外延",
+    "功率电子",
+    "硅掺杂",
+    "蓝宝石衬底"
+  ],
+  "dateAdded": "2026-10-28",
+  "readTime": 9,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{steele2026bandgap, title={A 7-eV bandgap semiconductor based on silicon-doped $\\alpha$-(AlxGa1-x)2O3}, journal={Nature}, volume={658}, pages={623--628}, year={2026}, doi={10.1038/s41586-026-11085-3}}",
+    "formatted": "Steele J., Bhattacharya D., Nomoto K., Schlom D.G., et al. A 7-eV bandgap semiconductor based on silicon-doped alpha-(AlxGa1-x)2O3. Nature 658, 623-628 (2026). DOI: 10.1038/s41586-026-11085-3."
+  },
+  "preprint": false,
+  "venue": "Nature",
+  "arxivId": null,
+  "codeUrl": null
+}

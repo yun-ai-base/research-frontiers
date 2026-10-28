@@ -1,6 +1,625 @@
 {
   "research": [
     {
+      "id": "r-surface-code-teleport-20261022",
+      "title": "125 比特芯片上「传送」拓扑量子物态：浙大团队首次观测到传态相变",
+      "field": "物理",
+      "subfield": "量子计算 / 量子纠错",
+      "researchers": [
+        "邹亦仁",
+        "夏弘宽",
+        "张奥赛",
+        "朱旭浩",
+        "金飞彤 等",
+        "张鹏飞",
+        "朱国毅",
+        "王浩华"
+      ],
+      "institution": "浙江大学物理学院 / 浙江大学杭州国际科创中心 / 香港科技大学（广州）/ 合肥国家实验室",
+      "source": {
+        "journal": "Nature Physics",
+        "doi": "10.1038/s41567-026-03484-0",
+        "url": "https://www.nature.com/articles/s41567-026-03484-0",
+        "publicationDate": "2026-10-22"
+      },
+      "summary": "浙江大学与香港科技大学（广州）团队在自研 125 比特超导芯片上，用 98 个量子比特实现码距最高为 7 的拓扑表面码逻辑态隐形传态，并首次测出「传态相变」：芯片间纠缠强度存在明确临界门槛，借助非克利福德魔法资源恢复电磁对偶对称性后，阈值从 0.122π 提升至 0.175π。",
+      "abstract": "The surface code is a leading candidate for harnessing long-range entanglement to protect logical quantum information against errors, and teleportation of the code's logical states is desirable for robust quantum information processing. Here we demonstrate the teleportation of surface code states with code distances up to 7, implemented on a superconducting quantum processor with 125 qubits. We obtain a phase diagram for successful teleportation of the logical state by tuning the local entangling gates uniformly across a finite threshold. Furthermore, we show that the entangling threshold can be boosted by coherent qubit rotations that inject non-classical magic resources, restoring the duality symmetry of the surface code's topological phase.",
+      "breakthrough": "2026 年 10 月 22 日，《自然·物理》发表浙江大学王浩华、张鹏飞团队与香港科技大学（广州）朱国毅团队的合作成果，首次在真实超导芯片上把「一团纠缠量子物态」作为一个整体传送出去，并画出了传送成败的相图。\n\n表面码把逻辑量子信息分散编织进二维晶格上数十个物理比特的长程纠缠中，是通往容错量子计算的主流路线。但要在模块之间传递逻辑态，难度远高于传单个比特：既要保住编码内部的长程纠缠，又要靠两端之间的纠缠资源当「桥梁」。理论此前的预言是——不完美的纠缠桥梁等价于一场弱测量，其后果由二维随机统计模型刻画，传送成败之间存在由 Nishimori 临界点界定的尖锐相变。\n\n实验在 125 比特芯片上划出 Alice、Bob 两套交错排列的码距 7 表面码，共动用 98 个量子比特；Alice 端制备拓扑逻辑态，随后用强度可连续调节的横向纠缠门模拟从「完好信道」到「完全断开」的全部情形，再用基于张量网络的最大似然解码器判定 Bob 端能否重构逻辑信息。结果是清晰的两段行为：纠缠够强时，码距越大「越纠越对」；弱过临界点后，拓扑保护失效，码距越大反而「越纠越错」。有限尺寸标度分析给出的临界伪阈值与理论预言的 Nishimori 临界点高度吻合。\n\n更关键的一步是「省纠缠」：团队把量子比特的旋转轴从 X 方向可控地转到 X+Z 的魔术方向，恢复表面码的电—磁自对偶对称性，相当于在 Clifford 线路之外注入非经典「魔法」资源，让同一份伤害被电、磁两类激发平摊，等效错误率直接减半。实验测得的传态阈值由 0.122(2)π 跃升至 0.175(5)π。传送一组任意逻辑态（含 H 型魔法态）后，Bob 端平均逻辑保真度达 0.95(2)，与传送前 Alice 端的 0.96(1) 几乎持平。",
+      "significance": "这项工作的核心价值不在于「传了一个更大的态」，而在于把「量子多体传态相变」从理论概念变成一张可测量的实验相图——它回答了分布式量子计算最关键的一个资源问题：模块之间的纠缠需要多强，逻辑信息才搬得动。\n\n对分布式容错量子计算而言，这是必要的前置能力：未来多块量子芯片要像一台机器协同工作，就必须能把受编码保护的逻辑态在模块间搬运，而不是把裸比特搬来搬去。对基础物理而言，它把表面码的纠错阈值问题转化成了一个统计物理相变问题，并证明「对称性」可以当工程设计原理用——用魔法资源换更低的纠缠门槛，是一种可复制的资源优化范式。\n\n更值得留意的是，同一类 Nishimori 临界点此前曾在完全不同的量子方案（纠缠猫态制备）中被观测到，两个体系殊途同归，正是普适性的直接体现。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "量子纠错与统计物理在此合并成同一件事：传态阈值不是工程良率问题，而是八顶角模型式的相变临界点。这提示后续量子硬件优化可以「借道」统计物理的相变理论，把阈值提升表述为对称性恢复问题，而不是单纯堆门保真度。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：引入中途测量与快速重置，把拓扑态制备从线性深度压到常数深度；中期：设计关联解码器，利用 Alice「能读懂」与 Bob「能修复」之间的信息差；长期：在两块独立芯片之间做真正非局域的远程传态，即量子组网的第一步。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "理论上电磁自对偶可把阈值推向 0.25π 上限，但从中重拾信息需要更精妙的测量与解码——差的那一段能否补上？魔法资源的注入成本与阈值收益的最优点在哪里？跨芯片传态时，光子互连的损耗会不会重新把系统推回阈值以下？",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        }
+      ],
+      "expertCommentary": "这是「把理论相图画到硬件上」的典型胜利。98 个比特协同、码距 7，说明平台能力已经追上理论需求；而真正的洞察是那句「码距越大反而越纠越错」——它把容错计算从「越多越好」的直觉里拽了出来，明确告诉你资源不足时规模是负债而非资产。用魔法资源换阈值这一步尤其漂亮：不是硬压噪声，而是通过恢复对称性让伤害均摊，属于典型的「用结构解决问题」而非「用蛮力解决问题」。冷静看，0.95 的传态保真度还不足以支撑实际算法，且实验里 Alice、Bob 仍在同一块芯片上，跨模块的真实损耗尚未经受考验。",
+      "relatedMilestones": [
+        {
+          "year": 1997,
+          "description": "Kitaev 提出拓扑表面码，把纠错问题转化为拓扑序问题"
+        },
+        {
+          "year": 2024,
+          "description": "理论预言不完美纠缠桥下的表面码传态相变（PRX Quantum 5, 040313）"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 125 比特芯片上实现码距 7 表面码传态并测出传态相变（Nature Physics）"
+        }
+      ],
+      "tags": [
+        "量子纠错",
+        "表面码",
+        "量子隐形传态",
+        "超导量子计算",
+        "拓扑序",
+        "魔法资源"
+      ],
+      "dateAdded": "2026-10-28",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{zou2026teleportation, title={Teleportation transition of surface codes on a superconducting quantum processor}, journal={Nature Physics}, year={2026}, doi={10.1038/s41567-026-03484-0}}",
+        "formatted": "Zou Y., Xia H.-K., Zhang A., Zhu X., Jin F., et al. Teleportation transition of surface codes on a superconducting quantum processor. Nature Physics (2026). DOI: 10.1038/s41567-026-03484-0."
+      },
+      "preprint": false,
+      "venue": "Nature Physics",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-zeolite-carbonylation-20261021",
+      "title": "分子筛「独自」催化烯烃羰基化：无金属、无配体，做出伯酸与仲酸",
+      "field": "化学",
+      "subfield": "催化化学 / 分子筛",
+      "researchers": [
+        "亓良",
+        "盛滢嬴",
+        "张雯娜",
+        "倪友明",
+        "何林海",
+        "李彬",
+        "王安杰",
+        "朱文良",
+        "Alexis T. Bell",
+        "刘中民"
+      ],
+      "institution": "中国科学院大连化学物理研究所 / 加州大学伯克利分校",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-11183-2",
+        "url": "https://www.nature.com/articles/s41586-026-11183-2",
+        "publicationDate": "2026-10-21"
+      },
+      "summary": "中科院大连化物所刘中民院士、朱文良研究员团队利用 FER 分子筛的孔道限域效应，在无贵金属、无有机配体条件下实现水参与的乙烯羰基化制丙酸、丙烯羰基化制异丁酸：丙酸选择性 100 小时保持 80%，异丁酸选择性 750 小时保持 95%，并证明八元环与十元环孔道位点分别「指定」乙烯与丙烯的反应路径。",
+      "abstract": "Carbonylation inserts CO into substrates to make acids, esters and alcohols, but industrial routes rely on precious-metal complexes with ancillary ligands. Here we show that tuning spatial confinement in a ferrierite (FER) zeolite, combined with a high CO/olefin ratio, extends zeolite-catalysed carbonylation from tertiary to primary and secondary carboxylic acids. At a CO/olefin ratio of 360, ethylene carbonylation to propionic acid keeps 80% selectivity over 100 h, and propylene carbonylation to isobutyric acid keeps 95% selectivity over 750 h. The T2-O5 site in the eight-membered-ring cavity and the T3-O1 site in the ten-membered-ring channel are identified as the respective active centres, showing that pore micro-environment alone can preset reaction selectivity.",
+      "breakthrough": "2026 年 10 月 21 日，《自然》发表中国科学院大连化学物理研究所刘中民院士、朱文良研究员团队（与加州大学伯克利分校 Alexis T. Bell 合作）的研究，首次让分子筛「独自」完成烯烃羰基化：不加任何金属、不加任何有机配体，在水参与的条件下把乙烯变成丙酸、把丙烯变成异丁酸。\n\n羰基化就是把 CO 插入底物分子、造出酸、酯、醇的百年老反应，醋酸、香料、医药中间体都靠它。但工业主流至今离不开铑、铱等贵金属配合物和卤素助剂，成本高、流程繁琐，催化剂与产物还难以分离。Koch 型酸性催化虽在 1960 年代就被发现，过去几十年在沸石上只能得到含叔碳的羧酸——因为烯烃的齐聚与异构化总是比生成伯酸、仲酸更快。\n\n团队的关键判断是：用孔道的空间限域把这条副反应「挤」出去。他们筛选了 FER(ZSM-35)、TON、MFI、MOR、BEA、FAU 六种拓扑结构，FER 的活性与羧酸选择性明显最优，说明决定因素在骨架拓扑而非酸浓度或晶粒尺寸。在 CO/烯烃比 360 的条件下，乙烯羰基化制丙酸的选择性在 100 小时内保持 80%，丙烯羰基化制异丁酸的选择性在 750 小时连续运行中保持约 95%；把比例降到 24 和 90，选择性分别降到 61% 和 57%，限域效应与高 CO 分压的耦合关系由此量化。\n\n结合二维 27Al 多量子 MAS NMR、动力学测量与 DFT 计算，团队把「活性位点」定位到具体晶格位置：八元环空腔中的 T2-O5 负责乙烯羰基化，十元环通道中的 T3-O1 负责丙烯羰基化。也就是说，孔道开在哪里、多大，本身就决定了催化哪种底物——选择性可以由孔道几何「预先设定」，而不是靠反复调配金属与配体试出来。",
+      "significance": "这是一条绕开贵金属的化工新路线：把羰基化从「必须有金属中心」的范式里解放出来，用固体的孔道几何代替配体的电子与空间调控。分子筛作为固体酸还天然与产物两相分离，催化剂回收比均相体系简单得多，同时孔道限域顺带抑制了烯烃聚合副反应。\n\n对产业而言，这与我国煤基甲醇制烯烃的既有布局天然衔接——把丰富的烯烃变成丙酸、异丁酸这类高附加值含氧化合物，是一条能落地的煤化工增值路径。对学科而言，它给出了「孔道微环境即选择性开关」的底层理论框架，让分子筛羰基化从个案经验走向可按位点反向预测、理性设计的通用方法。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "这是「结构催化」对「配体催化」的一次正面替代：传统均相催化靠配体电子效应调控金属中心，这里靠 8-MR / 10-MR 孔道的物理限域区分底物，两条调控哲学在同一个反应上碰面。同样的思路可迁移到择形择路径的其他反应体系，例如选择性氢氧化、胺化。",
+          "relatedFields": [
+            "化学",
+            "物理"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：把实验室反应推向工艺放大，重点解决高 CO/烯烃比带来的 CO 循环能耗；中期：通过后处理调控或新骨架合成降低所需 CO 比例，让 80%/95% 的选择性在工业级配比下站住；长期：若成本压下来，丙酸/异丁酸下游（防腐剂、香料、可降解塑料单体）的绿色路线会被整体重写。",
+          "relatedFields": [
+            "化学"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "为什么偏偏是 FER 的 8-MR 与 10-MR 分工明确，这一分界的电子结构根源能否推广成预测规则？酰基阳离子中间体的限域稳定性如何在不牺牲扩散的前提下继续提升？750 小时之外的长周期失活机理（积碳还是骨架脱铝）需要更长时间的工业侧验证。",
+          "relatedFields": [
+            "化学"
+          ]
+        }
+      ],
+      "expertCommentary": "把「百年必须用贵金属」这件事拆开看，本质是没有人相信纯 Brønsted 酸能把伯酸/仲酸这条路径跑赢烯烃齐聚。刘中民团队的做法是把竞争反应物理性地关在门外——不是调电子，是调几何，这就把问题从「配体设计」换维成了「孔道设计」，思路很硬。750 小时、95% 选择性，这个稳定性数据说明他们不是在展示一个漂亮但脆弱的初活性。需要冷静的是 CO/烯烃比 360 这个条件：真实工厂里循环这么多 CO 能耗不低，论文也自认这是应用前提，所以离「绿色化工」还差一段工程账。",
+      "relatedMilestones": [
+        {
+          "year": 1962,
+          "description": "Koch 等人发现无机酸质子可催化羰基化，为非金属路线留下最早的伏笔"
+        },
+        {
+          "year": 2017,
+          "description": "刘中民团队实现分子筛催化二甲醚羰基化制乙醇的工业化，证明分子筛本身可当羰基化催化剂"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 孔道限域调控让分子筛独自完成烯烃羰基化，首次做出伯酸与仲酸（Nature）"
+        }
+      ],
+      "tags": [
+        "分子筛",
+        "羰基化",
+        "绿色化工",
+        "限域效应",
+        "择形催化",
+        "丙酸",
+        "异丁酸"
+      ],
+      "dateAdded": "2026-10-28",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{qi2026zeolite, title={Zeolite-catalysed olefin carbonylation based on tuning spatial confinement}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-11183-2}}",
+        "formatted": "Qi L., Sheng Y., Zhang W., Ni Y., He L., Li B., Wang A., Zhu W., Bell A.T., Liu Z. Zeolite-catalysed olefin carbonylation based on tuning spatial confinement. Nature (2026). DOI: 10.1038/s41586-026-11183-2."
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-dendritic-decision-20261015",
+      "title": "神经元内部也分工：树突编码抽象规则，胞体处理感觉，共同撑起灵活决策",
+      "field": "生物",
+      "subfield": "神经科学 / 认知计算",
+      "researchers": [
+        "张园",
+        "刘延和",
+        "胡亚闯",
+        "张振坤",
+        "杜杰",
+        "崔乐乐",
+        "刘奇",
+        "钟林",
+        "辛宇",
+        "柴瑞明",
+        "邓莉",
+        "潘经纬",
+        "Jackie Schiller",
+        "徐宁龙"
+      ],
+      "institution": "中国科学院脑科学与智能技术卓越创新中心（神经科学研究所）/ 脑认知与类脑智能全国重点实验室",
+      "source": {
+        "journal": "Science",
+        "doi": "10.1126/science.adz5323",
+        "url": "https://www.science.org/doi/10.1126/science.adz5323",
+        "publicationDate": "2026-10-15"
+      },
+      "summary": "中科院脑智卓越中心徐宁龙团队在小鼠听觉规则切换任务中，用亚细胞分辨率双光子成像首次直接证明：同一个皮层神经元的顶端树突主要编码推断出的抽象规则，胞体主要表征感觉信息；光遗传抑制树突后，胞体依据规则输出选择信号的能力显著下降，而在规则反转试次中受损最重。",
+      "abstract": "Flexible decisions require combining sensory inputs with abstract rules, yet most studies treat a neuron as a single processing unit. Recording tuft dendrites and somata of layer 5 extratelencephalic neurons in mouse auditory cortex during a rule-switching categorization task, we show compartmentalized coding within the same cell: tuft dendrites preferentially encode the inferred abstract rule whereas somata preferentially encode sensory information, with the choice signal present in both. Optogenetic suppression of tuft activity, mediated by SST interneurons, reduced rule coding and impaired soma choice signals, most strongly on trials where the correct choice reversed with the rule.",
+      "breakthrough": "2026 年 10 月 15 日，《科学》在线发表中国科学院脑科学与智能技术卓越创新中心徐宁龙团队的研究，第一次在认知行为中拿到直接证据：同一个神经元内部存在功能分区，树突算「规则」，胞体算「感觉」。\n\n现代神经科学沿用一百多年的经典图像是把神经元当作一个均质的「点状节点」，只用发放率近似它的全部输出。这个简化在建模上很方便，却回避了一个根本问题：基本单元内部的计算如何支撑智能。皮层锥体神经元拥有庞大分支的树突——早在 1951 年，张香桐先生就提出顶端树突具有电兴奋性并能整合突触输入，但树突处理与灵活决策之间始终缺少直接的因果链条。\n\n团队设计了规则切换的听觉分类任务：小鼠听七个频率之一的纯音，按当前分类边界判断高低，而边界会在没有预警的情况下切换，动物只能从奖励反馈里推断隐藏规则。借助基于信念状态的强化学习模型估计每个试次的规则判断，再用双光子成像同步记录听觉皮层第 5 层端脑外投射（ET）神经元的顶端树突与胞体钙活动。\n\n结果是清晰的分区：广义线性模型与互信息分析都显示，树突末梢以规则编码为主，胞体以感觉编码为主，主干介于两者之间，而选择信号在两个区室都出现；对同一神经元做双平面近同步配对记录，仍在单细胞内部看到同样的偏好。因果验证靠光遗传：在生长抑素（SST）阳性中间神经元中表达红光敏感通道，选择性压制远端树突活动后，树突与胞体的规则、决策编码双双减弱，感觉编码却基本保留；把试次按「正确选择是否随规则反转」拆开后，反转试次的胞体选择信号受损最重，固定映射的非反转试次几乎不受影响。",
+      "significance": "它把「神经元是不是一个点」这个建模假设变成了可测量的问题，答案是：不是。同一细胞内部就能完成一次非线性整合——树突带来的抽象规则与胞体带来的感觉输入相乘，才产生单独任一区室都造不出的、依赖规则的选择信号。\n\n这为认知灵活性提供了细胞层面的统一解释：灵活不是因为网络更复杂，而是因为基本单元本身就能分区计算。对人工智能而言，这是一条可借鉴的架构线索——当前主流的人工神经元仍是「点状加权求和」，而大脑用树突的多区室非线性换来了极高的能效与灵活性，两者的差距提示了下一代神经网络的设计方向。\n\n它还接续了一条跨越七十余年的中国学术脉络：从张香桐 1951 年对顶端树突的推断，到今天直接的行为层面证据。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "计算神经科学与深度学习在此正面相遇：「点状神经元」正是人工神经网络的基本单元，而本研究表明真实神经元自带分区编码与非线性整合。这为「树突神经网络」类架构提供了实验依据，也暗示 Transformer 之类的模型可能缺失了一种廉价而有效的计算层级。",
+          "relatedFields": [
+            "生物",
+            "计算机",
+            "心理"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：解析树突实现规则—感觉整合的具体电生理机制（钙尖峰、NMDA 非线性）；中期：把多区室计算规则抽象成算法模块，用于小样本、快适应的强化学习；长期：若类脑芯片能实现树突级非线性，低功耗情境推理与脑机接口的自适应解码都可能受益。",
+          "relatedFields": [
+            "计算机",
+            "生物"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "规则信息如何「写」进树突——是长程投射的输入选择，还是局部可塑性？SST 中间神经元既接收规则又只调控树突、不输出决策，这类「只调不算」的细胞在更大网络里扮演什么角色？这套分区机制在人类皮层与其他模态（如视觉规则）中是否同样成立？",
+          "relatedFields": [
+            "生物",
+            "心理"
+          ]
+        }
+      ],
+      "expertCommentary": "这项研究的价值在于「因果闭环」做得干净：先证明树突偏规则、胞体偏感觉，再用光遗传掐掉树突，看选择信号是否随之塌陷，最后按「正确选择是否随规则反转」拆数据，让受损效应精确落在需要规则整合的试次上。三步环环相扣，很难用其他解释绕过去。特别值得称道的是双平面配对成像——群体统计容易受细胞组成干扰，他们在同一细胞内部复核了结论，这一步把「细胞间差异」的替代解释也堵掉了。保留意见：整合的电生理机制仍是黑箱，且对象是小鼠听觉皮层的单一亚型神经元，普适性还有待跨模态、跨物种验证。",
+      "relatedMilestones": [
+        {
+          "year": 1951,
+          "description": "张香桐提出顶端树突具有电兴奋性并整合突触输入，埋下分区计算的伏笔"
+        },
+        {
+          "year": 1960,
+          "description": "双区室神经元模型确立，把树突与胞体视为可分别计算的两级"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 首次在认知行为中证明树突编码抽象规则、与胞体感觉信号整合支撑灵活决策（Science）"
+        }
+      ],
+      "tags": [
+        "树突计算",
+        "认知灵活性",
+        "光遗传学",
+        "双光子成像",
+        "听觉皮层",
+        "类脑计算"
+      ],
+      "dateAdded": "2026-10-28",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{zhang2026dendritic, title={Dendritic computation for abstract rule-based flexible decision-making}, journal={Science}, year={2026}, doi={10.1126/science.adz5323}}",
+        "formatted": "Zhang Y., Liu Y., Hu Y., Zhang Z., Du J., Cui L., et al. Dendritic computation for abstract rule-based flexible decision-making. Science 394 (6821) (2026). DOI: 10.1126/science.adz5323."
+      },
+      "preprint": false,
+      "venue": "Science",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-sgr-stream-disk-20261013",
+      "title": "为正在瓦解的星系「画像」：人马座矮星系曾有旋转盘，金属丰度呈罕见「∧形」",
+      "field": "天文",
+      "subfield": "星系考古 / 银河系结构",
+      "researchers": [
+        "郭子熙",
+        "薛香香",
+        "刘超",
+        "赵刚 等"
+      ],
+      "institution": "中国科学院国家天文台 / 中国科学院紫金山天文台",
+      "source": {
+        "journal": "Nature Astronomy",
+        "doi": "10.1038/s41550-026-02996-2",
+        "url": "https://www.nature.com/articles/s41550-026-02996-2",
+        "publicationDate": "2026-10-13"
+      },
+      "summary": "国家天文台赵刚院士团队联合紫金山天文台，用 LAMOST、SDSS 与 Gaia 数据结合 N 体模拟，为正在被银河系潮汐撕裂的人马座矮星系「倒带重放」：它瓦解前曾拥有旋转恒星盘，且盘内金属丰度沿半径呈先升后降的「∧形」分布，与多数星系「越往外越贫金属」的图景不同。",
+      "abstract": "The Sagittarius dwarf galaxy is being tidally disrupted by the Milky Way, and whether it hosted a rotating disk before disruption has been debated because different progenitor structures can leave streams with similar positions and velocities. Combining LAMOST and SDSS spectroscopy with Gaia astrometry, we find a [Fe/H]-angular-momentum correlation in both the leading and trailing arms of the Sagittarius stream. N-body simulations show that only a rotating disk with a ∧-like radial metallicity profile, rising then falling with radius, reproduces the observed features of both arms simultaneously; only 3 of 217 MaNGA dwarfs show a clearly similar profile.",
+      "breakthrough": "2026 年 10 月 13 日，《自然·天文学》发表中国科学院国家天文台赵刚院士团队（联合紫金山天文台等单位）的研究，第一次为「正在被吃掉」的星系画出了它瓦解前的画像。\n\n人马座矮星系 1994 年被发现，如今正被银河系引力一点点剥离，恒星沿轨道散开成环绕整个天空的巨大星流。这类星流是「星系考古」的一手材料——银河系正是靠不断吞并小星系长大的。但复原它曾经的样子极难：不同内部结构的前身星系，可能在瓦解后留下位置和速度分布几乎相同的星流，光看今天恒星在哪、怎么动并不够。\n\n团队换用化学线索。恒星大气像一张出生地的化学快照，被引力剥离后轨道会变，化学成分却大体保留。他们用郭守敬望远镜（LAMOST）与斯隆巡天（SDSS）的光谱，加上 Gaia 卫星的位置与运动信息，分析星流的前导臂与后随臂，发现沿近似垂直于星流运动的方向存在金属丰度梯度：靠银河系中心一侧偏富金属，另一侧偏贫金属；更关键的是，[Fe/H] 与角动量某一分量存在稳健的相关性——这正是前身星系旋转可能留下的化学印记。\n\n为验证这一点，团队做 N 体模拟，比较盘状、椭球状与带旋转的椭球状三类模型，每类再设「单调下降」与「先升后降」两种径向金属分布。结论很干净：只有「带旋转的盘」加「先升后降（∧形）的金属丰度分布」能同时复现两条星流臂的全部观测特征。模拟还揭示了一个精巧的对应——前导臂的恒星主要追溯到原始星盘较外侧，后随臂更多反映内侧，两半拼起来才能定量复原整本书的内容。此外，团队在 SDSS MaNGA 巡天筛出的 217 个矮星系里只找到 3 个具有明确相似的分布，说明这种化学轮廓并不常见，但也不是人马座矮星系独有。",
+      "significance": "这项工作的意义有两层。具体一层是给一个正在消失的星系定案：它瓦解前有旋转盘，且这个盘的化学结构反常——最富金属的恒星不在核心，而集中在中半径的环带上，暗示其化学增丰历史与常见星系图景不同。\n\n方法一层更具示范性：它证明了「化学指纹 + 精密运动学 + 数值模拟倒带」这条路径可行。哪些早已被撕碎的星系不再是研究空白，它们同样能被纳入与幸存矮星系的系统比较，从而补全矮星系演化与银河系组装史的样本。这也再次说明基础研究与大型观测装置的慢功夫价值——LAMOST 多年积累的千万量级恒星光谱，正是这类「星系考古」得以开展的地基。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "星系考古与化学演化在此合流：把恒星光谱当作「出生地快照」，等价于用化学丰度做逆问题求解，与地球科学里用同位素反演物质来源的思路同构。这套「化学＋动力学＋模拟」三联法，未来可用于任何已瓦解结构的重建。",
+          "relatedFields": [
+            "天文"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：用更深的 LAMOST 光谱与 Gaia 后续数据补足星流中心区与巡天未覆盖天区；中期：把同类分析推到其他已知星流（如 Gaia-Enceladus 遗迹），检验旋转盘是否为被吞并矮星系的普遍特征；长期：为银河系组装史与暗物质分布模型提供化学约束。",
+          "relatedFields": [
+            "天文",
+            "物理"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "∧形金属丰度分布为何会出现——是恒星形成环带的遗迹，还是与银河系长期相互作用的结果？银河系自身的径向丰度轮廓也有类似趋势，两者是否存在共同演化的痕迹？前身星系中心约 1.5 千秒差距内的结构约束仍弱，这部分空白能否被未来高分辨率光谱填上？",
+          "relatedFields": [
+            "天文"
+          ]
+        }
+      ],
+      "expertCommentary": "「把已经撕碎的东西复原」是星系考古里最难的一类问题，此前对人马座矮星系有没有盘一直争不出结果，原因很朴素：位置和速度这两类证据对前身结构不敏感。赵刚团队换用化学丰度当第三把钥匙，再用 N 体模拟反向筛选模型，逻辑是标准的逆问题求解，且结论具有排他性——只有旋转盘加∧形分布这一种组合能同时对上两条星流臂，这比「找到一个能拟合的模型」有说服力得多。∧形分布本身是个意外收获，它意味着最富金属的区域不在星系中心，这一点若被更多样本证实，会推动矮星系化学演化模型改写。保留一句：中心区域与巡天覆盖的空白仍然存在，结论是在这些限制下给出的有依据推断，而非完整复原。",
+      "relatedMilestones": [
+        {
+          "year": 1994,
+          "description": "人马座矮星系被发现，是银河系最近的卫星星系之一"
+        },
+        {
+          "year": 2003,
+          "description": "SDSS 确认环绕全天的人马座星流，星系考古时代开启"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 化学丰度＋N 体模拟复原其瓦解前的旋转盘与∧形金属丰度分布（Nature Astronomy）"
+        }
+      ],
+      "tags": [
+        "人马座星流",
+        "星系考古",
+        "金属丰度",
+        "LAMOST",
+        "Gaia",
+        "矮星系演化"
+      ],
+      "dateAdded": "2026-10-28",
+      "readTime": 10,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{guo2026sgr, title={A $\\wedge$-like metallicity profile in the disk of the Sagittarius dwarf galaxy}, journal={Nature Astronomy}, year={2026}, doi={10.1038/s41550-026-02996-2}}",
+        "formatted": "Guo Z., Xue X., Liu C., Zhao G., et al. A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy. Nature Astronomy (2026). DOI: 10.1038/s41550-026-02996-2."
+      },
+      "preprint": false,
+      "venue": "Nature Astronomy",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-critical-topology-20261007",
+      "title": "「沸水里保住冰雕」：中国团队首次实验观测临界拓扑态，拓扑不再需要能隙",
+      "field": "物理",
+      "subfield": "凝聚态物理 / 拓扑物态",
+      "researchers": [
+        "林志康",
+        "王立威",
+        "孔泽霖",
+        "周尧",
+        "林海青",
+        "余雪佳",
+        "张霜",
+        "蒋建华"
+      ],
+      "institution": "中国科学技术大学 / 苏州大学 / 宁波东方理工大学 / 香港大学",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-11099-x",
+        "url": "https://www.nature.com/articles/s41586-026-11099-x",
+        "publicationDate": "2026-10-07"
+      },
+      "summary": "中国科大蒋建华、宁波东方理工余雪佳、港大张霜等团队用 3D 打印声学超材料，以纠缠谱代替能隙判据，在一维与二维体系中首次实验观测到临界拓扑态——证明能隙关闭到零时拓扑边缘态仍可存在；同期刊发的另一篇论文（南洋理工张柏乐团队）在一维 Floquet 临界点观测到拓扑零模与 π 模。",
+      "abstract": "Topological phases are conventionally protected by a bulk energy gap, and whether topology survives at a gapless critical point has been a long-standing question. Here, using acoustic metamaterials and the generalized Li-Haldane bulk-edge correspondence, we experimentally demonstrate critical topology in one and two dimensions: the bulk entanglement spectrum, obtained from the spectral decomposition of the measured Green's function, shows the degeneracies expected for gapless topological states, and topological edge modes are directly imaged inside the gapless continuum. Transitions between phases with different critical topology generate multi-critical points, revealing topology-driven multi-criticality and a hierarchy of topological phases.",
+      "breakthrough": "2026 年 10 月 7 日，《自然》同期发表两篇论文，宣布中国科学家首次实验观测到「临界拓扑态」，在拓扑物理与临界相变之间架起桥梁。\n\n过去的主流认识是：拓扑只能活在「有能隙」的物质里。能隙像一道堤坝，把体态与边缘态隔开，边缘的特殊传导才能稳定；到了相变临界点，堤坝消失、涨落主导，拓扑效应理应不复存在。宁波东方理工大学余雪佳把这道难题比作「在沸水中完好保存一件冰雕」，并用数年时间建起临界拓扑的理论框架——包括量子临界点拓扑分类与广义 Li-Haldane 体边对应。\n\n实验由两支风格迥异的团队完成。中国科大蒋建华团队（联合香港大学张霜等）的做法是把临界拓扑物态映射到 3D 打印的声子晶体上，用泵浦—探测手段测出隐含本征性质的格林函数，再作谱分解得到纠缠谱。纠缠谱相当于「不看堤坝看水流的影子」：即使体态完全无能隙，也能从量子关联中还原边缘模态。实验在一维与二维体系中同时看到预期的简并：一维体态纠缠谱在 0.5 处出现两重简并，二维自旋陈绝缘体转变处的动量分辨纠缠谱同样在 0.5 附近出现简并模，对应无能隙连续谱中的拓扑角态。\n\n同期另一篇论文由南洋理工大学张柏乐团队完成，用 3D 打印声学波导阵列构建一维 Floquet（周期驱动）系统，通过直管设定最近邻耦合、弯管设定次近邻耦合，在约 9.8 kHz 重构单周期 Floquet 算符，锁定无能隙的临界相边界，并分辨出局域在边界上的临界零能模与 π 模。\n\n研究还发现了一个超出预期的规律：拓扑会引发多重临界现象——当临界态的拓扑性质改变时，必然出现多重临界点，这与经典相变中由吉布斯相律决定的三相点完全不同，说明拓扑是临界相变不可忽视的特征指标。",
+      "significance": "这是一次教科书级别的概念改写：拓扑不变量的成立不再以能隙为前提。它把拓扑物理与临界现象这两条各自拿过诺贝尔奖（1982 年临界现象理论、2016 年拓扑相变）却长期互不相容的脉络接了起来，用不变量去重新分类相变。\n\n方法上的意义同样重要：纠缠谱被证明是一种不受能隙约束的拓扑「诊断工具」，可在真实体系中测量，且不依赖极低温或复杂量子操控。声学超材料这种宏观、可打印、可重构的平台大幅降低了验证门槛，使这类前沿物理能被重复、被教学、被快速扩展到光学等经典波体系。\n\n应用层面，临界拓扑会带来一类特殊的「连续谱内拓扑局域态」，为声学与光学器件（如稳健波导、抗无序滤波）提供了新的设计自由度，也为拓扑量子计算与非平衡拓扑物态研究打开了入口。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "拓扑学与临界现象在此合并：过去分类物质靠「有没有能隙」，现在可以靠「临界点的拓扑指标」。这把统计物理的普适类思想引入拓扑分类，反过来也让拓扑成为刻画相变的新标签，与张量网络、量子蒙特卡洛方法天然衔接。",
+          "relatedFields": [
+            "物理",
+            "数学"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：把临界拓扑推广到光学、微波等经典波平台，做成可打印的稳健波导与传感器原型；中期：在真实量子体系（冷原子、超导电路）中复现临界拓扑态；长期：若临界点的拓扑局域态可控，可能用于抗无序的片上信息传输与拓扑量子计算编码。",
+          "relatedFields": [
+            "物理",
+            "计算机"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "声学平台测得的纠缠谱与量子极限结果等价，但真实量子体系中的退相干会不会抹掉临界信号？二维之上的三维临界拓扑如何定义与测量？拓扑驱动的多重临界性是否存在超越吉布斯相律的一般计数规则？",
+          "relatedFields": [
+            "物理",
+            "数学"
+          ]
+        }
+      ],
+      "expertCommentary": "「在沸水里保存冰雕」这个比喻点出了问题的全部难度：临界点涨落最大、能隙为零，任何依赖能隙的判据都失效。余雪佳团队的回答不是硬保能隙，而是换了一把尺子——纠缠谱只依赖量子关联结构，与有没有能隙无关，这一步把概念障碍拆掉了。两篇同期论文用完全不同的设计与测量方式（Floquet 零模/π 模 vs 一维二维纠缠谱）指向同一结论，这种「独立双证」比单篇更有分量。声学超材料虽是经典波平台，却恰好避开了量子体系在临界点的强噪声，是聪明的取巧。需要留意的是，实验目前仍在经典波体系，量子体系中的临界拓扑观测才算真正闭环。",
+      "relatedMilestones": [
+        {
+          "year": 1982,
+          "description": "Wilson 因临界现象相变理论获诺贝尔物理学奖，普适类思想确立"
+        },
+        {
+          "year": 2016,
+          "description": "Thouless、Haldane、Kosterlitz 因拓扑相变与拓扑物态获诺贝尔物理学奖"
+        },
+        {
+          "year": 2024,
+          "description": "余雪佳等提出广义 Li-Haldane 体边对应，为无能隙拓扑提供判据"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 声学超材料中首次实验观测一维与二维临界拓扑态（Nature 同期两篇）"
+        }
+      ],
+      "tags": [
+        "临界拓扑",
+        "纠缠谱",
+        "声学超材料",
+        "拓扑相变",
+        "Floquet系统",
+        "多临界性"
+      ],
+      "dateAdded": "2026-10-28",
+      "readTime": 11,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{lin2026critical, title={Experimental observation of critical topology}, journal={Nature}, volume={658}, pages={365--371}, year={2026}, doi={10.1038/s41586-026-11099-x}}",
+        "formatted": "Lin Z.-K., Wang L.-W., Kong Z.-L., Zhou Y., Lin H.-Q., Yu X., Zhang S., Jiang J.-H. Experimental observation of critical topology. Nature 658, 365-371 (2026). DOI: 10.1038/s41586-026-11099-x. 同期：Cheng Z. et al. Observation of critical topological phase transition. Nature 658, 358-364 (2026). DOI: 10.1038/s41586-026-11067-5."
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-th229-nuclear-clock-20261007",
+      "title": "钍-229 核光钟闭环运行：1.4 微克钍把原子核变成钟摆",
+      "field": "物理",
+      "subfield": "精密测量 / 核量子计量",
+      "researchers": [
+        "丁世谦 等"
+      ],
+      "institution": "清华大学物理系 / 中国科学院相关研究所",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-11122-1",
+        "url": "https://www.nature.com/articles/s41586-026-11122-1",
+        "publicationDate": "2026-10-07"
+      },
+      "summary": "清华大学丁世谦团队联合国内多家机构，用自主研制的 148 纳米连续波真空紫外激光和仅 1.4 微克钍-229 生长的毫米级掺钍氟化钙晶体，把激光频率稳定锁定到钍-229 原子核跃迁上，实现核光钟的稳定闭环运行——首次把高精度频率锁定从原子电子跃迁拓展到原子核跃迁。",
+      "abstract": "Optical clocks reference the frequency of an electronic transition, whereas a nuclear clock references a transition inside the atomic nucleus, which is far less sensitive to external electromagnetic perturbations. Using a home-built 148 nm continuous-wave vacuum-ultraviolet laser and a millimetre-scale CaF2 crystal doped with only 1.4 micrograms of Th-229, we lock the laser frequency to the Th-229 nuclear transition and demonstrate stable closed-loop operation of a nuclear clock, establishing a complete technical chain from light source and crystal growth to precision spectroscopy and frequency feedback.",
+      "breakthrough": "2026 年 10 月 7 日，《自然》在线发表清华大学物理系丁世谦团队联合国内多家科研机构的研究，成功让核光钟稳定闭环运行——这不是又一次「测到核跃迁」，而是第一次让原子核真正开始「走时」。\n\n传统原子钟用的是原子外层电子的能级跃迁。原子核比原子小五个数量级，其跃迁受外界电磁环境扰动小得多，因此核光钟在原理上能提供更高的精度与更低的系统不确定度。钍-229 是目前唯一已知可用激光直接激发的核跃迁体系：跃迁能量约 8.4 电子伏，对应 148 纳米真空紫外波长。但这条路有两个老瓶颈——缺少满足精密操控要求的连续波真空紫外激光，以及高质量掺钍晶体极难制备。\n\n团队的做法是两头同时啃。光源侧，依靠前期自主发展的 148 纳米连续波超窄线宽激光；材料侧，联合中国科学院相关机构突破稀缺放射性核素掺杂晶体的生长难题，仅用 1.4 微克钍-229 就长出毫米尺度的高质量掺钍氟化钙晶体。随后完成精密光谱测量，获得高分辨率的核跃迁吸收谱并实现快速吸收信号读出；通过筛选窄线宽、低温度敏感性的核跃迁谱线作为频率参考，建立起以核跃迁信号为基准的激光频率反馈控制系统。\n\n这一步跨越被团队视为关键：从「测得一条谱线」到「让一条谱线当基准」，核光钟由此形成从连续波真空紫外光源、掺钍晶体制备、核跃迁精密探测到闭环运行的完整技术体系，并展现出优异的短期频率稳定性。同期欧洲研究团队独立完成了同类工作，两者共同标志着钍-229 核光钟的成功研制。",
+      "significance": "核光钟被讨论了近二十年，此前的进展一直停在「能激发、能观测」，缺的正是「能锁定、能运行」。本次工作补上了这最后一环，意味着时间频率基准有可能从电子跃迁时代跨入核跃迁时代。\n\n预期价值集中在三处：一是更高精度的时间频率基准（核跃迁对电磁扰动不敏感，系统不确定度天花板更低）；二是基础物理检验——核跃迁对精细结构常数、强相互作用耦合的漂移更敏感，可作为「常数是否真的恒定」的探针；三是与现有光钟比对后形成新的引力测量手段，用于相对论测地、暗物质搜寻等。\n\n工程上的巧思同样值得注意：仅用 1.4 微克放射性核素就长出可用晶体，把材料门槛压到了现实可承受的量级——这在放射性核素实验里是决定项目能否推进的关键。",
+      "innovationRating": 5,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "核物理与精密测量在此交汇：核跃迁把「原子核内部结构」这个核物理议题变成了计量学资源。反过来，核光钟的稳定性又为核结构理论提供高精度检验数据，两端互为工具。这与光频梳、离子钟的发展路径高度相似。",
+          "relatedFields": [
+            "物理"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：与锶/镱光钟做长期比对，压低核光钟的不确定度预算；中期：把设备小型化、降低对同步辐射等大装置的依赖；长期：用于精细结构常数漂移检验、引力势差测量与新型导航/授时体系。",
+          "relatedFields": [
+            "物理"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "当前展示的是短期稳定性，长期稳定度能否压过最好的电子光钟？掺钍晶体的放射性衰变与辐照损伤会如何限制寿命？核跃迁谱线里是否还藏着新物理（如超轻暗物质耦合）的信号？",
+          "relatedFields": [
+            "物理"
+          ]
+        }
+      ],
+      "expertCommentary": "评判这项工作要看它跨的是哪道坎：过去几年钍-229 的新闻都停在「首次激光激发核跃迁」，那是物理可行性的证明；这一次是把核跃迁做成频率基准并闭环锁定，属于计量学可行性。两者难度不在一个量级——前者要求测到信号，后者要求信号足够干净、可快速读出、可长期反馈。1.4 微克核素长出毫米级晶体这个数字值得单独记一笔，它决定了这条路能不能被更多实验室复制。冷静看：论文展示的主要是短期稳定性，与顶尖光钟的长期稳定度和系统不确定度对比尚未公布，核光钟要从「能跑」变成「更准」，还差一场硬碰硬的比对。",
+      "relatedMilestones": [
+        {
+          "year": 1976,
+          "description": "发现钍-229 存在极低能量的同核异能态，为核光钟埋下物质基础"
+        },
+        {
+          "year": 2003,
+          "description": "Flambaum 提出利用钍-229 核跃迁研制核光钟的构想"
+        },
+        {
+          "year": 2024,
+          "description": "多个团队首次实现钍-229 核跃迁的激光激发与精密谱测量"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 核光钟实现稳定闭环运行，中欧团队同期独立完成（Nature）"
+        }
+      ],
+      "tags": [
+        "核光钟",
+        "钍-229",
+        "真空紫外激光",
+        "精密测量",
+        "频率基准",
+        "基础物理检验"
+      ],
+      "dateAdded": "2026-10-28",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{ding2026nuclearclock, title={A nuclear clock synchronized to Th-229}, journal={Nature}, year={2026}, doi={10.1038/s41586-026-11122-1}}",
+        "formatted": "Ding S., et al. A nuclear clock synchronized to Th-229. Nature (2026). DOI: 10.1038/s41586-026-11122-1."
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
+      "id": "r-7ev-uwbg-semi-20261007",
+      "title": "7 电子伏带隙还能导电：掺硅氧化铝镓薄膜刷新半导体纪录",
+      "field": "化学",
+      "subfield": "材料化学 / 超宽带隙半导体",
+      "researchers": [
+        "Jacob Steele",
+        "D. Bhattacharya",
+        "K. Nomoto",
+        "Darrell G. Schlom 等"
+      ],
+      "institution": "康奈尔大学",
+      "source": {
+        "journal": "Nature",
+        "doi": "10.1038/s41586-026-11085-3",
+        "url": "https://www.nature.com/articles/s41586-026-11085-3",
+        "publicationDate": "2026-10-07"
+      },
+      "summary": "康奈尔大学 Darrell Schlom 团队用分子束外延在蓝宝石衬底上生长掺硅 α-(AlxGa1-x)2O3 薄膜，在带隙超过 7 电子伏时仍保持可控导电，打破立方氮化硼保持的纪录；在 6 电子伏以上的「巨带隙」区间，室温导电性比此前报道高出 1 亿倍以上，并已制成可工作的二极管与晶体管。",
+      "abstract": "Wider bandgaps allow semiconductors to withstand stronger electric fields, but supplying free electrons becomes progressively harder as the gap widens. Here we show that silicon doping of alpha-(AlxGa1-x)2O3 films grown by molecular-beam epitaxy on sapphire preserves controllable conductivity at bandgaps beyond 7 eV, exceeding the previous record held by cubic boron nitride. Above 6 eV, in the colossal-bandgap regime, room-temperature conductivity exceeds earlier reports by more than eight orders of magnitude, and both diodes and transistors operate with these films.",
+      "breakthrough": "2026 年 10 月 7 日，《自然》发表康奈尔大学 Darrell Schlom 团队的研究，把「能导电的半导体带隙」纪录推到 7 电子伏以上——并且是在蓝宝石这种便宜、可大规模量产的衬底上做到的。\n\n带隙是电子从价带跃入导带所需的能量。带隙越宽，材料越能承受强电场，氮化镓、碳化硅因此撑起了快充与电动车。氧化铝镓更极端：调节铝镓比例，带隙可在 5.4 至 8.6 电子伏之间连续可调，是已知半导体中可调范围最宽的体系。但这里长期横着一道墙——铝含量越高，越难向材料中注入自由电子；富铝薄膜的导电性比富镓薄膜低几个数量级，做成器件毫无意义。\n\n团队的解决办法朴实而精准：用分子束外延在蓝宝石衬底上逐原子层生长氧化膜，在生长过程中掺入少量硅，让硅原子充当电子施主。测试结果显示，掺硅薄膜在带隙超过 7 电子伏时仍可导电，打破此前由立方氮化硼保持的纪录；在团队称为「巨带隙（colossal bandgap）」的 6 电子伏以上区间，室温导电性比以往任何报道高出 1 亿倍以上。更关键的是，他们把材料做成了器件：二极管与晶体管均成功运行，说明这不是一组漂亮的霍尔测量数据，而是可工作的电子学。\n\n成本维度的优势同样重要。金刚石、立方氮化硼等超宽带隙材料性能优异却难以规模化制备，而蓝宝石储量丰富、价格低廉且已有高质量的大规模产能，这使该路线的产业化门槛显著低于其他候选材料。",
+      "significance": "电力电子的核心矛盾一直是「耐压」与「导通」的二选一：要承受高电压就得用宽带隙材料，但带隙一宽，导通损耗就飙升。这项工作在 7 电子伏这个前所未有的高度同时拿到了两者，等于把这堵墙推开一道缝。\n\n若良率与成本可控，其直接后果是功率器件更小、更耐压、发热更少——从快充、电动车到电网的电能转换环节，都能少浪费一部分能量。对材料学科而言，「掺硅做施主 + 蓝宝石衬底 + 分子束外延」是一套可复制的工艺组合，说明超宽带隙半导体的瓶颈不一定在材料本身，也可能只是掺杂策略没找对。\n\n需要清醒的是：这是一项薄膜层面的结果，从论文到产线仍需长期的工程化验证，尤其是大面积均匀性与长期可靠性。",
+      "innovationRating": 4,
+      "divergentExtensions": [
+        {
+          "direction": "跨领域联系",
+          "content": "这项工作重新定义了「宽带隙半导体」的边界：过去 GaN/SiC（3.3/3.2 eV）已算宽，如今 7 eV 仍可器件化，意味着深紫外光电子、高压功率与极端环境电子学有了同一套材料平台。掺杂工程与衬底工程在此合流，为后续多元氧化物外延提供模板。",
+          "relatedFields": [
+            "化学",
+            "物理"
+          ]
+        },
+        {
+          "direction": "应用推演",
+          "content": "短期：提升薄膜迁移率与接触电阻，做出更高耐压的晶体管原型；中期：验证大面积外延均匀性与长期偏压可靠性，打通 6 英寸级蓝宝石工艺；长期：进入超高压直流输电、深紫外探测与航天电子等对体积和散热极敏感的场景。",
+          "relatedFields": [
+            "化学",
+            "物理"
+          ]
+        },
+        {
+          "direction": "开放问题",
+          "content": "7 eV 之上还能走多远——8.6 eV 的纯铝端是否也能导电？硅之外是否有更高效的施主（如锡、锗）？p 型掺杂这道宽禁带半导体的老难题在这套体系里有没有解？高铝含量下的氧空位与界面态如何抑制？",
+          "relatedFields": [
+            "化学",
+            "物理"
+          ]
+        }
+      ],
+      "expertCommentary": "这条新闻最容易被误读成「又一个参数纪录」，实际上它的突破点在于「导电可控」而不是「带隙更宽」——氧化铝镓本来就能做到 8.6 eV，问题一直是里面没有可用的电子。团队没有去改材料体系，而是用一个最朴素的手段（掺硅）配上一套足够干净的外延工艺解决了注入问题，属于典型的「难点不在想法而在手艺」。做成二极管和晶体管这一步尤其关键，它把材料数据变成了器件可行性。批注两条：一是 p 型缺失会让它短期内只能做单极器件；二是从实验室薄膜到产线，中间隔着良率这条长河。",
+      "relatedMilestones": [
+        {
+          "year": 1993,
+          "description": "GaN 基蓝光 LED 与高电子迁移率晶体管起步，宽带隙半导体进入实用阶段"
+        },
+        {
+          "year": 2010,
+          "description": "SiC 功率器件量产，宽禁带电力电子开始替代硅基方案"
+        },
+        {
+          "year": 2026,
+          "description": "🔥 掺硅氧化铝镓薄膜在 7 eV 带隙下保持可控导电并做成器件（Nature）"
+        }
+      ],
+      "tags": [
+        "超宽带隙半导体",
+        "氧化铝镓",
+        "分子束外延",
+        "功率电子",
+        "硅掺杂",
+        "蓝宝石衬底"
+      ],
+      "dateAdded": "2026-10-28",
+      "readTime": 9,
+      "status": "unread",
+      "starred": false,
+      "citations": {
+        "bibtex": "@article{steele2026bandgap, title={A 7-eV bandgap semiconductor based on silicon-doped $\\alpha$-(AlxGa1-x)2O3}, journal={Nature}, volume={658}, pages={623--628}, year={2026}, doi={10.1038/s41586-026-11085-3}}",
+        "formatted": "Steele J., Bhattacharya D., Nomoto K., Schlom D.G., et al. A 7-eV bandgap semiconductor based on silicon-doped alpha-(AlxGa1-x)2O3. Nature 658, 623-628 (2026). DOI: 10.1038/s41586-026-11085-3."
+      },
+      "preprint": false,
+      "venue": "Nature",
+      "arxivId": null,
+      "codeUrl": null
+    },
+    {
       "id": "r-besiii-entangle-vus-20260902",
       "title": "量子纠缠首次用于提取粒子信息：复旦团队开辟精确检验标准模型新路径",
       "field": "物理",

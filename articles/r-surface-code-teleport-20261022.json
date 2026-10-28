@@ -1,0 +1,89 @@
+{
+  "id": "r-surface-code-teleport-20261022",
+  "title": "125 比特芯片上「传送」拓扑量子物态：浙大团队首次观测到传态相变",
+  "field": "物理",
+  "subfield": "量子计算 / 量子纠错",
+  "researchers": [
+    "邹亦仁",
+    "夏弘宽",
+    "张奥赛",
+    "朱旭浩",
+    "金飞彤 等",
+    "张鹏飞",
+    "朱国毅",
+    "王浩华"
+  ],
+  "institution": "浙江大学物理学院 / 浙江大学杭州国际科创中心 / 香港科技大学（广州）/ 合肥国家实验室",
+  "source": {
+    "journal": "Nature Physics",
+    "doi": "10.1038/s41567-026-03484-0",
+    "url": "https://www.nature.com/articles/s41567-026-03484-0",
+    "publicationDate": "2026-10-22"
+  },
+  "summary": "浙江大学与香港科技大学（广州）团队在自研 125 比特超导芯片上，用 98 个量子比特实现码距最高为 7 的拓扑表面码逻辑态隐形传态，并首次测出「传态相变」：芯片间纠缠强度存在明确临界门槛，借助非克利福德魔法资源恢复电磁对偶对称性后，阈值从 0.122π 提升至 0.175π。",
+  "abstract": "The surface code is a leading candidate for harnessing long-range entanglement to protect logical quantum information against errors, and teleportation of the code's logical states is desirable for robust quantum information processing. Here we demonstrate the teleportation of surface code states with code distances up to 7, implemented on a superconducting quantum processor with 125 qubits. We obtain a phase diagram for successful teleportation of the logical state by tuning the local entangling gates uniformly across a finite threshold. Furthermore, we show that the entangling threshold can be boosted by coherent qubit rotations that inject non-classical magic resources, restoring the duality symmetry of the surface code's topological phase.",
+  "breakthrough": "2026 年 10 月 22 日，《自然·物理》发表浙江大学王浩华、张鹏飞团队与香港科技大学（广州）朱国毅团队的合作成果，首次在真实超导芯片上把「一团纠缠量子物态」作为一个整体传送出去，并画出了传送成败的相图。\n\n表面码把逻辑量子信息分散编织进二维晶格上数十个物理比特的长程纠缠中，是通往容错量子计算的主流路线。但要在模块之间传递逻辑态，难度远高于传单个比特：既要保住编码内部的长程纠缠，又要靠两端之间的纠缠资源当「桥梁」。理论此前的预言是——不完美的纠缠桥梁等价于一场弱测量，其后果由二维随机统计模型刻画，传送成败之间存在由 Nishimori 临界点界定的尖锐相变。\n\n实验在 125 比特芯片上划出 Alice、Bob 两套交错排列的码距 7 表面码，共动用 98 个量子比特；Alice 端制备拓扑逻辑态，随后用强度可连续调节的横向纠缠门模拟从「完好信道」到「完全断开」的全部情形，再用基于张量网络的最大似然解码器判定 Bob 端能否重构逻辑信息。结果是清晰的两段行为：纠缠够强时，码距越大「越纠越对」；弱过临界点后，拓扑保护失效，码距越大反而「越纠越错」。有限尺寸标度分析给出的临界伪阈值与理论预言的 Nishimori 临界点高度吻合。\n\n更关键的一步是「省纠缠」：团队把量子比特的旋转轴从 X 方向可控地转到 X+Z 的魔术方向，恢复表面码的电—磁自对偶对称性，相当于在 Clifford 线路之外注入非经典「魔法」资源，让同一份伤害被电、磁两类激发平摊，等效错误率直接减半。实验测得的传态阈值由 0.122(2)π 跃升至 0.175(5)π。传送一组任意逻辑态（含 H 型魔法态）后，Bob 端平均逻辑保真度达 0.95(2)，与传送前 Alice 端的 0.96(1) 几乎持平。",
+  "significance": "这项工作的核心价值不在于「传了一个更大的态」，而在于把「量子多体传态相变」从理论概念变成一张可测量的实验相图——它回答了分布式量子计算最关键的一个资源问题：模块之间的纠缠需要多强，逻辑信息才搬得动。\n\n对分布式容错量子计算而言，这是必要的前置能力：未来多块量子芯片要像一台机器协同工作，就必须能把受编码保护的逻辑态在模块间搬运，而不是把裸比特搬来搬去。对基础物理而言，它把表面码的纠错阈值问题转化成了一个统计物理相变问题，并证明「对称性」可以当工程设计原理用——用魔法资源换更低的纠缠门槛，是一种可复制的资源优化范式。\n\n更值得留意的是，同一类 Nishimori 临界点此前曾在完全不同的量子方案（纠缠猫态制备）中被观测到，两个体系殊途同归，正是普适性的直接体现。",
+  "innovationRating": 5,
+  "divergentExtensions": [
+    {
+      "direction": "跨领域联系",
+      "content": "量子纠错与统计物理在此合并成同一件事：传态阈值不是工程良率问题，而是八顶角模型式的相变临界点。这提示后续量子硬件优化可以「借道」统计物理的相变理论，把阈值提升表述为对称性恢复问题，而不是单纯堆门保真度。",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "应用推演",
+      "content": "短期：引入中途测量与快速重置，把拓扑态制备从线性深度压到常数深度；中期：设计关联解码器，利用 Alice「能读懂」与 Bob「能修复」之间的信息差；长期：在两块独立芯片之间做真正非局域的远程传态，即量子组网的第一步。",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    },
+    {
+      "direction": "开放问题",
+      "content": "理论上电磁自对偶可把阈值推向 0.25π 上限，但从中重拾信息需要更精妙的测量与解码——差的那一段能否补上？魔法资源的注入成本与阈值收益的最优点在哪里？跨芯片传态时，光子互连的损耗会不会重新把系统推回阈值以下？",
+      "relatedFields": [
+        "物理",
+        "计算机"
+      ]
+    }
+  ],
+  "expertCommentary": "这是「把理论相图画到硬件上」的典型胜利。98 个比特协同、码距 7，说明平台能力已经追上理论需求；而真正的洞察是那句「码距越大反而越纠越错」——它把容错计算从「越多越好」的直觉里拽了出来，明确告诉你资源不足时规模是负债而非资产。用魔法资源换阈值这一步尤其漂亮：不是硬压噪声，而是通过恢复对称性让伤害均摊，属于典型的「用结构解决问题」而非「用蛮力解决问题」。冷静看，0.95 的传态保真度还不足以支撑实际算法，且实验里 Alice、Bob 仍在同一块芯片上，跨模块的真实损耗尚未经受考验。",
+  "relatedMilestones": [
+    {
+      "year": 1997,
+      "description": "Kitaev 提出拓扑表面码，把纠错问题转化为拓扑序问题"
+    },
+    {
+      "year": 2024,
+      "description": "理论预言不完美纠缠桥下的表面码传态相变（PRX Quantum 5, 040313）"
+    },
+    {
+      "year": 2026,
+      "description": "🔥 125 比特芯片上实现码距 7 表面码传态并测出传态相变（Nature Physics）"
+    }
+  ],
+  "tags": [
+    "量子纠错",
+    "表面码",
+    "量子隐形传态",
+    "超导量子计算",
+    "拓扑序",
+    "魔法资源"
+  ],
+  "dateAdded": "2026-10-28",
+  "readTime": 11,
+  "status": "unread",
+  "starred": false,
+  "citations": {
+    "bibtex": "@article{zou2026teleportation, title={Teleportation transition of surface codes on a superconducting quantum processor}, journal={Nature Physics}, year={2026}, doi={10.1038/s41567-026-03484-0}}",
+    "formatted": "Zou Y., Xia H.-K., Zhang A., Zhu X., Jin F., et al. Teleportation transition of surface codes on a superconducting quantum processor. Nature Physics (2026). DOI: 10.1038/s41567-026-03484-0."
+  },
+  "preprint": false,
+  "venue": "Nature Physics",
+  "arxivId": null,
+  "codeUrl": null
+}
